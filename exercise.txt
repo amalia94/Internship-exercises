@@ -1,0 +1,1266 @@
+Script started on 2023-12-11 11:23:07+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads[00m$ more cp2k.out
+[?2004lmore: cannot open cp2k.out: No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads[00m$ cd more cprk.out
+[?2004lbash: cd: too many arguments
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads[00m$ nano cp2k.out
+[?2004l[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                        cp2k.out                                  [1;79H(B[m[23d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute   (B[0;7m^C(B[m Location[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify   (B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[22d[K[?12l[?25h[2d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;48H(B[0;7m*[79G(B[m[?12l[?25h[2de[?25l[?12l[?25hx[?25l[?12l[?25hi[?25l[?12l[?25ht[?25l[3d[?12l[?25h[?25l[?12l[?25h^[?25l[?12l[?25hx[?25l[?12l[?25h [?25l[?12l[?25hX[?25l[4d[?12l[?25h[?25l[?12l[?25h[2d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h^exit^[?25l[?12l[?25hgexit^g[?25l[?12l[?25hexit[K^[?25l[?12l[?25hexit[K[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h^[?25l[?12l[?25hG[?25l[5d[?12l[?25h[?25l[A^G[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[A^X[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[Aexit[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25hm[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25hp[?25l[?12l[?25h2[?25l[?12l[?25hk[?25l[?12l[?25h.[?25l[?12l[?25ho[?25l[?12l[?25hu[?25l[?12l[?25ht[?25l[3d[?12l[?25h[?25l[2;14H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25he[?25l[?12l[?25hx[?25l[?12l[?25hi[?25l[?12l[?25ht[?25l[3d[?12l[?25h[?25l[Aexit[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25hq[?25l[?12l[?25h[K[?25l[?12l[?25hQ[?25l[3d[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?                                                           [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;23H[?12l[?25h[?25l[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads[00m$ more cp2k.out
+[?2004lmore: cannot open cp2k.out: No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads[00m$ ^[[200~grep "SCF Done:" dimer.log~[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mgrep "SCF Done:" dimer.log[27mgrep "SCF Done:" dimer.log
+[?2004lgrep: dimer.log: No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads[00m$ cd linux-exers[Kcise.tar.gz
+[?2004lbash: cd: linux-exercise.tar.gz: Not a directory
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads[00m$ cd ^[[200~tar xzvf linux-exercise.tar.gz~[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K [7mtar xzvf linux-exercise.tar.gz[27mtar xzvf linux-exercise.tar.gz
+[?2004lbash: cd: too many arguments
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads[00m$ [7mtar xzvf linux-exercise.tar.gz[27mtar xzvf linux-exercise.tar.gz
+[?2004llinux-exercises/
+linux-exercises/dimer_scan.log
+linux-exercises/freq.log
+linux-exercises/cp2k.xyz
+linux-exercises/cp2k.out
+linux-exercises/dimer.log
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads[00m$ more cp2k.out
+[?2004lmore: cannot open cp2k.out: No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads[00m$ grep "SCF Done:" dimer.log
+[?2004lgrep: dimer.log: No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads[00m$ cd linus-exercise[K[K[K[K[K[K[K[K[K[Kx-exercise
+[?2004lbash: cd: linux-exercise: No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads[00m$ linux-exercisesclinux-exercisesdlinux-exercises linux-exercises
+[?2004l[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ more cp2k.out
+[?2004l DBCSR| Multiplication driver                                                SMM
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Multiplication size stacks                                             0
+ DBCSR| Use subcommunicators                                                   F
+ DBCSR| Use MPI combined types                                                 F
+ DBCSR| Use MPI memory allocation                                              T
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                            100
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2013-02-12 09:15:34.616
+ ***** ** ***  *** **   PROGRAM STARTED ON                              nid00016
+ **    ****   ******    PROGRAM STARTED BY                                      
+ ***** **    ** ** **   PROGRAM PROCESS ID                                 31373
+  **** **  *******  **  PROGRAM STARTED IN          /wrk/asillanp/cp2k/benchmark
+
+ CP2K| version string:                                          CP2K version 2.3
+ CP2K| source code revision number:                                        12343
+ CP2K| is freely available from                             http://www.cp2k.org/
+ CP2K| Program compiled at                          Thu Feb  7 17:23:41 EET 2013
+ CP2K| Program compiled on                                           sisu-login1
+ CP2K| Program compiled for                                          sisu-intel3
+ CP2K| Input file name                                            H2O-512_md.inp
+[7m--More--(1%)[27m[K[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ nano cp2k.out
+[?2004l[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;31H(B[0;7m[ Read 1434 lines ](B[m[H(B[0;7m  GNU nano 6.2                        cp2k.out                                  [1;79H(B[m[23d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute   (B[0;7m^C(B[m Location[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify   (B[0;7m^/(B[m Go To Line[2d DBCSR| Multiplication driver[78GSMM[3;2HDBCSR| Multiplication stack size[77G1000[4;2HDBCSR| Multiplication size stacks[80G0[5;2HDBCSR| Use subcommunicators[80GF[6;2HDBCSR| Use MPI combined types[80GF[7;2HDBCSR| Use MPI memory allocation[80GT[8;2HDBCSR| Use Communication thread[80GT[9;2HDBCSR| Communication thread load[78G100[12;3H**** **** ******  **  PROGRAM STARTED AT[12;58H2013-02-12 09:15:34.616[13;2H***** ** ***  *** **   PROGRAM STARTED ON[73Gnid00016[14;2H**    ****   ******    PROGRAM STARTED BY[15d ***** **    ** ** **   PROGRAM PROCESS ID[76G31373[16;3H**** **  *******  **  PROGRAM STARTED IN[16;53H/wrk/asillanp/cp2k/benchmark[18;2HCP2K| version string:[18;65HCP2K version 2.3[19;2HCP2K| source code revision number:[76G12343[20;2HCP2K| is freely available from[20;61H[94mhttp://www.cp2k.org/[21;2H[39m(B[mCP2K| Program compiled at[21;53HThu Feb  7 17:23:41 EET 2013[2;1H[?12l[?25h[?25l[1;48H(B[0;7m*[79G(B[m[?12l[?25h[2dq DBCSR| Multiplication driver[78G S(B[0;7m>[2;2H(B[m[?25l[23;14H   (B[0;7mM-C(B[m Case Sens   (B[0;7mM-B(B[m Backwards   (B[0;7m^P(B[m Older        (B[0;7m^T(B[m Go To Line[24;2H(B[0;7mC(B[m Cancel       (B[0;7mM-R(B[m Reg.exp.    (B[0;7m^R(B[m Replace      (B[0;7m^N(B[m Newer[K[23;78H[A(B[0;7mSearch:                                                                         [22;9H(B[m[?12l[?25h[?25l[?12l[?25h[?25l[22;33H[1K (B[0;7m[ Cancelled ](B[m[K[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut       (B[0;7m^T(B[m Execute   (B[0;7m^C(B[m Location[K[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify   (B[0;7m^/(B[m Go To Line[?12l[?25h[2dq[?25l[22d(B[0;7mSave modified buffer?                                                           [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;23H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m Browse[22d(B[0;7mFile Name to Write: cp2k.out(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l    [1K (B[0;7m[ Cancelled ](B[m[K[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut       (B[0;7m^T(B[m Execute   (B[0;7m^C(B[m Location[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify   (B[0;7m^/(B[m Go To Line[?12l[?25h[2dq[?25l[?12l[?25h[5d[?25l[22d(B[0;7mSave modified buffer?                                                           [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;23H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m Browse[22d(B[0;7mFile Name to Write: cp2k.out(B[m[?12l[?25h[?25l[?12l[?25h[?25l    [1K (B[0;7m[ Cancelled ](B[m[K[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut       (B[0;7m^T(B[m Execute   (B[0;7m^C(B[m Location[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify   (B[0;7m^/(B[m Go To Line[?12l[?25h[5d [?25l[22d(B[0;7mSave modified buffer?                                                           [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;23H[?12l[?25h[?25l[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep "SCF Done:" dimer.log [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kg
+[?2004l [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.637052486     A.U. after   12 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.649944913     A.U. after   11 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.654913859     A.U. after   12 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.656483798     A.U. after   11 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.657152494     A.U. after   11 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.657682699     A.U. after   11 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.658087670     A.U. after   12 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.658642047     A.U. after   12 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.659440588     A.U. after   12 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.660069288     A.U. after   12 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.660165007     A.U. after   10 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.660185016     A.U. after   10 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.660221654     A.U. after   11 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.660243827     A.U. after   10 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.660246491     A.U. after    8 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.660246751     A.U. after    7 cycles
+ [01;31m[KSCF Done:[m[K  E(RPBE-PBE) =  -152.660246843     A.U. after    6 cycles
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep warning cp2k.out
+[?2004l[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep -i warning cp2k.out
+[?2004l *** 09:15:35 [01;31m[KWARNING[m[K in qs_initial_guess:calculate_first_density_matrix ***
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep "Maximum[K[K[K[K[K[K[K[K[K[K[K[K[K[7mgrep "Maximum Force" dimer[27m[7m.[27m[7mlog[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep "Maximum Force" dimer.log
+[?2004l [01;31m[KMaximum Force[m[K            0.057661     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.023218     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.010337     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.006429     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.002624     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.003480     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.003740     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.005036     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.005406     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.002917     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.001048     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.001021     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.001210     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.000533     0.000450     NO 
+ [01;31m[KMaximum Force[m[K            0.000123     0.000450     YES
+ [01;31m[KMaximum Force[m[K            0.000042     0.000450     YES
+ [01;31m[KMaximum Force[m[K            0.000033     0.000450     YES
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mgrep "m Forc" dimer.log[27mgrep "m Forc" dimer.log
+[?2004l Maximu[01;31m[Km Forc[m[Ke            0.057661     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.023218     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.010337     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.006429     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.002624     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.003480     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.003740     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.005036     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.005406     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.002917     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.001048     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.001021     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.001210     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.000533     0.000450     NO 
+ Maximu[01;31m[Km Forc[m[Ke            0.000123     0.000450     YES
+ Maximu[01;31m[Km Forc[m[Ke            0.000042     0.000450     YES
+ Maximu[01;31m[Km Forc[m[Ke            0.000033     0.000450     YES
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mgrep " Force" dimer.log[27mgrep " Force" dimer.log
+[?2004l Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.052528044 RMS     0.016650655
+ Internal [01;31m[K Force[m[Ks:  Max     0.057661487 RMS     0.022508193
+ RMS[01;31m[K Force[m[K = .22508D-01 SwitMx=.10000D-02 MixMth= 1
+ Maximum[01;31m[K Force[m[K            0.057661     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.022508     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.021873468 RMS     0.007419602
+ Internal [01;31m[K Force[m[Ks:  Max     0.023218374 RMS     0.006661627
+ RMS[01;31m[K Force[m[K = .66616D-02 SwitMx=.10000D-02 MixMth= 1
+ Maximum[01;31m[K Force[m[K            0.023218     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.006662     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.018473188 RMS     0.005726133
+ Internal [01;31m[K Force[m[Ks:  Max     0.010336832 RMS     0.003856936
+ RMS[01;31m[K Force[m[K = .38569D-02 SwitMx=.10000D-02 MixMth= 1
+ Maximum[01;31m[K Force[m[K            0.010337     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.003857     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.009168159 RMS     0.003542658
+ Internal [01;31m[K Force[m[Ks:  Max     0.006428579 RMS     0.002401234
+ RMS[01;31m[K Force[m[K = .24012D-02 SwitMx=.10000D-02 MixMth= 1
+ Maximum[01;31m[K Force[m[K            0.006429     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.002401     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.004682039 RMS     0.001720967
+ Internal [01;31m[K Force[m[Ks:  Max     0.002624125 RMS     0.001338755
+ RMS[01;31m[K Force[m[K = .13388D-02 SwitMx=.10000D-02 MixMth= 1
+ Maximum[01;31m[K Force[m[K            0.002624     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.001339     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.004156726 RMS     0.001705614
+ Internal [01;31m[K Force[m[Ks:  Max     0.003479694 RMS     0.001534893
+ RMS[01;31m[K Force[m[K = .15349D-02 SwitMx=.10000D-02 MixMth= 1
+ Maximum[01;31m[K Force[m[K            0.003480     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.001535     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.005840255 RMS     0.002205550
+ Internal [01;31m[K Force[m[Ks:  Max     0.003740333 RMS     0.001958187
+ RMS[01;31m[K Force[m[K = .19582D-02 SwitMx=.10000D-02 MixMth= 1
+ Maximum[01;31m[K Force[m[K            0.003740     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.001958     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.005150980 RMS     0.002393562
+ Internal [01;31m[K Force[m[Ks:  Max     0.005036113 RMS     0.002355206
+ RMS[01;31m[K Force[m[K = .23552D-02 SwitMx=.10000D-02 MixMth= 1
+ Maximum[01;31m[K Force[m[K            0.005036     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.002355     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.004050320 RMS     0.002159038
+ Internal [01;31m[K Force[m[Ks:  Max     0.005406134 RMS     0.002165707
+ RMS[01;31m[K Force[m[K = .21657D-02 SwitMx=.10000D-02 MixMth= 1
+ Maximum[01;31m[K Force[m[K            0.005406     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.002166     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.004020124 RMS     0.001402666
+ Internal [01;31m[K Force[m[Ks:  Max     0.002916874 RMS     0.001182496
+ RMS[01;31m[K Force[m[K = .11825D-02 SwitMx=.10000D-02 MixMth= 1
+ Maximum[01;31m[K Force[m[K            0.002917     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.001182     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.001050067 RMS     0.000506503
+ Internal [01;31m[K Force[m[Ks:  Max     0.001047974 RMS     0.000553119
+ RMS[01;31m[K Force[m[K = .55312D-03 SwitMx=.10000D-02 MixMth= 2
+ Maximum[01;31m[K Force[m[K            0.001048     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.000553     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.000822505 RMS     0.000350171
+ Internal [01;31m[K Force[m[Ks:  Max     0.001021199 RMS     0.000370430
+ RMS[01;31m[K Force[m[K = .37043D-03 SwitMx=.10000D-02 MixMth= 2
+ Maximum[01;31m[K Force[m[K            0.001021     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.000370     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.001594565 RMS     0.000587390
+ Internal [01;31m[K Force[m[Ks:  Max     0.001209793 RMS     0.000497861
+ RMS[01;31m[K Force[m[K = .49786D-03 SwitMx=.10000D-02 MixMth= 2
+ Maximum[01;31m[K Force[m[K            0.001210     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.000498     0.000300     NO 
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.000960632 RMS     0.000298950
+ Internal [01;31m[K Force[m[Ks:  Max     0.000533418 RMS     0.000221928
+ RMS[01;31m[K Force[m[K = .22193D-03 SwitMx=.10000D-02 MixMth= 2
+ Maximum[01;31m[K Force[m[K            0.000533     0.000450     NO 
+ RMS    [01;31m[K Force[m[K            0.000222     0.000300     YES
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.000246178 RMS     0.000084919
+ Internal [01;31m[K Force[m[Ks:  Max     0.000122775 RMS     0.000066226
+ RMS[01;31m[K Force[m[K = .66226D-04 SwitMx=.10000D-02 MixMth= 2
+ Maximum[01;31m[K Force[m[K            0.000123     0.000450     YES
+ RMS    [01;31m[K Force[m[K            0.000066     0.000300     YES
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.000050666 RMS     0.000022651
+ Internal [01;31m[K Force[m[Ks:  Max     0.000041756 RMS     0.000016543
+ RMS[01;31m[K Force[m[K = .16543D-04 SwitMx=.10000D-02 MixMth= 2
+ Maximum[01;31m[K Force[m[K            0.000042     0.000450     YES
+ RMS    [01;31m[K Force[m[K            0.000017     0.000300     YES
+ Center     Atomic                  [01;31m[K Force[m[Ks (Hartrees/Bohr)
+ Cartesian[01;31m[K Force[m[Ks:  Max     0.000052548 RMS     0.000019139
+ Internal [01;31m[K Force[m[Ks:  Max     0.000032921 RMS     0.000013794
+ RMS[01;31m[K Force[m[K = .13794D-04 SwitMx=.10000D-02 MixMth= 2
+ Maximum[01;31m[K Force[m[K            0.000033     0.000450     YES
+ RMS    [01;31m[K Force[m[K            0.000014     0.000300     YES
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mgrep " Displa" dimer.log[27mgrep " Displa" dimer.log
+[?2004l Maximum[01;31m[K Displa[m[Kcement     0.218107     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.108003     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.328915     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.156239     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.156513     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.095361     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.178826     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.075157     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.269534     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.115583     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.237828     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.112887     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.288583     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.144836     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.274271     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.156026     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.261413     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.128936     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.055137     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.023976     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.032357     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.014542     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.071028     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.025905     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.044699     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.020290     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.018702     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.007275     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.003641     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.001954     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.002938     0.001800     NO 
+ RMS    [01;31m[K Displa[m[Kcement     0.001343     0.001200     NO 
+ Maximum[01;31m[K Displa[m[Kcement     0.001257     0.001800     YES
+ RMS    [01;31m[K Displa[m[Kcement     0.000507     0.001200     YES
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mgrep -E "RMS |Maximum " di[27m[7mm[27m[7mer.log[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep -E "RMS |Maximum " dimer.log
+[?2004l Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.052528044 [01;31m[KRMS [m[K    0.016650655
+ Internal  Forces:  Max     0.057661487 [01;31m[KRMS [m[K    0.022508193
+ [01;31m[KRMS [m[KForce = .22508D-01 SwitMx=.10000D-02 MixMth= 1
+ [01;31m[KMaximum [m[Kstep size (   0.300) exceeded in Quadratic search.
+ [01;31m[KMaximum [m[KForce            0.057661     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.022508     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.218107     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.108003     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.021873468 [01;31m[KRMS [m[K    0.007419602
+ Internal  Forces:  Max     0.023218374 [01;31m[KRMS [m[K    0.006661627
+ [01;31m[KRMS [m[KForce = .66616D-02 SwitMx=.10000D-02 MixMth= 1
+ [01;31m[KMaximum [m[KForce            0.023218     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.006662     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.328915     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.156239     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.018473188 [01;31m[KRMS [m[K    0.005726133
+ Internal  Forces:  Max     0.010336832 [01;31m[KRMS [m[K    0.003856936
+ [01;31m[KRMS [m[KForce = .38569D-02 SwitMx=.10000D-02 MixMth= 1
+ [01;31m[KMaximum [m[KForce            0.010337     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.003857     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.156513     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.095361     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.009168159 [01;31m[KRMS [m[K    0.003542658
+ Internal  Forces:  Max     0.006428579 [01;31m[KRMS [m[K    0.002401234
+ [01;31m[KRMS [m[KForce = .24012D-02 SwitMx=.10000D-02 MixMth= 1
+ [01;31m[KMaximum [m[KForce            0.006429     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.002401     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.178826     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.075157     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.004682039 [01;31m[KRMS [m[K    0.001720967
+ Internal  Forces:  Max     0.002624125 [01;31m[KRMS [m[K    0.001338755
+ [01;31m[KRMS [m[KForce = .13388D-02 SwitMx=.10000D-02 MixMth= 1
+ [01;31m[KMaximum [m[KForce            0.002624     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.001339     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.269534     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.115583     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.004156726 [01;31m[KRMS [m[K    0.001705614
+ Internal  Forces:  Max     0.003479694 [01;31m[KRMS [m[K    0.001534893
+ [01;31m[KRMS [m[KForce = .15349D-02 SwitMx=.10000D-02 MixMth= 1
+ [01;31m[KMaximum [m[KForce            0.003480     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.001535     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.237828     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.112887     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.005840255 [01;31m[KRMS [m[K    0.002205550
+ Internal  Forces:  Max     0.003740333 [01;31m[KRMS [m[K    0.001958187
+ [01;31m[KRMS [m[KForce = .19582D-02 SwitMx=.10000D-02 MixMth= 1
+ [01;31m[KMaximum [m[KForce            0.003740     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.001958     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.288583     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.144836     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.005150980 [01;31m[KRMS [m[K    0.002393562
+ Internal  Forces:  Max     0.005036113 [01;31m[KRMS [m[K    0.002355206
+ [01;31m[KRMS [m[KForce = .23552D-02 SwitMx=.10000D-02 MixMth= 1
+ [01;31m[KMaximum [m[KForce            0.005036     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.002355     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.274271     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.156026     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.004050320 [01;31m[KRMS [m[K    0.002159038
+ Internal  Forces:  Max     0.005406134 [01;31m[KRMS [m[K    0.002165707
+ [01;31m[KRMS [m[KForce = .21657D-02 SwitMx=.10000D-02 MixMth= 1
+ [01;31m[KMaximum [m[KForce            0.005406     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.002166     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.261413     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.128936     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.004020124 [01;31m[KRMS [m[K    0.001402666
+ Internal  Forces:  Max     0.002916874 [01;31m[KRMS [m[K    0.001182496
+ [01;31m[KRMS [m[KForce = .11825D-02 SwitMx=.10000D-02 MixMth= 1
+ [01;31m[KMaximum [m[KForce            0.002917     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.001182     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.055137     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.023976     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.001050067 [01;31m[KRMS [m[K    0.000506503
+ Internal  Forces:  Max     0.001047974 [01;31m[KRMS [m[K    0.000553119
+ [01;31m[KRMS [m[KForce = .55312D-03 SwitMx=.10000D-02 MixMth= 2
+ [01;31m[KMaximum [m[KForce            0.001048     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.000553     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.032357     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.014542     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.000822505 [01;31m[KRMS [m[K    0.000350171
+ Internal  Forces:  Max     0.001021199 [01;31m[KRMS [m[K    0.000370430
+ [01;31m[KRMS [m[KForce = .37043D-03 SwitMx=.10000D-02 MixMth= 2
+ [01;31m[KRMS [m[KError=  0.1982339966D-02 NUsed= 2 EDIIS=F
+ [01;31m[KMaximum [m[KForce            0.001021     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.000370     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.071028     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.025905     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.001594565 [01;31m[KRMS [m[K    0.000587390
+ Internal  Forces:  Max     0.001209793 [01;31m[KRMS [m[K    0.000497861
+ [01;31m[KRMS [m[KForce = .49786D-03 SwitMx=.10000D-02 MixMth= 2
+ [01;31m[KRMS [m[KError=  0.1325342653D-02 NUsed= 3 EDIIS=F
+ [01;31m[KMaximum [m[KForce            0.001210     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.000498     0.000300     NO 
+ [01;31m[KMaximum [m[KDisplacement     0.044699     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.020290     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.000960632 [01;31m[KRMS [m[K    0.000298950
+ Internal  Forces:  Max     0.000533418 [01;31m[KRMS [m[K    0.000221928
+ [01;31m[KRMS [m[KForce = .22193D-03 SwitMx=.10000D-02 MixMth= 2
+ [01;31m[KRMS [m[KError=  0.5844568945D-03 NUsed= 4 EDIIS=F
+ [01;31m[KMaximum [m[KForce            0.000533     0.000450     NO 
+ [01;31m[KRMS [m[K    Force            0.000222     0.000300     YES
+ [01;31m[KMaximum [m[KDisplacement     0.018702     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.007275     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.000246178 [01;31m[KRMS [m[K    0.000084919
+ Internal  Forces:  Max     0.000122775 [01;31m[KRMS [m[K    0.000066226
+ [01;31m[KRMS [m[KForce = .66226D-04 SwitMx=.10000D-02 MixMth= 2
+ [01;31m[KRMS [m[KError=  0.1880243956D-03 NUsed= 5 EDIIS=F
+ [01;31m[KMaximum [m[KForce            0.000123     0.000450     YES
+ [01;31m[KRMS [m[K    Force            0.000066     0.000300     YES
+ [01;31m[KMaximum [m[KDisplacement     0.003641     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.001954     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.000050666 [01;31m[KRMS [m[K    0.000022651
+ Internal  Forces:  Max     0.000041756 [01;31m[KRMS [m[K    0.000016543
+ [01;31m[KRMS [m[KForce = .16543D-04 SwitMx=.10000D-02 MixMth= 2
+ [01;31m[KRMS [m[KError=  0.6523573178D-04 NUsed= 5 EDIIS=F
+ [01;31m[KMaximum [m[KForce            0.000042     0.000450     YES
+ [01;31m[KRMS [m[K    Force            0.000017     0.000300     YES
+ [01;31m[KMaximum [m[KDisplacement     0.002938     0.001800     NO 
+ [01;31m[KRMS [m[K    Displacement     0.001343     0.001200     NO 
+ Requested convergence on [01;31m[KRMS [m[Kdensity matrix=1.00D-08 within 128 cycles.
+ Cartesian Forces:  Max     0.000052548 [01;31m[KRMS [m[K    0.000019139
+ Internal  Forces:  Max     0.000032921 [01;31m[KRMS [m[K    0.000013794
+ [01;31m[KRMS [m[KForce = .13794D-04 SwitMx=.10000D-02 MixMth= 2
+ [01;31m[KRMS [m[KError=  0.3192725381D-04 NUsed= 5 EDIIS=F
+ [01;31m[KMaximum [m[KForce            0.000033     0.000450     YES
+ [01;31m[KRMS [m[K    Force            0.000014     0.000300     YES
+ [01;31m[KMaximum [m[KDisplacement     0.001257     0.001800     YES
+ [01;31m[KRMS [m[K    Displacement     0.000507     0.001200     YES
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mgrep -A 4 "Threshold" dime[27m[7mr[27m[7m.log[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep -A 4 "Threshold" dimer.log
+[?2004l         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.057661     0.000450     NO 
+ RMS     Force            0.022508     0.000300     NO 
+ Maximum Displacement     0.218107     0.001800     NO 
+ RMS     Displacement     0.108003     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.023218     0.000450     NO 
+ RMS     Force            0.006662     0.000300     NO 
+ Maximum Displacement     0.328915     0.001800     NO 
+ RMS     Displacement     0.156239     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.010337     0.000450     NO 
+ RMS     Force            0.003857     0.000300     NO 
+ Maximum Displacement     0.156513     0.001800     NO 
+ RMS     Displacement     0.095361     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.006429     0.000450     NO 
+ RMS     Force            0.002401     0.000300     NO 
+ Maximum Displacement     0.178826     0.001800     NO 
+ RMS     Displacement     0.075157     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.002624     0.000450     NO 
+ RMS     Force            0.001339     0.000300     NO 
+ Maximum Displacement     0.269534     0.001800     NO 
+ RMS     Displacement     0.115583     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.003480     0.000450     NO 
+ RMS     Force            0.001535     0.000300     NO 
+ Maximum Displacement     0.237828     0.001800     NO 
+ RMS     Displacement     0.112887     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.003740     0.000450     NO 
+ RMS     Force            0.001958     0.000300     NO 
+ Maximum Displacement     0.288583     0.001800     NO 
+ RMS     Displacement     0.144836     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.005036     0.000450     NO 
+ RMS     Force            0.002355     0.000300     NO 
+ Maximum Displacement     0.274271     0.001800     NO 
+ RMS     Displacement     0.156026     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.005406     0.000450     NO 
+ RMS     Force            0.002166     0.000300     NO 
+ Maximum Displacement     0.261413     0.001800     NO 
+ RMS     Displacement     0.128936     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.002917     0.000450     NO 
+ RMS     Force            0.001182     0.000300     NO 
+ Maximum Displacement     0.055137     0.001800     NO 
+ RMS     Displacement     0.023976     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.001048     0.000450     NO 
+ RMS     Force            0.000553     0.000300     NO 
+ Maximum Displacement     0.032357     0.001800     NO 
+ RMS     Displacement     0.014542     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.001021     0.000450     NO 
+ RMS     Force            0.000370     0.000300     NO 
+ Maximum Displacement     0.071028     0.001800     NO 
+ RMS     Displacement     0.025905     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.001210     0.000450     NO 
+ RMS     Force            0.000498     0.000300     NO 
+ Maximum Displacement     0.044699     0.001800     NO 
+ RMS     Displacement     0.020290     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.000533     0.000450     NO 
+ RMS     Force            0.000222     0.000300     YES
+ Maximum Displacement     0.018702     0.001800     NO 
+ RMS     Displacement     0.007275     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.000123     0.000450     YES
+ RMS     Force            0.000066     0.000300     YES
+ Maximum Displacement     0.003641     0.001800     NO 
+ RMS     Displacement     0.001954     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.000042     0.000450     YES
+ RMS     Force            0.000017     0.000300     YES
+ Maximum Displacement     0.002938     0.001800     NO 
+ RMS     Displacement     0.001343     0.001200     NO 
+[36m[K--[m[K
+         Item               Value     [01;31m[KThreshold[m[K  Converged?
+ Maximum Force            0.000033     0.000450     YES
+ RMS     Force            0.000014     0.000300     YES
+ Maximum Displacement     0.001257     0.001800     YES
+ RMS     Displacement     0.000507     0.001200     YES
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep O[Ko[KO cp2k.xyz
+[?2004l  [01;31m[KO[m[K         5.3576720000        6.5177900000        6.9368540000
+  [01;31m[KO[m[K         4.8873090000        4.8994080000        9.0246510000
+  [01;31m[KO[m[K         3.7040280000       18.1902110000       17.0704570000
+  [01;31m[KO[m[K        10.7449060000       13.7929840000       12.2309830000
+  [01;31m[KO[m[K        22.4651030000        6.0376550000        5.6742960000
+  [01;31m[KO[m[K        23.6853530000        1.4943150000        9.5354790000
+  [01;31m[KO[m[K         2.7166370000       23.1290080000        5.4944920000
+  [01;31m[KO[m[K        14.3109450000        5.6941600000        5.2780340000
+  [01;31m[KO[m[K        11.7849800000        2.0985770000       13.3588180000
+  [01;31m[KO[m[K         9.5649860000       11.5645510000        5.4298300000
+  [01;31m[KO[m[K         2.5542860000        8.7079630000       21.7203120000
+  [01;31m[KO[m[K         2.2092200000       10.8484720000        6.5778720000
+  [01;31m[KO[m[K         2.3292770000       11.9019740000        2.0012790000
+  [01;31m[KO[m[K         9.0216750000        4.0431250000       20.5457600000
+  [01;31m[KO[m[K        16.6848080000        1.1282900000        4.8549120000
+  [01;31m[KO[m[K         2.1017540000        8.7334560000        9.4961560000
+  [01;31m[KO[m[K         6.7138340000        1.8193400000       11.6583940000
+  [01;31m[KO[m[K         7.8234170000        4.7526480000        4.6307130000
+  [01;31m[KO[m[K         4.2471690000        2.1386670000        3.8959840000
+  [01;31m[KO[m[K         6.3528770000        2.7805060000        8.1898110000
+  [01;31m[KO[m[K        24.5925110000       10.6073640000        1.6342400000
+  [01;31m[KO[m[K         5.4169030000        4.2900600000       22.0238610000
+  [01;31m[KO[m[K         5.9604340000        6.4390070000        1.8239410000
+  [01;31m[KO[m[K         8.3523390000        7.5685770000        8.1383980000
+  [01;31m[KO[m[K         2.3909810000        4.1294490000        9.5035800000
+  [01;31m[KO[m[K         7.1127220000       15.5308190000        3.8159380000
+  [01;31m[KO[m[K         7.8440360000       10.1708730000        6.8874840000
+  [01;31m[KO[m[K        11.8578190000       10.4597200000        3.5518820000
+  [01;31m[KO[m[K         7.1358170000       11.6206570000        2.1933420000
+  [01;31m[KO[m[K         6.3595570000       12.7342250000       13.4255030000
+  [01;31m[KO[m[K         5.1734580000       17.0088530000       15.0513780000
+  [01;31m[KO[m[K         7.6109570000        7.6408540000        3.6309230000
+  [01;31m[KO[m[K         1.4919280000        6.0308570000        7.8004440000
+  [01;31m[KO[m[K        12.1871910000        2.7839140000        1.0903480000
+  [01;31m[KO[m[K        23.4069620000        4.2211590000       10.1975560000
+  [01;31m[KO[m[K        17.7219630000       24.5612490000        8.6276770000
+  [01;31m[KO[m[K         6.1220850000       11.7795480000        8.1235600000
+  [01;31m[KO[m[K         5.0851160000       24.2388400000        3.2008550000
+  [01;31m[KO[m[K        11.1538650000        6.6236490000        8.2844630000
+  [01;31m[KO[m[K        16.8991240000        3.3171390000        8.8304830000
+  [01;31m[KO[m[K         7.1808680000        1.7902530000        3.7253460000
+  [01;31m[KO[m[K        11.7318130000        2.6849160000        9.9955320000
+  [01;31m[KO[m[K        10.1142870000       13.9367040000        8.6421310000
+  [01;31m[KO[m[K         6.3936700000        3.6524470000        1.9031660000
+  [01;31m[KO[m[K         1.1436540000        0.7441080000        5.4145280000
+  [01;31m[KO[m[K         4.7974990000       10.8817200000       12.1030620000
+  [01;31m[KO[m[K         8.3843070000       24.6329050000        1.6559370000
+  [01;31m[KO[m[K         1.7236190000        2.5251430000       22.2999140000
+  [01;31m[KO[m[K         0.5864660000        8.5411990000        4.6041030000
+  [01;31m[KO[m[K         9.6859700000        2.5684590000        2.7757330000
+  [01;31m[KO[m[K         8.3309930000        5.0720390000       10.9130980000
+  [01;31m[KO[m[K        23.9327730000        3.9911760000        0.1659700000
+  [01;31m[KO[m[K         3.4356420000       12.3556730000        8.5412840000
+  [01;31m[KO[m[K         9.2068490000       11.4181700000       11.5717460000
+  [01;31m[KO[m[K        10.6664850000       23.8644980000        3.2691450000
+  [01;31m[KO[m[K         1.6740530000        6.2148540000        4.2151260000
+  [01;31m[KO[m[K        11.3162820000        4.0090670000        7.6268620000
+  [01;31m[KO[m[K        20.6866460000        0.8957720000        1.4046000000
+  [01;31m[KO[m[K        10.6638380000       14.0453250000        5.3519350000
+  [01;31m[KO[m[K         8.7278380000        4.2905750000        7.2587320000
+  [01;31m[KO[m[K         7.4855730000        7.7351020000       10.7036380000
+  [01;31m[KO[m[K        11.3229740000       11.5285600000        9.4696090000
+  [01;31m[KO[m[K         5.9228390000        9.1656460000        5.4867120000
+  [01;31m[KO[m[K        13.0531580000       14.9544090000        4.5368460000
+  [01;31m[KO[m[K         0.7979700000        7.1313940000       20.3858250000
+  [01;31m[KO[m[K         1.4019830000       11.8587110000       16.6881510000
+  [01;31m[KO[m[K        22.8557520000       13.0341680000       12.6334820000
+  [01;31m[KO[m[K         6.8373710000       10.2384870000       21.7295850000
+  [01;31m[KO[m[K         1.8429980000        2.7807320000       19.5601020000
+  [01;31m[KO[m[K         6.3224360000        4.6996190000       13.0053280000
+  [01;31m[KO[m[K         6.8634090000       22.6561090000       22.0711760000
+  [01;31m[KO[m[K        13.5453260000        5.1779950000       18.8991930000
+  [01;31m[KO[m[K         8.4187220000        2.7407340000        0.2056480000
+  [01;31m[KO[m[K         8.7127180000        8.0997700000       21.7365110000
+  [01;31m[KO[m[K         0.3694250000        3.5431510000       14.3900140000
+  [01;31m[KO[m[K        22.2109580000        9.7935940000       19.3449730000
+  [01;31m[KO[m[K         7.3379670000       14.5146310000       11.8331360000
+  [01;31m[KO[m[K         8.5746480000        4.8094950000       14.4465860000
+  [01;31m[KO[m[K         1.3166190000       23.6286280000       17.6361760000
+  [01;31m[KO[m[K         5.7970610000        6.7884790000       18.5502350000
+  [01;31m[KO[m[K        21.4114850000       23.0941770000       18.7477430000
+  [01;31m[KO[m[K         9.1073590000       24.5086360000       18.6437910000
+  [01;31m[KO[m[K         2.5462060000       17.7649470000       20.1044510000
+  [01;31m[KO[m[K         5.5839790000        0.3589090000        0.5817480000
+  [01;31m[KO[m[K         6.9726680000       10.4802140000       10.5602830000
+  [01;31m[KO[m[K         3.3024960000        9.5774330000       14.3510270000
+  [01;31m[KO[m[K        12.9756970000       10.4613080000       17.7362360000
+  [01;31m[KO[m[K         3.0095220000        9.6968140000       18.8873010000
+  [01;31m[KO[m[K         2.2176980000       23.1755090000       22.5927610000
+  [01;31m[KO[m[K         8.5638170000       17.4869340000       16.9318420000
+  [01;31m[KO[m[K         7.0989980000       10.8840720000       17.3197240000
+  [01;31m[KO[m[K        11.6700590000        5.8405640000       16.9779060000
+  [01;31m[KO[m[K        10.2286460000        7.9026470000       18.3839170000
+  [01;31m[KO[m[K         5.2664900000        8.1493760000       22.7241350000
+  [01;31m[KO[m[K        22.5644920000        8.4102750000        1.3599390000
+  [01;31m[KO[m[K         5.7919030000        9.4025290000       19.3848840000
+  [01;31m[KO[m[K         2.1241420000       14.0372660000       15.3632040000
+  [01;31m[KO[m[K         5.6942740000       20.4245650000       19.2902100000
+  [01;31m[KO[m[K         5.1993120000       24.1230090000       14.2206430000
+  [01;31m[KO[m[K        12.8627340000        3.6699630000       15.5387630000
+  [01;31m[KO[m[K        23.4044550000       14.0081600000       15.1897440000
+  [01;31m[KO[m[K         5.7404680000        1.9430150000       20.1287370000
+  [01;31m[KO[m[K        12.1454260000       12.4832230000       20.7172520000
+  [01;31m[KO[m[K        10.8702020000        8.2687600000       23.7057590000
+  [01;31m[KO[m[K         7.9688430000        5.8486980000       17.0796820000
+  [01;31m[KO[m[K         4.9340480000       23.0053360000       23.8193120000
+  [01;31m[KO[m[K         9.1764090000       14.5603730000       16.8520810000
+  [01;31m[KO[m[K         4.0696620000        6.5285200000       20.5411530000
+  [01;31m[KO[m[K        23.8932730000        3.0194220000       19.5858590000
+  [01;31m[KO[m[K        24.5032400000        8.6617980000       24.0395310000
+  [01;31m[KO[m[K         8.4434270000        1.7954280000       22.1037330000
+  [01;31m[KO[m[K         0.8646310000        4.7631110000       11.4745000000
+  [01;31m[KO[m[K        23.5709540000        7.0157430000       16.6781210000
+  [01;31m[KO[m[K        10.9706690000        1.7872930000       18.3976340000
+  [01;31m[KO[m[K        10.6412830000        4.9829460000        2.0503510000
+  [01;31m[KO[m[K         5.0223420000        6.5317930000       11.2441470000
+  [01;31m[KO[m[K         0.4300910000        4.8417760000       22.6936400000
+  [01;31m[KO[m[K         3.9079100000        8.2660050000        2.2130340000
+  [01;31m[KO[m[K        17.0724880000        1.3266140000        2.3054670000
+  [01;31m[KO[m[K         3.7393270000       17.1257600000       10.4423620000
+  [01;31m[KO[m[K         7.9289570000        5.5607020000       22.5095200000
+  [01;31m[KO[m[K         5.6138440000       23.1665670000       17.4740360000
+  [01;31m[KO[m[K        10.7488800000       12.1152810000       16.1760360000
+  [01;31m[KO[m[K         1.7127010000        9.0969070000       16.4845550000
+  [01;31m[KO[m[K         4.6993910000        6.1984430000       24.2466260000
+  [01;31m[KO[m[K         9.7279860000       14.2947610000       21.7942790000
+  [01;31m[KO[m[K         9.0095440000        3.5046710000       17.8172400000
+  [01;31m[KO[m[K        16.0251840000        7.1575830000       23.1399840000
+  [01;31m[KO[m[K        22.6312970000       18.7205770000       14.9969270000
+  [01;31m[KO[m[K        24.2509590000       22.3765180000       22.7500330000
+  [01;31m[KO[m[K         4.6611390000        4.8804010000        4.9218250000
+  [01;31m[KO[m[K        12.4558280000       24.7970120000        8.1130040000
+  [01;31m[KO[m[K         3.2233120000       20.3848770000       23.3565980000
+  [01;31m[KO[m[K         4.1123130000       16.4196300000        0.0901890000
+  [01;31m[KO[m[K        22.9139220000        7.4893350000       14.1352090000
+  [01;31m[KO[m[K        13.3295130000       24.3747640000        3.4840390000
+  [01;31m[KO[m[K         8.8720990000       12.3647710000       14.3468710000
+  [01;31m[KO[m[K        11.8231620000       17.1505610000        7.7992960000
+  [01;31m[KO[m[K         4.7828900000        1.3782110000        6.4962270000
+  [01;31m[KO[m[K        24.3505470000       19.8105460000        3.9892250000
+  [01;31m[KO[m[K        11.7775640000        2.1275700000        4.5278570000
+  [01;31m[KO[m[K         8.1648460000        8.3139920000        1.1077350000
+  [01;31m[KO[m[K        19.9616550000        9.6872500000        6.9960690000
+  [01;31m[KO[m[K         2.3004050000        3.2287460000        6.2704910000
+  [01;31m[KO[m[K        24.6312720000       18.1496590000       10.9942070000
+  [01;31m[KO[m[K         7.0386680000       22.0872710000       14.0245610000
+  [01;31m[KO[m[K         3.8220130000       11.0580270000        4.4129630000
+  [01;31m[KO[m[K        24.3484600000       15.5633890000        4.5067170000
+  [01;31m[KO[m[K         9.9927860000       20.4648430000        1.2723270000
+  [01;31m[KO[m[K         5.3897820000       13.8564610000       19.9812350000
+  [01;31m[KO[m[K         2.2622360000       24.0124340000        0.7924170000
+  [01;31m[KO[m[K         9.3886140000       19.2000930000        9.7957990000
+  [01;31m[KO[m[K        20.1092910000        9.8094930000        1.8261890000
+  [01;31m[KO[m[K         6.6684900000       22.5997400000        7.1427650000
+  [01;31m[KO[m[K        14.4835530000       22.8572110000        1.2532740000
+  [01;31m[KO[m[K         8.2671370000       17.8390750000       14.1860740000
+  [01;31m[KO[m[K         9.7191290000       15.5001560000        3.3389520000
+  [01;31m[KO[m[K        10.2517200000       21.6822490000       10.6971480000
+  [01;31m[KO[m[K         3.6712580000        0.9535690000       12.5103770000
+  [01;31m[KO[m[K        17.0872240000       15.1300350000       11.5669490000
+  [01;31m[KO[m[K         4.6647740000       21.4752900000        4.4421020000
+  [01;31m[KO[m[K        14.7074750000       14.6193380000        2.4721550000
+  [01;31m[KO[m[K         6.0882970000       12.4983660000        4.4346180000
+  [01;31m[KO[m[K         7.0160340000       14.2835350000        8.9760470000
+  [01;31m[KO[m[K        23.3313750000       21.8408860000        2.0752370000
+  [01;31m[KO[m[K         1.0316080000       10.3591500000       13.0138870000
+  [01;31m[KO[m[K        15.2053920000        0.7060500000        8.3247560000
+  [01;31m[KO[m[K        11.1852300000       18.0852790000       11.6260790000
+  [01;31m[KO[m[K         2.2248140000       18.5715600000        8.5912800000
+  [01;31m[KO[m[K         2.4895870000       11.8808950000       11.1935380000
+  [01;31m[KO[m[K        10.5429760000       18.1868350000        2.9123890000
+  [01;31m[KO[m[K         2.0912450000       19.4460320000        4.5189460000
+  [01;31m[KO[m[K        23.5065890000       20.3197440000        6.6070680000
+  [01;31m[KO[m[K         4.0560260000       24.0280410000        7.5207000000
+  [01;31m[KO[m[K         5.6561160000       21.7238230000       11.8608200000
+  [01;31m[KO[m[K        24.2729290000       12.3523420000        5.0685880000
+  [01;31m[KO[m[K        24.5151680000       20.1221160000       18.0620250000
+  [01;31m[KO[m[K         5.2053400000       16.2223360000        7.5347330000
+  [01;31m[KO[m[K        13.9528030000        1.0545880000       12.1999610000
+  [01;31m[KO[m[K         3.0883420000       15.3596420000       18.5979870000
+  [01;31m[KO[m[K         7.4535310000        0.3927500000        8.4789200000
+  [01;31m[KO[m[K         9.6743610000        0.4119150000       12.6204030000
+  [01;31m[KO[m[K        15.7698760000       11.6793330000        3.5616270000
+  [01;31m[KO[m[K        19.3266640000       18.0618670000       24.1511160000
+  [01;31m[KO[m[K         6.3461840000       17.2670600000       11.9723110000
+  [01;31m[KO[m[K         1.9012630000       12.9877930000       19.2786890000
+  [01;31m[KO[m[K        12.9500840000       17.8097380000        4.0778940000
+  [01;31m[KO[m[K         2.2104600000        1.3501290000        9.6623820000
+  [01;31m[KO[m[K         3.3565690000       22.3204530000       15.4814020000
+  [01;31m[KO[m[K        10.4123110000        4.5477340000       12.5550640000
+  [01;31m[KO[m[K         6.3437480000       19.3527450000       10.3393400000
+  [01;31m[KO[m[K        13.7727550000       22.0008140000        7.8003100000
+  [01;31m[KO[m[K         6.7953330000       13.5858800000       17.3379480000
+  [01;31m[KO[m[K         4.5504420000       15.3648530000       21.8819450000
+  [01;31m[KO[m[K         7.9942430000       21.0287180000        3.0012890000
+  [01;31m[KO[m[K        14.4485890000        1.5426960000       24.7407030000
+  [01;31m[KO[m[K        24.2294300000       15.6547570000       17.1597530000
+  [01;31m[KO[m[K        24.4252160000       14.7695910000       22.7808110000
+  [01;31m[KO[m[K         4.9826680000       14.3219920000       15.3134780000
+  [01;31m[KO[m[K        13.9504470000       15.8156600000       20.8507990000
+  [01;31m[KO[m[K         9.7719390000       10.5927730000        1.5486000000
+  [01;31m[KO[m[K        11.0870160000       16.9757410000       17.7570420000
+  [01;31m[KO[m[K         3.2463070000       18.2107700000       13.4965970000
+  [01;31m[KO[m[K        22.0796120000       18.7113380000       18.4352440000
+  [01;31m[KO[m[K         4.2690890000        7.3438630000       16.1776590000
+  [01;31m[KO[m[K         7.6201490000        2.0509150000       14.3973980000
+  [01;31m[KO[m[K        19.5149650000       16.9919810000       21.7551160000
+  [01;31m[KO[m[K         0.6905510000       17.8958010000       16.9043380000
+  [01;31m[KO[m[K        22.0543230000        9.4109780000       21.9466060000
+  [01;31m[KO[m[K         9.3369240000       10.7258120000       20.6582380000
+  [01;31m[KO[m[K         2.2327170000       13.6225790000       22.4449300000
+  [01;31m[KO[m[K         5.7614640000        9.6436190000        0.9423610000
+  [01;31m[KO[m[K         8.4122560000        0.4919060000        5.8473420000
+  [01;31m[KO[m[K         3.1926430000       20.8632480000       12.1393190000
+  [01;31m[KO[m[K         8.4102050000       20.9146580000       18.0151970000
+  [01;31m[KO[m[K        11.0696210000       22.8959240000        0.6086620000
+  [01;31m[KO[m[K         1.3982690000        5.5411760000       16.2991620000
+  [01;31m[KO[m[K         5.0552300000       20.5228920000       16.3852950000
+  [01;31m[KO[m[K        13.6375180000       24.0810590000       10.3117560000
+  [01;31m[KO[m[K         9.4747630000       22.3771420000       13.4652780000
+  [01;31m[KO[m[K        10.2728380000       20.9261320000       15.5833900000
+  [01;31m[KO[m[K         3.2466530000        1.5593690000       24.5815400000
+  [01;31m[KO[m[K        22.1884740000       20.1262680000       24.8785690000
+  [01;31m[KO[m[K        12.0471950000       15.8753510000       22.8285790000
+  [01;31m[KO[m[K         9.1898710000       22.8784540000        8.2638750000
+  [01;31m[KO[m[K         9.5377860000       10.3769610000       17.9140010000
+  [01;31m[KO[m[K        17.8459460000       14.0836940000       14.5217780000
+  [01;31m[KO[m[K        11.9168920000        7.0033290000       21.5064890000
+  [01;31m[KO[m[K         1.0177580000       21.8390650000       14.2454470000
+  [01;31m[KO[m[K         8.4214620000       15.0936980000       19.4839230000
+  [01;31m[KO[m[K        13.5360750000       18.3148590000       17.0096890000
+  [01;31m[KO[m[K        11.8034570000       20.6310750000       23.4281330000
+  [01;31m[KO[m[K         3.9411030000       11.9711770000       21.3934140000
+  [01;31m[KO[m[K         3.9832040000       11.1503580000       24.0224330000
+  [01;31m[KO[m[K         5.3825580000       19.2301360000       24.5625660000
+  [01;31m[KO[m[K         7.5135310000       20.0713480000       15.6398710000
+  [01;31m[KO[m[K        22.7327540000       17.0255080000       23.7960540000
+  [01;31m[KO[m[K         7.1948550000       23.2515330000        4.3531520000
+  [01;31m[KO[m[K         6.5613100000       15.3309370000       23.5776620000
+  [01;31m[KO[m[K        20.8157100000       15.2989780000        5.7273340000
+  [01;31m[KO[m[K         4.4238410000        1.0411190000       16.2448320000
+  [01;31m[KO[m[K        10.6406640000       22.5065890000       19.1834280000
+  [01;31m[KO[m[K        13.8652930000       19.0459210000       21.5192620000
+  [01;31m[KO[m[K         8.6819490000       24.0175210000       15.8521470000
+  [01;31m[KO[m[K         0.6465980000       17.3767100000       21.9273350000
+  [01;31m[KO[m[K         9.1727050000       23.9019310000       23.8374720000
+  [01;31m[KO[m[K         7.5277480000       17.6654310000       19.5630960000
+  [01;31m[KO[m[K         1.5047770000       20.6390410000       10.1442300000
+  [01;31m[KO[m[K         8.2188350000       19.5371190000       24.2511470000
+  [01;31m[KO[m[K         1.4332810000       16.1465280000       13.2950000000
+  [01;31m[KO[m[K         8.5674080000       20.3581870000       21.8750110000
+  [01;31m[KO[m[K         9.8054940000       20.3491840000        4.8703910000
+  [01;31m[KO[m[K         5.1407300000       17.7117350000       20.8594680000
+  [01;31m[KO[m[K        12.9541160000       19.8733460000       19.1682210000
+  [01;31m[KO[m[K        12.2453200000       22.2977830000       16.9186700000
+  [01;31m[KO[m[K         6.7229710000       24.1819520000       19.7718180000
+  [01;31m[KO[m[K        15.2745940000        7.5305910000        9.1585990000
+  [01;31m[KO[m[K        20.1525410000        7.0662880000        6.5891860000
+  [01;31m[KO[m[K        13.6372760000       12.6113560000       10.9584210000
+  [01;31m[KO[m[K        23.5386200000       12.7695420000        9.1261980000
+  [01;31m[KO[m[K        11.8246670000        9.3957220000        6.9435350000
+  [01;31m[KO[m[K        15.4568820000       23.7902890000        5.1905830000
+  [01;31m[KO[m[K        19.3311830000        2.6134370000        9.8040660000
+  [01;31m[KO[m[K        23.9711090000        4.6526630000        7.2180570000
+  [01;31m[KO[m[K        20.7391790000        8.1425810000       11.9829350000
+  [01;31m[KO[m[K        13.0942620000        5.7502990000        0.3100240000
+  [01;31m[KO[m[K        20.0871620000        2.0577980000        3.9828080000
+  [01;31m[KO[m[K        11.0224100000       10.9623970000       23.0623750000
+  [01;31m[KO[m[K        17.4390750000        9.4375870000        2.6015880000
+  [01;31m[KO[m[K         0.2712270000        1.5775530000        0.4895600000
+  [01;31m[KO[m[K        17.0782220000       22.4270680000        3.6163600000
+  [01;31m[KO[m[K        19.7291640000        6.7507420000        9.3972260000
+  [01;31m[KO[m[K        11.3092910000        7.7166380000       14.8923750000
+  [01;31m[KO[m[K        22.6751540000        3.8089160000        4.1216740000
+  [01;31m[KO[m[K        16.2356600000        3.7117780000        6.0981910000
+  [01;31m[KO[m[K        17.3141300000       23.5269120000       13.3735810000
+  [01;31m[KO[m[K        18.1965040000        7.9571930000        0.2615780000
+  [01;31m[KO[m[K        15.4057160000        4.3055110000        1.3544420000
+  [01;31m[KO[m[K        21.2621990000        3.5844910000        0.0812300000
+  [01;31m[KO[m[K        23.9814790000        9.4381360000        8.7421370000
+  [01;31m[KO[m[K        12.5835340000        6.4988080000        3.0640520000
+  [01;31m[KO[m[K        14.3189290000        8.1033460000        6.5756000000
+  [01;31m[KO[m[K        24.4983070000        1.3333280000        3.0261320000
+  [01;31m[KO[m[K         0.1794860000        4.3908570000        3.0183430000
+  [01;31m[KO[m[K        22.2162000000        8.6229450000        4.6409290000
+  [01;31m[KO[m[K        18.0044090000        8.8674520000       15.7505800000
+  [01;31m[KO[m[K        11.6671430000        6.9289210000       11.8401960000
+  [01;31m[KO[m[K        24.7466340000        8.2331170000       12.3564970000
+  [01;31m[KO[m[K        16.7966060000        8.6281420000        5.0947200000
+  [01;31m[KO[m[K        20.0252740000       23.6399650000        3.1948220000
+  [01;31m[KO[m[K        14.3140610000        2.7299250000        3.3600920000
+  [01;31m[KO[m[K        22.6803760000        7.2190910000       10.0167040000
+  [01;31m[KO[m[K        10.2637000000        8.0498570000        4.0587300000
+  [01;31m[KO[m[K        19.0396280000       24.1328820000       10.9884880000
+  [01;31m[KO[m[K         2.8843770000       14.7212580000        5.7887960000
+  [01;31m[KO[m[K         0.6348290000       14.3464030000       11.5877600000
+  [01;31m[KO[m[K        22.7588480000       10.2815840000       10.9156770000
+  [01;31m[KO[m[K        15.7202170000        1.3983210000       14.0699230000
+  [01;31m[KO[m[K        19.5892070000       10.3997670000        9.7339640000
+  [01;31m[KO[m[K        16.2005960000        5.7572910000        3.5177300000
+  [01;31m[KO[m[K        13.9954770000        5.8372920000       10.8596980000
+  [01;31m[KO[m[K        15.1241020000        9.3707770000       13.0086600000
+  [01;31m[KO[m[K        18.7040750000        9.6448450000       13.3448710000
+  [01;31m[KO[m[K        15.3356200000        3.3911300000       22.8830790000
+  [01;31m[KO[m[K        13.4797890000       11.5531180000       24.2621990000
+  [01;31m[KO[m[K        20.1593730000       21.5652850000        1.6337570000
+  [01;31m[KO[m[K         2.9579610000        8.0704070000       12.1315380000
+  [01;31m[KO[m[K        18.1462390000        3.9634760000        2.8199990000
+  [01;31m[KO[m[K        12.1250300000        8.8156050000        9.9147430000
+  [01;31m[KO[m[K        22.5137780000        6.7639580000       21.6246990000
+  [01;31m[KO[m[K        20.8785540000        2.5845840000        7.4590930000
+  [01;31m[KO[m[K        14.1557790000       10.2957260000        1.8472660000
+  [01;31m[KO[m[K        20.9343980000        4.3497850000       13.4759510000
+  [01;31m[KO[m[K        17.7896170000        5.9284100000        6.0085890000
+  [01;31m[KO[m[K         2.8467060000        8.0367900000        6.2231310000
+  [01;31m[KO[m[K        17.4323640000        6.0990160000        8.5852890000
+  [01;31m[KO[m[K        22.6992900000        3.3873010000       15.1167580000
+  [01;31m[KO[m[K         1.8814520000       15.4610490000        9.2066520000
+  [01;31m[KO[m[K        17.8554050000       23.7683690000        1.5453550000
+  [01;31m[KO[m[K        22.6490900000       10.6793000000        6.6631280000
+  [01;31m[KO[m[K        12.8678130000        4.4762290000       22.5021230000
+  [01;31m[KO[m[K        19.6017800000        2.7754540000       21.2012410000
+  [01;31m[KO[m[K        19.7647660000       11.5447420000       22.0616440000
+  [01;31m[KO[m[K        21.3373280000       15.1891800000       21.1785250000
+  [01;31m[KO[m[K        16.9451020000        3.6526490000       15.0026580000
+  [01;31m[KO[m[K        14.4966870000        2.6397480000       18.3677120000
+  [01;31m[KO[m[K        18.5050340000       22.3441520000       20.3654920000
+  [01;31m[KO[m[K        24.5792620000        8.6244070000       18.5618970000
+  [01;31m[KO[m[K        22.6847790000        1.0800370000       24.1023990000
+  [01;31m[KO[m[K         4.7621720000        4.5666690000       16.5494880000
+  [01;31m[KO[m[K        14.8009860000        5.5737770000       15.1213950000
+  [01;31m[KO[m[K        15.3766670000       11.8592410000       17.1599620000
+  [01;31m[KO[m[K        14.5993690000        9.8535420000       10.3880890000
+  [01;31m[KO[m[K         0.9485520000       24.5832150000       13.3725770000
+  [01;31m[KO[m[K        16.8561130000        1.5015870000       21.3075790000
+  [01;31m[KO[m[K        15.4275700000        7.2058730000       18.5781370000
+  [01;31m[KO[m[K         8.9246850000        5.7596950000        0.1801630000
+  [01;31m[KO[m[K        22.9073200000        3.2499480000       22.2008460000
+  [01;31m[KO[m[K        18.4221160000       23.3436090000       16.4095840000
+  [01;31m[KO[m[K        16.8439870000       23.8933640000       22.1185130000
+  [01;31m[KO[m[K        20.6429030000        7.0648080000       15.9154690000
+  [01;31m[KO[m[K        18.8887660000        2.5133220000       13.1993560000
+  [01;31m[KO[m[K        22.5697680000       11.6182250000       23.5700430000
+  [01;31m[KO[m[K        24.8311520000        0.4197360000       22.6263350000
+  [01;31m[KO[m[K        19.8612870000        7.7132470000       23.0527300000
+  [01;31m[KO[m[K        22.8268880000       12.1544510000        2.7634490000
+  [01;31m[KO[m[K        20.9310720000       12.6492050000       10.3473880000
+  [01;31m[KO[m[K         4.9027830000        3.0108050000       14.1463700000
+  [01;31m[KO[m[K        23.3764470000       10.1923250000       14.3064050000
+  [01;31m[KO[m[K        14.4705870000       11.0602370000       21.7339930000
+  [01;31m[KO[m[K        17.9144560000        8.6246440000       21.3886240000
+  [01;31m[KO[m[K         3.1860960000        4.8131690000       18.5342960000
+  [01;31m[KO[m[K        14.3183200000       14.3424650000       17.3756240000
+  [01;31m[KO[m[K        22.3640720000       23.3711200000        9.6215420000
+  [01;31m[KO[m[K        12.7697070000       24.4281420000       21.5220140000
+  [01;31m[KO[m[K        20.2404220000        4.9881960000       22.4937940000
+  [01;31m[KO[m[K        19.9793190000        5.9567690000       19.1681290000
+  [01;31m[KO[m[K        19.8736360000        3.8184810000       17.5567720000
+  [01;31m[KO[m[K        21.0880890000       14.1748500000       23.7597960000
+  [01;31m[KO[m[K         6.3592230000        2.5889460000       17.5342920000
+  [01;31m[KO[m[K        17.6138930000        4.2042860000       23.7661470000
+  [01;31m[KO[m[K        18.9346610000       24.9251190000       19.0272390000
+  [01;31m[KO[m[K        20.7945990000       11.3087450000       14.0760950000
+  [01;31m[KO[m[K        13.0026380000        9.9561760000       14.7414910000
+  [01;31m[KO[m[K        14.6447590000        8.4304230000       20.9899710000
+  [01;31m[KO[m[K        13.9607690000        8.3093650000        0.1705500000
+  [01;31m[KO[m[K        17.3294840000        2.6695480000       18.0141960000
+  [01;31m[KO[m[K        11.7749640000        0.1841270000       16.3910560000
+  [01;31m[KO[m[K         8.6490770000        7.8884850000       14.3827850000
+  [01;31m[KO[m[K        22.3145080000        0.7059720000       15.9847840000
+  [01;31m[KO[m[K         1.7407810000        6.5676790000       24.2814200000
+  [01;31m[KO[m[K        15.3445890000        8.1943640000       16.0652580000
+  [01;31m[KO[m[K        20.3570230000       11.5488810000       24.8334210000
+  [01;31m[KO[m[K        19.5610440000        5.6813400000        1.3450570000
+  [01;31m[KO[m[K        23.4845930000       22.6501730000       12.2722830000
+  [01;31m[KO[m[K         6.1631860000        9.0727260000       15.3323020000
+  [01;31m[KO[m[K         3.6855170000        0.4394800000       18.9077290000
+  [01;31m[KO[m[K        18.9671930000        1.1885800000       15.9853260000
+  [01;31m[KO[m[K        17.3991820000        5.9279570000       19.8331930000
+  [01;31m[KO[m[K        19.6529600000        8.7753630000       19.2472270000
+  [01;31m[KO[m[K        21.8597730000        5.7484540000        2.5255210000
+  [01;31m[KO[m[K         0.7358080000       12.9072370000       24.5041140000
+  [01;31m[KO[m[K        24.3691060000        1.0890240000       17.5099050000
+  [01;31m[KO[m[K        23.6493160000       11.1690580000       16.9277830000
+  [01;31m[KO[m[K        17.5988200000       13.2488430000        9.7342750000
+  [01;31m[KO[m[K        15.3975980000       11.8498140000        8.1709400000
+  [01;31m[KO[m[K        21.4963020000       21.0397750000        8.3555120000
+  [01;31m[KO[m[K        22.8935470000       23.3294170000        6.4275270000
+  [01;31m[KO[m[K        10.2101430000       15.0292280000        0.7461660000
+  [01;31m[KO[m[K        11.2078940000       15.5613420000       10.2789110000
+  [01;31m[KO[m[K         9.1982320000       12.7332610000       24.4403200000
+  [01;31m[KO[m[K         6.0290500000       20.2298550000        7.8995080000
+  [01;31m[KO[m[K        19.3020460000       14.1656760000        3.9968690000
+  [01;31m[KO[m[K         4.7865180000       16.7523470000        2.6589000000
+  [01;31m[KO[m[K        16.4297270000       20.9512730000        1.5325840000
+  [01;31m[KO[m[K        13.3114380000       19.2590980000       13.0276440000
+  [01;31m[KO[m[K        16.5842990000       22.2350350000        7.8197600000
+  [01;31m[KO[m[K        16.9608050000       11.7478530000       21.4984120000
+  [01;31m[KO[m[K         9.5782550000       18.6303710000        6.9465900000
+  [01;31m[KO[m[K        20.1512460000       17.7397430000        6.3994700000
+  [01;31m[KO[m[K        15.5106570000       12.5893740000       13.8572860000
+  [01;31m[KO[m[K        17.1698380000       11.3212470000        6.2370170000
+  [01;31m[KO[m[K        14.2922490000       12.6400770000        5.6158320000
+  [01;31m[KO[m[K        17.1524830000       14.6818160000        5.7252060000
+  [01;31m[KO[m[K        16.0544420000       14.2151040000       21.2450980000
+  [01;31m[KO[m[K        13.0396120000       14.2357490000        0.4016220000
+  [01;31m[KO[m[K        22.4802210000       17.4686120000        4.1637550000
+  [01;31m[KO[m[K        20.8746670000        4.6510450000       10.8315580000
+  [01;31m[KO[m[K        13.8839660000       14.8145260000        8.4770480000
+  [01;31m[KO[m[K        17.7242760000       19.0141470000        6.1533250000
+  [01;31m[KO[m[K        18.4304170000       20.7665040000       24.5852010000
+  [01;31m[KO[m[K         6.9832140000       18.1629830000        6.6431330000
+  [01;31m[KO[m[K         0.1516300000       19.8187510000        0.0402800000
+  [01;31m[KO[m[K        15.7554880000        6.6966270000       12.8156730000
+  [01;31m[KO[m[K        14.4941850000       23.4762310000       13.1562300000
+  [01;31m[KO[m[K        14.4517650000       16.7367770000       10.7514270000
+  [01;31m[KO[m[K        10.8374780000       22.4410550000        6.1601050000
+  [01;31m[KO[m[K        21.3289810000       12.7757370000       19.9504590000
+  [01;31m[KO[m[K        16.3730540000       17.1413930000       24.4522770000
+  [01;31m[KO[m[K         2.6644440000       14.6374510000        3.0802980000
+  [01;31m[KO[m[K        17.1406730000       18.3585170000        9.0480890000
+  [01;31m[KO[m[K        16.6380420000       17.9020300000        3.7957030000
+  [01;31m[KO[m[K        21.3261380000       20.5860590000        4.5595300000
+  [01;31m[KO[m[K         3.7473300000       19.5439580000        6.6618420000
+  [01;31m[KO[m[K        17.1489590000       12.3528310000        0.6254050000
+  [01;31m[KO[m[K        17.5724570000       11.8554390000       12.0261420000
+  [01;31m[KO[m[K        22.9903900000       24.0937810000        3.5869520000
+  [01;31m[KO[m[K        15.4558190000       16.8005940000        5.7879300000
+  [01;31m[KO[m[K        10.0089850000        0.3391530000        9.7389590000
+  [01;31m[KO[m[K        14.4310080000        2.9911270000       10.4646160000
+  [01;31m[KO[m[K        10.7074960000       18.1810440000       22.3567650000
+  [01;31m[KO[m[K         9.0729340000       16.7713780000       24.1307130000
+  [01;31m[KO[m[K        18.0823900000       21.5593100000        5.9141840000
+  [01;31m[KO[m[K        17.4730160000       14.6875340000       23.6838550000
+  [01;31m[KO[m[K         3.0271230000       23.1960190000       10.4666780000
+  [01;31m[KO[m[K        15.9694760000       17.9099420000       20.4086150000
+  [01;31m[KO[m[K        11.8082340000       18.9231530000       14.9407160000
+  [01;31m[KO[m[K         0.6015030000       22.0582350000        6.9522010000
+  [01;31m[KO[m[K        19.2817520000       13.8492650000        1.2201220000
+  [01;31m[KO[m[K        19.0208480000        0.3466340000       23.8767960000
+  [01;31m[KO[m[K        20.4787230000       17.0464830000        9.1708670000
+  [01;31m[KO[m[K        14.8495430000       18.0253430000        1.5488470000
+  [01;31m[KO[m[K        21.2181530000       16.7392890000        1.9561330000
+  [01;31m[KO[m[K        13.4168940000       19.1059720000        6.7293430000
+  [01;31m[KO[m[K        23.3624950000       14.8007660000        7.2574250000
+  [01;31m[KO[m[K        23.7553360000        1.8889780000        6.8963290000
+  [01;31m[KO[m[K        18.1283860000       16.6996240000        2.0475490000
+  [01;31m[KO[m[K        18.8681740000        0.6640990000        6.4806880000
+  [01;31m[KO[m[K         6.6716530000       12.6085580000       23.5324090000
+  [01;31m[KO[m[K        17.1171940000       15.1338470000       18.7752770000
+  [01;31m[KO[m[K        20.4748790000       21.6332470000       22.4402160000
+  [01;31m[KO[m[K        21.6287060000       19.3291890000       21.7542840000
+  [01;31m[KO[m[K        10.4765690000       15.4186020000       14.3910170000
+  [01;31m[KO[m[K        16.7442220000       21.3169850000       12.2155920000
+  [01;31m[KO[m[K        22.5079390000        4.8943870000       17.9060920000
+  [01;31m[KO[m[K         1.3853690000        8.2937260000        1.2897800000
+  [01;31m[KO[m[K        18.3065200000       13.2256880000       17.0504650000
+  [01;31m[KO[m[K         5.8549390000       24.1491450000       10.5501660000
+  [01;31m[KO[m[K        12.9373880000       21.5949370000       10.2309720000
+  [01;31m[KO[m[K        14.9061550000       23.0119860000       16.8669670000
+  [01;31m[KO[m[K        20.9226230000        1.8428120000       18.9040630000
+  [01;31m[KO[m[K        20.3341920000       11.3417540000        4.4306860000
+  [01;31m[KO[m[K         0.5933890000       15.0554320000        1.3090940000
+  [01;31m[KO[m[K        21.6485830000       20.4638920000       12.9852510000
+  [01;31m[KO[m[K        10.3432350000       19.2126920000       19.5082400000
+  [01;31m[KO[m[K        23.2022340000       15.6087810000       10.3894600000
+  [01;31m[KO[m[K        13.1513640000       15.7546140000       15.1184770000
+  [01;31m[KO[m[K        11.8981820000       14.7683020000       19.1064030000
+  [01;31m[KO[m[K        19.4411420000       21.3915480000       11.5987610000
+  [01;31m[KO[m[K        18.5861270000       17.3293750000       11.2054000000
+  [01;31m[KO[m[K        21.3851930000       16.2140790000       12.6217980000
+  [01;31m[KO[m[K        17.9352510000       17.5401920000       17.9906110000
+  [01;31m[KO[m[K        15.4030190000       16.7437420000       13.7542860000
+  [01;31m[KO[m[K        20.4509900000       21.2707710000       15.9148920000
+  [01;31m[KO[m[K        24.0615240000       17.9683010000        8.0234330000
+  [01;31m[KO[m[K        21.5558100000       16.7419500000       16.6535830000
+  [01;31m[KO[m[K        19.2616380000       18.4917540000       13.4534270000
+  [01;31m[KO[m[K        20.1043610000       23.2320420000        5.8390020000
+  [01;31m[KO[m[K        14.3984850000       23.7769430000       23.6126500000
+  [01;31m[KO[m[K        23.7392790000       15.8690470000       19.8693220000
+  [01;31m[KO[m[K        16.7836500000       21.3640650000       18.4452620000
+  [01;31m[KO[m[K        19.9021570000       14.2529410000        8.5231400000
+  [01;31m[KO[m[K        16.8466980000       19.1546370000       13.9661910000
+  [01;31m[KO[m[K         1.5707480000       17.1047930000       24.8062610000
+  [01;31m[KO[m[K        12.7628250000        2.2654380000       20.6227270000
+  [01;31m[KO[m[K        17.9664960000       10.6404900000       17.6026590000
+  [01;31m[KO[m[K         3.2682070000       21.2964800000       20.7156580000
+  [01;31m[KO[m[K        24.2459150000       12.1966030000       20.1179120000
+  [01;31m[KO[m[K        19.6808630000       19.5589580000       19.3852340000
+  [01;31m[KO[m[K         5.9072900000       19.4787110000        2.2778120000
+  [01;31m[KO[m[K        24.6457840000       20.0800880000       12.7037820000
+  [01;31m[KO[m[K        22.2697000000       18.9351940000        9.9088190000
+  [01;31m[KO[m[K        14.2822090000        0.7950180000       16.2177220000
+  [01;31m[KO[m[K        20.9028610000       23.4536320000       24.3558670000
+  [01;31m[KO[m[K        20.0388270000       13.7044030000       12.6223860000
+  [01;31m[KO[m[K        12.6426190000       12.5452110000       13.6979930000
+  [01;31m[KO[m[K        10.8087330000       22.4142290000       21.7660870000
+  [01;31m[KO[m[K        19.2043430000       16.6772790000       15.4974520000
+  [01;31m[KO[m[K        22.3610310000       24.0651850000       21.2124710000
+  [01;31m[KO[m[K        18.6151240000       20.6606580000        9.2664290000
+  [01;31m[KO[m[K        14.5456100000       19.9637500000       24.2557470000
+  [01;31m[KO[m[K        24.3965930000       23.6588130000        0.2805480000
+  [01;31m[KO[m[K        21.1470130000       13.6756890000       16.7511760000
+  [01;31m[KO[m[K        22.3566610000       23.0908910000       14.8529570000
+  [01;31m[KO[m[K        22.7040870000       14.4265020000        1.2055810000
+  [01;31m[KO[m[K        23.8370650000       16.5422470000       14.1664660000
+  [01;31m[KO[m[K         1.4615580000        1.3725250000       15.7090600000
+  [01;31m[KO[m[K        16.1470350000       19.3765570000       16.4538180000
+  [01;31m[KO[m[K        24.1570680000       19.9023340000       21.6961650000
+  [01;31m[KO[m[K         0.6841690000       21.5760650000       19.9418400000
+  [01;31m[KO[m[K        15.0258280000       19.3226710000       10.4148310000
+  [01;31m[KO[m[K        23.9069860000       22.6082000000       16.9823030000
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep O cp2k.xyz | wc
+[?2004l    512    2048   33280
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep -E "O|H" cp2k.xyz | w c -1
+[?2004lwc: invalid option -- '1'
+Try 'wc --help' for more information.
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mgrep -E "O|H" cp2k.xyz | w[27m[7mc[27m[7m -l[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep -E "O|H" cp2k.xyz | wc -l
+[?2004l1536
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mwc -l cp2k.xy[27mwc -l cp2k.xy
+[?2004lwc: cp2k.xy: No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mgrep TIME cp2k.out[27mgrep TIME cp2k.out
+[?2004l [01;31m[KTIME[m[K [fs]                    =                                         0.500000
+ CPU [01;31m[KTIME[m[K [s]                 =                      290.20               290.20
+ [01;31m[KTIME[m[K [fs]                    =                                         1.000000
+ CPU [01;31m[KTIME[m[K [s]                 =                       70.63               180.42
+ [01;31m[KTIME[m[K [fs]                    =                                         1.500000
+ CPU [01;31m[KTIME[m[K [s]                 =                      114.28               158.37
+ [01;31m[KTIME[m[K [fs]                    =                                         2.000000
+ CPU [01;31m[KTIME[m[K [s]                 =                       71.75               136.72
+ [01;31m[KTIME[m[K [fs]                    =                                         2.500000
+ CPU [01;31m[KTIME[m[K [s]                 =                       38.50               117.07
+ [01;31m[KTIME[m[K [fs]                    =                                         3.000000
+ CPU [01;31m[KTIME[m[K [s]                 =                       36.26               103.61
+ [01;31m[KTIME[m[K [fs]                    =                                         3.500000
+ CPU [01;31m[KTIME[m[K [s]                 =                       35.33                93.85
+ [01;31m[KTIME[m[K [fs]                    =                                         4.000000
+ CPU [01;31m[KTIME[m[K [s]                 =                       32.24                86.15
+ [01;31m[KTIME[m[K [fs]                    =                                         4.500000
+ CPU [01;31m[KTIME[m[K [s]                 =                       35.31                80.50
+ [01;31m[KTIME[m[K [fs]                    =                                         5.000000
+ CPU [01;31m[KTIME[m[K [s]                 =                       35.20                75.97
+ ROUTINE             CALLS  TOT [01;31m[KTIME[m[K [s]  AVE VOLUME [Bytes]  PERFORMANCE [MB/s]
+ SUBROUTINE                       CALLS  ASD         SELF [01;31m[KTIME[m[K        TOTAL [01;31m[KTIME[m[K
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ n[Kmore times
+[?2004lmore: cannot open times: No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mplot 'times' using 0:5 wit[27m[7mh[27m[7m points[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ plot 'times' using 0:5 with points
+[?2004lCommand 'plot' not found, but can be installed with:
+sudo apt install plotutils
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ sudo app install plotutils [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+[?2004l[sudo] password for amalia: 
+sudo: app: command not found
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mplot 'times' using 0:5 wit[27m[7mh[27m[7m lines[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ plot 'times' using 0:5 with lines
+[?2004lCommand 'plot' not found, but can be installed with:
+sudo apt install plotutils
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7msudo apt install plotutils[27m [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo apt install plotutils [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+[?2004lCitire liste de pachete... 0%Citire liste de pachete... 100%Citire liste de pachete... Terminat
+Se construiește arborele de dependență... 0%Se construiește arborele de dependență... 0%Se construiește arborele de dependență... 50%Se construiește arborele de dependență... 50%Se construiește arborele de dependență... Terminat
+Se citesc informațiile de stare... 0%               Se citesc informațiile de stare... 0%Se citesc informațiile de stare... Terminat
+The following additional packages will be installed:
+  libplot2c2
+Pachete sugerate:
+  gsfonts
+Următoarele pachete NOI vor fi instalate:
+  libplot2c2 plotutils
+0 înnoite, 2 nou instalate, 0 de șters și 15 neînnoite.
+Este nevoie să descărcați 1.117 kB de arhive.
+După această operație vor fi folosiți din disc încă 4.139 kB.
+Vreți să continuați? [Y/n] y
+[33m0% [În lucru][0m              Luat:1 http://ro.archive.ubuntu.com/ubuntu jammy/universe amd64 libplot2c2 amd64 2.6-11 [506 kB]
+[33m1% [1 libplot2c2 7.008 B/506 kB 1%][0m[33m14% [1 libplot2c2 196 kB/506 kB 39%][0m[33m                                    46% [În lucru][0m               Luat:2 http://ro.archive.ubuntu.com/ubuntu jammy/universe amd64 plotutils amd64 2.6-11 [611 kB]
+[33m46% [2 plotutils 0 B/611 kB 0%][0m[33m                               100% [În lucru][0m                Aduși: 1.117 kB în 2s (733 kB/s)
+
+7[0;23r8[1ASelecting previously unselected package libplot2c2:amd64.
+(Se citește baza de date ... (Se citește baza de date ... 5%(Se citește baza de date ... 10%(Se citește baza de date ... 15%(Se citește baza de date ... 20%(Se citește baza de date ... 25%(Se citește baza de date ... 30%(Se citește baza de date ... 35%(Se citește baza de date ... 40%(Se citește baza de date ... 45%(Se citește baza de date ... 50%(Se citește baza de date ... 55%(Se citește baza de date ... 60%(Se citește baza de date ... 65%(Se citește baza de date ... 70%(Se citește baza de date ... 75%(Se citește baza de date ... 80%(Se citește baza de date ... 85%(Se citește baza de date ... 90%(Se citește baza de date ... 95%(Se citește baza de date ... 100%(Se citește baza de date ... 207204 fișiere și directoare actualmente instalate.)
+Preparing to unpack .../libplot2c2_2.6-11_amd64.deb ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[24;0f[42m[30mProgress: [ 11%][49m[39m [######....................................................] 8Unpacking libplot2c2:amd64 (2.6-11) ...
+7[24;0f[42m[30mProgress: [ 22%][49m[39m [############..............................................] 8Selecting previously unselected package plotutils.
+Preparing to unpack .../plotutils_2.6-11_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 33%][49m[39m [###################.......................................] 8Unpacking plotutils (2.6-11) ...
+7[24;0f[42m[30mProgress: [ 44%][49m[39m [#########################.................................] 8Se pregătește libplot2c2:amd64 (2.6-11) ...
+7[24;0f[42m[30mProgress: [ 56%][49m[39m [################################..........................] 87[24;0f[42m[30mProgress: [ 67%][49m[39m [######################################....................] 8Se pregătește plotutils (2.6-11) ...
+7[24;0f[42m[30mProgress: [ 78%][49m[39m [#############################################.............] 87[24;0f[42m[30mProgress: [ 89%][49m[39m [###################################################.......] 8Processing triggers for libc-bin (2.35-0ubuntu3.4) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for install-info (6.8-4build1) ...
+
+7[0;24r8[1A[J[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mgrep "CPU TIME" cp2k.out >[27m[7m [27m[7mtimes[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep "CPU TIME" cp2k.out > times
+[?2004l[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mmore times[27mmore times
+[?2004l CPU TIME [s]                 =                      290.20               290.20
+ CPU TIME [s]                 =                       70.63               180.42
+ CPU TIME [s]                 =                      114.28               158.37
+ CPU TIME [s]                 =                       71.75               136.72
+ CPU TIME [s]                 =                       38.50               117.07
+ CPU TIME [s]                 =                       36.26               103.61
+ CPU TIME [s]                 =                       35.33                93.85
+ CPU TIME [s]                 =                       32.24                86.15
+ CPU TIME [s]                 =                       35.31                80.50
+ CPU TIME [s]                 =                       35.20                75.97
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mplot 'times' using 0:5 wit[27m[7mh[27m[7m points[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ plot 'times' using 0:5 with points
+[?2004l#PLOT 1
+plot: an unrecognized command `0x20' was encountered in the input
+plot: the input file `times' could not be parsed
+ox[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mplot 'times' using 0:5 wit[27m[7mh[27m[7m lines[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ plot 'times' using 0:5 with lines
+[?2004l#PLOT 1
+plot: an unrecognized command `0x20' was encountered in the input
+plot: the input file `times' could not be parsed
+ox[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ quit
+[?2004lCommand 'quit' not found, but can be installed with:
+sudo snap install quit
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mgrep TEMPERATURE cp2k.out[27mgrep TEMPERATURE cp2k.out
+[?2004l INITIAL [01;31m[KTEMPERATURE[m[K[K]                =                                 300.000
+ [01;31m[KTEMPERATURE[m[K [K]              =                     305.326              305.326
+ [01;31m[KTEMPERATURE[m[K [K]              =                     323.124              314.225
+ [01;31m[KTEMPERATURE[m[K [K]              =                     347.442              325.297
+ [01;31m[KTEMPERATURE[m[K [K]              =                     368.720              336.153
+ [01;31m[KTEMPERATURE[m[K [K]              =                     377.405              344.403
+ [01;31m[KTEMPERATURE[m[K [K]              =                     368.690              348.451
+ [01;31m[KTEMPERATURE[m[K [K]              =                     344.999              347.958
+ [01;31m[KTEMPERATURE[m[K [K]              =                     314.601              343.788
+ [01;31m[KTEMPERATURE[m[K [K]              =                     287.757              337.563
+ [01;31m[KTEMPERATURE[m[K [K]              =                     272.845              331.091
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mgrep TEMPERATURE cp2k.out [27m[7m|[27m[7m awk '{a+=$4;print $4,NR,a/NR}'[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep TEMPERATURE cp2k.out | awk '{a+=$4;print $4,NR,a/NR}'
+[?2004l300.000 1 300
+305.326 2 302,5
+323.124 3 309,333
+347.442 4 318,75
+368.720 5 328,6
+377.405 6 336,667
+368.690 7 341,143
+344.999 8 341,5
+314.601 9 338,444
+287.757 10 333,3
+272.845 11 327,727
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mawk '/TEMPERATURE/{a+=$4;n[27m[7m+[27m[7m+;print $4,n,a/n}' cp2k.out[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ awk '/TEMPERATURE/{a+=$4;n++;print $4,n,a/n}' cp2k.out
+[?2004l300.000 1 300
+305.326 2 302,5
+323.124 3 309,333
+347.442 4 318,75
+368.720 5 328,6
+377.405 6 336,667
+368.690 7 341,143
+344.999 8 341,5
+314.601 9 338,444
+287.757 10 333,3
+272.845 11 327,727
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mcat cp2k.xyz | sort -n -k [27m[7m2[27m[7m | head[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ cat cp2k.xyz | sort -n -k 2 | head
+[?2004l  H        -0.5305550000        3.6122210000       14.7086020000
+  H        -0.5099810000        4.6930730000       22.7955390000
+  H        -0.3297560000        8.5010670000        4.8782520000
+  H        -0.3241760000       15.1038460000        1.5773540000
+  H        -0.0748410000        0.8127580000        0.0296070000
+  H        -0.0458740000       21.3572900000        6.8759690000
+    1536
+ i =        0, time =        0.000, E =     -8807.9524412500
+  H         0.0614840000        4.2880610000       11.2611580000
+  H         0.1497510000        6.9271230000       21.0598550000
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ [7mwget ftp://mirbase.org/pub[27m[7m/[27m[7mmirbase/CURRENT/genomes/hsa.gff3[27m[A]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ wget ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+[?2004l--2023-12-11 12:17:08--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+           => ‘hsa.gff3’
+Resolving mirbase.org (mirbase.org)... 130.88.97.249
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... grep -v "#" hsa.gff3 > tmp_nohash
+grep -v "miRNA_primary_transcript" tmp_nohash > tmp_nomir
+failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:19:20--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try: 2) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:21:32--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try: 3) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... cut -c 4- tmp_nomir > tmp_noscr
+failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:23:46--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try: 4) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... exit
+^X
+exit
+exit
+failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:26:00--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try: 5) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... exit
+failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:28:17--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try: 6) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:30:33--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try: 7) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:32:49--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try: 8) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:35:07--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try: 9) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:37:25--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try:10) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:39:46--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try:11) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:42:05--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try:12) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:44:24--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try:13) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:46:43--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try:14) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:49:03--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try:15) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:51:22--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try:16) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 12:53:41--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try:17) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 13:06:33--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try:18) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 13:08:53--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try:19) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Retrying.
+
+--2023-12-11 13:11:12--  ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+  (try:20) => ‘hsa.gff3’
+Connecting to mirbase.org (mirbase.org)|130.88.97.249|:21... failed: Connection timed out.
+Giving up.
+
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep -v "#" hsa.gff3 > tmp_nohash
+[?2004lgrep: hsa.gff3: No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ grep -v "miRNA_primary_transcript" tmp_nohash > tmp_nomir
+[?2004l[?2004h]0;amalia@amalia-VirtualBox: ~/Downloads/linux-exercises[01;32mamalia@amalia-VirtualBox[00m:[01;34m~/Downloads/linux-exercises[00m$ cut -c 4- tmp_nomir > tmp_noscr
+[?2004l[?20

@@ -1,0 +1,554 @@
+Script started on 2023-12-11 14:41:25+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ $ alias
+[?2004l
+$: command not found
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ alias[K[K[K[K[Kbash
+[?2004l
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ~/.bash_prf[Kofile
+[?2004l
+bash: /home/amalia/.bash_profile: No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ cd
+[?2004l
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ bash
+[?2004l
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ apt-get install bash
+[?2004l
+E: Nu pot deschide fișierul blocat /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ y
+[?2004l
+y: command not found
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ sudo apt-get install bash
+[?2004l
+[sudo] password for amalia: 
+
+Citire liste de pachete... 0%
+
+Citire liste de pachete... 100%
+
+Citire liste de pachete... Terminat
+
+
+Se construiește arborele de dependență... 0%
+
+Se construiește arborele de dependență... 0%
+
+Se construiește arborele de dependență... 50%
+
+Se construiește arborele de dependență... 50%
+
+Se construiește arborele de dependență... Terminat
+
+
+Se citesc informațiile de stare... 0%               
+
+Se citesc informațiile de stare... 0%
+
+Se citesc informațiile de stare... Terminat
+
+bash is already the newest version (5.1-6ubuntu1).
+bash este marcat ca fiind instalat manual.
+0 înnoite, 0 nou instalate, 0 de șters și 15 neînnoite.
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ alias
+[?2004l
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ 
+[K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ alias word="command"
+[?2004l
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ alias wrd[K[Kord
+[?2004l
+alias word='command'
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ unai[Klias word
+[?2004l
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ alias rm="rm --interactive"
+[?2004l
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ alias la="ls --all"
+[?2004l
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ alias
+[?2004l
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls --all'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+alias rm='rm --interactive'
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ rn[Km
+[?2004l
+rm: missing operand
+Try 'rm --help' for more information.
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ alias rm
+[?2004l
+alias rm='rm --interactive'
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ pwd
+[?2004l
+/home/amalia
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ls
+[?2004l
+alias.txt  [0m[01;34mDownloads[0m       [01;31mlinux-exercise.tar.gz[0m  ps.txt           [01;34msnap[0m
+[01;34mDesktop[0m    exercise.txt    [01;34mMusic[0m                  [01;34mPublic[0m           [01;34mTemplates[0m
+[01;34mDocuments[0m  helloworld.txt  [01;34mPictures[0m               [01;34mPycharmProjects[0m  [01;34mVideos[0m
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ alias
+[?2004l
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls --all'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+alias rm='rm --interactive'
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ alias update=''
+[?2004l
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ alias updateaa[Kza='sudo apt-get update'
+[?2004l
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ updateaza
+[?2004l
+[sudo] password for amalia: 
+
+0% [În lucru]
+              
+Luat:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+
+0% [În așteptarea antetelor] [1 InRelease 6.990 B/110 kB 6%]
+                                                              
+Atins:2 http://ro.archive.ubuntu.com/ubuntu jammy InRelease
+
+                                                              
+0% [1 InRelease 14,2 kB/110 kB 13%]
+0% [În așteptarea antetelor] [1 InRelease 31,6 kB/110 kB 29%]
+                                                               
+Luat:3 http://ro.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+
+0% [3 InRelease 12,8 kB/119 kB 11%] [1 InRelease 31,6 kB/110 kB 29%]
+                                                                    
+0% [3 InRelease 50,5 kB/119 kB 43%]
+                                   
+0% [3 InRelease 109 kB/119 kB 91%]
+0% [În așteptarea antetelor] [În așteptarea antetelor]
+                                                          
+Luat:4 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [379 kB]
+
+0% [În așteptarea antetelor] [4 Packages 2.695 B/379 kB 1%]
+0% [În așteptarea antetelor] [4 Packages 15,8 kB/379 kB 4%]
+                                                             
+Atins:5 http://ro.archive.ubuntu.com/ubuntu jammy-backports InRelease
+
+                                                             
+0% [4 Packages 33,2 kB/379 kB 9%]
+                                 
+Luat:6 http://ro.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [543 kB]
+
+0% [6 Packages 2.665 B/543 kB 0%] [4 Packages 164 kB/379 kB 43%]
+24% [6 Packages 53,5 kB/543 kB 10%] [4 Packages 207 kB/379 kB 55%]
+                                                                  
+26% [6 Packages 181 kB/543 kB 33%]
+26% [4 Packages store 0 B] [6 Packages 184 kB/543 kB 34%] [În așteptarea antetelor]
+                                                                                     
+28% [6 Packages 335 kB/543 kB 62%] [În așteptarea antetelor]
+                                                              
+Luat:7 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1.035 kB]
+
+29% [6 Packages 410 kB/543 kB 75%] [7 Packages 4.146 B/1.035 kB 0%]
+                                                                   
+32% [În așteptarea antetelor] [7 Packages 261 kB/1.035 kB 25%]
+                                                                
+Luat:8 http://ro.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1.246 kB]
+
+32% [8 Packages 3.912 B/1.246 kB 0%] [7 Packages 261 kB/1.035 kB 25%]
+32% [6 Packages store 0 B] [8 Packages 3.912 B/1.246 kB 0%] [7 Packages 261 kB/1.035 kB 25%]
+                                                                                            
+38% [8 Packages 290 kB/1.246 kB 23%] [7 Packages 524 kB/1.035 kB 51%]
+                                                                     
+48% [8 Packages 844 kB/1.246 kB 68%] [În așteptarea antetelor]
+                                                                
+Luat:9 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [197 kB]
+
+48% [8 Packages 844 kB/1.246 kB 68%] [9 Translation-en 11,6 kB/197 kB 6%]
+48% [7 Packages store 0 B] [8 Packages 844 kB/1.246 kB 68%] [9 Translation-en 11,6 kB/197 kB 
+                                                                                             
+54% [7 Packages store 0 B] [8 Packages 1.235 kB/1.246 kB 99%] [În așteptarea antetelor]
+                                                                                         
+Luat:10 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1.205 kB]
+
+54% [7 Packages store 0 B] [8 Packages 1.235 kB/1.246 kB 99%] [10 Packages 217 B/1.205 kB 0%]
+                                                                                             
+54% [7 Packages store 0 B] [În așteptarea antetelor] [10 Packages 8.192 B/1.205 kB 1%]
+                                                                                        
+Luat:11 http://ro.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [257 kB]
+
+54% [7 Packages store 0 B] [11 Translation-en 0 B/257 kB 0%] [10 Packages 11,8 kB/1.205 kB 1%
+                                                                                             
+58% [7 Packages store 0 B] [În așteptarea antetelor] [10 Packages 187 kB/1.205 kB 16%]
+                                                                                        
+Luat:12 http://ro.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1.018 kB]
+
+58% [7 Packages store 0 B] [12 Packages 10,1 kB/1.018 kB 1%] [10 Packages 187 kB/1.205 kB 16%
+                                                                                             
+75% [7 Packages store 0 B] [10 Packages 919 kB/1.205 kB 76%]
+                                                            
+Luat:13 http://ro.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [675 kB]
+
+75% [7 Packages store 0 B] [13 Packages 14,5 kB/675 kB 2%] [10 Packages 942 kB/1.205 kB 78%]
+                                                                                            
+77% [13 Packages 92,9 kB/675 kB 14%] [10 Packages 1.025 kB/1.205 kB 85%]
+77% [9 Translation-en store 0 B] [13 Packages 92,9 kB/675 kB 14%] [10 Packages 1.025 kB/1.205
+                                                                                             
+81% [9 Translation-en store 0 B] [13 Packages 351 kB/675 kB 52%] [În așteptarea antetelor]
+                                                                                            
+Luat:14 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [195 kB]
+
+81% [9 Translation-en store 0 B] [13 Packages 351 kB/675 kB 52%] [14 Translation-en 23,9 kB/1
+                                                                                             
+86% [9 Translation-en store 0 B] [14 Translation-en 189 kB/195 kB 97%]
+                                                                      
+86% [9 Translation-en store 0 B] [În așteptarea antetelor]
+                                                            
+Luat:15 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [815 kB]
+
+86% [9 Translation-en store 0 B] [15 Packages 28,7 kB/815 kB 4%]
+                                                                
+89% [15 Packages 348 kB/815 kB 43%]
+89% [8 Packages store 0 B] [15 Packages 348 kB/815 kB 43%]
+                                                          
+94% [8 Packages store 0 B] [În așteptarea antetelor]
+                                                      
+Luat:16 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [577 kB]
+
+94% [8 Packages store 0 B] [16 Packages 0 B/577 kB 0%]
+                                                      
+99% [8 Packages store 0 B]
+                          
+99% [În lucru]
+99% [11 Translation-en store 0 B]
+                                 
+99% [În lucru]
+99% [12 Packages store 0 B]
+                           
+100% [În lucru]
+100% [10 Packages store 0 B]
+                            
+100% [În lucru]
+100% [13 Packages store 0 B]
+                            
+100% [În lucru]
+100% [14 Translation-en store 0 B]
+                                  
+100% [În lucru]
+100% [15 Packages store 0 B]
+                            
+100% [În lucru]
+100% [16 Packages store 0 B]
+                            
+100% [În lucru]
+                
+Aduși: 8.373 kB în 3s (2.904 kB/s)
+
+Citire liste de pachete... 0%
+
+Citire liste de pachete... 0%
+
+Citire liste de pachete... 0%
+
+Citire liste de pachete... 3%
+
+Citire liste de pachete... 3%
+
+Citire liste de pachete... 5%
+
+Citire liste de pachete... 5%
+
+Citire liste de pachete... 5%
+
+Citire liste de pachete... 5%
+
+Citire liste de pachete... 6%
+
+Citire liste de pachete... 6%
+
+Citire liste de pachete... 7%
+
+Citire liste de pachete... 7%
+
+Citire liste de pachete... 7%
+
+Citire liste de pachete... 7%
+
+Citire liste de pachete... 7%
+
+Citire liste de pachete... 7%
+
+Citire liste de pachete... 36%
+
+Citire liste de pachete... 36%
+
+Citire liste de pachete... 52%
+
+Citire liste de pachete... 52%
+
+Citire liste de pachete... 52%
+
+Citire liste de pachete... 52%
+
+Citire liste de pachete... 65%
+
+Citire liste de pachete... 65%
+
+Citire liste de pachete... 66%
+
+Citire liste de pachete... 66%
+
+Citire liste de pachete... 66%
+
+Citire liste de pachete... 66%
+
+Citire liste de pachete... 66%
+
+Citire liste de pachete... 66%
+
+Citire liste de pachete... 66%
+
+Citire liste de pachete... 69%
+
+Citire liste de pachete... 69%
+
+Citire liste de pachete... 70%
+
+Citire liste de pachete... 70%
+
+Citire liste de pachete... 72%
+
+Citire liste de pachete... 72%
+
+Citire liste de pachete... 76%
+
+Citire liste de pachete... 76%
+
+Citire liste de pachete... 76%
+
+Citire liste de pachete... 76%
+
+Citire liste de pachete... 77%
+
+Citire liste de pachete... 77%
+
+Citire liste de pachete... 80%
+
+Citire liste de pachete... 80%
+
+Citire liste de pachete... 82%
+
+Citire liste de pachete... 82%
+
+Citire liste de pachete... 83%
+
+Citire liste de pachete... 83%
+
+Citire liste de pachete... 83%
+
+Citire liste de pachete... 83%
+
+Citire liste de pachete... 83%
+
+Citire liste de pachete... 83%
+
+Citire liste de pachete... 83%
+
+Citire liste de pachete... 83%
+
+Citire liste de pachete... 83%
+
+Citire liste de pachete... 83%
+
+Citire liste de pachete... 84%
+
+Citire liste de pachete... 84%
+
+Citire liste de pachete... 84%
+
+Citire liste de pachete... 84%
+
+Citire liste de pachete... 84%
+
+Citire liste de pachete... 84%
+
+Citire liste de pachete... 84%
+
+Citire liste de pachete... 84%
+
+Citire liste de pachete... 84%
+
+Citire liste de pachete... 84%
+
+Citire liste de pachete... 86%
+
+Citire liste de pachete... 86%
+
+Citire liste de pachete... 87%
+
+Citire liste de pachete... 87%
+
+Citire liste de pachete... 89%
+
+Citire liste de pachete... 89%
+
+Citire liste de pachete... 92%
+
+Citire liste de pachete... 92%
+
+Citire liste de pachete... 92%
+
+Citire liste de pachete... 92%
+
+Citire liste de pachete... 94%
+
+Citire liste de pachete... 94%
+
+Citire liste de pachete... 96%
+
+Citire liste de pachete... 96%
+
+Citire liste de pachete... 98%
+
+Citire liste de pachete... 98%
+
+Citire liste de pachete... 99%
+
+Citire liste de pachete... 99%
+
+Citire liste de pachete... 99%
+
+Citire liste de pachete... 99%
+
+Citire liste de pachete... 99%
+
+Citire liste de pachete... 99%
+
+Citire liste de pachete... 99%
+
+Citire liste de pachete... 99%
+
+Citire liste de pachete... Terminat
+
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ exit
+[?2004l
+exit
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ exit
+[?2004l
+exit
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ cd
+[?2004l
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ exit
+[?2004l
+exit
+
+Script done on 2023-12-11 19:08:19+02:00 [COMMAND_EXIT_CODE="0"]
+

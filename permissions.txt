@@ -1,0 +1,109 @@
+Script started on 2023-12-12 15:15:49+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ chmod w[Kamalia [K[K[K[K[K[K[Ku[Kg[Ko[Ku+ rwx permissions.txt
+[?2004lchmod: cannot access 'rwx': No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ chmod u+ rwx alias.txt
+[?2004lchmod: cannot access 'rwx': No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ bash sample.sh
+[?2004lbash: sample.sh: No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ls
+[?2004lalias.txt  exercise.txt           permissions.txt  [0m[01;34mPycharmProjects[0m
+[01;34mDesktop[0m    helloworld.txt         [01;34mPictures[0m         [01;34msnap[0m
+[01;34mDocuments[0m  [01;31mlinux-exercise.tar.gz[0m  ps.txt           [01;34mTemplates[0m
+[01;34mDownloads[0m  [01;34mMusic[0m                  [01;34mPublic[0m           [01;34mVideos[0m
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps.txt +[K[K [K[K[K[K[K[K[Kcm[Khmod u+[K [K- rwx permissions[K[K[K[K[K[K[K[K[K[Ks.txt
+[?2004lchmod: cannot access 'rwx': No such file or directory
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ int access (const char *pathname, int mode)[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K-k[Kl
+[?2004l-l: command not found
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ cd -l
+[?2004lbash: cd: -l: invalid option
+cd: usage: cd [-L|[-P [-e]] [-@]] [dir]
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ s[Kls -l ps.txt[K[K[Kdoctxt[K[K[K[K[K[Ke[Ktxt
+[?2004l-rw-rw-r-- 1 amalia amalia 65129 dec 11 13:36 ps.txt
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ chmod amalia amalia 777[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls -l helloworld.txt
+[?2004l-rw-rw-r-- 1 amalia amalia 2196 dec 11 14:27 helloworld.txt
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ chmod uw -[K[K[K[Ku-r helloworls.[K[K[Kld.txt
+[?2004l[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ech[K[K[Kc[Kls -l helloworld.txt 
+[?2004l--w-rw-r-- 1 amalia amalia 2196 dec 11 14:27 helloworld.txt
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ chmod u+r helloworld.txt
+[?2004l[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ls -l helloworld.txt
+[?2004l-rw-rw-r-- 1 amalia amalia 2196 dec 11 14:27 helloworld.txt
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ls [K[K[Kchmod u-r[Kw hellowold[K[Krold.[K[K[K[Kld.txt
+[?2004l[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ls - [Kl
+[?2004ltotal 684
+-rw-rw-r-- 1 amalia amalia  25253 dec 11 19:10 alias.txt
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [0m[01;34mDesktop[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mDocuments[0m
+drwxr-xr-x 4 amalia amalia   4096 dec 11 13:37 [01;34mDownloads[0m
+-rw-rw-r-- 1 amalia amalia 110592 dec 11 13:13 exercise.txt
+-r--rw-r-- 1 amalia amalia   2196 dec 11 14:27 helloworld.txt
+-rw-rw-r-- 1 amalia amalia 441060 dec 11 11:15 [01;31mlinux-exercise.tar.gz[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mMusic[0m
+-rw-rw-r-- 1 amalia amalia      0 dec 12 15:15 permissions.txt
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mPictures[0m
+-rw-rw-r-- 1 amalia amalia  65129 dec 11 13:36 ps.txt
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mPublic[0m
+drwxrwxr-x 4 amalia amalia   4096 dec  5 14:39 [01;34mPycharmProjects[0m
+drwx------ 6 amalia amalia   4096 dec  5 14:26 [01;34msnap[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mTemplates[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mVideos[0m
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ chmod[K[K[K[K[Kchmod u+w helloworld.txt
+[?2004l[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ls -l
+[?2004ltotal 688
+-rw-rw-r-- 1 amalia amalia  25253 dec 11 19:10 alias.txt
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [0m[01;34mDesktop[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mDocuments[0m
+drwxr-xr-x 4 amalia amalia   4096 dec 11 13:37 [01;34mDownloads[0m
+-rw-rw-r-- 1 amalia amalia 110592 dec 11 13:13 exercise.txt
+-rw-rw-r-- 1 amalia amalia   2196 dec 11 14:27 helloworld.txt
+-rw-rw-r-- 1 amalia amalia 441060 dec 11 11:15 [01;31mlinux-exercise.tar.gz[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mMusic[0m
+-rw-rw-r-- 1 amalia amalia   4096 dec 12 15:34 permissions.txt
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mPictures[0m
+-rw-rw-r-- 1 amalia amalia  65129 dec 11 13:36 ps.txt
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mPublic[0m
+drwxrwxr-x 4 amalia amalia   4096 dec  5 14:39 [01;34mPycharmProjects[0m
+drwx------ 6 amalia amalia   4096 dec  5 14:26 [01;34msnap[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mTemplates[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mVideos[0m
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ch mo[K[K[Kmod u-x helloworld.txt
+[?2004l[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ls-[K -l
+[?2004ltotal 688
+-rw-rw-r-- 1 amalia amalia  25253 dec 11 19:10 alias.txt
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [0m[01;34mDesktop[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mDocuments[0m
+drwxr-xr-x 4 amalia amalia   4096 dec 11 13:37 [01;34mDownloads[0m
+-rw-rw-r-- 1 amalia amalia 110592 dec 11 13:13 exercise.txt
+-rw-rw-r-- 1 amalia amalia   2196 dec 11 14:27 helloworld.txt
+-rw-rw-r-- 1 amalia amalia 441060 dec 11 11:15 [01;31mlinux-exercise.tar.gz[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mMusic[0m
+-rw-rw-r-- 1 amalia amalia   4096 dec 12 15:34 permissions.txt
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mPictures[0m
+-rw-rw-r-- 1 amalia amalia  65129 dec 11 13:36 ps.txt
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mPublic[0m
+drwxrwxr-x 4 amalia amalia   4096 dec  5 14:39 [01;34mPycharmProjects[0m
+drwx------ 6 amalia amalia   4096 dec  5 14:26 [01;34msnap[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mTemplates[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mVideos[0m
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ chmod u+x helloworld.txt
+[?2004l[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ls -l
+[?2004ltotal 688
+-rw-rw-r-- 1 amalia amalia  25253 dec 11 19:10 alias.txt
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [0m[01;34mDesktop[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mDocuments[0m
+drwxr-xr-x 4 amalia amalia   4096 dec 11 13:37 [01;34mDownloads[0m
+-rw-rw-r-- 1 amalia amalia 110592 dec 11 13:13 exercise.txt
+-rwxrw-r-- 1 amalia amalia   2196 dec 11 14:27 [01;32mhelloworld.txt[0m
+-rw-rw-r-- 1 amalia amalia 441060 dec 11 11:15 [01;31mlinux-exercise.tar.gz[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mMusic[0m
+-rw-rw-r-- 1 amalia amalia   4096 dec 12 15:34 permissions.txt
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mPictures[0m
+-rw-rw-r-- 1 amalia amalia  65129 dec 11 13:36 ps.txt
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mPublic[0m
+drwxrwxr-x 4 amalia amalia   4096 dec  5 14:39 [01;34mPycharmProjects[0m
+drwx------ 6 amalia amalia   4096 dec  5 14:26 [01;34msnap[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mTemplates[0m
+drwxr-xr-x 2 amalia amalia   4096 dec  5 12:36 [01;34mVideos[0m
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ exit 
+[?2004lexit
+
+Script done on 2023-12-12 15:37:12+02:00 [COMMAND_EXIT_CODE="0"]

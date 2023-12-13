@@ -1,0 +1,29 @@
+Script started on 2023-12-11 14:01:24+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="87" LINES="28"]
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ eco[Kho "Hello world" | tr{[K[a-z] [A-Z]
+[?2004ltr[a-z]: command not found
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ echo -n Hello, wrl[K[K[K[K[K world!
+[?2004lHello world![?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ echo $HOME
+[?2004l/home/amalia
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ echo -e "Hello world"a world"\ world"[1@ 
+[?2004lHello a\ world
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ echo -e "Hello a\W[Kworld"
+[?2004lHello a\world
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ e[Kecho "[K-r[Ke "Hello [K\aworld"
+[?2004lHelloworld
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ echo -e "Hello world"\ world"c world"
+[?2004lHello[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ echo -e "Hello eorld[K[K[K[K[Kworld"\"c"
+[?2004lHello world[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ echo -e "Hello a\n world!"
+[?2004lHello a
+ world!
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ echo -e "Hello \n world"[K!" 
+[?2004lHello 
+ world!
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ echo "Hello wr[Korld! [K[K [K: $(date + '%D %T') > log.txt
+[?2004l[?2004h> ls
+[?2004l[?2004h> echo[K[K[K[Kexit
+[?2004l[?2004h> 
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2023-12-11 14:27:00+02:00 [COMMAND_EXIT_CODE="130"]

@@ -1,0 +1,1021 @@
+Script started on 2023-12-11 13:16:59+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="24"]
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -ax
+[?2004l    PID TTY      STAT   TIME COMMAND
+      1 ?        Ss     0:01 /sbin/init splash
+      2 ?        S      0:00 [kthreadd]
+      3 ?        I<     0:00 [rcu_gp]
+      4 ?        I<     0:00 [rcu_par_gp]
+      5 ?        I<     0:00 [slub_flushwq]
+      6 ?        I<     0:00 [netns]
+      8 ?        I<     0:00 [kworker/0:0H-kblockd]
+     10 ?        I<     0:00 [mm_percpu_wq]
+     11 ?        I      0:00 [rcu_tasks_kthread]
+     12 ?        I      0:00 [rcu_tasks_rude_kthread]
+     13 ?        I      0:00 [rcu_tasks_trace_kthread]
+     14 ?        S      0:00 [ksoftirqd/0]
+     15 ?        I      0:03 [rcu_preempt]
+     16 ?        S      0:00 [migration/0]
+     17 ?        S      0:00 [idle_inject/0]
+     19 ?        S      0:00 [cpuhp/0]
+     20 ?        S      0:00 [cpuhp/1]
+     21 ?        S      0:00 [idle_inject/1]
+     22 ?        S      0:00 [migration/1]
+     23 ?        S      0:00 [ksoftirqd/1]
+     25 ?        I<     0:00 [kworker/1:0H-events_highpri]
+     26 ?        S      0:00 [cpuhp/2]
+     27 ?        S      0:00 [idle_inject/2]
+     28 ?        S      0:00 [migration/2]
+     29 ?        S      0:00 [ksoftirqd/2]
+     31 ?        I<     0:00 [kworker/2:0H-events_highpri]
+     32 ?        S      0:00 [kdevtmpfs]
+     33 ?        I<     0:00 [inet_frag_wq]
+     34 ?        S      0:00 [kauditd]
+     35 ?        S      0:00 [khungtaskd]
+     37 ?        S      0:00 [oom_reaper]
+     39 ?        I<     0:00 [writeback]
+     40 ?        S      0:00 [kcompactd0]
+     41 ?        SN     0:00 [ksmd]
+     42 ?        SN     0:00 [khugepaged]
+     43 ?        I<     0:00 [kintegrityd]
+     44 ?        I<     0:00 [kblockd]
+     45 ?        I<     0:00 [blkcg_punt_bio]
+     46 ?        I<     0:00 [tpm_dev_wq]
+     47 ?        I<     0:00 [ata_sff]
+     48 ?        I<     0:00 [md]
+     49 ?        I<     0:00 [edac-poller]
+     50 ?        I<     0:00 [devfreq_wq]
+     51 ?        S      0:00 [watchdogd]
+     53 ?        I<     0:00 [kworker/1:1H-kblockd]
+     54 ?        S      0:00 [kswapd0]
+     55 ?        S      0:00 [ecryptfs-kthread]
+     56 ?        I<     0:00 [kthrotld]
+     57 ?        I<     0:00 [acpi_thermal_pm]
+     58 ?        S      0:00 [scsi_eh_0]
+     59 ?        I<     0:00 [scsi_tmf_0]
+     60 ?        S      0:00 [scsi_eh_1]
+     61 ?        I<     0:00 [scsi_tmf_1]
+     64 ?        I<     0:00 [mld]
+     65 ?        I<     0:00 [ipv6_addrconf]
+     76 ?        I<     0:00 [kstrp]
+     78 ?        I<     0:00 [zswap-shrink]
+     79 ?        I<     0:00 [kworker/u7:0]
+     83 ?        I<     0:00 [charger_manager]
+    121 ?        I<     0:00 [kworker/2:1H-kblockd]
+    129 ?        S      0:00 [scsi_eh_2]
+    130 ?        I<     0:00 [scsi_tmf_2]
+    160 ?        S      0:00 [jbd2/sda3-8]
+    161 ?        I<     0:00 [ext4-rsv-conver]
+    200 ?        S<s    0:00 /lib/systemd/systemd-journald
+    237 ?        S      0:00 [irq/18-vmwgfx]
+    248 ?        Ss     0:00 /lib/systemd/systemd-udevd
+    302 ?        I<     0:00 [cryptd]
+    309 ?        I<     0:00 [kworker/0:2H-kblockd]
+    404 ?        Ss     0:08 /lib/systemd/systemd-oomd
+    410 ?        Ss     0:00 /lib/systemd/systemd-resolved
+    411 ?        Ssl    0:00 /lib/systemd/systemd-timesyncd
+    581 ?        Ssl    0:00 /usr/libexec/accounts-daemon
+    582 ?        Ss     0:00 /usr/sbin/acpid
+    584 ?        Ss     0:00 avahi-daemon: running [amalia-VirtualBox.local]
+    586 ?        Ss     0:00 /usr/sbin/cron -f -P
+    588 ?        Ss     0:01 @dbus-daemon --system --address=systemd: --nofork -
+    589 ?        Ssl    0:00 /usr/sbin/NetworkManager --no-daemon
+    595 ?        Ssl    0:00 /usr/sbin/irqbalance --foreground
+    600 ?        Ss     0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run
+    602 ?        Ssl    0:01 /usr/libexec/polkitd --no-debug
+    603 ?        Ssl    0:00 /usr/libexec/power-profiles-daemon
+    604 ?        Ssl    0:00 /usr/sbin/rsyslogd -n -iNONE
+    606 ?        Ssl    0:02 /usr/lib/snapd/snapd
+    607 ?        Ssl    0:00 /usr/libexec/switcheroo-control
+    612 ?        Ss     0:00 /lib/systemd/systemd-logind
+    621 ?        Ssl    0:00 /usr/libexec/udisks2/udisksd
+    623 ?        Ss     0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+    633 ?        S      0:00 avahi-daemon: chroot helper
+    666 ?        Ssl    0:00 /usr/sbin/ModemManager
+    669 ?        Ss     0:00 /usr/sbin/cupsd -l
+    701 ?        S      0:00 /usr/lib/cups/notifier/dbus dbus://
+    706 ?        Ssl    0:00 /usr/sbin/gdm3
+    714 ?        Ssl    0:00 /usr/bin/python3 /usr/share/unattended-upgrades/una
+    747 ?        Ssl    0:00 /usr/sbin/cups-browsed
+    757 ?        Ss     0:00 /usr/sbin/kerneloops --test
+    760 ?        Ss     0:00 /usr/sbin/kerneloops
+    813 ?        SNsl   0:00 /usr/libexec/rtkit-daemon
+   1023 ?        Ssl    0:00 /usr/libexec/upowerd
+   1036 ?        Ssl    0:11 /usr/libexec/packagekitd
+   1190 ?        Ssl    0:00 /usr/libexec/colord
+   1275 ?        Sl     0:00 gdm-session-worker [pam/gdm-password]
+   1279 ?        Ss     0:00 /lib/systemd/systemd --user
+   1280 ?        S      0:00 (sd-pam)
+   1286 ?        Ssl    0:00 /usr/bin/pipewire
+   1287 ?        Ssl    0:00 /usr/bin/pipewire-media-session
+   1288 ?        Ssl    0:00 /usr/bin/pulseaudio --daemonize=no --log-target=jou
+   1289 ?        Ss     0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-de
+   1295 ?        Ssl    0:00 /usr/bin/ubuntu-report service
+   1303 ?        Sl     0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+   1310 ?        Ss     0:01 /usr/bin/dbus-daemon --session --address=systemd: -
+   1318 tty2     Ssl+   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SE
+   1323 tty2     Sl+    0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+   1324 ?        Ssl    0:00 /usr/libexec/gvfsd
+   1338 ?        Ssl    0:00 /usr/libexec/xdg-document-portal
+   1345 ?        Ssl    0:00 /usr/libexec/xdg-permission-store
+   1348 ?        Sl     0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   1361 ?        Ss     0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_u
+   1399 ?        SNsl   0:01 /usr/libexec/tracker-miner-fs-3
+   1404 ?        Ssl    0:00 /usr/libexec/gnome-session-ctl --monitor
+   1424 ?        Ssl    0:00 /usr/libexec/gnome-session-binary --systemd-service
+   1443 ?        Sl     0:00 /usr/libexec/at-spi-bus-launcher --launch-immediate
+   1445 ?        Rsl   15:05 /usr/bin/gnome-shell
+   1452 ?        S      0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defau
+   1480 ?        Ssl    0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+   1488 ?        Ssl    0:00 /usr/libexec/gvfs-goa-volume-monitor
+   1496 ?        Sl     0:00 /usr/libexec/goa-daemon
+   1509 ?        Sl     0:00 /usr/libexec/goa-identity-service
+   1514 ?        Ssl    0:00 /usr/libexec/gvfs-mtp-volume-monitor
+   1524 ?        Ssl    0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+   1532 ?        Ssl    0:00 /usr/libexec/gvfs-afc-volume-monitor
+   1552 ?        Sl     0:00 /usr/libexec/gnome-shell-calendar-server
+   1558 ?        Ssl    0:00 /usr/libexec/evolution-source-registry
+   1559 ?        Sl     0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-de
+   1566 ?        Ssl    0:00 /usr/libexec/xdg-desktop-portal
+   1571 ?        Ssl    0:00 /usr/libexec/dconf-service
+   1574 ?        Ssl    0:00 /usr/libexec/xdg-desktop-portal-gnome
+   1578 ?        Ssl    0:00 /usr/libexec/evolution-calendar-factory
+   1593 ?        Ssl    0:00 /usr/libexec/evolution-addressbook-factory
+   1596 ?        Sl     0:00 /usr/libexec/gvfsd-trash --spawner :1.5 /org/gtk/gv
+   1615 ?        Sl     0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell
+   1619 ?        Sl     0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+   1633 ?        Ss     0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XD
+   1634 ?        Ssl    0:00 /usr/libexec/gsd-a11y-settings
+   1636 ?        Sl     0:04 /usr/bin/ibus-daemon --panel disable
+   1637 ?        Ssl    0:00 /usr/libexec/gsd-color
+   1639 ?        Ssl    0:00 /usr/libexec/gsd-datetime
+   1640 ?        Ssl    0:00 /usr/libexec/gsd-housekeeping
+   1643 ?        Ssl    0:00 /usr/libexec/gsd-keyboard
+   1645 ?        Ssl    0:00 /usr/libexec/gsd-media-keys
+   1653 ?        Ssl    0:00 /usr/libexec/gsd-power
+   1657 ?        Ssl    0:00 /usr/libexec/gsd-print-notifications
+   1658 ?        Ssl    0:00 /usr/libexec/gsd-rfkill
+   1659 ?        Ssl    0:00 /usr/libexec/gsd-screensaver-proxy
+   1663 ?        Ssl    0:00 /usr/libexec/gsd-sharing
+   1669 ?        Ssl    0:00 /usr/libexec/gsd-smartcard
+   1674 ?        Ssl    0:00 /usr/libexec/gsd-sound
+   1679 ?        Ssl    0:00 /usr/libexec/gsd-wacom
+   1715 ?        Sl     0:00 /usr/libexec/gsd-printer
+   1721 ?        Sl     0:00 /usr/libexec/ibus-memconf
+   1722 ?        Sl     0:01 /usr/libexec/ibus-extension-gtk3
+   1735 ?        Sl     0:00 /usr/libexec/evolution-data-server/evolution-alarm-
+   1737 ?        Sl     0:00 /usr/libexec/ibus-portal
+   1747 ?        Sl     0:00 /usr/libexec/gsd-disk-utility-notify
+   1780 ?        Sl     0:02 /snap/snap-store/959/usr/bin/snap-store --gapplicat
+   1827 ?        Sl     0:01 /usr/libexec/ibus-engine-simple
+   1881 ?        Ssl    0:00 /usr/libexec/xdg-desktop-portal-gtk
+   1933 ?        Sl     0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Scree
+   2066 ?        Ssl    0:00 /usr/libexec/gvfsd-metadata
+   2839 ?        S      1:42 /usr/bin/Xwayland :0 -rootless -noreset -accessx -c
+   2842 ?        Ssl    0:00 /usr/libexec/gsd-xsettings
+   2868 ?        Sl     0:00 /usr/libexec/ibus-x11
+   3001 ?        Sl     0:00 /usr/bin/snap userd
+   3301 ?        Sl     0:00 update-notifier
+   3808 ?        I      0:00 [kworker/1:0-cgroup_destroy]
+   4086 ?        I      0:01 [kworker/2:0-events]
+   4795 ?        R      0:00 [kworker/u6:18-events_unbound]
+   4796 ?        I      0:00 [kworker/u6:19-events_power_efficient]
+   4797 ?        I      0:00 [kworker/u6:20-events_unbound]
+   4800 ?        I      0:00 [kworker/0:0-events]
+   4823 ?        I      0:00 [kworker/0:2-events]
+   4930 ?        Sl     0:00 gjs /usr/share/gnome-shell/extensions/ding@rasterso
+   4970 ?        I      0:00 [kworker/2:2-cgroup_destroy]
+   5034 ?        I      0:00 [kworker/1:1-events]
+   5082 ?        Rsl    0:00 /usr/libexec/gnome-terminal-server
+   5100 pts/2    Ss     0:00 bash
+   5132 ?        I      0:00 [kworker/2:1]
+   5133 pts/2    S+     0:00 script ps.txt
+   5134 pts/0    Ss     0:00 bash -i
+   5159 pts/0    R+     0:00 ps -ax
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -ef
+[?2004lUID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 11:11 ?        00:00:01 /sbin/init splash
+root           2       0  0 11:11 ?        00:00:00 [kthreadd]
+root           3       2  0 11:11 ?        00:00:00 [rcu_gp]
+root           4       2  0 11:11 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 11:11 ?        00:00:00 [slub_flushwq]
+root           6       2  0 11:11 ?        00:00:00 [netns]
+root           8       2  0 11:11 ?        00:00:00 [kworker/0:0H-kblockd]
+root          10       2  0 11:11 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 11:11 ?        00:00:00 [rcu_tasks_kthread]
+root          12       2  0 11:11 ?        00:00:00 [rcu_tasks_rude_kthread]
+root          13       2  0 11:11 ?        00:00:00 [rcu_tasks_trace_kthread]
+root          14       2  0 11:11 ?        00:00:00 [ksoftirqd/0]
+root          15       2  0 11:11 ?        00:00:03 [rcu_preempt]
+root          16       2  0 11:11 ?        00:00:00 [migration/0]
+root          17       2  0 11:11 ?        00:00:00 [idle_inject/0]
+root          19       2  0 11:11 ?        00:00:00 [cpuhp/0]
+root          20       2  0 11:11 ?        00:00:00 [cpuhp/1]
+root          21       2  0 11:11 ?        00:00:00 [idle_inject/1]
+root          22       2  0 11:11 ?        00:00:00 [migration/1]
+root          23       2  0 11:11 ?        00:00:00 [ksoftirqd/1]
+root          25       2  0 11:11 ?        00:00:00 [kworker/1:0H-events_highpri
+root          26       2  0 11:11 ?        00:00:00 [cpuhp/2]
+root          27       2  0 11:11 ?        00:00:00 [idle_inject/2]
+root          28       2  0 11:11 ?        00:00:00 [migration/2]
+root          29       2  0 11:11 ?        00:00:00 [ksoftirqd/2]
+root          31       2  0 11:11 ?        00:00:00 [kworker/2:0H-events_highpri
+root          32       2  0 11:11 ?        00:00:00 [kdevtmpfs]
+root          33       2  0 11:11 ?        00:00:00 [inet_frag_wq]
+root          34       2  0 11:11 ?        00:00:00 [kauditd]
+root          35       2  0 11:11 ?        00:00:00 [khungtaskd]
+root          37       2  0 11:11 ?        00:00:00 [oom_reaper]
+root          39       2  0 11:11 ?        00:00:00 [writeback]
+root          40       2  0 11:11 ?        00:00:00 [kcompactd0]
+root          41       2  0 11:11 ?        00:00:00 [ksmd]
+root          42       2  0 11:11 ?        00:00:00 [khugepaged]
+root          43       2  0 11:11 ?        00:00:00 [kintegrityd]
+root          44       2  0 11:11 ?        00:00:00 [kblockd]
+root          45       2  0 11:11 ?        00:00:00 [blkcg_punt_bio]
+root          46       2  0 11:11 ?        00:00:00 [tpm_dev_wq]
+root          47       2  0 11:11 ?        00:00:00 [ata_sff]
+root          48       2  0 11:11 ?        00:00:00 [md]
+root          49       2  0 11:11 ?        00:00:00 [edac-poller]
+root          50       2  0 11:11 ?        00:00:00 [devfreq_wq]
+root          51       2  0 11:11 ?        00:00:00 [watchdogd]
+root          53       2  0 11:11 ?        00:00:00 [kworker/1:1H-kblockd]
+root          54       2  0 11:11 ?        00:00:00 [kswapd0]
+root          55       2  0 11:11 ?        00:00:00 [ecryptfs-kthread]
+root          56       2  0 11:11 ?        00:00:00 [kthrotld]
+root          57       2  0 11:11 ?        00:00:00 [acpi_thermal_pm]
+root          58       2  0 11:11 ?        00:00:00 [scsi_eh_0]
+root          59       2  0 11:11 ?        00:00:00 [scsi_tmf_0]
+root          60       2  0 11:11 ?        00:00:00 [scsi_eh_1]
+root          61       2  0 11:11 ?        00:00:00 [scsi_tmf_1]
+root          64       2  0 11:11 ?        00:00:00 [mld]
+root          65       2  0 11:11 ?        00:00:00 [ipv6_addrconf]
+root          76       2  0 11:11 ?        00:00:00 [kstrp]
+root          78       2  0 11:11 ?        00:00:00 [zswap-shrink]
+root          79       2  0 11:11 ?        00:00:00 [kworker/u7:0]
+root          83       2  0 11:11 ?        00:00:00 [charger_manager]
+root         121       2  0 11:11 ?        00:00:00 [kworker/2:1H-kblockd]
+root         129       2  0 11:11 ?        00:00:00 [scsi_eh_2]
+root         130       2  0 11:11 ?        00:00:00 [scsi_tmf_2]
+root         160       2  0 11:11 ?        00:00:00 [jbd2/sda3-8]
+root         161       2  0 11:11 ?        00:00:00 [ext4-rsv-conver]
+root         200       1  0 11:11 ?        00:00:00 /lib/systemd/systemd-journal
+root         237       2  0 11:11 ?        00:00:00 [irq/18-vmwgfx]
+root         248       1  0 11:11 ?        00:00:00 /lib/systemd/systemd-udevd
+root         302       2  0 11:11 ?        00:00:00 [cryptd]
+root         309       2  0 11:11 ?        00:00:00 [kworker/0:2H-kblockd]
+systemd+     404       1  0 11:11 ?        00:00:08 /lib/systemd/systemd-oomd
+systemd+     410       1  0 11:11 ?        00:00:00 /lib/systemd/systemd-resolve
+systemd+     411       1  0 11:11 ?        00:00:00 /lib/systemd/systemd-timesyn
+root         581       1  0 11:11 ?        00:00:00 /usr/libexec/accounts-daemon
+root         582       1  0 11:11 ?        00:00:00 /usr/sbin/acpid
+avahi        584       1  0 11:11 ?        00:00:00 avahi-daemon: running [amali
+root         586       1  0 11:11 ?        00:00:00 /usr/sbin/cron -f -P
+message+     588       1  0 11:11 ?        00:00:01 @dbus-daemon --system --addr
+root         589       1  0 11:11 ?        00:00:00 /usr/sbin/NetworkManager --n
+root         595       1  0 11:11 ?        00:00:00 /usr/sbin/irqbalance --foreg
+root         600       1  0 11:11 ?        00:00:00 /usr/bin/python3 /usr/bin/ne
+root         602       1  0 11:11 ?        00:00:01 /usr/libexec/polkitd --no-de
+root         603       1  0 11:11 ?        00:00:00 /usr/libexec/power-profiles-
+syslog       604       1  0 11:11 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         606       1  0 11:11 ?        00:00:02 /usr/lib/snapd/snapd
+root         607       1  0 11:11 ?        00:00:00 /usr/libexec/switcheroo-cont
+root         612       1  0 11:11 ?        00:00:00 /lib/systemd/systemd-logind
+root         621       1  0 11:11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root         623       1  0 11:11 ?        00:00:00 /sbin/wpa_supplicant -u -s -
+avahi        633     584  0 11:11 ?        00:00:00 avahi-daemon: chroot helper
+root         666       1  0 11:11 ?        00:00:00 /usr/sbin/ModemManager
+root         669       1  0 11:11 ?        00:00:00 /usr/sbin/cupsd -l
+lp           701     669  0 11:11 ?        00:00:00 /usr/lib/cups/notifier/dbus 
+root         706       1  0 11:11 ?        00:00:00 /usr/sbin/gdm3
+root         714       1  0 11:11 ?        00:00:00 /usr/bin/python3 /usr/share/
+root         747       1  0 11:11 ?        00:00:00 /usr/sbin/cups-browsed
+kernoops     757       1  0 11:11 ?        00:00:00 /usr/sbin/kerneloops --test
+kernoops     760       1  0 11:11 ?        00:00:00 /usr/sbin/kerneloops
+rtkit        813       1  0 11:11 ?        00:00:00 /usr/libexec/rtkit-daemon
+root        1023       1  0 11:12 ?        00:00:00 /usr/libexec/upowerd
+root        1036       1  0 11:12 ?        00:00:11 /usr/libexec/packagekitd
+colord      1190       1  0 11:12 ?        00:00:00 /usr/libexec/colord
+root        1275     706  0 11:12 ?        00:00:00 gdm-session-worker [pam/gdm-
+amalia      1279       1  0 11:12 ?        00:00:00 /lib/systemd/systemd --user
+amalia      1280    1279  0 11:12 ?        00:00:00 (sd-pam)
+amalia      1286    1279  0 11:12 ?        00:00:00 /usr/bin/pipewire
+amalia      1287    1279  0 11:12 ?        00:00:00 /usr/bin/pipewire-media-sess
+amalia      1288    1279  0 11:12 ?        00:00:00 /usr/bin/pulseaudio --daemon
+amalia      1289    1279  0 11:12 ?        00:00:00 /snap/snapd-desktop-integrat
+amalia      1295    1279  0 11:12 ?        00:00:00 /usr/bin/ubuntu-report servi
+amalia      1303       1  0 11:12 ?        00:00:00 /usr/bin/gnome-keyring-daemo
+amalia      1310    1279  0 11:12 ?        00:00:01 /usr/bin/dbus-daemon --sessi
+amalia      1318    1275  0 11:12 tty2     00:00:00 /usr/libexec/gdm-wayland-ses
+amalia      1323    1318  0 11:12 tty2     00:00:00 /usr/libexec/gnome-session-b
+amalia      1324    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfsd
+amalia      1338    1279  0 11:12 ?        00:00:00 /usr/libexec/xdg-document-po
+amalia      1345    1279  0 11:12 ?        00:00:00 /usr/libexec/xdg-permission-
+amalia      1348    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfsd-fuse /run
+root        1361    1338  0 11:12 ?        00:00:00 fusermount3 -o rw,nosuid,nod
+amalia      1399    1279  0 11:12 ?        00:00:01 /usr/libexec/tracker-miner-f
+amalia      1404    1279  0 11:12 ?        00:00:00 /usr/libexec/gnome-session-c
+amalia      1424    1279  0 11:12 ?        00:00:00 /usr/libexec/gnome-session-b
+amalia      1443    1424  0 11:12 ?        00:00:00 /usr/libexec/at-spi-bus-laun
+amalia      1445    1279 11 11:12 ?        00:15:11 /usr/bin/gnome-shell
+amalia      1452    1443  0 11:12 ?        00:00:00 /usr/bin/dbus-daemon --confi
+amalia      1480    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfs-udisks2-vo
+amalia      1488    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfs-goa-volume
+amalia      1496    1279  0 11:12 ?        00:00:00 /usr/libexec/goa-daemon
+amalia      1509    1279  0 11:12 ?        00:00:00 /usr/libexec/goa-identity-se
+amalia      1514    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfs-mtp-volume
+amalia      1524    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfs-gphoto2-vo
+amalia      1532    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfs-afc-volume
+amalia      1552    1279  0 11:12 ?        00:00:00 /usr/libexec/gnome-shell-cal
+amalia      1558    1279  0 11:12 ?        00:00:00 /usr/libexec/evolution-sourc
+amalia      1559    1289  0 11:12 ?        00:00:00 /snap/snapd-desktop-integrat
+amalia      1566    1279  0 11:12 ?        00:00:00 /usr/libexec/xdg-desktop-por
+amalia      1571    1279  0 11:12 ?        00:00:00 /usr/libexec/dconf-service
+amalia      1574    1279  0 11:12 ?        00:00:00 /usr/libexec/xdg-desktop-por
+amalia      1578    1279  0 11:12 ?        00:00:00 /usr/libexec/evolution-calen
+amalia      1593    1279  0 11:12 ?        00:00:00 /usr/libexec/evolution-addre
+amalia      1596    1324  0 11:12 ?        00:00:00 /usr/libexec/gvfsd-trash --s
+amalia      1615    1279  0 11:12 ?        00:00:00 /usr/bin/gjs /usr/share/gnom
+amalia      1619    1279  0 11:12 ?        00:00:00 /usr/libexec/at-spi2-registr
+amalia      1633    1279  0 11:12 ?        00:00:00 sh -c /usr/bin/ibus-daemon -
+amalia      1634    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-a11y-settin
+amalia      1636    1633  0 11:12 ?        00:00:04 /usr/bin/ibus-daemon --panel
+amalia      1637    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-color
+amalia      1639    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-datetime
+amalia      1640    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-housekeepin
+amalia      1643    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-keyboard
+amalia      1645    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-media-keys
+amalia      1653    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-power
+amalia      1657    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-print-notif
+amalia      1658    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-rfkill
+amalia      1659    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-screensaver
+amalia      1663    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-sharing
+amalia      1669    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-smartcard
+amalia      1674    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-sound
+amalia      1679    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-wacom
+amalia      1715    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-printer
+amalia      1721    1636  0 11:12 ?        00:00:00 /usr/libexec/ibus-memconf
+amalia      1722    1636  0 11:12 ?        00:00:01 /usr/libexec/ibus-extension-
+amalia      1735    1424  0 11:12 ?        00:00:00 /usr/libexec/evolution-data-
+amalia      1737    1279  0 11:12 ?        00:00:00 /usr/libexec/ibus-portal
+amalia      1747    1424  0 11:12 ?        00:00:00 /usr/libexec/gsd-disk-utilit
+amalia      1780    1279  0 11:12 ?        00:00:02 /snap/snap-store/959/usr/bin
+amalia      1827    1636  0 11:12 ?        00:00:01 /usr/libexec/ibus-engine-sim
+amalia      1881    1279  0 11:12 ?        00:00:00 /usr/libexec/xdg-desktop-por
+amalia      1933    1279  0 11:12 ?        00:00:00 /usr/bin/gjs /usr/share/gnom
+amalia      2066    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfsd-metadata
+amalia      2839    1445  1 11:12 ?        00:01:42 /usr/bin/Xwayland :0 -rootle
+amalia      2842    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-xsettings
+amalia      2868    1279  0 11:12 ?        00:00:00 /usr/libexec/ibus-x11
+amalia      3001    1279  0 11:13 ?        00:00:00 /usr/bin/snap userd
+amalia      3301    1424  0 11:13 ?        00:00:00 update-notifier
+root        3808       2  0 11:26 ?        00:00:00 [kworker/1:0-cgroup_destroy]
+root        4086       2  0 12:07 ?        00:00:01 [kworker/2:0-mm_percpu_wq]
+root        4795       2  0 13:06 ?        00:00:00 [kworker/u6:18-events_unboun
+root        4796       2  0 13:06 ?        00:00:00 [kworker/u6:19-events_unboun
+root        4797       2  0 13:06 ?        00:00:00 [kworker/u6:20-events_power_
+root        4800       2  0 13:06 ?        00:00:00 [kworker/0:0-events]
+root        4823       2  0 13:06 ?        00:00:00 [kworker/0:2-events]
+amalia      4930    1445  0 13:06 ?        00:00:00 gjs /usr/share/gnome-shell/e
+root        4970       2  0 13:06 ?        00:00:00 [kworker/2:2-cgroup_destroy]
+root        5034       2  0 13:12 ?        00:00:00 [kworker/1:1-events]
+amalia      5082    1279  0 13:12 ?        00:00:02 /usr/libexec/gnome-terminal-
+amalia      5100    5082  0 13:12 pts/2    00:00:00 bash
+root        5132       2  0 13:16 ?        00:00:00 [kworker/2:1]
+amalia      5133    5100  0 13:16 pts/2    00:00:00 script ps.txt
+amalia      5134    5133  0 13:16 pts/0    00:00:00 bash -i
+amalia      5169    5134  0 13:20 pts/0    00:00:00 ps -ef
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -u
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+amalia      1318  0.0  0.0 165260  6144 tty2     Ssl+ 11:12   0:00 /usr/libexec/gdm-way
+amalia      1323  0.0  0.1 225916 15616 tty2     Sl+  11:12   0:00 /usr/libexec/gnome-s
+amalia      5100  0.0  0.0  14144  5120 pts/2    Ss   13:12   0:00 bash
+amalia      5133  0.0  0.0  11260  2048 pts/2    S+   13:16   0:00 script ps.txt
+amalia      5134  0.0  0.0  14148  5248 pts/0    Ss   13:16   0:00 bash -i
+amalia      5179  0.0  0.0  15544  3200 pts/0    R+   13:21   0:00 ps -u
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -C
+[?2004lerror: list of command names must follow -C
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps --help
+[?2004l
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -p<PID>
+[?2004lbash: syntax error near unexpected token `newline'
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -L
+[?2004l    PID     LWP TTY          TIME CMD
+   5134    5134 pts/0    00:00:00 bash
+   5193    5193 pts/0    00:00:00 ps
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ -sort[K[K[K[K[Kps -sort pmem
+[?2004lerror: process ID list syntax error
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -eo
+[?2004lerror: format specification must follow -o
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -U root -u root
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:01 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      5 ?        00:00:00 slub_flushwq
+      6 ?        00:00:00 netns
+      8 ?        00:00:00 kworker/0:0H-kblockd
+     10 ?        00:00:00 mm_percpu_wq
+     11 ?        00:00:00 rcu_tasks_kthread
+     12 ?        00:00:00 rcu_tasks_rude_kthread
+     13 ?        00:00:00 rcu_tasks_trace_kthread
+     14 ?        00:00:00 ksoftirqd/0
+     15 ?        00:00:03 rcu_preempt
+     16 ?        00:00:00 migration/0
+     17 ?        00:00:00 idle_inject/0
+     19 ?        00:00:00 cpuhp/0
+     20 ?        00:00:00 cpuhp/1
+     21 ?        00:00:00 idle_inject/1
+     22 ?        00:00:00 migration/1
+     23 ?        00:00:00 ksoftirqd/1
+     25 ?        00:00:00 kworker/1:0H-events_highpri
+     26 ?        00:00:00 cpuhp/2
+     27 ?        00:00:00 idle_inject/2
+     28 ?        00:00:00 migration/2
+     29 ?        00:00:00 ksoftirqd/2
+     31 ?        00:00:00 kworker/2:0H-events_highpri
+     32 ?        00:00:00 kdevtmpfs
+     33 ?        00:00:00 inet_frag_wq
+     34 ?        00:00:00 kauditd
+     35 ?        00:00:00 khungtaskd
+     37 ?        00:00:00 oom_reaper
+     39 ?        00:00:00 writeback
+     40 ?        00:00:00 kcompactd0
+     41 ?        00:00:00 ksmd
+     42 ?        00:00:00 khugepaged
+     43 ?        00:00:00 kintegrityd
+     44 ?        00:00:00 kblockd
+     45 ?        00:00:00 blkcg_punt_bio
+     46 ?        00:00:00 tpm_dev_wq
+     47 ?        00:00:00 ata_sff
+     48 ?        00:00:00 md
+     49 ?        00:00:00 edac-poller
+     50 ?        00:00:00 devfreq_wq
+     51 ?        00:00:00 watchdogd
+     53 ?        00:00:00 kworker/1:1H-kblockd
+     54 ?        00:00:00 kswapd0
+     55 ?        00:00:00 ecryptfs-kthread
+     56 ?        00:00:00 kthrotld
+     57 ?        00:00:00 acpi_thermal_pm
+     58 ?        00:00:00 scsi_eh_0
+     59 ?        00:00:00 scsi_tmf_0
+     60 ?        00:00:00 scsi_eh_1
+     61 ?        00:00:00 scsi_tmf_1
+     64 ?        00:00:00 mld
+     65 ?        00:00:00 ipv6_addrconf
+     76 ?        00:00:00 kstrp
+     78 ?        00:00:00 zswap-shrink
+     79 ?        00:00:00 kworker/u7:0
+     83 ?        00:00:00 charger_manager
+    121 ?        00:00:00 kworker/2:1H-kblockd
+    129 ?        00:00:00 scsi_eh_2
+    130 ?        00:00:00 scsi_tmf_2
+    160 ?        00:00:00 jbd2/sda3-8
+    161 ?        00:00:00 ext4-rsv-conver
+    200 ?        00:00:00 systemd-journal
+    237 ?        00:00:00 irq/18-vmwgfx
+    248 ?        00:00:00 systemd-udevd
+    302 ?        00:00:00 cryptd
+    309 ?        00:00:00 kworker/0:2H-kblockd
+    581 ?        00:00:00 accounts-daemon
+    582 ?        00:00:00 acpid
+    586 ?        00:00:00 cron
+    589 ?        00:00:00 NetworkManager
+    595 ?        00:00:00 irqbalance
+    600 ?        00:00:00 networkd-dispat
+    602 ?        00:00:01 polkitd
+    603 ?        00:00:00 power-profiles-
+    606 ?        00:00:02 snapd
+    607 ?        00:00:00 switcheroo-cont
+    612 ?        00:00:00 systemd-logind
+    621 ?        00:00:00 udisksd
+    623 ?        00:00:00 wpa_supplicant
+    666 ?        00:00:00 ModemManager
+    669 ?        00:00:00 cupsd
+    706 ?        00:00:00 gdm3
+    714 ?        00:00:00 unattended-upgr
+    747 ?        00:00:00 cups-browsed
+   1023 ?        00:00:00 upowerd
+   1036 ?        00:00:11 packagekitd
+   1275 ?        00:00:00 gdm-session-wor
+   1361 ?        00:00:00 fusermount3
+   3808 ?        00:00:00 kworker/1:0-events
+   4086 ?        00:00:01 kworker/2:0-events
+   4795 ?        00:00:00 kworker/u6:18-events_unbound
+   4796 ?        00:00:00 kworker/u6:19-events_unbound
+   4797 ?        00:00:00 kworker/u6:20-events_power_efficient
+   4800 ?        00:00:00 kworker/0:0-events
+   4823 ?        00:00:00 kworker/0:2-events
+   5034 ?        00:00:00 kworker/1:1-events
+   5132 ?        00:00:00 kworker/2:1-events
+   5180 ?        00:00:00 kworker/2:2-events
+   5192 ?        00:00:00 kworker/1:2-mm_percpu_wq
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -x
+[?2004l    PID TTY      STAT   TIME COMMAND
+   1279 ?        Ss     0:00 /lib/systemd/systemd --user
+   1280 ?        S      0:00 (sd-pam)
+   1286 ?        Ssl    0:00 /usr/bin/pipewire
+   1287 ?        Ssl    0:00 /usr/bin/pipewire-media-session
+   1288 ?        Ssl    0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+   1289 ?        Ss     0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-i
+   1295 ?        Ssl    0:00 /usr/bin/ubuntu-report service
+   1303 ?        Sl     0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+   1310 ?        Ss     0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork
+   1318 tty2     Ssl+   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_M
+   1323 tty2     Sl+    0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+   1324 ?        Ssl    0:00 /usr/libexec/gvfsd
+   1338 ?        Ssl    0:00 /usr/libexec/xdg-document-portal
+   1345 ?        Ssl    0:00 /usr/libexec/xdg-permission-store
+   1348 ?        Sl     0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   1399 ?        SNsl   0:01 /usr/libexec/tracker-miner-fs-3
+   1404 ?        Ssl    0:00 /usr/libexec/gnome-session-ctl --monitor
+   1424 ?        Ssl    0:00 /usr/libexec/gnome-session-binary --systemd-service --sess
+   1443 ?        Sl     0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+   1445 ?        Ssl   15:27 /usr/bin/gnome-shell
+   1452 ?        S      0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-
+   1480 ?        Ssl    0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+   1488 ?        Ssl    0:00 /usr/libexec/gvfs-goa-volume-monitor
+   1496 ?        Sl     0:00 /usr/libexec/goa-daemon
+   1509 ?        Sl     0:00 /usr/libexec/goa-identity-service
+   1514 ?        Ssl    0:00 /usr/libexec/gvfs-mtp-volume-monitor
+   1524 ?        Ssl    0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+   1532 ?        Ssl    0:00 /usr/libexec/gvfs-afc-volume-monitor
+   1552 ?        Sl     0:00 /usr/libexec/gnome-shell-calendar-server
+   1558 ?        Ssl    0:00 /usr/libexec/evolution-source-registry
+   1559 ?        Sl     0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-i
+   1566 ?        Ssl    0:00 /usr/libexec/xdg-desktop-portal
+   1571 ?        Ssl    0:00 /usr/libexec/dconf-service
+   1574 ?        Ssl    0:00 /usr/libexec/xdg-desktop-portal-gnome
+   1578 ?        Ssl    0:00 /usr/libexec/evolution-calendar-factory
+   1593 ?        Ssl    0:00 /usr/libexec/evolution-addressbook-factory
+   1596 ?        Sl     0:00 /usr/libexec/gvfsd-trash --spawner :1.5 /org/gtk/gvfs/exec
+   1615 ?        Sl     0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifi
+   1619 ?        Sl     0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+   1633 ?        Ss     0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSI
+   1634 ?        Ssl    0:00 /usr/libexec/gsd-a11y-settings
+   1636 ?        Sl     0:04 /usr/bin/ibus-daemon --panel disable
+   1637 ?        Ssl    0:00 /usr/libexec/gsd-color
+   1639 ?        Ssl    0:00 /usr/libexec/gsd-datetime
+   1640 ?        Ssl    0:00 /usr/libexec/gsd-housekeeping
+   1643 ?        Ssl    0:00 /usr/libexec/gsd-keyboard
+   1645 ?        Ssl    0:00 /usr/libexec/gsd-media-keys
+   1653 ?        Ssl    0:00 /usr/libexec/gsd-power
+   1657 ?        Ssl    0:00 /usr/libexec/gsd-print-notifications
+   1658 ?        Ssl    0:00 /usr/libexec/gsd-rfkill
+   1659 ?        Ssl    0:00 /usr/libexec/gsd-screensaver-proxy
+   1663 ?        Ssl    0:00 /usr/libexec/gsd-sharing
+   1669 ?        Ssl    0:00 /usr/libexec/gsd-smartcard
+   1674 ?        Ssl    0:00 /usr/libexec/gsd-sound
+   1679 ?        Ssl    0:00 /usr/libexec/gsd-wacom
+   1715 ?        Sl     0:00 /usr/libexec/gsd-printer
+   1721 ?        Sl     0:00 /usr/libexec/ibus-memconf
+   1722 ?        Sl     0:02 /usr/libexec/ibus-extension-gtk3
+   1735 ?        Sl     0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+   1737 ?        Sl     0:00 /usr/libexec/ibus-portal
+   1747 ?        Sl     0:00 /usr/libexec/gsd-disk-utility-notify
+   1780 ?        Sl     0:02 /snap/snap-store/959/usr/bin/snap-store --gapplication-ser
+   1827 ?        Sl     0:01 /usr/libexec/ibus-engine-simple
+   1881 ?        Ssl    0:00 /usr/libexec/xdg-desktop-portal-gtk
+   1933 ?        Sl     0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+   2066 ?        Ssl    0:00 /usr/libexec/gvfsd-metadata
+   2839 ?        S      1:42 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -au
+   2842 ?        Ssl    0:00 /usr/libexec/gsd-xsettings
+   2868 ?        Sl     0:00 /usr/libexec/ibus-x11
+   3001 ?        Sl     0:00 /usr/bin/snap userd
+   3301 ?        Sl     0:00 update-notifier
+   4930 ?        Sl     0:01 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/
+   5082 ?        Ssl    0:05 /usr/libexec/gnome-terminal-server
+   5100 pts/2    Ss     0:00 bash
+   5133 pts/2    S+     0:00 script ps.txt
+   5134 pts/0    Ss     0:00 bash -i
+   5208 pts/0    R+     0:00 ps -x
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ [K]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -U
+[?2004lerror: list of real users must follow -U
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -t <YYY>
+[?2004lbash: syntax error near unexpected token `newline'
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -ef
+[?2004lUID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 11:11 ?        00:00:01 /sbin/init splash
+root           2       0  0 11:11 ?        00:00:00 [kthreadd]
+root           3       2  0 11:11 ?        00:00:00 [rcu_gp]
+root           4       2  0 11:11 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 11:11 ?        00:00:00 [slub_flushwq]
+root           6       2  0 11:11 ?        00:00:00 [netns]
+root           8       2  0 11:11 ?        00:00:00 [kworker/0:0H-kblockd]
+root          10       2  0 11:11 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 11:11 ?        00:00:00 [rcu_tasks_kthread]
+root          12       2  0 11:11 ?        00:00:00 [rcu_tasks_rude_kthread]
+root          13       2  0 11:11 ?        00:00:00 [rcu_tasks_trace_kthread]
+root          14       2  0 11:11 ?        00:00:00 [ksoftirqd/0]
+root          15       2  0 11:11 ?        00:00:04 [rcu_preempt]
+root          16       2  0 11:11 ?        00:00:00 [migration/0]
+root          17       2  0 11:11 ?        00:00:00 [idle_inject/0]
+root          19       2  0 11:11 ?        00:00:00 [cpuhp/0]
+root          20       2  0 11:11 ?        00:00:00 [cpuhp/1]
+root          21       2  0 11:11 ?        00:00:00 [idle_inject/1]
+root          22       2  0 11:11 ?        00:00:00 [migration/1]
+root          23       2  0 11:11 ?        00:00:00 [ksoftirqd/1]
+root          25       2  0 11:11 ?        00:00:00 [kworker/1:0H-events_highpri]
+root          26       2  0 11:11 ?        00:00:00 [cpuhp/2]
+root          27       2  0 11:11 ?        00:00:00 [idle_inject/2]
+root          28       2  0 11:11 ?        00:00:00 [migration/2]
+root          29       2  0 11:11 ?        00:00:00 [ksoftirqd/2]
+root          31       2  0 11:11 ?        00:00:00 [kworker/2:0H-events_highpri]
+root          32       2  0 11:11 ?        00:00:00 [kdevtmpfs]
+root          33       2  0 11:11 ?        00:00:00 [inet_frag_wq]
+root          34       2  0 11:11 ?        00:00:00 [kauditd]
+root          35       2  0 11:11 ?        00:00:00 [khungtaskd]
+root          37       2  0 11:11 ?        00:00:00 [oom_reaper]
+root          39       2  0 11:11 ?        00:00:00 [writeback]
+root          40       2  0 11:11 ?        00:00:00 [kcompactd0]
+root          41       2  0 11:11 ?        00:00:00 [ksmd]
+root          42       2  0 11:11 ?        00:00:00 [khugepaged]
+root          43       2  0 11:11 ?        00:00:00 [kintegrityd]
+root          44       2  0 11:11 ?        00:00:00 [kblockd]
+root          45       2  0 11:11 ?        00:00:00 [blkcg_punt_bio]
+root          46       2  0 11:11 ?        00:00:00 [tpm_dev_wq]
+root          47       2  0 11:11 ?        00:00:00 [ata_sff]
+root          48       2  0 11:11 ?        00:00:00 [md]
+root          49       2  0 11:11 ?        00:00:00 [edac-poller]
+root          50       2  0 11:11 ?        00:00:00 [devfreq_wq]
+root          51       2  0 11:11 ?        00:00:00 [watchdogd]
+root          53       2  0 11:11 ?        00:00:00 [kworker/1:1H-kblockd]
+root          54       2  0 11:11 ?        00:00:00 [kswapd0]
+root          55       2  0 11:11 ?        00:00:00 [ecryptfs-kthread]
+root          56       2  0 11:11 ?        00:00:00 [kthrotld]
+root          57       2  0 11:11 ?        00:00:00 [acpi_thermal_pm]
+root          58       2  0 11:11 ?        00:00:00 [scsi_eh_0]
+root          59       2  0 11:11 ?        00:00:00 [scsi_tmf_0]
+root          60       2  0 11:11 ?        00:00:00 [scsi_eh_1]
+root          61       2  0 11:11 ?        00:00:00 [scsi_tmf_1]
+root          64       2  0 11:11 ?        00:00:00 [mld]
+root          65       2  0 11:11 ?        00:00:00 [ipv6_addrconf]
+root          76       2  0 11:11 ?        00:00:00 [kstrp]
+root          78       2  0 11:11 ?        00:00:00 [zswap-shrink]
+root          79       2  0 11:11 ?        00:00:00 [kworker/u7:0]
+root          83       2  0 11:11 ?        00:00:00 [charger_manager]
+root         121       2  0 11:11 ?        00:00:00 [kworker/2:1H-kblockd]
+root         129       2  0 11:11 ?        00:00:00 [scsi_eh_2]
+root         130       2  0 11:11 ?        00:00:00 [scsi_tmf_2]
+root         160       2  0 11:11 ?        00:00:00 [jbd2/sda3-8]
+root         161       2  0 11:11 ?        00:00:00 [ext4-rsv-conver]
+root         200       1  0 11:11 ?        00:00:00 /lib/systemd/systemd-journald
+root         237       2  0 11:11 ?        00:00:00 [irq/18-vmwgfx]
+root         248       1  0 11:11 ?        00:00:00 /lib/systemd/systemd-udevd
+root         302       2  0 11:11 ?        00:00:00 [cryptd]
+root         309       2  0 11:11 ?        00:00:00 [kworker/0:2H-kblockd]
+systemd+     404       1  0 11:11 ?        00:00:09 /lib/systemd/systemd-oomd
+systemd+     410       1  0 11:11 ?        00:00:00 /lib/systemd/systemd-resolved
+systemd+     411       1  0 11:11 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root         581       1  0 11:11 ?        00:00:00 /usr/libexec/accounts-daemon
+root         582       1  0 11:11 ?        00:00:00 /usr/sbin/acpid
+avahi        584       1  0 11:11 ?        00:00:00 avahi-daemon: running [amalia-Virtu
+root         586       1  0 11:11 ?        00:00:00 /usr/sbin/cron -f -P
+message+     588       1  0 11:11 ?        00:00:01 @dbus-daemon --system --address=sys
+root         589       1  0 11:11 ?        00:00:00 /usr/sbin/NetworkManager --no-daemo
+root         595       1  0 11:11 ?        00:00:00 /usr/sbin/irqbalance --foreground
+root         600       1  0 11:11 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-
+root         602       1  0 11:11 ?        00:00:01 /usr/libexec/polkitd --no-debug
+root         603       1  0 11:11 ?        00:00:00 /usr/libexec/power-profiles-daemon
+syslog       604       1  0 11:11 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         606       1  0 11:11 ?        00:00:02 /usr/lib/snapd/snapd
+root         607       1  0 11:11 ?        00:00:00 /usr/libexec/switcheroo-control
+root         612       1  0 11:11 ?        00:00:00 /lib/systemd/systemd-logind
+root         621       1  0 11:11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root         623       1  0 11:11 ?        00:00:00 /sbin/wpa_supplicant -u -s -O /run/
+avahi        633     584  0 11:11 ?        00:00:00 avahi-daemon: chroot helper
+root         666       1  0 11:11 ?        00:00:00 /usr/sbin/ModemManager
+root         669       1  0 11:11 ?        00:00:00 /usr/sbin/cupsd -l
+lp           701     669  0 11:11 ?        00:00:00 /usr/lib/cups/notifier/dbus dbus://
+root         706       1  0 11:11 ?        00:00:00 /usr/sbin/gdm3
+root         714       1  0 11:11 ?        00:00:00 /usr/bin/python3 /usr/share/unatten
+root         747       1  0 11:11 ?        00:00:00 /usr/sbin/cups-browsed
+kernoops     757       1  0 11:11 ?        00:00:00 /usr/sbin/kerneloops --test
+kernoops     760       1  0 11:11 ?        00:00:00 /usr/sbin/kerneloops
+rtkit        813       1  0 11:11 ?        00:00:00 /usr/libexec/rtkit-daemon
+root        1023       1  0 11:12 ?        00:00:00 /usr/libexec/upowerd
+root        1036       1  0 11:12 ?        00:00:11 /usr/libexec/packagekitd
+colord      1190       1  0 11:12 ?        00:00:00 /usr/libexec/colord
+root        1275     706  0 11:12 ?        00:00:00 gdm-session-worker [pam/gdm-passwor
+amalia      1279       1  0 11:12 ?        00:00:00 /lib/systemd/systemd --user
+amalia      1280    1279  0 11:12 ?        00:00:00 (sd-pam)
+amalia      1286    1279  0 11:12 ?        00:00:00 /usr/bin/pipewire
+amalia      1287    1279  0 11:12 ?        00:00:00 /usr/bin/pipewire-media-session
+amalia      1288    1279  0 11:12 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no 
+amalia      1289    1279  0 11:12 ?        00:00:00 /snap/snapd-desktop-integration/83/
+amalia      1295    1279  0 11:12 ?        00:00:00 /usr/bin/ubuntu-report service
+amalia      1303       1  0 11:12 ?        00:00:00 /usr/bin/gnome-keyring-daemon --dae
+amalia      1310    1279  0 11:12 ?        00:00:01 /usr/bin/dbus-daemon --session --ad
+amalia      1318    1275  0 11:12 tty2     00:00:00 /usr/libexec/gdm-wayland-session en
+amalia      1323    1318  0 11:12 tty2     00:00:00 /usr/libexec/gnome-session-binary -
+amalia      1324    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfsd
+amalia      1338    1279  0 11:12 ?        00:00:00 /usr/libexec/xdg-document-portal
+amalia      1345    1279  0 11:12 ?        00:00:00 /usr/libexec/xdg-permission-store
+amalia      1348    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1
+root        1361    1338  0 11:12 ?        00:00:00 fusermount3 -o rw,nosuid,nodev,fsna
+amalia      1399    1279  0 11:12 ?        00:00:01 /usr/libexec/tracker-miner-fs-3
+amalia      1404    1279  0 11:12 ?        00:00:00 /usr/libexec/gnome-session-ctl --mo
+amalia      1424    1279  0 11:12 ?        00:00:00 /usr/libexec/gnome-session-binary -
+amalia      1443    1424  0 11:12 ?        00:00:00 /usr/libexec/at-spi-bus-launcher --
+amalia      1445    1279 11 11:12 ?        00:15:40 /usr/bin/gnome-shell
+amalia      1452    1443  0 11:12 ?        00:00:00 /usr/bin/dbus-daemon --config-file=
+amalia      1480    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-mo
+amalia      1488    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monito
+amalia      1496    1279  0 11:12 ?        00:00:00 /usr/libexec/goa-daemon
+amalia      1509    1279  0 11:12 ?        00:00:00 /usr/libexec/goa-identity-service
+amalia      1514    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monito
+amalia      1524    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-mo
+amalia      1532    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monito
+amalia      1552    1279  0 11:12 ?        00:00:00 /usr/libexec/gnome-shell-calendar-s
+amalia      1558    1279  0 11:12 ?        00:00:00 /usr/libexec/evolution-source-regis
+amalia      1559    1289  0 11:12 ?        00:00:00 /snap/snapd-desktop-integration/83/
+amalia      1566    1279  0 11:12 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+amalia      1571    1279  0 11:12 ?        00:00:00 /usr/libexec/dconf-service
+amalia      1574    1279  0 11:12 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gno
+amalia      1578    1279  0 11:12 ?        00:00:00 /usr/libexec/evolution-calendar-fac
+amalia      1593    1279  0 11:12 ?        00:00:00 /usr/libexec/evolution-addressbook-
+amalia      1596    1324  0 11:12 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner 
+amalia      1615    1279  0 11:12 ?        00:00:00 /usr/bin/gjs /usr/share/gnome-shell
+amalia      1619    1279  0 11:12 ?        00:00:00 /usr/libexec/at-spi2-registryd --us
+amalia      1633    1279  0 11:12 ?        00:00:00 sh -c /usr/bin/ibus-daemon --panel 
+amalia      1634    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+amalia      1636    1633  0 11:12 ?        00:00:05 /usr/bin/ibus-daemon --panel disabl
+amalia      1637    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-color
+amalia      1639    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-datetime
+amalia      1640    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-housekeeping
+amalia      1643    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-keyboard
+amalia      1645    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-media-keys
+amalia      1653    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-power
+amalia      1657    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-print-notification
+amalia      1658    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-rfkill
+amalia      1659    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+amalia      1663    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-sharing
+amalia      1669    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-smartcard
+amalia      1674    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-sound
+amalia      1679    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-wacom
+amalia      1715    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-printer
+amalia      1721    1636  0 11:12 ?        00:00:00 /usr/libexec/ibus-memconf
+amalia      1722    1636  0 11:12 ?        00:00:02 /usr/libexec/ibus-extension-gtk3
+amalia      1735    1424  0 11:12 ?        00:00:00 /usr/libexec/evolution-data-server/
+amalia      1737    1279  0 11:12 ?        00:00:00 /usr/libexec/ibus-portal
+amalia      1747    1424  0 11:12 ?        00:00:00 /usr/libexec/gsd-disk-utility-notif
+amalia      1780    1279  0 11:12 ?        00:00:02 /snap/snap-store/959/usr/bin/snap-s
+amalia      1827    1636  0 11:12 ?        00:00:01 /usr/libexec/ibus-engine-simple
+amalia      1881    1279  0 11:12 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+amalia      1933    1279  0 11:12 ?        00:00:00 /usr/bin/gjs /usr/share/gnome-shell
+amalia      2066    1279  0 11:12 ?        00:00:00 /usr/libexec/gvfsd-metadata
+amalia      2839    1445  1 11:12 ?        00:01:42 /usr/bin/Xwayland :0 -rootless -nor
+amalia      2842    1279  0 11:12 ?        00:00:00 /usr/libexec/gsd-xsettings
+amalia      2868    1279  0 11:12 ?        00:00:00 /usr/libexec/ibus-x11
+amalia      3001    1279  0 11:13 ?        00:00:00 /usr/bin/snap userd
+amalia      3301    1424  0 11:13 ?        00:00:00 update-notifier
+root        4795       2  0 13:06 ?        00:00:00 [kworker/u6:18-events_unbound]
+root        4797       2  0 13:06 ?        00:00:00 [kworker/u6:20-events_unbound]
+root        4800       2  0 13:06 ?        00:00:00 [kworker/0:0-events]
+root        4823       2  0 13:06 ?        00:00:00 [kworker/0:2-events]
+amalia      4930    1445  0 13:06 ?        00:00:01 gjs /usr/share/gnome-shell/extensio
+root        5034       2  0 13:12 ?        00:00:00 [kworker/1:1-events]
+amalia      5082    1279  0 13:12 ?        00:00:08 /usr/libexec/gnome-terminal-server
+amalia      5100    5082  0 13:12 pts/2    00:00:00 bash
+root        5132       2  0 13:16 ?        00:00:00 [kworker/2:1-events]
+amalia      5133    5100  0 13:16 pts/2    00:00:00 script ps.txt
+amalia      5134    5133  0 13:16 pts/0    00:00:00 bash -i
+root        5180       2  0 13:22 ?        00:00:00 [kworker/2:2-events]
+root        5192       2  0 13:22 ?        00:00:00 [kworker/1:2-events]
+root        5224       2  0 13:30 ?        00:00:00 [kworker/1:0-mm_percpu_wq]
+root        5227       2  0 13:33 ?        00:00:00 [kworker/u6:0-events_unbound]
+amalia      5228    5134  0 13:33 pts/0    00:00:00 ps -ef
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -x
+[?2004l    PID TTY      STAT   TIME COMMAND
+   1279 ?        Ss     0:00 /lib/systemd/systemd --user
+   1280 ?        S      0:00 (sd-pam)
+   1286 ?        Ssl    0:00 /usr/bin/pipewire
+   1287 ?        Ssl    0:00 /usr/bin/pipewire-media-session
+   1288 ?        Ssl    0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+   1289 ?        Ss     0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-i
+   1295 ?        Ssl    0:00 /usr/bin/ubuntu-report service
+   1303 ?        Sl     0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+   1310 ?        Ss     0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork
+   1318 tty2     Ssl+   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_M
+   1323 tty2     Sl+    0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+   1324 ?        Ssl    0:00 /usr/libexec/gvfsd
+   1338 ?        Ssl    0:00 /usr/libexec/xdg-document-portal
+   1345 ?        Ssl    0:00 /usr/libexec/xdg-permission-store
+   1348 ?        Sl     0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   1399 ?        SNsl   0:02 /usr/libexec/tracker-miner-fs-3
+   1404 ?        Ssl    0:00 /usr/libexec/gnome-session-ctl --monitor
+   1424 ?        Ssl    0:00 /usr/libexec/gnome-session-binary --systemd-service --sess
+   1443 ?        Sl     0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+   1445 ?        Rsl   15:44 /usr/bin/gnome-shell
+   1452 ?        S      0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-
+   1480 ?        Ssl    0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+   1488 ?        Ssl    0:00 /usr/libexec/gvfs-goa-volume-monitor
+   1496 ?        Sl     0:00 /usr/libexec/goa-daemon
+   1509 ?        Sl     0:00 /usr/libexec/goa-identity-service
+   1514 ?        Ssl    0:00 /usr/libexec/gvfs-mtp-volume-monitor
+   1524 ?        Ssl    0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+   1532 ?        Ssl    0:00 /usr/libexec/gvfs-afc-volume-monitor
+   1552 ?        Sl     0:00 /usr/libexec/gnome-shell-calendar-server
+   1558 ?        Ssl    0:00 /usr/libexec/evolution-source-registry
+   1559 ?        Sl     0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-i
+   1566 ?        Ssl    0:00 /usr/libexec/xdg-desktop-portal
+   1571 ?        Ssl    0:00 /usr/libexec/dconf-service
+   1574 ?        Ssl    0:00 /usr/libexec/xdg-desktop-portal-gnome
+   1578 ?        Ssl    0:00 /usr/libexec/evolution-calendar-factory
+   1593 ?        Ssl    0:00 /usr/libexec/evolution-addressbook-factory
+   1596 ?        Sl     0:00 /usr/libexec/gvfsd-trash --spawner :1.5 /org/gtk/gvfs/exec
+   1615 ?        Sl     0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifi
+   1619 ?        Sl     0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+   1633 ?        Ss     0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSI
+   1634 ?        Ssl    0:00 /usr/libexec/gsd-a11y-settings
+   1636 ?        Sl     0:05 /usr/bin/ibus-daemon --panel disable
+   1637 ?        Ssl    0:00 /usr/libexec/gsd-color
+   1639 ?        Ssl    0:00 /usr/libexec/gsd-datetime
+   1640 ?        Ssl    0:00 /usr/libexec/gsd-housekeeping
+   1643 ?        Ssl    0:00 /usr/libexec/gsd-keyboard
+   1645 ?        Ssl    0:00 /usr/libexec/gsd-media-keys
+   1653 ?        Ssl    0:00 /usr/libexec/gsd-power
+   1657 ?        Ssl    0:00 /usr/libexec/gsd-print-notifications
+   1658 ?        Ssl    0:00 /usr/libexec/gsd-rfkill
+   1659 ?        Ssl    0:00 /usr/libexec/gsd-screensaver-proxy
+   1663 ?        Ssl    0:00 /usr/libexec/gsd-sharing
+   1669 ?        Ssl    0:00 /usr/libexec/gsd-smartcard
+   1674 ?        Ssl    0:00 /usr/libexec/gsd-sound
+   1679 ?        Ssl    0:00 /usr/libexec/gsd-wacom
+   1715 ?        Sl     0:00 /usr/libexec/gsd-printer
+   1721 ?        Sl     0:00 /usr/libexec/ibus-memconf
+   1722 ?        Sl     0:02 /usr/libexec/ibus-extension-gtk3
+   1735 ?        Sl     0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+   1737 ?        Sl     0:00 /usr/libexec/ibus-portal
+   1747 ?        Sl     0:00 /usr/libexec/gsd-disk-utility-notify
+   1780 ?        Sl     0:02 /snap/snap-store/959/usr/bin/snap-store --gapplication-ser
+   1827 ?        Sl     0:01 /usr/libexec/ibus-engine-simple
+   1881 ?        Ssl    0:00 /usr/libexec/xdg-desktop-portal-gtk
+   1933 ?        Sl     0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+   2066 ?        Ssl    0:00 /usr/libexec/gvfsd-metadata
+   2839 ?        S      1:42 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -au
+   2842 ?        Ssl    0:00 /usr/libexec/gsd-xsettings
+   2868 ?        Sl     0:00 /usr/libexec/ibus-x11
+   3001 ?        Sl     0:00 /usr/bin/snap userd
+   3301 ?        Sl     0:00 update-notifier
+   4930 ?        Sl     0:01 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/
+   5082 ?        Ssl    0:09 /usr/libexec/gnome-terminal-server
+   5100 pts/2    Ss     0:00 bash
+   5133 pts/2    R+     0:00 script ps.txt
+   5134 pts/0    Ss     0:00 bash -i
+   5239 pts/0    R+     0:00 ps -x
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -u<amai[Klia>
+[?2004lbash: syntax error near unexpected token `newline'
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -u<amalia.giurgea>
+[?2004lbash: syntax error near unexpected token `newline'
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ ps -U root -u root
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:01 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      5 ?        00:00:00 slub_flushwq
+      6 ?        00:00:00 netns
+      8 ?        00:00:00 kworker/0:0H-kblockd
+     10 ?        00:00:00 mm_percpu_wq
+     11 ?        00:00:00 rcu_tasks_kthread
+     12 ?        00:00:00 rcu_tasks_rude_kthread
+     13 ?        00:00:00 rcu_tasks_trace_kthread
+     14 ?        00:00:00 ksoftirqd/0
+     15 ?        00:00:04 rcu_preempt
+     16 ?        00:00:00 migration/0
+     17 ?        00:00:00 idle_inject/0
+     19 ?        00:00:00 cpuhp/0
+     20 ?        00:00:00 cpuhp/1
+     21 ?        00:00:00 idle_inject/1
+     22 ?        00:00:00 migration/1
+     23 ?        00:00:00 ksoftirqd/1
+     25 ?        00:00:00 kworker/1:0H-events_highpri
+     26 ?        00:00:00 cpuhp/2
+     27 ?        00:00:00 idle_inject/2
+     28 ?        00:00:00 migration/2
+     29 ?        00:00:00 ksoftirqd/2
+     31 ?        00:00:00 kworker/2:0H-events_highpri
+     32 ?        00:00:00 kdevtmpfs
+     33 ?        00:00:00 inet_frag_wq
+     34 ?        00:00:00 kauditd
+     35 ?        00:00:00 khungtaskd
+     37 ?        00:00:00 oom_reaper
+     39 ?        00:00:00 writeback
+     40 ?        00:00:00 kcompactd0
+     41 ?        00:00:00 ksmd
+     42 ?        00:00:00 khugepaged
+     43 ?        00:00:00 kintegrityd
+     44 ?        00:00:00 kblockd
+     45 ?        00:00:00 blkcg_punt_bio
+     46 ?        00:00:00 tpm_dev_wq
+     47 ?        00:00:00 ata_sff
+     48 ?        00:00:00 md
+     49 ?        00:00:00 edac-poller
+     50 ?        00:00:00 devfreq_wq
+     51 ?        00:00:00 watchdogd
+     53 ?        00:00:00 kworker/1:1H-kblockd
+     54 ?        00:00:00 kswapd0
+     55 ?        00:00:00 ecryptfs-kthread
+     56 ?        00:00:00 kthrotld
+     57 ?        00:00:00 acpi_thermal_pm
+     58 ?        00:00:00 scsi_eh_0
+     59 ?        00:00:00 scsi_tmf_0
+     60 ?        00:00:00 scsi_eh_1
+     61 ?        00:00:00 scsi_tmf_1
+     64 ?        00:00:00 mld
+     65 ?        00:00:00 ipv6_addrconf
+     76 ?        00:00:00 kstrp
+     78 ?        00:00:00 zswap-shrink
+     79 ?        00:00:00 kworker/u7:0
+     83 ?        00:00:00 charger_manager
+    121 ?        00:00:00 kworker/2:1H-kblockd
+    129 ?        00:00:00 scsi_eh_2
+    130 ?        00:00:00 scsi_tmf_2
+    160 ?        00:00:00 jbd2/sda3-8
+    161 ?        00:00:00 ext4-rsv-conver
+    200 ?        00:00:00 systemd-journal
+    237 ?        00:00:00 irq/18-vmwgfx
+    248 ?        00:00:00 systemd-udevd
+    302 ?        00:00:00 cryptd
+    309 ?        00:00:00 kworker/0:2H-kblockd
+    581 ?        00:00:00 accounts-daemon
+    582 ?        00:00:00 acpid
+    586 ?        00:00:00 cron
+    589 ?        00:00:00 NetworkManager
+    595 ?        00:00:00 irqbalance
+    600 ?        00:00:00 networkd-dispat
+    602 ?        00:00:01 polkitd
+    603 ?        00:00:00 power-profiles-
+    606 ?        00:00:02 snapd
+    607 ?        00:00:00 switcheroo-cont
+    612 ?        00:00:00 systemd-logind
+    621 ?        00:00:00 udisksd
+    623 ?        00:00:00 wpa_supplicant
+    666 ?        00:00:00 ModemManager
+    669 ?        00:00:00 cupsd
+    706 ?        00:00:00 gdm3
+    714 ?        00:00:00 unattended-upgr
+    747 ?        00:00:00 cups-browsed
+   1023 ?        00:00:00 upowerd
+   1036 ?        00:00:11 packagekitd
+   1275 ?        00:00:00 gdm-session-wor
+   1361 ?        00:00:00 fusermount3
+   4795 ?        00:00:00 kworker/u6:18-events_power_efficient
+   4797 ?        00:00:00 kworker/u6:20-events_unbound
+   4800 ?        00:00:00 kworker/0:0-events
+   4823 ?        00:00:00 kworker/0:2-events
+   5034 ?        00:00:00 kworker/1:1-events
+   5132 ?        00:00:00 kworker/2:1-events
+   5180 ?        00:00:00 kworker/2:2-events
+   5224 ?        00:00:00 kworker/1:0-events
+   5227 ?        00:00:00 kworker/u6:0-events_unbound
+   5235 ?        00:00:00 kworker/u6:1-events_power_efficient
+   5249 ?        00:00:00 kworker/1:2-events
+[?2004h]0;amalia@amalia-VirtualBox: ~[01;32mamalia@amalia-VirtualBox[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2023-12-11 13:36:38+02:00 [COMMAND_EXIT_CODE="0"]
