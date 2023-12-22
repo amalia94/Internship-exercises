@@ -1,0 +1,18 @@
+ARTIFACTORY_API_KEY= VmFsZW9AR2VuMjB4Cg
+
+export ARTIFACTORY_USER= s1rkrann
+
+dnzjnjnvjzdnhgb 546&*^&% StrictHostKeyChecking &)^%*)(*)^
+
+The bellow paths should be updated with the path provided via SSH from Windows C/User/<your_user_name>.  (if SSH is not available, use local path from root->user->home->Downloads)
+
+export ANDROID_HOME=/usr/lib/android-sdk
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+
+
+Do not use hardcoded paths/strings!!!
+
+export IVI_ADB_SERIAL= sZW9AR2VuMjB4
+2345878044^%^&&*5StrictHostKeyChecking^%$$#$^
+
