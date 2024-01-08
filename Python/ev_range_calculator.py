@@ -10,7 +10,7 @@ def calculate_range(battery_capacity, efficiency):
     range_km = battery_capacity / efficiency
     return range_km
 
-# Calculate the range for Mercedes AMG QES:
+# Calculate the range for Mercedes-AMG QES:
 
 
 range_eqs = calculate_range(battery_capacity, efficiency)
