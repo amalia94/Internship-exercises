@@ -1,3 +1,4 @@
+
 class ReadLinuxCommands:
     def __init__(self, linux_cmd):
         self.linux_cmd = linux_cmd
@@ -10,7 +11,6 @@ class ReadLinuxCommands:
         except FileNotFoundError:
             print("File not found.")
 
-# Usage example
 file_reader = ReadLinuxCommands("linux_cmd")
 file_reader.display_content()
 
