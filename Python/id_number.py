@@ -12,6 +12,24 @@ def validate_id_number(func):
     return wrapper
 
 
+def validate_last_component(funct):
+    def wrapper(id_number):
+        personal_numeric_code = [int(x) for x in id_number]
+        constant_num = [2, 7, 9, 1, 4, 6, 3, 5, 8, 2, 7, 9]
+        total = sum(personal_numeric_code * constant_num for numeric_code, constant_num in
+                    zip(personal_numeric_code[:12], constant_num)) % 11
+        awaited_sum = 1 if total == 10 else total
+        try:
+            if personal_numeric_code[12] != awaited_sum:
+                raise ValueError("ID number sum is invalid")
+        except ValueError as error:
+            print(error)
+
+        return funct(id_number)
+
+    return wrapper()
+
+
 def convert(id_number):
     id_number(string.split())
     return id_number
