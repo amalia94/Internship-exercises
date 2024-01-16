@@ -1,6 +1,3 @@
-import string
-
-
 def validate_id_number(func):
     def wrapper(id_number):
         if len(id_number) != 13:
@@ -30,18 +27,6 @@ def validate_last_component(funct):
     return wrapper()
 
 
-def convert(id_number):
-    id_number(string.split())
-    return id_number
-
-
-def id_parameters(id_parameters):
-    year = int(id_number[1:3])
-    month = int(id_number[3:5])
-    day = int(id_number[5:7])
-    county = int(id_number[7:9])
-
-
 county_codes = {
     '42': 'Vrancea',
     '34': 'Sibiu'
@@ -63,10 +48,17 @@ def interpret_id_number(id_number):
     }
     county = county_codes.keys()
 
-    gender = 'M' if sex in [1, 3, 5, 7] else "F"
 
-    if sex in [5, 6]:
+    gender = "Male" if sex in [1, 3, 5, 7] else "Female" if sex in [2, 4, 6, 8] else "Unknown"
+
+    if sex in [5, 7]:
         year += 2000
+    elif sex in [6, 8]:
+        year += 2000
+    elif sex in [1, 2]:
+        year += 1900
+    elif sex in [3, 4]:
+        year += 1800
 
     id_interpretation = {
         'gender': gender,
@@ -75,10 +67,9 @@ def interpret_id_number(id_number):
         'day': day,
         'county': county
 
-    }
+}
     return id_interpretation
 
-
-id_number = "5231207890123"
+id_number = "9231207890123"
 result = interpret_id_number(id_number)
 print(result)
