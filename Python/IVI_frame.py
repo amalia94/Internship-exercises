@@ -33,6 +33,6 @@ for signal in signals:
 
     value_1 = int(byte_1[bit_1:bit_1+size], 2)
     value_2 = int(byte_2[bit_2:bit_2+size], 2)
-    print("First frame for", signal_name, ":", value_1, "~ Second frame:", value_2)
+    print("First frame for", signal_name, ":", value_1, "~ Second frame :", value_2)
 
 
