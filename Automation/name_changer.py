@@ -7,29 +7,49 @@
 import os
 
 
-def rename_files(directory):
-    messages = []
-    for root, dirs, files in os.walk(directory):
-        for item in dirs + files:
-            if '.' not in item:
-                old_path = os.path.join(root, item)
-                base, ext = os.path.splitext(item)
-                if ext == '':
-                    new_name = base[0].upper() + base[1:-1].upper() + base[-1].upper() if len(base) > 2 else base.upper()
-                    new_path = os.path.join(root, new_name)
+def create_directory_structure():
+    main_dir = "main"
+    head_dir = "head"
+    commit_dir = "commit"
+    dev_dir = "dev"
+    opt_dir = "opt"
+    systemd_file = "systemd.d"
+    commit_fix_dir = "commit_fix"
+    src_dir = "src"
+    commit_fix_fix_file = "commit_fix_fix"
+    app_main_file = "app_main"
+    variables_file = "variables.txt"
+    unit_test_file = "unit_test.py"
 
-                    if old_path != new_path:
-                        os.rename(old_path, new_path)
-                        messages.append(f"The file without extension '{item}' has been modified.")
+    os.makedirs(main_dir, exist_ok=True)
 
-    return messages
+    os.makedirs(os.path.join(main_dir, head_dir), exist_ok=True)
+
+    os.makedirs(os.path.join(main_dir, commit_dir), exist_ok=True)
+
+    os.makedirs(os.path.join(main_dir, head_dir, dev_dir), exist_ok=True)
+
+    os.makedirs(os.path.join(main_dir, head_dir, opt_dir), exist_ok=True)
+
+    with open(os.path.join(main_dir, head_dir, dev_dir, systemd_file), "w") as f:
+        pass  # Empty file
+
+    os.makedirs(os.path.join(main_dir, commit_dir, commit_fix_dir), exist_ok=True)
+
+    os.makedirs(os.path.join(main_dir, commit_dir, commit_fix_dir, src_dir), exist_ok=True)
+
+    with open(os.path.join(main_dir, commit_dir, commit_fix_dir, src_dir, app_main_file), "w") as f:
+        pass  # Empty file
+
+    with open(os.path.join(main_dir, commit_dir, commit_fix_dir, commit_fix_fix_file), "w") as f:
+        pass  # Empty file
+
+    with open(os.path.join(main_dir, commit_dir, variables_file), "w") as f:
+        pass  # Empty file
+
+    with open(os.path.join(main_dir, commit_dir, commit_fix_dir, src_dir, unit_test_file), "w") as f:
+        pass  # Empty file
 
 
 if __name__ == "__main__":
-    target_directory = r"C:\Users\agiurgea\PycharmProjects\Internship-exercises\Automation"
-    result_messages = rename_files(target_directory)
-
-    for message in result_messages:
-        print(message)
-
-
+    create_directory_structure()
