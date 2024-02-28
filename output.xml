@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.0 on win32)" generated="2024-02-28T11:39:36.034983" rpa="false" schemaversion="5">
+<suite id="s1" name="Internship-exercises" source="C:\Users\agiurgea\PycharmProjects\Internship-exercises">
+<suite id="s1-s1" name="RobotFramework" source="C:\Users\agiurgea\PycharmProjects\Internship-exercises\RobotFramework">
+<suite id="s1-s1-s1" name="Logcat" source="C:\Users\agiurgea\PycharmProjects\Internship-exercises\RobotFramework\logcat.robot">
+<test id="s1-s1-s1-t1" name="Test Logcat Analysis" line="14">
+<kw name="Parse Logcat">
+<kw name="Get File" owner="OperatingSystem">
+<msg time="2024-02-28T11:39:36.095781" level="INFO" html="true">Getting file '&lt;a href="file://C:\Users\agiurgea\PycharmProjects\Internship-exercises\RobotFramework\logcat_applications.txt"&gt;C:\Users\agiurgea\PycharmProjects\Internship-exercises\RobotFramework\logcat_applications.txt&lt;/a&gt;'.</msg>
+<msg time="2024-02-28T11:39:36.102949" level="INFO">${log_data} = --------- beginning of main
+03-14 17:55:47.856  5535  5619 I System.out: Broadcasting: Intent { act=com.samsung.intent.action.BIG_DATA_INFO (has extras) }
+03-14 17:55:47.857  4830 17522 E power   : IS...</msg>
+<var>${log_data}</var>
+<arg>${input_file}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<status status="PASS" start="2024-02-28T11:39:36.094785" elapsed="0.008164"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-02-28T11:39:36.103951" level="INFO">${parsed_data} = []</msg>
+<var>${parsed_data}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-02-28T11:39:36.102949" elapsed="0.001002"/>
+</kw>
+<kw name="Split To Lines" owner="String">
+<msg time="2024-02-28T11:39:36.106939" level="INFO">9656 lines returned</msg>
+<msg time="2024-02-28T11:39:36.118926" level="INFO">${lines} = ['--------- beginning of main', '03-14 17:55:47.856  5535  5619 I System.out: Broadcasting: Intent { act=com.samsung.intent.action.BIG_DATA_INFO (has extras) }', '03-14 17:55:47.857  4830 17522 E powe...</msg>
+<var>${lines}</var>
+<arg>${log_data}</arg>
+<doc>Splits the given string to lines.</doc>
+<status status="PASS" start="2024-02-28T11:39:36.103951" elapsed="0.014975"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<msg time="2024-02-28T11:39:36.119894" level="FAIL">Evaluating expression 'ActivityTaskManager: START u0 in --------- beginning of main' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</msg>
+<arg>ActivityTaskManager: START u0 in ${single_line}</arg>
+<arg>Parse Start Line</arg>
+<arg>${single_line}</arg>
+<arg>${parsed_data}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="FAIL" start="2024-02-28T11:39:36.119894" elapsed="0.001070">Evaluating expression 'ActivityTaskManager: START u0 in --------- beginning of main' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>Layer: Destroyed ActivityRecord in ${single_line}</arg>
+<arg>Parse End Line</arg>
+<arg>${single_line}</arg>
+<arg>${parsed_data}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2024-02-28T11:39:36.120964" elapsed="0.000000"/>
+</kw>
+<var name="${single_line}">--------- beginning of main</var>
+<status status="FAIL" start="2024-02-28T11:39:36.119894" elapsed="0.001070">Evaluating expression 'ActivityTaskManager: START u0 in --------- beginning of main' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</iter>
+<var>${single_line}</var>
+<value>@{lines}</value>
+<status status="FAIL" start="2024-02-28T11:39:36.118926" elapsed="0.002038">Evaluating expression 'ActivityTaskManager: START u0 in --------- beginning of main' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</for>
+<return>
+<value>${parsed_data}</value>
+<status status="NOT RUN" start="2024-02-28T11:39:36.120964" elapsed="0.000000"/>
+</return>
+<var>${parsed_data}</var>
+<arg>${LOG FILE}</arg>
+<status status="FAIL" start="2024-02-28T11:39:36.094785" elapsed="0.026179">Evaluating expression 'ActivityTaskManager: START u0 in --------- beginning of main' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</kw>
+<kw name="Generate Output">
+<arg>${parsed_data}</arg>
+<arg>${output_file}</arg>
+<status status="NOT RUN" start="2024-02-28T11:39:36.122883" elapsed="0.000000"/>
+</kw>
+<kw name="Calculate Verdict">
+<var>${verdict}</var>
+<arg>${parsed_data}</arg>
+<status status="NOT RUN" start="2024-02-28T11:39:36.122883" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Verdict: ${verdict}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-02-28T11:39:36.123879" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${verdict}</arg>
+<arg>PASSED</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2024-02-28T11:39:36.123879" elapsed="0.000000"/>
+</kw>
+<doc>Test logcat analysis and verdict</doc>
+<tag>Logcat</tag>
+<status status="FAIL" start="2024-02-28T11:39:36.093787" elapsed="0.031245">Evaluating expression 'ActivityTaskManager: START u0 in --------- beginning of main' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<status status="FAIL" start="2024-02-28T11:39:36.068876" elapsed="0.060264"/>
+</suite>
+<status status="FAIL" start="2024-02-28T11:39:36.066877" elapsed="0.064256"/>
+</suite>
+<status status="FAIL" start="2024-02-28T11:39:36.038970" elapsed="0.094156"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Logcat</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Internship-exercises">Internship-exercises</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="RobotFramework">Internship-exercises.RobotFramework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Logcat">Internship-exercises.RobotFramework.Logcat</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-02-28T11:39:36.021942" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\RobotFramework\logcat.robot' on line 35: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-28T11:39:36.024020" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\RobotFramework\logcat.robot' on line 76: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

@@ -22,14 +22,18 @@ Test Logcat Analysis
 
 
 *** Keywords ***
+
 Parse Logcat
     [Arguments]  ${input_file}
     ${log_data}=  Get File  ${input_file}
     ${parsed_data}=  Create List
-    FOR  ${line}  IN  @{log_data}
-      Run Keyword If  'ActivityTaskManager: START u0' in ${line}  Parse Start Line  ${line}  ${parsed_data}
-      Run Keyword If  'Layer: Destroyed ActivityRecord' in ${line}  Parse End Line  ${line}  ${parsed_data}
+    ${lines}=  Split To Lines  ${log_data}
+    FOR  ${single_line}  IN  @{lines}
+        Run Keyword If  ActivityTaskManager: START u0 in ${single_line}  Parse Start Line  ${single_line}  ${parsed_data}
+        Run Keyword If  Layer: Destroyed ActivityRecord in ${single_line}  Parse End Line  ${single_line}  ${parsed_data}
+    END
     [Return]  ${parsed_data}
+
 
 Parse Start Line
     [Arguments]  ${line}  ${parsed_data}
@@ -45,7 +49,9 @@ Parse End Line
     ${end_time}=  Convert To Integer  ${match}[0][1]
     FOR  ${index}  ${item}  IN ENUMERATE  ${parsed_data}
       Run Keyword If  '${item}' == ${package}  Set End Time  ${index}  ${end_time}  ${parsed_data}
-
+    END
+    
+    
 Set End Time
     [Arguments]  ${index}  ${end_time}  ${parsed_data}
     Set To Dictionary  ${parsed_data}[${index}]  end_time=${end_time}
@@ -58,7 +64,9 @@ Generate Output
     FOR  ${item}  IN  @{parsed_data}
         Append To List  ${output}  ${item['package']}  ${item['start_time']}  ${item['end_time']}  ${item['lifespan']}
     Create File  ${output_file}  ${output}
-
+    END
+    
+    
 Calculate Verdict
     [Arguments]  ${parsed_data}
     ${total_apps}=  Get Length  ${parsed_data}
