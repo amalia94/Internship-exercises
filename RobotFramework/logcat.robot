@@ -29,10 +29,13 @@ Parse Logcat
     ${parsed_data}=  Create List
     ${lines}=  Split To Lines  ${log_data}
     FOR  ${single_line}  IN  @{lines}
+        ${ignore}=  Run Keyword And Return Status  Should Not Start With  ${single_line}  ---------
+        Run Keyword If  ${ignore}  Continue For Loop
         Run Keyword If  ActivityTaskManager: START u0 in ${single_line}  Parse Start Line  ${single_line}  ${parsed_data}
         Run Keyword If  Layer: Destroyed ActivityRecord in ${single_line}  Parse End Line  ${single_line}  ${parsed_data}
     END
-    [Return]  ${parsed_data}
+    RETURN  ${parsed_data}
+
 
 
 Parse Start Line
@@ -48,15 +51,14 @@ Parse End Line
     ${package}=  Set Variable  ${match}[0][0]
     ${end_time}=  Convert To Integer  ${match}[0][1]
     FOR  ${index}  ${item}  IN ENUMERATE  ${parsed_data}
-      Run Keyword If  '${item}' == ${package}  Set End Time  ${index}  ${end_time}  ${parsed_data}
+        Run Keyword If  '${item}' == ${package}  Set End Time  ${index}  ${end_time}  ${parsed_data}
     END
-    
-    
+
 Set End Time
     [Arguments]  ${index}  ${end_time}  ${parsed_data}
     Set To Dictionary  ${parsed_data}[${index}]  end_time=${end_time}
-    ${lifespan}=  Evaluate  $end_time - ${parsed_data}[${index}]['start_time']
-    Set To Dictionary  ${parsed_data}[${index}]  lifespan=${lifespan}
+    ${lifespan}=  Evaluate
+
 
 Generate Output
     [Arguments]  ${parsed_data}  ${output_file}
@@ -65,13 +67,14 @@ Generate Output
         Append To List  ${output}  ${item['package']}  ${item['start_time']}  ${item['end_time']}  ${item['lifespan']}
     Create File  ${output_file}  ${output}
     END
-    
-    
+
+
 Calculate Verdict
     [Arguments]  ${parsed_data}
     ${total_apps}=  Get Length  ${parsed_data}
     ${less_than_30_seconds}=  Evaluate  len([app for app in ${parsed_data} if app['lifespan'] < 30])
     ${percentage}=  Evaluate  (${less_than_30_seconds} / ${total_apps}) * 100
     ${verdict}=  Run Keyword If  ${percentage} >= 75  Set Variable  PASSED  ELSE  Set Variable  FAILED
-    [Return]  ${verdict}
+    RETURN  ${verdict}
+
 
