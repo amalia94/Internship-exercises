@@ -9578,7 +9578,7 @@
 03-14 17:57:17.428  7568  7568 I HBD     : h getDefaultInputRange : UNKNOWN 
 03-14 17:57:17.428  7568  7568 I HBD     : a currentState : 0 
 03-14 17:57:17.430  7568  7568 I HBD     : h load selected json path : /data/user/0/com.samsung.android.honeyboard/files/selected.json 
-03-14 17:57:17.430  7568  7568 I HBD     : h load selected json info : {"version":"1.0","currentLanguageOrder":0,"selected":[{"activeOptionList":["auto_replace","auto_spacing"],"engName":"English","id":65538,"inputType":"qwerty","isUsed":true}]} 
+03-14 17:57:17.430  7568  7568 I HBD   ``  : h load selected json info : {"version":"1.0","currentLanguageOrder":0,"selected":[{"activeOptionList":["auto_replace","auto_spacing"],"engName":"English","id":65538,"inputType":"qwerty","isUsed":true}]}
 03-14 17:57:17.431  7568  7568 I HBD     : a [UpdatePolicy] [post] a: 0 cl: 65538 kit: [0/0] vt: 0 ir: 1 
 03-14 17:57:17.431  7568  7568 I HBD     : HoneyBoardService [PF_OP][onStartInput]  6227154 ns 
 03-14 17:57:17.433  5230  7966 D InputMethodManagerServicePhysicalKey: isConnectedDexOnPC false
