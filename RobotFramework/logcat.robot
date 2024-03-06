@@ -31,7 +31,9 @@ Test Logcat Analysis
     Log                         Verdict: ${verdict}[${RESULT_VERDICT_INDEX}]
     Log                         Percent apps lifespan > 30s: ${verdict}[${PERCENTAGE_VERDICT_INDEX}]
     Log                         Apps with lifespan > 30s: ${verdict}[${APPS_VERDICT_INDEX}:]
-    Should Be Equal As Strings  ${verdict}[${RESULT_VERDICT_INDEX}]  PASSED
+
+    ${message}=    Evaluate    'PASSED: apps lifespan < 30s: %s' % '${verdict}[${PERCENTAGE_VERDICT_INDEX}]' if '${verdict}[${RESULT_VERDICT_INDEX}]' == 'PASSED' else 'FAILED: apps lifespan < 30s: %s' % '${verdict}[${PERCENTAGE_VERDICT_INDEX}]'
+    Run Keyword If    '${verdict}[${RESULT_VERDICT_INDEX}]' == 'PASSED'    Pass Execution    ${message}    ELSE    Fail    ${message}
 
 
 *** Keywords ***
@@ -81,8 +83,8 @@ Generate Output
 Calculate Verdict
     [Arguments]  ${apps}
     ${total_apps}=              Get Length  ${apps}
-    ${less_than_30_seconds}=    Evaluate    [(key, value[2]) for key, value in ${apps}.items() if value[2] > 30]
-    ${percentage}=              Evaluate  (len(${less_than_30_seconds}) / ${total_apps}) * 100
+    ${less_than_30_seconds}=    Evaluate    [(key, value[2]) for key, value in ${apps}.items() if value[2] < 30]
+    ${percentage}=              Evaluate    '{0:.3f}'.format((len(${less_than_30_seconds}) / ${total_apps}) * 100)
     ${verdict}=                 Run Keyword If  ${percentage} >= 75  Set Variable  PASSED  ELSE  Set Variable  FAILED
     RETURN  ${verdict}  ${percentage}  @{less_than_30_seconds}
 
