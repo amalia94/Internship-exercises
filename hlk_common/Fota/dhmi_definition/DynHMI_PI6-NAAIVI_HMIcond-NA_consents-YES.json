@@ -1,0 +1,87 @@
+{
+    "Step1": [
+        {
+            "phase": "Download",
+            "buttons": {
+                "BtnAcceptConsent": "LABEL_FOTA_BUTTON_001",
+                "BtnPostpone": "LABEL_FOTA_BUTTON_007",
+                "BtnCancel": "LABEL_FOTA_BUTTON_004",
+                "BtnDetails": "LABEL_FOTA_BUTTON_005"},
+            "isSilent": false,
+            "stateMessages": {
+                "messages": ["LABEL_FOTA_MESSAGE_100"]}
+        },
+        {
+            "phase": "Installation",
+            "buttons": {
+                "BtnAcceptConsent": "LABEL_FOTA_BUTTON_001",
+                "BtnPostpone": "LABEL_FOTA_BUTTON_007",
+                "BtnCancel": "LABEL_FOTA_BUTTON_004",
+                "BtnDetails": "LABEL_FOTA_BUTTON_005"},
+            "isSilent": false,
+            "stateMessages": {
+                "messages": ["LABEL_FOTA_MESSAGE_100"]}
+        },
+            {
+            "phase": "Activation",
+            "buttons": {
+                "BtnAcceptConsent": "LABEL_FOTA_BUTTON_001",
+                "BtnPostpone": "LABEL_FOTA_BUTTON_007",
+                "BtnCancel": "LABEL_FOTA_BUTTON_004",
+                "BtnDetails": "LABEL_FOTA_BUTTON_005"},
+            "isSilent": false,
+            "stateMessages": {
+                "messages": ["LABEL_FOTA_MESSAGE_100"]}
+        }
+    ],
+    "Step2": {
+       "ContentType": "SYSTEM",
+       "ReleaseNotes": [
+         {
+           "lang": "en_GB",
+           "releaseNote": "This is an AIVI FOTA test campaign.CarriageReturn It allows to test FOTA on AIVI.",
+           "name": "FOTA AIVI Update Campaign"
+         },
+         {
+           "lang": "fr_FR",
+           "releaseNote": "Ceci est une campagne de test FOTA AIVI. CarriageReturnElle permet de tester le FOTA sur AIVI.",
+           "name": "Campagne de mise \u00e0 jour FOTA IVI"}
+       ],
+       "DownloadPhase": { "IsEasyUpdate" : "YES",
+                          "IsWifi": "NO",
+                          "IsUSB" : "NO",
+                          "IsDownloadConsent":"YES",
+                          "DownloadDisclaimer": [],
+                          "DownloadStaticDisclaimer": null,
+                          "HMIConditionParkingBrake":"NA",
+                          "HMIConditionVehicleMotion":"NA",
+                          "HMIConditionDriveStage":"NA",
+                          "HMIConditionHazardLamps":"NA",
+                          "HMIConditionHVSoc":"NA",
+                          "HMIConditionHVSocPrecentageValue" : 0
+                        },
+       "InstallationPhase": { "IsInstallationConsent":"YES",
+                           "HMIConditionParkingBrake":"NA",
+                           "HMIConditionVehicleMotion":"NA",
+                           "HMIConditionDriveStage":"NA",
+                           "HMIConditionHazardLamps":"NA",
+                           "HMIConditionHVSoc":"NA",
+                           "HMIConditionHVSocPrecentageValue" : 0,
+                           "EstimatedInstallationTime":{"h":0,"m":30,"s":0},
+                           "EstimatedInstallationTimeStamp":"00:30:00"
+                         },
+       "ActivationPhase":   { "IsActivationConsent":"YES",
+                           "ActivationDisclaimer":[],
+                           "ActivationStaticDisclaimer": "ADID0",
+                           "HMIConditionParkingBrake":"NA",
+                           "HMIConditionVehicleMotion":"NA",
+                           "HMIConditionDriveStage":"NA",
+                           "HMIConditionHazardLamps":"NA",
+                           "HMIConditionHVSoc":"NA",
+                           "HMIConditionHVSocPrecentageValue" : 0,
+                           "EstimatedActivationTime":{"h":0,"m":0,"s":0},
+                           "EstimatedActivationTimeStamp":"00:00:00",
+                           "ScheduleActivation": "NO"
+                         }
+    }
+}

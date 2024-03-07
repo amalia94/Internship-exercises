@@ -1,0 +1,1337 @@
+{
+    "C1A": [
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/Action",
+            "signal_name": "action_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/Padding",
+            "signal_name": "padding_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/Padding",
+            "signal_name": "padding_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/Padding",
+            "signal_name": "padding_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/Action",
+            "signal_name": "action_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/Padding",
+            "signal_name": "padding_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/Padding",
+            "signal_name": "padding_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/Padding",
+            "signal_name": "padding_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Action",
+            "signal_name": "action_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option",
+            "signal_name": "option_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option1",
+            "signal_name": "option_1_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option2",
+            "signal_name": "option_2_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Temperature",
+            "signal_name": "temperature_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarNumber",
+            "signal_name": "calendar_number_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/TimestampOfUpdate",
+            "signal_name": "timestamp_of_update_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarDaysSelection",
+            "signal_name": "calendar_days_selection_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarStartTime",
+            "signal_name": "calendar_start_time_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Padding",
+            "signal_name": "padding_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/Padding",
+            "signal_name": "padding_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/Padding",
+            "signal_name": "padding_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        }
+    ],
+    "C1A-HS": [
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/Action",
+            "signal_name": "action_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/Padding",
+            "signal_name": "padding_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/Padding",
+            "signal_name": "padding_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/Padding",
+            "signal_name": "padding_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/Action",
+            "signal_name": "action_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/Padding",
+            "signal_name": "padding_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/Padding",
+            "signal_name": "padding_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/Padding",
+            "signal_name": "padding_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Action",
+            "signal_name": "action_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option",
+            "signal_name": "option_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option1",
+            "signal_name": "option_1_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option2",
+            "signal_name": "option_2_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Temperature",
+            "signal_name": "temperature_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarNumber",
+            "signal_name": "calendar_number_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/TimestampOfUpdate",
+            "signal_name": "timestamp_of_update_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarDaysSelection",
+            "signal_name": "calendar_days_selection_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarStartTime",
+            "signal_name": "calendar_start_time_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Padding",
+            "signal_name": "padding_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/Padding",
+            "signal_name": "padding_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/Padding",
+            "signal_name": "padding_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        }
+    ],
+    "T4VS": [
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/Action",
+            "signal_name": "action_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/Padding",
+            "signal_name": "padding_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/Padding",
+            "signal_name": "padding_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/Padding",
+            "signal_name": "padding_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/Action",
+            "signal_name": "action_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/Padding",
+            "signal_name": "padding_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/Padding",
+            "signal_name": "padding_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/Padding",
+            "signal_name": "padding_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Action",
+            "signal_name": "action_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option",
+            "signal_name": "option_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option1",
+            "signal_name": "option_1_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option2",
+            "signal_name": "option_2_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Temperature",
+            "signal_name": "temperature_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarNumber",
+            "signal_name": "calendar_number_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/TimestampOfUpdate",
+            "signal_name": "timestamp_of_update_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarDaysSelection",
+            "signal_name": "calendar_days_selection_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarStartTime",
+            "signal_name": "calendar_start_time_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Padding",
+            "signal_name": "padding_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/Padding",
+            "signal_name": "padding_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/Padding",
+            "signal_name": "padding_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        }
+    ],
+    "T4VS_EV": [
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/Action",
+            "signal_name": "action_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/Padding",
+            "signal_name": "padding_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/Padding",
+            "signal_name": "padding_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/Padding",
+            "signal_name": "padding_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/Action",
+            "signal_name": "action_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/Padding",
+            "signal_name": "padding_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/Padding",
+            "signal_name": "padding_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/Padding",
+            "signal_name": "padding_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Action",
+            "signal_name": "action_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option",
+            "signal_name": "option_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option1",
+            "signal_name": "option_1_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option2",
+            "signal_name": "option_2_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Temperature",
+            "signal_name": "temperature_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarNumber",
+            "signal_name": "calendar_number_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/TimestampOfUpdate",
+            "signal_name": "timestamp_of_update_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarDaysSelection",
+            "signal_name": "calendar_days_selection_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarStartTime",
+            "signal_name": "calendar_start_time_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Padding",
+            "signal_name": "padding_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/Padding",
+            "signal_name": "padding_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/Padding",
+            "signal_name": "padding_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        }
+    ],
+    "C1A_R2": [
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/Action",
+            "signal_name": "action_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/RemoteRequest/Padding",
+            "signal_name": "padding_req_bcm",
+            "frame_name": "RemoteFunctionService_REQ_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/TechnicalAck/Padding",
+            "signal_name": "padding_ack_bcm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/BCM/SynchroRequest/Padding",
+            "signal_name": "padding_sync_bcm",
+            "frame_name": "RemoteFunctionService_SYNC_BCM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/Action",
+            "signal_name": "action_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/RemoteRequest/Padding",
+            "signal_name": "padding_req_hfm",
+            "frame_name": "RemoteFunctionService_REQ_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/TechnicalAck/Padding",
+            "signal_name": "padding_ack_hfm",
+            "frame_name": "RemoteFunctionService_TECH_ACK_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Received/CipheredChannel/HFM/SynchroRequest/Padding",
+            "signal_name": "padding_sync_hfm",
+            "frame_name": "RemoteFunctionService_SYNC_HFM"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/SequenceType",
+            "signal_name": "sequence_type_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/SequenceNumber",
+            "signal_name": "sequence_number_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/RemoteOrder",
+            "signal_name": "remote_order_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Action",
+            "signal_name": "action_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option",
+            "signal_name": "option_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option1",
+            "signal_name": "option_1_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Option2",
+            "signal_name": "option_2_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Temperature",
+            "signal_name": "temperature_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarNumber",
+            "signal_name": "calendar_number_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/TimestampOfUpdate",
+            "signal_name": "timestamp_of_update_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarDaysSelection",
+            "signal_name": "calendar_days_selection_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/CalendarStartTime",
+            "signal_name": "calendar_start_time_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/RemoteRequest/Padding",
+            "signal_name": "padding_req_tcu",
+            "frame_name": "RemoteFunctionService_REQ_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/SequenceType",
+            "signal_name": "sequence_type_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/SequenceNumber",
+            "signal_name": "sequence_number_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/RemoteOrder",
+            "signal_name": "remote_order_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/TechnicalAck/Padding",
+            "signal_name": "padding_ack_tcu",
+            "frame_name": "RemoteFunctionService_TECH_ACK_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/AntiReplayCounter",
+            "signal_name": "anti_replay_counter_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/SequenceType",
+            "signal_name": "sequence_type_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/SequenceNumber",
+            "signal_name": "sequence_number_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        },
+        {
+            "func_name": "Vehicle/Sent/CipheredChannel/TCU/SynchroRequest/Padding",
+            "signal_name": "padding_sync_tcu",
+            "frame_name": "RemoteFunctionService_SYNC_TCU"
+        }
+    ]
+}

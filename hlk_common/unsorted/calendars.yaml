@@ -1,0 +1,1522 @@
+calendars:
+  two_expected_calendars:
+    expected_status:
+      - "ON"
+      - "ON"
+    days_list:
+      - "Monday"
+      - "Tuesday"
+      - "Wednesday"
+      - "Thursday"
+      - "Friday"
+      - "Saturday"
+      - "Sunday"
+    charge_calendar1:
+      expected_start_time: "21:45"
+      expected_end_time: "23:30"
+      days:
+        - "M: true"
+        - "T: true"
+        - "W: false"
+        - "T: false"
+        - "F: false"
+        - "S: false"
+        - "S: true"
+    charge_calendar2:
+      expected_start_time: "20:00"
+      expected_end_time: "21:00"
+      days:
+        - "M: false"
+        - "T: false"
+        - "W: true"
+        - "T: true"
+        - "F: false"
+        - "S: false"
+        - "S: false"
+  demo_calendar:
+    expected_status:
+      - "ON"
+      - "ON"
+      - "ON"
+      - "ON"
+      - "ON"
+    days_list:
+      - "Monday"
+      - "Tuesday"
+      - "Wednesday"
+      - "Thursday"
+      - "Friday"
+      - "Saturday"
+      - "Sunday"
+    charge_calendar1:
+      expected_start_time: "00:15"
+      expected_end_time: "00:30"
+      days:
+        - "M: true"
+        - "T: true"
+        - "W: true"
+        - "T: true"
+        - "F: true"
+        - "S: true"
+        - "S: false"
+    charge_calendar2:
+      expected_start_time: "00:15"
+      expected_end_time: "00:30"
+      days:
+        - "M: true"
+        - "T: true"
+        - "W: true"
+        - "T: true"
+        - "F: true"
+        - "S: true"
+        - "S: false"
+    charge_calendar3:
+      expected_start_time: "00:15"
+      expected_end_time: "00:30"
+      days:
+        - "M: true"
+        - "T: true"
+        - "W: true"
+        - "T: true"
+        - "F: true"
+        - "S: true"
+        - "S: false"
+    charge_calendar4:
+      expected_start_time: "00:15"
+      expected_end_time: "00:30"
+      days:
+        - "M: true"
+        - "T: true"
+        - "W: true"
+        - "T: true"
+        - "F: true"
+        - "S: true"
+        - "S: false"
+    charge_calendar5:
+      expected_start_time: "00:15"
+      expected_end_time: "00:30"
+      days:
+        - "M: true"
+        - "T: true"
+        - "W: true"
+        - "T: true"
+        - "F: true"
+        - "S: true"
+        - "S: false"
+  schedule_two_calendars:
+    temperature: 21
+    calendar1:
+      hour: 14
+      minutes: 0
+      days:
+        - "wednesday"
+        - "thursday"
+        - "friday"
+        - "saturday"
+        - "sunday"
+    calendar2:
+      hour: 7
+      minutes: 30
+      days:
+        - "monday"
+        - "friday"
+  scheduled_one_calendar:
+    begin_hour: 21
+    begin_min: 15
+    end_hour: 23
+    end_min: 15
+    active_days:
+      - "Monday"
+      - "Tuesday"
+      - "Wednesday"
+      - "Thursday"
+      - "Friday"
+      - "Saturday"
+      - "Sunday"
+  schedule_three_calendars:
+    calendar1:
+      hour: 14
+      minutes: 0
+      days:
+        - "wednesday"
+        - "thursday"
+        - "friday"
+        - "saturday"
+        - "sunday"
+    calendar2:
+      hour: 7
+      minutes: 30
+      days:
+        - "monday"
+        - "friday"
+    calendar3:
+      hour: 18
+      minutes: 30
+      days:
+        - "tuesday"
+        - "friday"
+  turn_off_all_calendars:
+    calendar1_OFF:
+    calendar2_OFF:
+    calendar3_OFF:
+    calendar4_OFF:
+    calendar5_OFF:
+  turn_off_all_charge_calendars:
+    charge1_OFF:
+    charge2_OFF:
+    charge3_OFF:
+    calendar4_OFF:
+    calendar5_OFF:
+  one_active_calendar:
+    expected_status:
+      - "ON"
+    days_list:
+      - "Monday"
+      - "Tuesday"
+      - "Wednesday"
+      - "Thursday"
+      - "Friday"
+      - "Saturday"
+      - "Sunday"
+    charge_calendar1:
+      expected_start_time: "21:15"
+      expected_end_time: "23:15"
+      days:
+        - "M: true"
+        - "T: true"
+        - "W: true"
+        - "T: true"
+        - "F: true"
+        - "S: true"
+        - "S: true"
+  one_deactivated_calendar:
+    charge_calendar1:
+      start_hour: 21
+      start_minutes: 14
+      end_hour: 23
+      end_minutes: 14
+      days:
+        - "monday"
+        - "tuesday"
+        - "wednesday"
+        - "thursday"
+        - "friday"
+        - "saturday"
+        - "sunday"
+  update_one_active_calendar:
+    charge_calendar1:
+      start_hour: 21
+      start_minutes: 14
+      end_hour: 23
+      end_minutes: 14
+      days:
+        - "monday"
+  one_expected_calendar:
+    expected_status:
+      - "ON"
+    days_list:
+      - "Monday"
+      - "Tuesday"
+      - "Wednesday"
+      - "Thursday"
+      - "Friday"
+      - "Saturday"
+      - "Sunday"
+    charge_calendar1:
+      expected_start_time: "00:15"
+      expected_end_time: "01:30"
+      days:
+        - "M: true"
+        - "T: true"
+        - "W: true"
+        - "T: true"
+        - "F: true"
+        - "S: true"
+        - "S: true"
+  scheduled_expected_calendar:
+    begin_hour: 20
+    begin_min: 30
+    end_hour: 22
+    end_min: 30
+    active_days:
+      - "Monday"
+      - "Tuesday"
+      - "Wednesday"
+      - "Thursday"
+      - "Friday"
+      - "Saturday"
+      - "Sunday"
+  one_needed_calendar:
+    expected_status:
+      - "ON"
+    days_list:
+      - "Monday"
+      - "Tuesday"
+      - "Wednesday"
+      - "Thursday"
+      - "Friday"
+      - "Saturday"
+      - "Sunday"
+    charge_calendar1:
+      expected_start_time: "20:30"
+      expected_end_time: "22:30"
+      days:
+        - "M: true"
+        - "T: true"
+        - "W: true"
+        - "T: true"
+        - "F: true"
+        - "S: true"
+        - "S: true"
+kmr_calendars:
+  schedule_two_calendars:
+   - wednesday:
+      startTime: "1400"
+      activationState: True
+      targetTemperature: 21.0
+     thursday:
+      startTime: "1400"
+      activationState: True
+      targetTemperature: 21.0
+     friday:
+      startTime: "1400"
+      activationState: True
+      targetTemperature: 21.0
+     saturday:
+      startTime: "1400"
+      activationState: True
+      targetTemperature: 21.0
+     sunday:
+      startTime: "1400"
+      activationState: True
+      targetTemperature: 21.0
+   - monday:
+      startTime: "0730"
+      activationState: True
+      targetTemperature: 21.0
+     friday:
+      startTime: "0730"
+      activationState: True
+      targetTemperature: 21.0
+  deactivate_one_calendar:
+   - wednesday:
+      startTime: "1400"
+      activationState: True
+     thursday:
+      startTime: "1400"
+      activationState: True
+     friday:
+      startTime: "1400"
+      activationState: True
+     saturday:
+      startTime: "1400"
+      activationState: True
+     sunday:
+      startTime: "1400"
+      activationState: True
+   - monday:
+      startTime: "0730"
+      activationState: False
+     friday:
+      startTime: "0730"
+      activationState: False
+  one_active_calendar:
+    - monday:
+        startTime: "1400"
+        activationState: True
+        targetTemperature: 18.0
+    - wednesday:
+        startTime: "1400"
+        activationState: True
+        targetTemperature: 18.0
+    - friday:
+        startTime: "1400"
+        activationState: True
+        targetTemperature: 18.0
+  deactivate_third_calendar:
+   - wednesday:
+      startTime: "1400"
+      activationState: True
+     thursday:
+      startTime: "1400"
+      activationState: True
+     friday:
+      startTime: "1400"
+      activationState: True
+     saturday:
+      startTime: "1400"
+      activationState: True
+     sunday:
+      startTime: "1400"
+      activationState: True
+   - monday:
+      startTime: "0730"
+      activationState: True
+     friday:
+      startTime: "0730"
+      activationState: True
+   - tuesday:
+      startTime: "1830"
+      activationState: False
+     friday:
+      startTime: "1830"
+      activationState: False
+calendars_can_frames:
+  one_active_calendar_entry:
+    - signal_name: "PreSoakCal1ArrivalMinChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal1ArrivalHourChange_MMI"
+      signal_value: "14"
+    - signal_name: "PreSoakCal1MondayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal1TuesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal1WednesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal1ThursdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal1FridayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal1SaturdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal1SundayChange_MMI"
+      signal_value: "0"
+  PreSoakCalAllChange_MMI:
+    - signal_name: "PreSoakCalAllChange_MMI"
+      signal_value: "1"
+      bit_position: "0"
+      byte_position: "6"
+      frame_id: 6F6
+      expected_frames: "3"
+  ChargeDelayedRequest:
+    - signal_name: "ChargeDelayedRequest"
+      signal_value: "1"
+      bit_position: "6"
+      byte_position: "5"
+      frame_id: 6F5
+      expected_frames: "3"
+  delayed:
+    - signal_name: "ChargeDelayedRequestValue"
+      signal_value: "0Eh"
+  ChargeCalAllChange_MMI:
+    - signal_name: "ChargeCalAllChange_MMI"
+      signal_value: "1"
+      bit_position: "1"
+      byte_position: "7"
+      frame_id: 6F3
+      expected_frames: "3"
+  ChargeAlwaysRequest:
+    - signal_name: "ChargeAlwaysRequest"
+      signal_value: "1"
+      bit_position: "7"
+      byte_position: "5"
+      frame_id: 6F5
+      expected_frames: "3"
+  schedule_one_calendar:
+    - signal_name: "ChargeCal1BeginHourChange_MMI"
+      signal_value: "21"
+    - signal_name: "ChargeCal1BeginMinChange_MMI"
+      signal_value: "15"
+    - signal_name: "ChargeCal1DurationChange_MMI"
+      signal_value: "120"
+    - signal_name: "ChargeCal1MondayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1TuesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1WednesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1ThursdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1FridayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1SaturdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1SundayChange_MMI"
+      signal_value: "1"
+  schedule_two_calendars:
+    - signal_name: "PreSoakCal1ArrivalMinChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal1ArrivalHourChange_MMI"
+      signal_value: "14"
+    - signal_name: "PreSoakCal1MondayChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal1TuesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal1WednesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal1ThursdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal1FridayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal1SaturdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal1SundayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal2ArrivalMinChange_MMI"
+      signal_value: "30"
+    - signal_name: "PreSoakCal2ArrivalHourChange_MMI"
+      signal_value: "7"
+    - signal_name: "PreSoakCal2MondayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal2TuesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal2WednesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal2ThursdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal2FridayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal2SaturdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal2SundayChange_MMI"
+      signal_value: "0"
+  one_deactivated_calendar_entry:
+    - signal_name: "PreSoakCal1ArrivalMinChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal1ArrivalHourChange_MMI"
+      signal_value: "14"
+    - signal_name: "PreSoakCal1MondayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal1TuesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal1WednesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal1ThursdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal1FridayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal1SaturdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "PreSoakCal1SundayChange_MMI"
+      signal_value: "0"
+  schedule_five_calendars_deactivated:
+    - signal_name: "ChargeCal1BeginHourChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1BeginMinChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1DurationChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1MondayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1TuesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1WednesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1ThursdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1FridayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1SaturdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1SundayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal2BeginHourChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal2BeginMinChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal2DurationChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal2MondayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal2TuesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal2WednesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal2ThursdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal2FridayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal2SaturdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal2SundayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal3BeginHourChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal3BeginMinChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal3DurationChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal3MondayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal3TuesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal3WednesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal3ThursdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal3FridayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal3SaturdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal3SundayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal4BeginHourChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal4BeginMinChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal4DurationChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal4MondayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal4TuesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal4WednesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal4ThursdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal4FridayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal4SaturdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal4SundayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal5BeginHourChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal5BeginMinChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal5DurationChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal5MondayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal5TuesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal5WednesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal5ThursdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal5FridayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal5SaturdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal5SundayChange_MMI"
+      signal_value: "0"
+  schedule_five_calendars:
+    - signal_name: "ChargeCal1BeginHourChange_MMI"
+      signal_value: "21"
+    - signal_name: "ChargeCal1BeginMinChange_MMI"
+      signal_value: "14"
+    - signal_name: "ChargeCal1DurationChange_MMI"
+      signal_value: "120"
+    - signal_name: "ChargeCal1MondayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1TuesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1WednesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1ThursdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1FridayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1SaturdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1SundayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal2BeginHourChange_MMI"
+      signal_value: "10"
+    - signal_name: "ChargeCal2BeginMinChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal2DurationChange_MMI"
+      signal_value: "120"
+    - signal_name: "ChargeCal2MondayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal2TuesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal2WednesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal2ThursdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal2FridayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal2SaturdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal2SundayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal3BeginHourChange_MMI"
+      signal_value: "14"
+    - signal_name: "ChargeCal3BeginMinChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal3DurationChange_MMI"
+      signal_value: "120"
+    - signal_name: "ChargeCal3MondayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal3TuesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal3WednesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal3ThursdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal3FridayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal3SaturdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal3SundayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal4BeginHourChange_MMI"
+      signal_value: "18"
+    - signal_name: "ChargeCal4BeginMinChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal4DurationChange_MMI"
+      signal_value: "120"
+    - signal_name: "ChargeCal4MondayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal4TuesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal4WednesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal4ThursdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal4FridayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal4SaturdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal4SundayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal5BeginHourChange_MMI"
+      signal_value: "3"
+    - signal_name: "ChargeCal5BeginMinChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal5DurationChange_MMI"
+      signal_value: "120"
+    - signal_name: "ChargeCal5MondayChange_MMI"
+      signal_value: "1"
+    - signal_name: "PreSoakCal5TuesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal5WednesdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal5ThursdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal5FridayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal5SaturdayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal5SundayChange_MMI"
+      signal_value: "1"
+  schedule_one_calendar_update:
+    - signal_name: "ChargeCal1BeginHourChange_MMI"
+      signal_value: "21"
+    - signal_name: "ChargeCal1BeginMinChange_MMI"
+      signal_value: "14"
+    - signal_name: "ChargeCal1DurationChange_MMI"
+      signal_value: "120"
+    - signal_name: "ChargeCal1MondayChange_MMI"
+      signal_value: "1"
+    - signal_name: "ChargeCal1TuesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1WednesdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1ThursdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1FridayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1SaturdayChange_MMI"
+      signal_value: "0"
+    - signal_name: "ChargeCal1SundayChange_MMI"
+      signal_value: "0"
+Calendar:
+  one_active_calendar_entry:
+    - Id: 1
+      ActivationState: 1
+      ArrivalTimestamp: "T14:00Z"
+      Monday: 1
+      Tuesday: 0
+      Wednesday: 1
+      Thursday: 0
+      Friday: 1
+      Saturday: 0
+      Sunday: 0
+    - Id: 2
+      ActivationState: 0
+      ArrivalTimestamp: "T16:00Z"
+      Monday: 1
+      Tuesday: 0
+      Wednesday: 0
+      Thursday: 0
+      Friday: 0
+      Saturday: 0
+      Sunday: 0
+    - Id: 3
+      ActivationState: 0
+      ArrivalTimestamp: "T18:00Z"
+      Monday: 1
+      Tuesday: 0
+      Wednesday: 0
+      Thursday: 0
+      Friday: 0
+      Saturday: 0
+      Sunday: 0
+    - Id: 4
+      ActivationState: 0
+      ArrivalTimestamp: "T20:00Z"
+      Monday: 1
+      Tuesday: 0
+      Wednesday: 0
+      Thursday: 0
+      Friday: 0
+      Saturday: 0
+      Sunday: 0
+    - Id: 5
+      ActivationState: 0
+      ArrivalTimestamp: "T22:00Z"
+      Monday: 1
+      Tuesday: 0
+      Wednesday: 0
+      Thursday: 0
+      Friday: 0
+      Saturday: 0
+      Sunday: 0
+  one_active_calendar_entry_response:
+    - Id1: 1
+      ActivationState1: 1
+      ArrivalTimestamp1: "T14:00Z"
+      Monday1: 1
+      Tuesday1: 0
+      Wednesday1: 1
+      Thursday1: 0
+      Friday1: 1
+      Saturday1: 0
+      Sunday1: 0
+    - Id2: 2
+      ActivationState2: 0
+      ArrivalTimestamp2: "T16:00Z"
+      Monday2: 1
+      Tuesday2: 0
+      Wednesday2: 0
+      Thursday2: 0
+      Friday2: 0
+      Saturday2: 0
+      Sunday2: 0
+    - Id3: 3
+      ActivationState3: 0
+      ArrivalTimestamp3: "T18:00Z"
+      Monday3: 1
+      Tuesday3: 0
+      Wednesday3: 0
+      Thursday3: 0
+      Friday3: 0
+      Saturday3: 0
+      Sunday3: 0
+    - Id4: 4
+      ActivationState4: 0
+      ArrivalTimestamp4: "T20:00Z"
+      Monday4: 1
+      Tuesday4: 0
+      Wednesday4: 0
+      Thursday4: 0
+      Friday4: 0
+      Saturday4: 0
+      Sunday4: 0
+    - Id5: 5
+      ActivationState5: 0
+      ArrivalTimestamp5: "T22:00Z"
+      Monday5: 1
+      Tuesday5: 0
+      Wednesday5: 0
+      Thursday5: 0
+      Friday5: 0
+      Saturday5: 0
+      Sunday5: 0
+  deactivate_one_calendar_entry:
+    - Id: 1
+      ActivationState: 1
+      ArrivalTimestamp: "T14:00Z"
+      Monday: 0
+      Tuesday: 0
+      Wednesday: 1
+      Thursday: 1
+      Friday: 1
+      Saturday: 1
+      Sunday: 1
+    - Id: 2
+      ActivationState: 0
+      ArrivalTimestamp: "T07:30Z"
+      Monday: 1
+      Tuesday: 0
+      Wednesday: 0
+      Thursday: 0
+      Friday: 1
+      Saturday: 0
+      Sunday: 0
+    - Id: 3
+      ActivationState: 0
+      ArrivalTimestamp: "T18:30Z"
+      Monday: 0
+      Tuesday: 1
+      Wednesday: 0
+      Thursday: 0
+      Friday: 1
+      Saturday: 0
+      Sunday: 0
+    - Id: 4
+      ActivationState: 0
+      ArrivalTimestamp: "T09:30Z"
+      Monday: 0
+      Tuesday: 0
+      Wednesday: 0
+      Thursday: 1
+      Friday: 0
+      Saturday: 1
+      Sunday: 0
+    - Id: 5
+      ActivationState: 0
+      ArrivalTimestamp: "T23:00Z"
+      Monday: 0
+      Tuesday: 0
+      Wednesday: 0
+      Thursday: 1
+      Friday: 0
+      Saturday: 1
+      Sunday: 0
+  schedule_one_calendar_activated:
+    - Id: 1
+      ActivationState: "YES"
+      StartTime: "T21:14Z"
+      Duration: 120
+      Monday: "true"
+      Tuesday: "true"
+      Wednesday: "true"
+      Thursday: "true"
+      Friday: "true"
+      Saturday: "true"
+      Sunday: "true"
+  schedule_five_calendars_activated:
+    - Id: 1
+      ActivationState: "YES"
+      StartTime: "T21:14Z"
+      Duration: 120
+      Monday: "true"
+      Tuesday: "true"
+      Wednesday: "true"
+      Thursday: "true"
+      Friday: "true"
+      Saturday: "true"
+      Sunday: "true"
+    - Id: 2
+      ActivationState: "YES"
+      StartTime: "T10:00Z"
+      Duration: 120
+      Monday: "true"
+      Tuesday: "true"
+      Wednesday: "true"
+      Thursday: "true"
+      Friday: "true"
+      Saturday: "true"
+      Sunday: "true"
+    - Id: 3
+      ActivationState: "YES"
+      StartTime: "T14:00Z"
+      Duration: 120
+      Monday: "true"
+      Tuesday: "true"
+      Wednesday: "true"
+      Thursday: "true"
+      Friday: "true"
+      Saturday: "true"
+      Sunday: "true"
+    - Id: 4
+      ActivationState: "YES"
+      StartTime: "T18:00Z"
+      Duration: 120
+      Monday: "true"
+      Tuesday: "true"
+      Wednesday: "true"
+      Thursday: "true"
+      Friday: "true"
+      Saturday: "true"
+      Sunday: "true"
+    - Id: 5
+      ActivationState: "YES"
+      StartTime: "T03:00Z"
+      Duration: 120
+      Monday: "true"
+      Tuesday: "true"
+      Wednesday: "true"
+      Thursday: "true"
+      Friday: "true"
+      Saturday: "true"
+      Sunday: "true"
+  schedule_five_calendars_deactivated:
+    - Id: 1
+      ActivationState: "NO"
+      StartTime: "T21:14Z"
+      Duration: 120
+      Monday: "true"
+      Tuesday: "true"
+      Wednesday: "true"
+      Thursday: "true"
+      Friday: "true"
+      Saturday: "true"
+      Sunday: "true"
+    - Id: 2
+      ActivationState: "NO"
+      StartTime: "T10:00Z"
+      Duration: 120
+      Monday: "true"
+      Tuesday: "true"
+      Wednesday: "true"
+      Thursday: "true"
+      Friday: "true"
+      Saturday: "true"
+      Sunday: "true"
+    - Id: 3
+      ActivationState: "NO"
+      StartTime: "T14:00Z"
+      Duration: 120
+      Monday: "true"
+      Tuesday: "true"
+      Wednesday: "true"
+      Thursday: "true"
+      Friday: "true"
+      Saturday: "true"
+      Sunday: "true"
+    - Id: 4
+      ActivationState: "NO"
+      StartTime: "T18:00Z"
+      Duration: 120
+      Monday: "true"
+      Tuesday: "true"
+      Wednesday: "true"
+      Thursday: "true"
+      Friday: "true"
+      Saturday: "true"
+      Sunday: "true"
+    - Id: 5
+      ActivationState: "NO"
+      StartTime: "T03:00Z"
+      Duration: 120
+      Monday: "true"
+      Tuesday: "true"
+      Wednesday: "true"
+      Thursday: "true"
+      Friday: "true"
+      Saturday: "true"
+      Sunday: "true"
+ChangeAction:
+  always:
+    mode: always
+  delayed:
+    mode: delayed
+  scheduled_one_active_calendar:
+    mode: scheduled
+    schedules:
+    - id: 1
+      activated: true
+      monday:
+        startTime: T21:15Z
+        duration: 120
+      tuesday:
+        startTime: T21:15Z
+        duration: 120
+      wednesday:
+        startTime: T21:15Z
+        duration: 120
+      thursday:
+        startTime: T21:15Z
+        duration: 120
+      friday:
+        startTime: T21:15Z
+        duration: 120
+      saturday:
+        startTime: T21:15Z
+        duration: 120
+      sunday:
+        startTime: T21:15Z
+        duration: 120
+    - id: 2
+      activated: false
+    - id: 3
+      activated: false
+    - id: 4
+      activated: false
+    - id: 5
+      activated: false
+  scheduled_one_calendar_active_updated:
+    mode: scheduled
+    schedules:
+    - id: 1
+      activated: true
+      monday:
+        startTime: T21:14Z
+        duration: 120
+  scheduled_five_calendars_active:
+    mode: scheduled
+    schedules:
+    - id: 1
+      activated: true
+      monday:
+        startTime: T21:14Z
+        duration: 120
+      tuesday:
+        startTime: T21:14Z
+        duration: 120
+      wednesday:
+        startTime: T21:14Z
+        duration: 120
+      thursday:
+        startTime: T21:14Z
+        duration: 120
+      friday:
+        startTime: T21:14Z
+        duration: 120
+      saturday:
+        startTime: T21:14Z
+        duration: 120
+      sunday:
+        startTime: T21:14Z
+        duration: 120
+    - id: 2
+      activated: true
+      monday:
+        startTime: T10:00Z
+        duration: 120
+      tuesday:
+        startTime: T10:00Z
+        duration: 120
+      wednesday:
+        startTime: T10:00Z
+        duration: 120
+      thursday:
+        startTime: T10:00Z
+        duration: 120
+      friday:
+        startTime: T10:00Z
+        duration: 120
+      saturday:
+        startTime: T10:00Z
+        duration: 120
+      sunday:
+        startTime: T10:00Z
+        duration: 120
+    - id: 3
+      activated: true
+      monday:
+        startTime: T16:00Z
+        duration: 1439
+      tuesday:
+        startTime: T16:00Z
+        duration: 1439
+      wednesday:
+        startTime: T16:00Z
+        duration: 1439
+      thursday:
+        startTime: T16:00Z
+        duration: 1439
+      friday:
+        startTime: T16:00Z
+        duration: 1439
+      saturday:
+        startTime: T16:00Z
+        duration: 1439
+    - id: 4
+      activated: true
+      monday:
+        startTime: T18:00Z
+        duration: 120
+      tuesday:
+        startTime: T18:00Z
+        duration: 120
+      wednesday:
+        startTime: T18:00Z
+        duration: 120
+      thursday:
+        startTime: T18:00Z
+        duration: 120
+      friday:
+        startTime: T18:00Z
+        duration: 120
+      saturday:
+        startTime: T18:00Z
+        duration: 120
+      sunday:
+        startTime: T18:00Z
+        duration: 120
+    - id: 5
+      activated: true
+      monday:
+        startTime: T03:00Z
+        duration: 120
+      tuesday:
+        startTime: T03:00Z
+        duration: 120
+      wednesday:
+        startTime: T03:00Z
+        duration: 120
+      thursday:
+        startTime: T03:00Z
+        duration: 120
+      friday:
+        startTime: T03:00Z
+        duration: 120
+      saturday:
+        startTime: T03:00Z
+        duration: 120
+      sunday:
+        startTime: T03:00Z
+        duration: 120
+  scheduled_five_calendars_inactive:
+    mode: "scheduled"
+    schedules:
+      - id: 1
+        activated: false
+      - id: 2
+        activated: false
+      - id: 3
+        activated: false
+      - id: 4
+        activated: false
+      - id: 5
+        activated: false
+  schedule_five_calendars_deactivated:
+      - id: 1
+        activated: false
+        monday:
+          startTime: T21:14Z
+          duration: 120
+        tuesday:
+          startTime: T21:14Z
+          duration: 120
+        wednesday:
+          startTime: T21:14Z
+          duration: 120
+        thursday:
+          startTime: T21:14Z
+          duration: 120
+        friday:
+          startTime: T21:14Z
+          duration: 120
+        saturday:
+          startTime: T21:14Z
+          duration: 120
+        sunday:
+          startTime: T21:14Z
+          duration: 120
+      - id: 2
+        activated: false
+        monday:
+          startTime: T10:00Z
+          duration: 120
+        tuesday:
+          startTime: T10:00Z
+          duration: 120
+        wednesday:
+          startTime: T10:00Z
+          duration: 120
+        thursday:
+          startTime: T10:00Z
+          duration: 120
+        friday:
+          startTime: T10:00Z
+          duration: 120
+        saturday:
+          startTime: T10:00Z
+          duration: 120
+        sunday:
+          startTime: T10:00Z
+          duration: 120
+      - id: 3
+        activated: false
+        monday:
+          startTime: T14:00Z
+          duration: 120
+        tuesday:
+          startTime: T14:00Z
+          duration: 120
+        wednesday:
+          startTime: T14:00Z
+          duration: 120
+        thursday:
+          startTime: T14:00Z
+          duration: 120
+        friday:
+          startTime: T14:00Z
+          duration: 120
+        saturday:
+          startTime: T14:00Z
+          duration: 120
+        sunday:
+          startTime: T14:00Z
+          duration: 120
+      - id: 4
+        activated: false
+        monday:
+          startTime: T18:00Z
+          duration: 120
+        tuesday:
+          startTime: T18:00Z
+          duration: 120
+        wednesday:
+          startTime: T18:00Z
+          duration: 120
+        thursday:
+          startTime: T18:00Z
+          duration: 120
+        friday:
+          startTime: T18:00Z
+          duration: 120
+        saturday:
+          startTime: T18:00Z
+          duration: 120
+        sunday:
+          startTime: T18:00Z
+          duration: 120
+      - id: 5
+        activated: false
+        monday:
+          startTime: T03:00Z
+          duration: 120
+        tuesday:
+          startTime: T03:00Z
+          duration: 120
+        wednesday:
+          startTime: T03:00Z
+          duration: 120
+        thursday:
+          startTime: T03:00Z
+          duration: 120
+        friday:
+          startTime: T03:00Z
+          duration: 120
+        saturday:
+          startTime: T03:00Z
+          duration: 120
+        sunday:
+          startTime: T03:00Z
+          duration: 120
+ScheduleFiveCalendars:
+  - activated: true
+    monday:
+      startTime: T21:14Z
+      duration: 120
+    tuesday:
+      startTime: T21:14Z
+      duration: 120
+    wednesday:
+      startTime: T21:14Z
+      duration: 120
+    thursday:
+      startTime: T21:14Z
+      duration: 120
+    friday:
+      startTime: T21:14Z
+      duration: 120
+    saturday:
+      startTime: T21:14Z
+      duration: 120
+    sunday:
+      startTime: T21:14Z
+      duration: 120
+  - activated: true
+    monday:
+      startTime: T10:00Z
+      duration: 120
+    tuesday:
+      startTime: T10:00Z
+      duration: 120
+    wednesday:
+      startTime: T10:00Z
+      duration: 120
+    thursday:
+      startTime: T10:00Z
+      duration: 120
+    friday:
+      startTime: T10:00Z
+      duration: 120
+    saturday:
+      startTime: T10:00Z
+      duration: 120
+    sunday:
+      startTime: T10:00Z
+      duration: 120
+  - activated: true
+    monday:
+      startTime: T16:00Z
+      duration: 1439
+    tuesday:
+      startTime: T16:00Z
+      duration: 1439
+    wednesday:
+      startTime: T16:00Z
+      duration: 1439
+    thursday:
+      startTime: T16:00Z
+      duration: 1439
+    friday:
+      startTime: T16:00Z
+      duration: 1439
+    saturday:
+      startTime: T16:00Z
+      duration: 1439
+  - activated: true
+    monday:
+      startTime: T18:00Z
+      duration: 120
+    tuesday:
+      startTime: T18:00Z
+      duration: 120
+    wednesday:
+      startTime: T18:00Z
+      duration: 120
+    thursday:
+      startTime: T18:00Z
+      duration: 120
+    friday:
+      startTime: T18:00Z
+      duration: 120
+    saturday:
+      startTime: T18:00Z
+      duration: 120
+    sunday:
+      startTime: T18:00Z
+      duration: 120
+  - activated: true
+    monday:
+      startTime: T03:00Z
+      duration: 120
+    tuesday:
+      startTime: T03:00Z
+      duration: 120
+    wednesday:
+      startTime: T03:00Z
+      duration: 120
+    thursday:
+      startTime: T03:00Z
+      duration: 120
+    friday:
+      startTime: T03:00Z
+      duration: 120
+    saturday:
+      startTime: T03:00Z
+      duration: 120
+    sunday:
+      startTime: T03:00Z
+      duration: 120
+ScheduleOneCalendarActive:
+  - activated: true
+    monday:
+      startTime: T21:15Z
+      duration: 120
+    tuesday:
+      startTime: T21:15Z
+      duration: 120
+    wednesday:
+      startTime: T21:15Z
+      duration: 120
+    thursday:
+      startTime: T21:15Z
+      duration: 120
+    friday:
+      startTime: T21:15Z
+      duration: 120
+    saturday:
+      startTime: T21:15Z
+      duration: 120
+    sunday:
+      startTime: T21:15Z
+      duration: 120
+KMR_Presoak_calendars:
+  DeactivateSecondCalendar:
+    - activated: true
+      monday: Null
+      tuesday: Null
+      wednesday:
+        readyAtTime: T14:00Z
+      thursday:
+        readyAtTime: T14:00Z
+      friday:
+        readyAtTime: T14:00Z
+      saturday:
+        readyAtTime: T14:00Z
+      sunday:
+        readyAtTime: T14:00Z
+    - activated: false
+      monday:
+        readyAtTime: T07:30Z
+      tuesday: Null
+      wednesday: Null
+      thursday: Null
+      friday:
+        readyAtTime: T07:30Z
+      saturday: Null
+      sunday: Null
+    - activated: false
+      monday: Null
+      tuesday:
+        readyAtTime: T18:30Z
+      wednesday: Null
+      thursday: Null
+      friday:
+        readyAtTime: T18:30Z
+      saturday: Null
+      sunday: Null
+    - activated: false
+      monday: Null
+      tuesday: Null
+      wednesday: Null
+      thursday:
+        readyAtTime: T09:30Z
+      friday: Null
+      saturday:
+        readyAtTime: T09:30Z
+      sunday: Null
+    - activated: false
+      monday: Null
+      tuesday: Null
+      wednesday: Null
+      thursday:
+        readyAtTime: T23:00Z
+      friday: Null
+      saturday:
+        readyAtTime: T23:00Z
+      sunday: Null
+  OneCalendarActivated:
+    - activated: true
+      targetTemperature: 18.0
+      monday:
+        readyAtTime: T14:00Z
+      tuesday: Null
+      wednesday:
+        readyAtTime: T14:00Z
+      thursday: Null
+      friday:
+        readyAtTime: T14:00Z
+      saturday: Null
+      sunday: Null
+    - activated: false
+      targetTemperature: 19.0
+      monday:
+        readyAtTime: T16:00Z
+      tuesday: Null
+      wednesday: Null
+      thursday: Null
+      friday: Null
+      saturday: Null
+      sunday: Null
+    - activated: false
+      targetTemperature: 20.0
+      monday:
+        readyAtTime: T18:00Z
+      tuesday: Null
+      wednesday: Null
+      thursday: Null
+      friday: Null
+      saturday: Null
+      sunday: Null
+    - activated: false
+      targetTemperature: 21.0
+      monday:
+        readyAtTime: T20:00Z
+      tuesday: Null
+      wednesday: Null
+      thursday: Null
+      friday: Null
+      saturday: Null
+      sunday: Null
+    - activated: false
+      targetTemperature: 22.0
+      monday:
+        readyAtTime: T22:00Z
+      tuesday: Null
+      wednesday: Null
+      thursday: Null
+      friday: Null
+      saturday: Null
+      sunday: Null

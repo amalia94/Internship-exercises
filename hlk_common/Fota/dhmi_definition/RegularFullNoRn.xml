@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CampaignDescription> xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="DynMHI_Step2.xsd">
+
+<SignedData version="2.2">
+
+  <GlobalData>
+    <ContentType>SYSTEM</ContentType>
+    <ReleaseNote>
+      <Translation lang="en_GB" name="FOTA Update Campaign"></Translation>
+      <Translation lang="fr_FR" name="Campagne de mise à jour FOTA"></Translation>
+    </ReleaseNote>
+  </GlobalData>
+
+  <Download>
+    <DownloadModalities EasyUpdate="YES" USB="NO" Wifi="NO"/>
+    <DownloadConsent>YES</DownloadConsent>
+    <DownloadDisclaimer>
+    </DownloadDisclaimer>
+    <HMIConditions DriveStage="NA" VehicleMotion="NA" ParkingBrake="NA" HVSOC="NA" HazardLamps="NA"/>
+  </Download>
+
+  <Installation>
+    <InstallConsent>YES</InstallConsent>
+    <HMIConditions DriveStage="NA" VehicleMotion="NA" ParkingBrake="NA" HVSOC="NA" HazardLamps="NA"/>
+    <InstallEstimatedTime>00:45:00</InstallEstimatedTime>
+  </Installation>
+
+  <Activation>
+    <ActivationConsent>YES</ActivationConsent>
+    <ScheduleActivation>NO</ScheduleActivation>
+    <ActivationDisclaimer>
+      <ActivationDisclaimerID>ADID0</ActivationDisclaimerID>
+    </ActivationDisclaimer>
+    <ActivationEstimatedTime>00:30:00</ActivationEstimatedTime>
+    <HMIConditions DriveStage="NA" VehicleMotion="NA" ParkingBrake="NA" HVSOC="NA" HazardLamps="NA"/>
+  </Activation>
+</SignedData>
+
+<Signature>
+MIME-Version: 1.0
+Content-Type: multipart/signed; protocol="application/pkcs7-signature"; micalg="sha-256"; boundary="----1B4BC9EA2211945C96450EA1D17B1A80"This is an S/MIME signed message------1B4BC9EA2211945C96450EA1D17B1A80
+<cms>
+  <file>
+    <name>CampaignDescription.xml</name>
+    <digest>WeuF2vd3Y6+NZ8rDoW5bLspF5ggKv/eBsTMrVZFHeI8=</digest>
+    <digesttype>sha256</digesttype>
+    <path>.</path>
+    <bindingId>3F2504E0-4F89-11D3-9A0C-0305E82C3301</bindingId>
+  </file>
+</cms>
+------1B4BC9EA2211945C96450EA1D17B1A80Content-Type: application/pkcs7-signature; name="smime.p7s"Content-Transfer-Encoding: base64Content-Disposition: attachment; filename="smime.p7s"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------1B4BC9EA2211945C96450EA1D17B1A80--
+</Signature>
+
+</CampaignDescription>

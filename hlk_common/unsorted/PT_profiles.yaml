@@ -1,0 +1,66 @@
+FAM_TRIGGER:
+ Start_of_Journey:
+  Trigger: Vehicle/Trigger/StartOfJourney
+  FuelDisplayedLevel: 20
+  StatusWheelStateFrontLeft: 0
+  StatusWheelStateRearLeft: 0
+  StatusWheelStateRearRight: 0
+  OilLevelWarning: 1
+  BadgeLowBatteryAlert: 0
+  FuelLowLevel: 0
+  OilLevel: 0
+  StatusDistanceTotalizer: 405
+  FuelConsumptionDistanceToEmptyTank: 1000
+  ExternalTempValue: 10
+  GEELowBatteryVoltage: 0
+  SteeringStatus: 0
+  SCRDistanceFinalWarning: 0
+  StatusSCRUreaLevel: 60
+  ZEVAutonomyDisplay: 100
+  EV_AvailableEnergy: 50
+ End_of_Journey:
+  Trigger: Vehicle/Trigger/EndOfJourney
+  AFUFailure: 1
+  CrashAirbagPassengerInhibition: 0
+  DieselFilterWaterDetection: 1
+  ESCABSMalfunction: 1
+  ESCASRMalfunction: 1
+  ESCAYCMalfunction: 1
+  EV_AvailableEnergy: 10
+  EngineCoolantTemp: 21
+  EngineFailureLevel1: 1
+  EngineFailureLevel2: 1
+  EngineWaterTempWarning: 1
+  ExternalTempValue: 10
+  FuelConsumptionDistanceToEmptyTank: 100
+  FuelDisplayedLevel: 20
+  FuelLowLevel: 1
+  GEELowBatteryVoltage: 1
+  OilLevel: 1
+  OilLevelWarning: 0
+  SCRDistanceFinalWarning: 1
+  StatusDistanceTotalizer: 1000
+  StatusSCRUreaLevel: 80
+  SteeringStatus: 1
+  ZEVAutonomyDisplay: 1000
+ Ctx_Journey_Without_permit:
+  Trigger: UCD/Context/Ctx_Journey_Without_permit
+  IdlingTimeInTrip:
+  DurationDRL_OnTrip: 0
+  NbABStriggered: 0
+  NbASRtriggered: 0
+  NbAYCtriggered: 0
+  NbESCTriggered: 0
+  NbMSRtriggered: 0
+  NbPressuresOnBrake: 0
+  TripFuelConsumption: 12400
+ Snapshot_Data:
+  Trigger: Vehicle/Trigger/EndOfJourney
+  FuelConsumptionDistanceToEmptyTank: 234
+  FuelDisplayedLevel: 12
+  MaintenanceFixedRange: 250
+  OilLevel: 1
+  StatusDistanceTotalizer: 123
+ Context_Data:
+  Trigger: UCD/Context/Ctx_Journey_Without_permit
+  TripDistance: 23

@@ -1,0 +1,106 @@
+dlt_receive:
+  part_authent:
+    - ['parseRegionMsgResp - region = emea', True]
+    - ['parsePartitionMsgResp - partition = 001', True]
+    - ['bootstrapping progress change: getPartition -> urlConnectiontTest', True]
+    - ['bootstrapping progress change: urlConnectiontTest -> certInstallIndication', True]
+    - ['bootstrapping state change: inProgress -> completed', True]
+    - ['Send Certificate Installed Notification', True]
+    - ['Send BootstrappingCompletion message with status=true', True]
+  kernel_log:
+    - ['SYSL', True]
+  vss_log:
+    - ['VSIP', True]
+  modem_status:
+    - ['Modem_Status =  1', True]
+  settings_mainactivity:
+    - ['com.android.car.settings/.Settings', True]
+  StDrx:
+    - ['StDrx', True]
+  ecall:
+    - ['MSD content : Ecall Type : AUTOMATIC ECALL', True]
+  StOn:
+    - ['Current IVCState: StOn', True]
+  StOn_Enter:
+    - ['notifyEnterIvcState. IVCState: StOn', True]
+  StOffData_Enter:
+    - ['notifyEnterIvcState. IVCState: StOffData', True]
+  StDrx_Enter:
+    - ['notifyEnterIvcState. IVCState: StDrx', True]
+  StOff_Enter:
+    - [' StOff ', True]
+  StOff:
+    - ['Current IVCState: StOff', True]
+  On_to_StDrx:
+    - ['StOn_to_StDrx', True]
+  crash_log:
+    - ['Receive request to change component state to', False]
+    - ['is no more alive, signal sent to application manager', False]
+  SmartQ:
+    - ['SmartQ stats: Qs=0', True]
+    - ['B=0', True]
+    - ['eMMC=0', True]
+    - ['X=0', True]
+    - ['OR=0', True]
+    - ['XR=0', True]
+  epmc:
+    - ['Budget reset to values - Budget: ${ret_val_epmc} Wh', True]
+  epmc_budget_0:
+    - ['Budget = 0 Wh', True]
+  mqttao:
+    - ['PINGREQ', True]
+    - ['PINGRESP', True]
+  power_on:
+    - ['Connecting to serverURI', True]
+    - ['Current IVCState: StOn', True]
+    - ['OCMConnectionStatus set:  CONNECTED', True]
+  mqtt_stoffdata:
+    - ['Current IVCState: StOn', True]
+    - ['Current IVCState: StOffData', True]
+    - ['"sdeh":2', True ]
+    - ['PUBLISH', True ]
+    - ['PUBACK', True ]
+  mqtt_stoff:
+    - ['Current IVCState: StOn', True]
+    - ['Current IVCState: StOff', True]
+    - ['"sdeh":2', True]
+    - ['PUBLISH', True]
+    - ['PUBACK', True]
+  mqtt_stdrx:
+    - ['Current IVCState: StOn', True]
+    - ['Current IVCState: StDrx', True]
+    - ['"sdeh":2', True]
+    - ['PUBLISH', True]
+    - ['PUBACK', True]
+  Drx_State:
+    - ['Current IVCState: StDrx', True]
+  operation_mode_default:
+    - ['Manager::init: Operation Mode:  DEFAULT_MODE', True]
+  operation_mode_factory:
+    - ['Manager::init: Operation Mode:  FACTORY_MODE', True]
+  mqttao_02:
+    - ['Current IVCState: StOffData', True]
+    - ['PINGREQ', True]
+    - ['PINGRESP', True]
+  cgw_violation:
+    - ['(Security1).*(1$)', True]
+    - ['(Security2).*(2$)', True]
+    - ['(Security3).*(2$)', True]
+    - ['(Security4).*(1$)', True]
+    - ['(Security5).*(0$)', True]
+    - ['(Security6).*(1$)', True]
+    - ['(Security7).*(0$)', True]
+    - ['(Security8).*(1$)', True]
+  va_uc2:
+    - ['parseRegionMsgResp - region = emea', True]
+    - ['parsePartitionMsgResp - partition = 001', True]
+    - ['bootstrapping progress change: getPartition -> urlConnectiontTest', True]
+    - ['bootstrapping progress change: urlConnectiontTest -> certInstallIndication', True]
+    - ['bootstrapping state change: inProgress -> completed', True]
+    - ['Send Certificate Installed Notification', True]
+    - ['Device certificate stored', True]
+    - ['Send BootstrappingCompletion message with status=true', True]
+  eCall_transitions:
+    - ['IVCState: StECall', True]
+    - ['IVCState: StCallBack', True]
+    - ['IVCState: StOn', True]

@@ -1,0 +1,266 @@
+doip_byte_configuration_ivi_android_12:
+  econav:
+    did: 2004
+    did_name: HMI
+    byte_position: [32, 33, 30, 30, 3, 33]
+    values: [0f, 95, c0, c8, '03', d5]
+  widget:
+    did: 2004
+    did_name: HMI
+    byte_position: [36]
+    values: ['18']
+  displaysize:
+    did: 2006
+    did_name: Display
+    byte_position: [28]
+    values: ['20']
+  radio_dab:
+    did: 2008
+    did_name: Multimedia
+    byte_position: [31, 30]
+    values: ['c0','d5']
+  drivermassage:
+    did: 2004
+    did_name: HMI
+    byte_position: [49, 50, 50, 51, 53, 48, 48, 49, 47, 47, 47]
+    values: ['32', 'd8', 'd9', '54', '92', '88', '8c', '72', '80', '90', 'b0']
+  trip_saving:
+    did: 2004
+    did_name: HMI
+    byte_position: [03, 30]
+    values: ['03', 'c0']
+  fuel_saving:
+    did: 2004
+    did_name: HMI
+    byte_position: [30]
+    values: ['c8']
+  tirepressureresetbutton:
+    did: 2004
+    did_name: HMI
+    byte_position: [37]
+    values: ['06']
+  vehicle_mode:
+    did: 2004
+    did_name: HMI
+    byte_position: [3]
+    values: ['12']
+  cfg_fueltype:
+    did: 2002
+    did_name: MEX
+    byte_position: [0]
+    values: [c8]
+  cnf_nav:
+    did: 2003
+    did_name: NAV
+    byte_position: [0]
+    values: ['55']
+  clock_24:
+    did: 2004
+    did_name: HMI
+    byte_position: [5]
+    values: ['9e']
+  clock_12:
+    did: 2004
+    did_name: HMI
+    byte_position: [5]
+    values: ['5e']
+  blacklight_autodimming:
+    did: 2004
+    did_name: HMI
+    byte_position: [29]
+    values: ['87']
+  vrc:
+    did: 2007
+    did_name: RVC
+    byte_position: [2]
+    values: ['50']
+  dtc_adas:
+    did: 2004
+    did_name: HMI
+    byte_position: [20]
+    values: ['03']
+  adas_osp:
+    did: 2004
+    did_name: HMI
+    byte_position: [22]
+    values: ['f7']
+  adas_ldw:
+    did: 2004
+    did_name: HMI
+    byte_position: [22, 27, 29]
+    values: ['5d', '20', '81']
+  ev_energy_flow_DOM:
+    did: 2004
+    did_name: HMI
+    byte_position: [3,37]
+    values: ['12','36']
+  ev_energy_flow:
+    did: 2004
+    did_name: HMI
+    byte_position: [3,37]
+    values: ['02','16']
+  mpu_adb_present:
+    did: 2004
+    did_name: HMI
+    byte_position: [38]
+    values: ['5f']
+  cfg_hmi_date_display_text:
+    did: 2004
+    did_name: HMI
+    byte_position: [5]
+    values: ['aa']
+  cnf_hmi_access_mpu_wac_silentMode:
+    did: 2004
+    did_name: HMI
+    byte_position: [16]
+    values: ['07']
+  mpu_afs_present:
+    did: 2004
+    did_name: HMI
+    byte_position: [49]
+    values: ['2f']
+  vision_MPU_autofrontwiper:
+    did: 2004
+    did_name: HMI
+    byte_position: [34]
+    values: ['07']
+  access_mpu_volumalarm:
+    did: 2004
+    did_name: HMI
+    byte_position: [17]
+    values: ['2a']
+  drivingmode:
+    did: 2004
+    did_name: HMI
+    byte_position: [33]
+    values: ['95']
+  mpu_autolockup:
+    did: 2004
+    did_name: HMI
+    byte_position: [16]
+    values: ['07']
+  drivingmode_econav:
+    did: 2004
+    did_name: HMI
+    byte_position: [35]
+    values: ['40']
+  econav_setting:
+    did: 2004
+    did_name: HMI
+    byte_position: [35]
+    values: ['a5']
+  vehiclemode_phev:
+    did: 2004
+    did_name: HMI
+    byte_position: [3]
+    values: ['06']
+  dreco_econav:
+    did: 2004
+    did_name: HMI
+    byte_position: [32]
+    values: ['30']
+  tpms_autoloc:
+    did: 2004
+    did_name: HMI
+    byte_position: [41]
+    values: ['28']
+  tpmsmmi:
+    did: 2004
+    did_name: HMI
+    byte_position: [41]
+    values: ['c9']
+  CNF_DrivingEco_DRECO_IMP:
+    did: 2004
+    did_name: HMI
+    byte_position: [31]
+    values: ['e2']
+  cnf_hmi_bodyequipment_mpu_virtualkey:
+    did: 2004
+    did_name: HMI
+    byte_position: [56]
+    values: ['bc']
+  cnf_hmi_comfort_no_auto_display:
+    did: 2004
+    did_name: HMI
+    byte_position: [45]
+    values: ['87']
+  cnf_hmi_comfort_auto_display_by_hard_button:
+    did: 2004
+    did_name: HMI
+    byte_position: [45]
+    values: ['c7']
+  CNF_HMI_ADAS_UPA_AUDIO:
+    did: 2004
+    did_name: HMI
+    byte_position: [18]
+    values: ['02']
+  cnf_hmi_comfort_front_defrost_no_display:
+    did: 2004
+    did_name: HMI
+    byte_position: [46]
+    values: ['3e']
+  cnf_hmi_comfort_front_defrost_display:
+    did: 2004
+    did_name: HMI
+    byte_position: [46]
+    values: ['7e']
+  tpmsmmi_puncher:
+    did: 2004
+    did_name: HMI
+    byte_position: [41]
+    values: ['28']
+  tpmsmmi_underinflated:
+    did: 2004
+    did_name: HMI
+    byte_position: [41]
+    values: ['48']
+  CNF_SeatPresence_Row1_C:
+    did: 2017
+    did_name: Nissan_Vehicle_information
+    byte_position: [1]
+    values: ['00']
+  CNF_SeatPresence_Row3_L:
+    did: 2017
+    did_name: Nissan_Vehicle_information
+    byte_position: [2]
+    values: ['06']
+  CNF_SeatPresence_Row3_C:
+    did: 2017
+    did_name: Nissan_Vehicle_information
+    byte_position: [2]
+    values: ['02']
+  CNF_SeatPresence_Row3_R:
+    did: 2017
+    did_name: Nissan_Vehicle_information
+    byte_position: [2]
+    values: ['00']
+  CNF_SeatPresence_Row1_P:
+    did: 2017
+    did_name: Nissan_Vehicle_information
+    byte_position: [2]
+    values: ['80']
+  CNF_SeatPresence_Row2_L:
+    did: 2017
+    did_name: Nissan_Vehicle_information
+    byte_position: [2]
+    values: ['c0']
+  CNF_SeatPresence_Row2_C:
+    did: 2017
+    did_name: Nissan_Vehicle_information
+    byte_position: [2]
+    values: ['e0']
+  CNF_SeatPresence_Row2_R:
+    did: 2017
+    did_name: Nissan_Vehicle_information
+    byte_position: [2]
+    values: ['f0']
+  ClimBlowerLevelDisplay:
+    did: 2004
+    did_name: HMI
+    byte_position: [80]
+    values: ['17'] 
+  vehicle_mode_cub:
+    did: 2004
+    did_name: HMI
+    byte_position: [3]
+    values: ['02']

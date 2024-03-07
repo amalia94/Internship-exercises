@@ -1,0 +1,61 @@
+hmi_info_ivi_android_10:
+  matrix_vision :
+    tap_action: ["Vehicle", "Outside", "Driving lights"]
+    search_action: {"text": "Matrix Vision"}
+    image_to_validate: ["None"]
+  adaptive_vision_toggle_button :
+    tap_action: ["Vehicle", "Outside", "Driving lights"]
+    search_action: {"resource-id": "com.renault.vehiclesettings:id/switchWidget", "text":"ON"}
+    image_to_validate: ["None"]
+  adaptive_vision :
+    tap_action: [ "Vehicle", "Outside", "Driving lights" ]
+    search_action: {"text": "Adaptive Vision"}
+    image_to_validate: ["None"]
+  disable_volumetric_alarm_off :
+    tap_action: ["Vehicle", "Outside", "Access"]
+    search_action: {"resource-id":"com.renault.vehiclesettings:id/switchWidget", "text":"OFF"}
+    image_to_validate: ["None"]
+  driving_assistance :
+    tap_action: ["Driving assistance", "Speed management"]
+    search_action: {"text": "Display speed limitations"}
+    image_to_validate: ["None"]
+  silent_mode :
+    tap_action: ["Vehicle", "Outside", "Access"]
+    search_action: {"text": "Silent mode"}
+    image_to_validate: ["None"]
+  clock_12h:
+    tap_action: ["Date and time"]
+    search_action: { "text": "12h" }
+    image_to_validate: ["None"]
+  clock_24h:
+    tap_action: ["Date and time"]
+    search_action: {"text": "24h"}
+    image_to_validate: ["None"]
+  silent_mode_on :
+    tap_action: ["Vehicle", "Outside", "Access"]
+    search_action: {"text": "Silent mode", "text": "ON"}
+    image_to_validate: ["None"]
+  automatic_front_wiper:
+    tap_action: [ "Vehicle", "Outside", "Wiping" ]
+    search_action: { "text": "Automatic front wiper" }
+    image_to_validate: ["None"]
+  follow_me_home :
+    tap_action: ["Vehicle", "Outside", "Welcome"]
+    search_action: {"text": "Follow me home", "text": "Driving lights"}
+    image_to_validate: ["Follow_me_home_30s.png"]
+  auto_door_lock_while_driving_on:
+    tap_action: ["Vehicle", "Outside", "Access"]
+    search_action: {"resource-id": "com.renault.vehiclesettings:id/switchWidget", "text":"ON"}
+    image_to_validate: ["None"]
+  access_and_start_by_phone :
+    tap_action: ["Vehicle", "Outside", "Access"]
+    search_action: {"text": "Access and start by phone"}
+    image_to_validate: ["None"]
+  traffic_side_selection_left:
+    tap_action: [ "Outside", "Driving lights", "Traffic side selection" ]
+    search_action: { "text": "Left" }
+    image_to_validate: [ "traffic_side_left_signal_myf2.png" ]
+  traffic_side_selection_right:
+    tap_action: [ "Outside", "Driving lights", "Traffic side selection" ]
+    search_action: { "text": "Right" }
+    image_to_validate: [ "traffic_side_right_signal_myf2.png" ]

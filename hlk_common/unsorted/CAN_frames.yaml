@@ -1,0 +1,39 @@
+CAN_FRAMES:
+  C1A-HS:
+    StatusRES:
+      signal_name: "Vehicle/Received/Status/RES"
+      Start: "12"
+      Stop: "6"
+      DoubleStart: "12"
+    BatteryVoltage:
+      signal_name: "BatteryVoltage"
+    ExternalTemp:
+      signal_name: "ExternalTemperature"
+    SwitchOffSESDisturbers:
+      signal_name: "SwitchOffSESDisturbers"
+    WelcomeSequenceStatus:
+      signal_name: "WelcomeSequenceStatus"
+    SwitchPosition:
+      signal_name: "IgnitionSwitchPosition"
+    AvailableEnergy:
+      signal_name: "Vehicle/Received/EV/AvailableEnergy"
+    PushtoStartButton:
+      signal_name: "PushtoStartButton"
+      "On": "1"
+      "Off": "0"
+    Presoak:
+      signal_name: "Vehicle/Received/HVAC/Presoak/ActivationStatus"
+      "presoak_forbidden": "0"
+      "no_presoak_in_progress": "1"
+      "presoak_in_progress": "2"
+      "unavailable": "3"
+FRAME_IDS:
+  TCU_A1:
+    C1A:
+      frame_id: "43C"
+    C1A-HS:
+      frame_id: "3F4"
+    T4VS:
+      frame_id: "634"
+    T4VS_EV:
+      frame_id: "634"

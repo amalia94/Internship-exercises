@@ -1,0 +1,247 @@
+doip_byte_configuration_ivi_android_10:
+  econav:
+    did: 2004
+    did_name: HMI
+    byte_position: [32, 33, 30, 30, 3, 33]
+    values: [0f, 95, c0, c8, '03', d5]
+  widget:
+    did: 2004
+    did_name: HMI
+    byte_position: [36]
+    values: ['18']
+  displaysize:
+    did: 2006
+    did_name: Display
+    byte_position: [28]
+    values: ['20']
+  radio_dab:
+    did: 2008
+    did_name: Multimedia
+    byte_position: [31, 30]
+    values: ['c0','d5']
+  drivermassage:
+    did: 2004
+    did_name: HMI
+    byte_position: [42, 42, 43, 44, 46, 41, 41, 41, 44, 40, 40]
+    values: ['c1', 'cb', '6a', 'a0', '92', '20', '30', '31', '40', '42', 'c2']
+  trip_saving:
+    did: 2004
+    did_name: HMI
+    byte_position: [03, 30]
+    values: ['03', 'c0']
+  fuel_saving:
+    did: 2004
+    did_name: HMI
+    byte_position: [30]
+    values: ['c8']
+  tirepressureresetbutton:
+    did: 2004
+    did_name: HMI
+    byte_position: [37]
+    values: ['06']
+  vehicle_mode:
+    did: 2004
+    did_name: HMI
+    byte_position: [4]
+    values: ['01']
+  cfg_fueltype:
+    did: 2002
+    did_name: MEX
+    byte_position: [1]
+    values: [c1]
+  cnf_nav:
+    did: 2003
+    did_name: NAV
+    byte_position: [1]
+    values: ['55']
+  clock_24:
+    did: 2004
+    did_name: HMI
+    byte_position: [5]
+    values: ['9e']
+  clock_12:
+    did: 2004
+    did_name: HMI
+    byte_position: [5]
+    values: ['5e']
+  blacklight_autodimming:
+    did: 2004
+    did_name: HMI
+    byte_position: [27]
+    values: ['02']
+  vrc:
+    did: 2007
+    did_name: RVC
+    byte_position: [2]
+    values: ['50']
+  dtc_adas:
+    did: 2004
+    did_name: HMI
+    byte_position: [20]
+    values: ['03']
+  adas_osp:
+    did: 2004
+    did_name: HMI
+    byte_position: [22]
+    values: ['f7']
+  adas_ldw:
+    did: 2004
+    did_name: HMI
+    byte_position: [21]
+    values: ['5d']
+  ev_energy_flow:
+    did: 2004
+    did_name: HMI
+    byte_position: [3, 35]
+    values: ['01', '58']
+  mpu_adb_present:
+    did: 2004
+    did_name: HMI
+    byte_position: [38]
+    values: ['5f']
+  cfg_hmi_date_display_text:
+    did: 2004
+    did_name: HMI
+    byte_position: [5]
+    values: ['aa']
+  cnf_hmi_access_mpu_wac_silentMode:
+    did: 2004
+    did_name: HMI
+    byte_position: [16]
+    values: ['07']
+  mpu_afs_present:
+    did: 2004
+    did_name: HMI
+    byte_position: [49]
+    values: ['2f']
+  vision_MPU_autofrontwiper:
+    did: 2004
+    did_name: HMI
+    byte_position: [34]
+    values: ['07']
+  access_mpu_volumalarm:
+    did: 2004
+    did_name: HMI
+    byte_position: [17]
+    values: ['2a']
+  drivingmode:
+    did: 2004
+    did_name: HMI
+    byte_position: [33]
+    values: ['95']
+  mpu_autofmh:
+    did: 2004
+    did_name: HMI
+    byte_position: [52]
+    values: ['c9']
+  mpu_autolockup:
+    did: 2004
+    did_name: HMI
+    byte_position: [16]
+    values: ['07']
+  drivingmode_econav:
+    did: 2004
+    did_name: HMI
+    byte_position: [32]
+    values: ['0f']
+  econav_setting:
+    did: 2004
+    did_name: HMI
+    byte_position: [35]
+    values: ['a5']
+  vehiclemode_phev:
+    did: 2004
+    did_name: HMI
+    byte_position: [3]
+    values: ['06']
+  dreco_econav:
+    did: 2004
+    did_name: HMI
+    byte_position: [32]
+    values: ['30']
+  display_touch_and_screen:
+    did: 2006
+    did_name: Display
+    byte_position: [28]
+    values: ['10']
+  mex_present:
+    did: 2002
+    did_name: MEX
+    byte_position: [0]
+    values: ['c9']
+  mex_dds_present:
+    did: 2002
+    did_name: MEX
+    byte_position: [163]
+    values: ['02']
+  mex_dds_settings:
+    did: 2002
+    did_name: MEX
+    byte_position: [164]
+    values: ['20']
+  mex_display_settings:
+    did: 2002
+    did_name: MEX
+    byte_position: [131,132,133]
+    values: ['df','ff','f1']
+  tpms_autoloc:
+    did: 2004
+    did_name: HMI
+    byte_position: [41]
+    values: ['28']
+  tpmsmmi:
+    did: 2004
+    did_name: HMI
+    byte_position: [37]
+    values: ['05']
+  cnf_hmi_bodyequipment_mpu_virtualkey:
+    did: 2004
+    did_name: HMI
+    byte_position: [56]
+    values: ['bc']
+  mpu_driving_side_present:
+    did: 2004
+    did_name: HMI
+    byte_position: [52]
+    values: ['c3']
+  cnf_hmi_comfort_no_auto_display:
+    did: 2004
+    did_name: HMI
+    byte_position: [45]
+    values: ['87']
+  cnf_hmi_comfort_auto_display_by_hard_button:
+    did: 2004
+    did_name: HMI
+    byte_position: [45]
+    values: ['c7']
+  CNF_HMI_ADAS_UPA_AUDIO:
+    did: 2004
+    did_name: HMI
+    byte_position: [18]
+    values: ['02']
+  cnf_hmi_comfort_front_defrost_no_display:
+    did: 2004
+    did_name: HMI
+    byte_position: [46]
+    values: ['3e']
+  cnf_hmi_comfort_front_defrost_display:
+    did: 2004
+    did_name: HMI
+    byte_position: [46]
+    values: ['7e']
+  tpmsmmi_puncher:
+    did: 2004
+    did_name: HMI
+    byte_position: [41]
+    values: ['28']
+  tpmsmmi_underinflated:
+    did: 2004
+    did_name: HMI
+    byte_position: [41]
+    values: ['48']
+  CNF_HMI_COMFORT_CAMAN_CAREG:
+    did: 2004
+    did_name: HMI
+    byte_position: [48]
+    values: ['00']
+

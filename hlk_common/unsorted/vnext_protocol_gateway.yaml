@@ -1,0 +1,639 @@
+Protocol_Notification:
+  obfcm_regulatory_data:
+    MessageType: RemoteNotification
+    TargetId: OBDRegulatory
+    params:
+      obdrd: "dynamic"
+  obfcm_alliance_data:
+    MessageType: RemoteNotification
+    TargetId: OBDAlliance
+    params:
+      obdd: "dynamic"
+  eva_001_single_trigger_data:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_PowerRelayOpen_BLMS
+      bhct1: 3.0
+      bhct2: 3.0
+      bhct3: 3.0
+      bhct4: 3.0
+      bhct5: 3.0
+      bhct6: 3.0
+      bhct7: 3.0
+      bhct8: 3.0
+      bhct9: 3.0
+      bhct10: 3.0
+      bhct11: 3.0
+      bhct12: 3.0
+      bhct13: 3.0
+      bhct14: 3.0
+      bhct15: 3.0
+      bhct16: 3.0
+      bhct17: 3.0
+      bhct18: 3.0
+      bhct19: 3.0
+      bhct20: 3.0
+      bhct21: 3.0
+      bhct22: 3.0
+      bhct23: 3.0
+      bhct24: 3.0
+      bhct25: 3.0
+      bhct26: 3.0
+      bhct27: 3.0
+      bhct28: 3.0
+      bhct29: 3.0
+      bhct30: 3.0
+      bhct31: 3.0
+      bhct32: 3.0
+      bhct33: 3.0
+      bhct34: 3.0
+      bhct35: 3.0
+      bhct36: 3.0
+      bhct37: 3.0
+      bhct38: 3.0
+      bhct39: 3.0
+      bhct40: 3.0
+      bhct41: 3.0
+      bhct42: 3.0
+      bhct43: 3.0
+      bhct44: 3.0
+      bhct45: 3.0
+      bhct46: 3.0
+      bhct47: 3.0
+      bhct48: 3.0
+      bhct49: 3.0
+      bhct50: 3.0
+      bhct51: 3.0
+      bhct52: 3.0
+      bhct53: 3.0
+      bhct54: 3.0
+      bhct55: 3.0
+      bhct56: 3.0
+      bhct57: 3.0
+      bhct58: 3.0
+      bhct59: 3.0
+      bhct60: 3.0
+      bhct61: 3.0
+      bhct62: 3.0
+      bhct63: 3.0
+      bhct64: 3.0
+      bhct65: 3.0
+      bhct66: 3.0
+      bhct67: 3.0
+      bhct68: 3.0
+      bhct69: 3.0
+      bhct70: 3.0
+      bhct71: 3.0
+      bhct72: 3.0
+      bhct73: 3.0
+      bhct74: 3.0
+      bhct75: 3.0
+      bhct76: 3.0
+      bhct77: 3.0
+      bhct78: 3.0
+      bhct79: 3.0
+      bhct80: 3.0
+      bhct81: 3.0
+      bhct82: 3.0
+      bhct83: 3.0
+      bhct84: 3.0
+      bhct85: 3.0
+      bhct86: 3.0
+      bhct87: 3.0
+      bhct88: 3.0
+      bhct89: 3.0
+      bhct90: 3.0
+      bhct91: 3.0
+      bhct92: 3.0
+      bhct93: 3.0
+      bhct94: 3.0
+      bhct95: 3.0
+      bhct96: 3.0
+  eva_periodic_trigger_data_1:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_60_Seconds_BLMS
+      ebt: 20.0
+      bstemma: 50
+      bstemmi: 10
+  eva_periodic_trigger_data_2:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_60_Seconds_DuringCharge_BLMS
+      evcspl: 70.199996948242188
+      evcpv: 200.0
+      chaip: 100.0
+      ecmvl: 700.0
+      evcmxvl: 200
+      evbccst: 1
+      ecrt: 600
+      ebctc: 300.0
+  eva_periodic_trigger_data_3:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_60_Seconds_Airbag_Crash_Order
+      evblmsemiv: 200
+      dcnevo: 12
+  eva_periodic_trigger_data_4:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_60_Seconds_BLMS_Safety_Mode_1
+      evblmshsgic: 250
+      evblmsemic: 100
+      evblmsreemtq: 200
+  eva_periodic_trigger_data_5:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_60_Seconds_Derating_Temp_ME_Inverter_BLMS
+      mbtrq: 60
+      evblmsemete: 70
+      mbsmtr: 100
+      mbsmint: -20
+      evblmsememgt: 50
+      evblmsememmt: 100
+  eva_periodic_trigger_data_6:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_60_Seconds_Derating_Temp_HSG_Inverter_BLMS
+      evblmshsgtr: 90
+      evblmshsgete: 80
+      hbsmt: 450
+      hbsmint: -30
+      evblmshsgemgt: 50
+      evblmshsgemmt: 200
+  eva_periodic_trigger_data_7:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_60_Seconds_ME_default_BLMS
+      evblmsems: 5000
+      evblmsitd: 100
+      evblmsemtd: 60
+      ecblmspebwt: 110
+      eecoof: 5
+      evblmsemift: 1
+      meesfd: 1
+      meemfd: 1
+  eva_periodic_trigger_data_8:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_60_Seconds_HSG_default_BLMS
+      evblmshsgems: 6000
+      evblmshsgemt: 30
+      evblmshsgit: 80
+      bfty: 1
+      heesfd: 1
+      heemfd: 1
+  eva_003_single_trigger_data_1:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_ProhibitionByRent_changed
+      chaprobr: 1
+  eva_003_single_trigger_data_2:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_ChargeStatus_changed_BLMS
+      chasta: 1
+  eva_003_single_trigger_data_3:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_CPLCFaultType_changed
+      evblmscft: 0
+  eva_003_single_trigger_data_4:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_ComboReady_BLMS_changed
+      ebcrdy: 1
+  eva_003_single_trigger_data_5:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_ChargeHLCRequest_changed
+      ebcchr: 1
+  eva_003_single_trigger_data_6:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_ErrorCode_BLMS_changed
+      ebcec: 1
+  eva_003_single_trigger_data_7:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_RequestEnergyTransferMode_BLMS_changed
+      ebcretm: 1
+  eva_003_single_trigger_data_8:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_ProgrammingStatus_BLMS_changed
+      echps: 1
+  eva_003_single_trigger_data_9:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_HVCharge_BLMS_changed
+      echc: 1
+  eva_003_single_trigger_data_10:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_OperatingType_changed_BLMS
+      evblmsot: 0
+  eva_003_single_trigger_data_11:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_ChargeAlert_changed_BLMS
+      chaale: 1
+  eva_003_single_trigger_data_12:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_ChangeCableStatus_no_privacy
+      ecpc: 1
+  eva_003_single_trigger_data_13:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_StartOfChargeTrigger_changed
+      evhvbsoct: 1
+  emulate_ubam_data_periodic_trigger_1:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_120_seconds_no_privacy
+      etv: 25.0
+  emulate_ubam_data_periodic_trigger_2:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy
+      brapre: 70.0
+      sv: 150.0
+      erpm: 3000.0
+      atrc: 1.0
+      emet: 700.0
+      esci: 2
+      aloc: 1.0
+      vhyrc: 35.0
+      vhsrl: 120
+      vhsrr: 120
+      vhsfr: 120
+      vhsfl: 120
+      vstragl: 180.0
+      wpfl: 4500.0
+      wpfr: 4500.0
+      wprr: 4500.0
+      wprl: 4500.0
+      gbcsmi: 2
+      locspe: 200
+  coma_001_trigger_1:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      TriggerType: Vehicle/Trigger/EndOfJourney
+      cdoo: 0
+      milr: 1
+      motb: 255
+      sblfl: 1
+  coma_001_trigger_2:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: Vehicle/Trigger/EndOfJourney
+      abmf: 0
+      afuf: 0
+      asmf: 0
+      aymf: 0
+      bfs: 0
+      blba: 0
+      cai: 0
+      cam: 0
+      chgasc: 0
+      flolev: 1
+      dfwd: 0
+      dtriu: 0
+      ebsd: 0
+      efl1: 0
+      efl2: 0
+      ewtw: 0
+      glbv: 2
+      hedpycf: 0
+      km: 123.0
+      maindtb: 120
+      mfr: 250.0
+      moam: 0
+      momm: 250.0
+      mpffw: 1
+      olev: 1
+      owar: 0
+      scrdfw: 0
+      scrul: 0.0
+      scrwd: 0
+      vds: 0
+      wsfl: 2
+      wsfr: 2
+      wsrl: 2
+      wsrr: 2
+  coma_001_trigger_3:
+    MessageType: UCD_Context
+    TargetId: Telemetry
+    params:
+      Context: UCD/Context/Ctx_Journey_Without_permit
+      tmect: 30.0
+  coma_001_trigger_4:
+    MessageType: UCD_Context
+    TargetId: Telemetry
+    params:
+      Context: UCD/Sent/Trigger/Trg_GlobalWarning_no_privacy
+      gvws: 2
+  payd_data:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: Vehicle/Trigger/EndOfJourney
+      km: 150.0
+  phyd_data_1:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: Vehicle/Trigger/EndOfJourney
+      km: 123.0
+  phyd_data_2:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy
+      lochea: "dynamic"
+      vlola: "dynamic"
+      vlolo: "dynamic"
+      locval: "dynamic"
+      brapre: 3
+      sv: 100
+      aloc: 2
+      atrc: 1
+  ubam_data_single_trigger_1:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_StopAutoForbidden_changed_no_privacy
+      gsaf: 2.0
+  ubam_data_single_trigger_2:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: Vehicle/Trigger/EndOfJourney
+      noerlod: 50.0
+      km: 123.0
+      eodr: 80.0
+      evaafcdr: 55
+      evaafcs: 60
+      socbat: 75
+      ecosts: 120
+      ecoec: 130
+      ecocs: 140
+      ecosls: 145
+  eva_002_single_trigger_data_1:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_StartOfCharge
+      evblmsmacc: 15.0
+      hvbct: 1
+  eva_002_single_trigger_data_2:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_EndOfCharge
+      bhdri: 12345ABCD
+      bhpar: 12345ABCD
+      blchgwt: 45.0
+      bschco: 4
+      bschpa: 5
+      bscvma: 4.0
+      bscvmi: 2.0
+      bsgkp: 1.2999999523162842
+      bsgkv: 1.2000000476837158
+      bsmil: 3
+      bssoc: 20.0
+      bstemma: 35
+      bstemmi: 10
+      dcvhpid: 200
+      dcvlpid: 110
+      ebel: 5.0
+      ebt: 30.0
+      etv: 25.0
+      evae: 50.0
+      evbaccit: 25.0
+      evblmsacp: 20.0
+      evblmscit: 30.0
+      evblmshvii: 1000
+      evblmsit: 500.0
+      evblmssft: 1
+      evblmsmft: 1
+      evblmstp: 40.0
+      evblnpu: 1
+      evusoc: 40.000015258789062
+      hvbap: 1.5
+      hvbatp: 2
+      hvbgp: 1.7000000476837158
+      km: 123.0
+      zevad: 2.0
+  eva_002_single_trigger_data_3:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_EndOfMission_BLMS
+      blhbrsh: 100
+      ecocs: 140
+      ecoec: 130
+      ecosls: 145
+      ecosts: 120
+      evbnaccs: 5000.0
+      evbnsc: 6000.0
+      evbnsab: 6000.0
+      evblmsndcro: 8000.0
+      evblmsndcrowc: 8000.0
+  eva_002_single_trigger_data_4:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_EndOfJourney_BLMS
+      dtriu: 0
+      evblnhbro: 1000
+      evprs: 1
+  dabr_003_trigger_data:
+    MessageType: UCD_Context
+    TargetId: Telemetry
+    params:
+      Context: UCD/Context/Ctx_Journey_Without_permit
+      atskm: 23.0
+      td: 0.0
+      tfc: 0.0
+      trienco: 0.0
+  eva_context_trigger_data:
+    MessageType: UCD_Context
+    TargetId: Telemetry
+    params:
+      Context: UCD/Context/Ctx_Journey_Without_permit
+      nbeminvnft: 1
+      nbemesf: 1
+      nbmefa: 1
+      nbemdrds: 1
+      td: 77.0
+      trienco: 30.0
+  dabr_data_periodic_trigger_1:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_120_seconds_no_privacy
+      ebel: 40.0
+      etv: 21.0
+      flev: 30.0
+      htccv: 20.0
+      km: 123.0
+      wpfl: 90.0
+      wpfr: 90.0
+      wprl: 90.0
+      wprr: 90.0
+  dabr_data_periodic_trigger_2:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_300_Seconds_DuringCharge_Common_no_privacy
+      ebel: 40.0
+      ecrt: 60
+      evblmsit: 200.0
+  dabr_data_periodic_trigger_3:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy
+      vlola:
+        value: "dynamic"
+      vlolo:
+        value: "dynamic"
+      lochea:
+        value: "dynamic"
+      locval:
+        value: "dynamic"
+      locts:
+        value: "dynamic"
+      sv:
+        value: [100.0]
+      erpm:
+        value: [3500.0]
+      emet:
+        value: [200.0]
+      brapre:
+        value: [3.0]
+      aloc:
+        value: [1.0]
+      atrc:
+        value: [1.0]
+  dabr_single_trigger_1:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: Vehicle/Trigger/StartOfJourney
+      cd: 1
+      ebel: 40.0
+      ecrt: 60
+      etv: 21.0
+      ewtw: 0
+      flev: 30.0
+      flolev: 0
+      glbv: 3
+      htccv: 20.0
+      km: 123.0
+      owar: 1
+      gvws: 0
+      wpfl: 90.0
+      wpfr: 90.0
+      wprl: 90.0
+      wprr: 90.0
+      wsfl: 0
+      wsfr: 0
+      wsrl: 0
+      wsrr: 0
+  dabr_single_trigger_2:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_StartOfCharge
+      chasta: 3
+  dabr_single_trigger_3:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_HVBatteryLowAlert_no_privacy
+      hvbla: 1
+  dabr_single_trigger_4:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_VehicleStates_changed_no_privacy
+      vehs: 3
+  dabr_single_trigger_5:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: Vehicle/Trigger/EndOfJourney
+      momm: 250.0
+  dabr_single_trigger_6:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_OperatingType_changed_BLMS
+      evblmsot: 5
+  dabr_single_trigger_7:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_ChangeOutsideLockState_no_privacy
+      sdfl: 1
+      sdfr: 1
+      sdols: 1
+      sdrl: 1
+      sdrr: 1
+  dabr_single_trigger_8:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_EndOfCharge
+      bssoc: 23.0
+  stive_001:
+    MessageType: RemoteNotification
+    TargetId: RDIAGLog
+    params:
+      lsdld: "dynamic"
+  bumi_data_1:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_EndOfMission_BLMS
+      bssoc: 23.0
+  bumi_data_2:
+    MessageType: UCD_Snapshot
+    TargetId: Telemetry
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_StartOfJourney_BLMS
+      bsgkp: 20.0
+      dtriu: 0
+      bin: 1234567890123456789012345
+      km: 150
+      bsmil: 50
+      ivcsw: "dynamic"

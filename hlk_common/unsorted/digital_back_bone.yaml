@@ -1,0 +1,71 @@
+DBB_Notification:
+  coma_001_trigger_1:
+    topic: dvc/uat/connected-vehicle/telemetry/v1/state/maintenance
+    params:
+      triggerOrContext: Vehicle/Trigger/EndOfJourney
+      maintenanceFixedRange: 250.0
+      maintenanceDrainingTimeBefore: 120
+      oilLevel: 1
+      maintenanceOverhaulMilageMinimum: 250.0
+      statusDistanceTotalizer: 123.0
+      GEELowBatteryVoltage: 2
+      crashAirbagMalfunction: false
+      crashAirbagPassengerInhibition: false
+      ESCABSMalfunction: false
+      ESCASRMalfunction: false
+      AFUFailure: false
+      ESCEBDStateDisplay: false
+      engineWaterTempWarning: false
+      engineFailureLevel1: false
+      engineFailureLevel2: false
+      dieselFilterWaterDetection: false
+      badgeLowBatteryAlert: false
+      statusWheelStateFrontLeft: 2
+      statusWheelStateFrontRight: 2
+      statusWheelStateRearLeft: 2
+      statusWheelStateRearRight: 2
+      ESCAYCMalfunction: false
+      chargeAlertSpotCharge: 3
+      globalVehicleWarningState: 2
+      maintenanceOverhaulAlertMinimum: false
+      distanceTripUnit: false
+      ESCBrakingFailureStatus: false
+      ESCVDCStatus: false
+      oilPressureWarning: false
+      statusSCRUreaLevel: false
+      SCRWarningDistance: false
+      fuelLowLevel: 1
+      vehicleLocationGNSSTimestamp: "dynamic"
+      maintenanceParticulateFilterFailureWarning: 1
+      vehicleReceivedHEVDisplayChargeFailure: false
+      SCRDistanceFinalWarning: false
+  coma_001_trigger_2:
+    topic: dvc/uat/connected-vehicle/telemetry/v1/state/maintenance
+    params:
+      triggerOrContext: Vehicle/Trigger/EndOfJourney
+      maintenanceOverhaulTimeBefore: 255
+      statusMILLampRequest: 1
+      crashDetectionOutOfOrder: false
+      statusBrakeLowFluidLevel: 1
+  coma_001_trigger_3:
+    topic: dvc/uat/connected-vehicle/telemetry/v1/state/maintenance
+    params:
+      triggerOrContext: UCD/Context/Ctx_Journey_Without_permit
+      tripMaxEngineCoolantTemp: 30.0
+  phyd_data:
+    topic: dvc/uat/connected-vehicle/telemetry/v1/state/insurance/pay-how-you-drive
+    params:
+      multimediaPrivacyModeState: 0
+      statusDistanceTotalizer: 123.0
+  payd_data:
+    topic: dvc/uat/connected-vehicle/telemetry/v1/state/insurance/pay-as-you-drive
+    params:
+      statusDistanceTotalizer: 150.0
+  payd_data_myf3:
+    topic: dvc/uat/connected-vehicle/telemetry/v1/state/insurance/pay-as-you-drive
+    params:
+      km: 150.0
+  stive_001:
+    topic: dvc/uat/connected-vehicle/telemetry/v1/state/diagnostic-trouble-code/raw
+    params:
+      rdiagLogData: "dynamic"

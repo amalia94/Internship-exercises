@@ -1,0 +1,445 @@
+{
+	"CHECK_WELCOME_TO_MMI_ON_Full_User_Hmi_transition_g":
+	{
+		"WelcomeSequenceStatus": "11b",
+		"Vehicle/Received/Status/VehicleStates": "0101b"
+	},
+	"default_canframe":
+	{
+		"Vehicle/Received/Status/Ignition/SupplyConfirmation": "0b",
+		"Vehicle/Received/Status/EEM/LowBatteryVoltage": "00b",
+		"Vehicle/Received/Status/Door/EngineHood": "10b",
+		"Vehicle/Received/GEE/Battery/Voltage": "01100100b",
+		"Vehicle/Received/GEE/EEM/StaticPowerLimitationRequest": "000b"
+	},
+	"MMI_OFF_STATE_TO_CHECK_WELCOME_transition_c":
+	{
+		"Vehicle/Received/CustomerPresence": "1b",
+		"SwitchOffSESDisturbers": "0b",
+		"Vehicle/Received/GEE/EEM/StaticPowerLimitationRequest": "000b",
+        "ProbableCustomerFeedBackNeed": "1b"
+	},
+	"MMI_OFF_STATE_TO_OFF_STATE_transition_b":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "00b"
+	},
+	"MMI_ON_Full_TO_MMI_ON_Partial_transition_q":
+	{
+		"Vehicle/Received/Status/VehicleStates": "0000b"
+	},
+	"MMI_ON_Partial_TO_MMI_ON_Full_transition_p":
+	{
+		"Vehicle/Received/Status/VehicleStates": "0101b"
+	},
+	"MMI_ON_TO_MMI_OFF_STATE_transition_d":
+	{
+		"SwitchOffSESDisturbers": "1b"
+	},
+    "MMI_ON_TO_MMI_OFF_STATE_transition_d_2":
+    {
+        "ProbableCustomerFeedBackNeed": "0b"
+    },
+    "MMI_ON_TO_MMI_OFF_STATE_transition_d_3":
+    {
+        "Vehicle/Received/GEE/EEM/StaticPowerLimitationRequest": "011b"
+    },
+    "MMI_ON_TO_MMI_OFF_STATE_transition_d_4":
+    {
+        "Vehicle/Received/GEE/EEM/StaticPowerLimitationRequest": "100b"
+    },
+    "MMI_ON_TO_MMI_OFF_STATE_transition_d_5":
+    {
+        "Vehicle/Received/GEE/EEM/StaticPowerLimitationRequest": "001b"
+    },
+	"OFF_STATE_TO_MMI_OFF_STATE_transition_a":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpType": "000b",
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/Status/DeliveryMode": "00b",
+		"Vehicle/Received/Status/Ignition/SupplyConfirmation": "0b",
+		"Vehicle/Received/Status/EEM/LowBatteryVoltage": "00b",
+		"Vehicle/Received/Status/Door/EngineHood": "10b",
+		"Vehicle/Received/GEE/Battery/Voltage": "01100100b",
+		"Vehicle/Received/GEE/EEM/StaticPowerLimitationRequest": "000b"
+	},
+	"Start_vehicle_sequence_MMI_ON_FULL_USER_HMI":
+	{
+		"Vehicle/Received/Status/Ignition/SupplyConfirmation": "0b",
+		"Vehicle/Received/Status/EEM/LowBatteryVoltage": "00b",
+		"Vehicle/Received/Status/Door/EngineHood": "10b",
+		"Vehicle/Received/GEE/Battery/Voltage": "01100100b",
+		"Vehicle/Received/GEE/EEM/StaticPowerLimitationRequest": "000b",
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/SleepManagement/WakeUpType": "000b",
+		"Vehicle/Received/Status/DeliveryMode": "00b",
+		"SwitchOffSESDisturbers": "0b",
+		"Vehicle/Received/CustomerPresence": "1b",
+		"WelcomeSequenceStatus": "10b",
+		"Vehicle/Received/Status/VehicleStates": "0101b",
+        "ProbableCustomerFeedBackNeed": "1b"
+	},
+	"Start_vehicle_sequence_OFF_DOOR_LOCKED_CUSTOMER_NOT_PRESENT":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/SleepManagement/WakeUpType": "000b",
+		"Vehicle/Received/ESC/Braking/PedalInformation": "001b",
+		"Vehicle/Received/Status/VehicleStates": "0101b",
+		"Vehicle/Received/Status/Door/TailGate": "01b",
+		"Vehicle/Received/Status/Door/Driver": "01b",
+		"Vehicle/Received/Status/Door/RearRight": "01b",
+		"Vehicle/Received/Status/Door/Passenger": "01b",
+		"Vehicle/Received/Status/Door/RearLeft": "01b",
+		"Vehicle/Received/Status/RES": "0011b",
+		"Vehicle/Received/Status/DeliveryMode": "00b",
+		"Vehicle/Received/Status/Door/OutsideLockedState": "1b",
+		"Vehicle/Received/Status/Doors/Driver/Locked": "1b",
+		"Vehicle/Received/Status/Ignition/SupplyConfirmation": "0b",
+		"Vehicle/Received/GEE/Battery/Voltage": "01100100b",
+		"Vehicle/Received/Status/Door/EngineHood": "10b",
+		"Vehicle/Received/CustomerPresence": "0b",
+		"Vehicle/Received/Doors/RearRight/Locked": "1b",
+		"Vehicle/Received/Doors/RearLeft/Locked": "1b", 
+		"Vehicle/Received/Doors/Passenger/Locked": "1b",
+		"Vehicle/Received/Doors/Back/Locked": "1b"
+	},
+	"Start_vehicle_sequence_OFF_DOOR_UNLOCKED_CUSTOMER_NOT_PRESENT":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/SleepManagement/WakeUpType": "000b",
+		"Vehicle/Received/ESC/Braking/PedalInformation": "001b",
+		"Vehicle/Received/Status/VehicleStates": "0101b",
+		"Vehicle/Received/Status/Door/TailGate": "01b",
+		"Vehicle/Received/Status/Door/Driver": "01b",
+		"Vehicle/Received/Status/Door/RearRight": "01b",
+		"Vehicle/Received/Status/Door/Passenger": "01b",
+		"Vehicle/Received/Status/Door/RearLeft": "01b",
+		"Vehicle/Received/Status/RES": "0011b",
+		"Vehicle/Received/Status/DeliveryMode": "00b",
+		"Vehicle/Received/Status/Door/OutsideLockedState": "0b",
+		"Vehicle/Received/Status/Doors/Driver/Locked": "0b",
+		"Vehicle/Received/Status/Ignition/SupplyConfirmation": "0b",
+		"Vehicle/Received/GEE/Battery/Voltage": "01100100b",
+		"Vehicle/Received/Status/Door/EngineHood": "10b",
+		"Vehicle/Received/CustomerPresence": "0b",
+		"Vehicle/Received/Doors/RearRight/Locked": "0b",
+		"Vehicle/Received/Doors/RearLeft/Locked": "0b", 
+		"Vehicle/Received/Doors/Passenger/Locked": "0b",
+		"Vehicle/Received/Doors/Back/Locked": "0b"
+	},
+	"startup_seq_ACG_normal":
+	{
+		"Vehicle/Received/Status/Ignition/SupplyConfirmation": "0b",
+		"Vehicle/Received/Status/EEM/LowBatteryVoltage": "00b",
+		"Vehicle/Received/Status/Door/EngineHood": "10b",
+		"Vehicle/Received/GEE/Battery/Voltage": "01100100b",
+		"Vehicle/Received/GEE/EEM/StaticPowerLimitationRequest": "000b",
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/SleepManagement/WakeUpType": "000b",
+		"Vehicle/Received/Status/DeliveryMode": "00b",
+		"SwitchOffSESDisturbers": "0b",
+		"Vehicle/Received/CustomerPresence": "1b",
+		"WelcomeSequenceStatus": "10b",
+		"Vehicle/Received/Status/VehicleStates": "0101b",
+		"CHECK_CANM_MMI_MULTIMEDIASTATE": "101b"
+	},
+	"Stop_vehicle_sequence_customer_needed":
+	{
+		"Vehicle/Received/CustomerPresence": "0b",
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "00b"
+	},
+	"Stop_vehicle_sequence_FROM_ON_STATE":
+	{
+		"SwitchOffSESDisturbers": "1b",
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "00b"
+	},
+    "keep_ivc_and_ivi_on" :
+    {
+        "Vehicle/Received/SleepManagement/WakeUpType": "000b",
+        "Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+        "Vehicle/Received/Status/DeliveryMode": "00b",
+        "Vehicle/Received/CustomerPresence": "01b",
+        "Vehicle/Received/GEE/EEM/StaticPowerLimitationRequest": "000b",
+        "SwitchOffSESDisturbers": "0b",
+        "WelcomeSequenceStatus": "00b",
+        "Vehicle/Received/Speed/Value": "0000000000000000b",
+        "Vehicle/Received/Status/Brake/Parking": "10b",
+        "Vehicle/Received/GEE/Battery/Voltage": "00000111b",
+        "ExternalTemperature": "000010110b",
+        "Vehicle/Received/HVAC/Temperature/CabinCurrentValue": "0011010b",
+        "Vehicle/Received/Status/Door/OutsideLockedState": "0b",
+        "HVBatteryEnergyLevel": "0101110b",
+        "Vehicle/Received/Status/VehicleStates": "0101b"
+	},
+	"only_keep_ivc_on" :
+    {
+        "Vehicle/Received/CustomerPresence": "0b",
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+        "Vehicle/Received/SleepManagement/WakeUpType": "0b",
+		"Vehicle/Received/Status/VehicleStates": "11b"
+    },
+    "vehicle_engine_off_door_unlocked_customer_not_present":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand":"11b",
+		"Vehicle/Received/SleepManagement/WakeUpType":"0b",
+		"Vehicle/Received/Status/VehicleStates":"11b",
+		"Vehicle/Received/Status/Door/TailGate":"1b",
+		"Vehicle/Received/Status/Door/Driver":"1b",
+		"Vehicle/Received/Status/Door/RearRight":"1b",
+		"Vehicle/Received/Status/Door/RearLeft":"1b",
+		"Vehicle/Received/Status/Door/Passenger":"1b",
+		"Vehicle/Received/Status/Door/EngineHood":"10b",
+		"Vehicle/Received/Status/Door/OutsideLockedState":"0b",
+		"Vehicle/Received/CustomerPresence":"0b"
+	},
+	"vehicle_engine_off_door_locked_customer_not_present":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand":"11b",
+		"Vehicle/Received/SleepManagement/WakeUpType":"0b",
+		"Vehicle/Received/Status/VehicleStates":"11b",
+		"Vehicle/Received/Status/Door/TailGate":"0b",
+		"Vehicle/Received/Status/Door/Driver":"0b",
+		"Vehicle/Received/Status/Door/RearRight":"0b",
+		"Vehicle/Received/Status/Door/RearLeft":"0b",
+		"Vehicle/Received/Status/Door/Passenger":"0b",
+		"Vehicle/Received/Status/Door/EngineHood":"10b",
+		"Vehicle/Received/Status/Door/OutsideLockedState":"0b",
+		"Vehicle/Received/CustomerPresence":"0b"
+	},
+	"vehicle_engine_off_presoak_not_progress_no_customer_25deg_temp":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand":"11b",
+		"Vehicle/Received/SleepManagement/WakeUpType":"0b",
+		"Vehicle/Received/Status/VehicleStates":"11b",
+		"Vehicle/Received/Status/Door/OutsideLockedState":"1b",
+		"Vehicle/Received/CustomerPresence":"0b",
+		"Vehicle/Received/HVAC/Temperature/CabinCurrentValue":"01000001b",
+		"Vehicle/Received/Status/Door/EngineHood":"10b",
+		"Vehicle/Received/HVAC/Presoak/ActivationStatus":"1b"
+	},
+    "IVI_WakeUp_AutoACC_PCFNNeeded_WelcomeDone":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/Status/VehicleStates": "0011b",
+        "ProbableCustomerFeedBackNeed": "1b",
+		"WelcomeSequenceStatus": "11b"
+	},
+    "IVI_EEMPowerLimitation_PCFNNotNeeded":
+	{
+		"Vehicle/Received/GEE/EEM/StaticPowerLimitationRequest": "001b",
+        "ProbableCustomerFeedBackNeed": "0b"
+	},
+    "IVI_AutoACC":
+	{
+		"Vehicle/Received/Status/VehicleStates": "0011b"
+	},
+    "IVI_CutOffPending":
+	{
+		"Vehicle/Received/Status/VehicleStates": "0010b"
+	},
+    "IVI_AutoACC_PCFNNeeded":
+	{
+		"Vehicle/Received/Status/VehicleStates": "0011b",
+		"ProbableCustomerFeedBackNeed": "1b"
+	},
+    "IVI_PCFNNotNeeded":
+	{
+        "ProbableCustomerFeedBackNeed": "0b"
+	},
+	"keep_ivc_and_ivi_on_plug_connected_46%_battery_500_min_remaining_time":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpType": "0b",
+		"Vehicle/Received/Status/VehicleStates": "101b",
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/Status/Door/OutsideLockedState": "0b",
+		"Vehicle/Received/CustomerPresence": "0b",
+		"Vehicle/Received/GEE/Battery/Voltage": "01100100b",
+		"Vehicle/Received/Status/DeliveryMode": "0b",
+		"ChargingPlugConnected_v2": "1b",
+		"HVBatteryEnergyLevel": "101110b",
+		"ChargeRemainingTimeDisplay": "000111110100b"
+	},
+    "vehicle_engine_off_customer_not_present_ivc_wakeup":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand":"11b",
+		"Vehicle/Received/SleepManagement/WakeUpType":"1b",
+		"Vehicle/Received/Status/VehicleStates":"11b",
+		"Vehicle/Received/Status/Door/TailGate":"1b",
+		"Vehicle/Received/Status/Door/Driver":"1b",
+		"Vehicle/Received/Status/Door/RearRight":"1b",
+		"Vehicle/Received/Status/Door/RearLeft":"1b",
+		"Vehicle/Received/Status/Door/Passenger":"1b",
+		"Vehicle/Received/Status/Door/EngineHood":"10b",
+		"Vehicle/Received/Status/Door/OutsideLockedState":"0b",
+		"Vehicle/Received/CustomerPresence":"0b"
+	},
+    "vehicle_engine_off_customer_present_ivc_wakeup":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand":"11b",
+		"Vehicle/Received/SleepManagement/WakeUpType":"1b",
+		"Vehicle/Received/Status/VehicleStates":"11b",
+		"Vehicle/Received/Status/Door/TailGate":"1b",
+		"Vehicle/Received/Status/Door/Driver":"1b",
+		"Vehicle/Received/Status/Door/RearRight":"1b",
+		"Vehicle/Received/Status/Door/RearLeft":"1b",
+		"Vehicle/Received/Status/Door/Passenger":"1b",
+		"Vehicle/Received/Status/Door/EngineHood":"10b",
+		"Vehicle/Received/Status/Door/OutsideLockedState":"0b",
+		"Vehicle/Received/CustomerPresence":"1b"
+	},
+    "vehicle_engine_off_res_not_progress_no_customer":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand":"11b",
+		"Vehicle/Received/SleepManagement/WakeUpType":"0b",
+		"Vehicle/Received/Status/RES": "0000b",
+		"Vehicle/Received/Status/VehicleStates":"11b",
+		"Vehicle/Received/Status/Door/TailGate":"1b",
+		"Vehicle/Received/Status/Door/Driver":"1b",
+		"Vehicle/Received/Status/Door/RearRight":"1b",
+		"Vehicle/Received/Status/Door/RearLeft":"1b",
+		"Vehicle/Received/Status/Door/Passenger":"1b",
+		"Vehicle/Received/Status/Door/EngineHood":"10b",
+		"Vehicle/Received/Status/Door/OutsideLockedState":"0b",
+		"Vehicle/Received/CustomerPresence":"0b"
+	},
+    "vehicle_engine_on_res_in_progress_no_customer":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand":"11b",
+		"Vehicle/Received/SleepManagement/WakeUpType":"0b",
+		"Vehicle/Received/Status/RES": "0011b",
+		"Vehicle/Received/Status/Ignition/SupplyConfirmation": "0b",
+		"Vehicle/Received/Status/VehicleStates": "0101b",
+		"Vehicle/Received/Status/Door/TailGate":"1b",
+		"Vehicle/Received/Status/Door/Driver":"1b",
+		"Vehicle/Received/Status/Door/RearRight":"1b",
+		"Vehicle/Received/Status/Door/RearLeft":"1b",
+		"Vehicle/Received/Status/Door/Passenger":"1b",
+		"Vehicle/Received/Status/Door/EngineHood":"10b",
+		"Vehicle/Received/Status/Door/OutsideLockedState":"0b",
+		"Vehicle/Received/CustomerPresence":"0b"
+	},
+	"vehicle_engine_off_customer_present_start_button_not_pressed":
+	{
+		"Vehicle/Received/CustomerPresence":"1b",
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand":"11b",
+		"Vehicle/Received/SleepManagement/WakeUpType":"1b",
+		"Vehicle/Received/Status/Ignition/PushtoStartButton":"0b",
+		"Vehicle/Received/Status/VehicleStates":"0011b"
+	},
+	"vehicle_engine_off_customer_not_present":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand":"11b",
+		"Vehicle/Received/SleepManagement/WakeUpType":"0b",
+		"Vehicle/Received/Status/VehicleStates":"0011b",
+		"Vehicle/Received/CustomerPresence":"0b"
+	},
+	"keep_ivc_and_ivi_on_vehicle_running_battery_level=46":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/SleepManagement/WakeUpType": "0b",
+		"Vehicle/Received/Status/Ignition/SwitchPosition": "1b",
+		"Vehicle/Received/Status/VehicleStates": "111b",
+		"Vehicle/Received/Status/Door/OutsideLockedState": "0b",
+		"Vehicle/Received/CustomerPresence": "1b",
+		"Vehicle/Received/GEE/Battery/Voltage": "01100100b",
+		"Vehicle/Received/Status/DeliveryMode": "0b",
+		"Vehicle/Received/EV/HVBattery/EnergyLevel": "101110b"
+	},
+	"keep_ivc_and_ivi_on_46%_battery":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/SleepManagement/WakeUpType": "0b",
+		"Vehicle/Received/Status/VehicleStates": "101b",
+		"Vehicle/Received/Status/Door/OutsideLockedState": "0b",
+		"Vehicle/Received/CustomerPresence": "1b",
+		"Vehicle/Received/GEE/Battery/Voltage": "01100100b",
+		"Vehicle/Received/EV/HVBattery/EnergyLevel": "101110b"
+	},
+	"vehicle_engine_off_presoak_in_progress_no_customer_25deg_temp":
+	{
+		"Vehicle/Received/CustomerPresence": "0b",
+		"Vehicle/Received/HVAC/Temperature/CabinCurrentValue": "01000001b",
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/SleepManagement/WakeUpType": "0b",
+		"Vehicle/Received/Status/Door/EngineHood": "10b",
+		"Vehicle/Received/Status/Door/OutsideLockedState": "1b",
+		"Vehicle/Received/Status/VehicleStates": "11b"
+	},
+    "keep_ivc_and_ivi_on_vehicle_running" :
+    {
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/SleepManagement/WakeUpType": "0b",
+		"Vehicle/Received/Status/Ignition/SwitchPosition":"1b",
+		"Vehicle/Received/Status/VehicleStates": "111b",
+		"Vehicle/Received/Status/Door/OutsideLockedState":"0b",
+		"Vehicle/Received/CustomerPresence": "1b",
+		"Vehicle/Received/GEE/Battery/Voltage": "00011110b",
+		"SwitchOffSESDisturbers": "0b",
+		"Vehicle/Received/Status/DeliveryMode": "0b",
+		"WelcomeSequenceStatus": "11b"
+	},
+	"keep_ivc_and_ivi_on_engine_off_customer_not_present":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/SleepManagement/WakeUpType": "0b",
+		"Vehicle/Received/Status/VehicleStates": "11b",
+		"Vehicle/Received/Status/Door/OutsideLockedState": "0b",
+		"Vehicle/Received/CustomerPresence": "0b",
+		"Vehicle/Received/GEE/Battery/Voltage": "00011110b",
+		"Vehicle/Received/Status/DeliveryMode": "0b",
+		"Vehicle/Received/Status/ExternalTemp/Value": "10110b",
+		"WelcomeSequenceStatus": "11b",
+		"SwitchOffSESDisturbers": "0b"
+	},
+	"vehicle_engine_off_door_unlocked_customer_present":
+	{
+		"Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+		"Vehicle/Received/SleepManagement/WakeUpType": "0b",
+		"Vehicle/Received/Status/VehicleStates": "11b",
+		"Vehicle/Received/Status/Door/TailGate": "01b",
+		"Vehicle/Received/Status/Door/Driver": "01b",
+		"Vehicle/Received/Status/Door/RearRight": "01b",
+		"Vehicle/Received/Status/Door/Passenger": "01b",
+		"Vehicle/Received/Status/Door/RearLeft": "01b",
+		"Vehicle/Received/Status/Door/OutsideLockedState": "0b",
+		"Vehicle/Received/CustomerPresence": "01b"
+	},
+    "keep_ivc_and_ivi_on_speed_5":
+    {
+        "Vehicle/Received/SleepManagement/WakeUpType": "000b",
+        "Vehicle/Received/SleepManagement/WakeUpSleepCommand": "11b",
+        "Vehicle/Received/Status/DeliveryMode": "00b",
+        "Vehicle/Received/CustomerPresence": "01b",
+        "Vehicle/Received/GEE/EEM/StaticPowerLimitationRequest": "000b",
+        "SwitchOffSESDisturbers": "0b",
+        "WelcomeSequenceStatus": "00b",
+        "Vehicle/Received/Speed/Value": "5",
+        "Vehicle/Received/Status/Brake/Parking": "10b",
+        "Vehicle/Received/GEE/Battery/Voltage": "00000111b",
+        "ExternalTemperature": "000010110b",
+        "Vehicle/Received/HVAC/Temperature/CabinCurrentValue": "0011010b",
+        "Vehicle/Received/Status/Door/OutsideLockedState": "0b",
+        "HVBatteryEnergyLevel": "0101110b",
+        "Vehicle/Received/Status/VehicleStates": "0101b"
+    },
+    "stop_engine":
+    {
+        "Vehicle/Received/Speed/Value": "0b",
+        "Vehicle/Received/Status/VehicleStates": "11b"
+    },
+    "lock_door_step1":
+    {
+        "Vehicle/Received/CustomerPresence": "0b"
+    },
+    "lock_door_step2":
+    {
+        "Vehicle/Received/Status/VehicleStates": "10b"
+    },
+    "go_to_sleep_step1":
+    {
+        "Vehicle/Received/Status/VehicleStates": "0b"
+    },
+    "go_to_sleep_step2":
+    {
+        "Vehicle/Received/SleepManagement/WakeUpSleepCommand": "0b"
+    }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CampaignDescription> xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="DynMHI_Step2.xsd">
+
+
+<SignedData version="2.2">
+
+  <GlobalData>
+    <ContentType>SYSTEM</ContentType>   
+    <ReleaseNote>
+      <Translation lang="en_GB" name="FOTA AIVI Update Campaign">This is an AIVI FOTA test campaign.&#xA; It allows to test FOTA on AIVI.</Translation>
+      <Translation lang="fr_FR" name="Campagne de mise à jour FOTA AIVI">Ceci est une campagne de test FOTA AIVI. &#xA;Elle permet de tester le FOTA sur AIVI.</Translation> 
+    </ReleaseNote>
+  </GlobalData>
+
+  <Download>
+    <DownloadModalities EasyUpdate="YES" USB="NO" Wifi="NO" />
+    <DownloadConsent>YES</DownloadConsent>
+    <DownloadDisclaimer>
+    </DownloadDisclaimer>
+    <HMIConditions DriveStage="NA" VehicleMotion="NA" ParkingBrake="NA" HVSOC="NA" HazardLamps="NA" />
+  </Download>
+
+  <Installation>
+    <InstallConsent>YES</InstallConsent>
+    <HMIConditions DriveStage="NA" VehicleMotion="NA" ParkingBrake="NA" HVSOC="NA" HazardLamps="NA" />
+    <InstallEstimatedTime>00:30:00</InstallEstimatedTime>
+  </Installation>
+
+  <Activation>
+    <ActivationConsent>YES</ActivationConsent>
+    <ScheduleActivation>NO</ScheduleActivation>
+    <ActivationDisclaimer>
+      <ActivationDisclaimerID>ADID0</ActivationDisclaimerID>
+    </ActivationDisclaimer>
+    <ActivationEstimatedTime>00:00:00</ActivationEstimatedTime>
+    <HMIConditions DriveStage="NA" VehicleMotion="NA" ParkingBrake="NA" HVSOC="NA" HazardLamps="NA" />
+  </Activation>
+</SignedData>
+
+<Signature>
+</Signature>
+
+</CampaignDescription>

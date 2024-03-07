@@ -1,0 +1,439 @@
+My_Renault:
+  sign_in: com.renault.myrenault.one.valid:id/login_btn_signin
+  beta_alert: com.renault.myrenault.one.valid:id/ib_core_onboarding_viewpager
+  signin_email: com.renault.myrenault.one.valid:id/sign_in_input_email
+  signin_password: com.renault.myrenault.one.valid:id/sign_in_input_password
+  signin_button: com.renault.myrenault.one.valid:id/btn_action
+  ratelater_text: //*[@text='RATE LATER']
+  button_privacy_banner: com.renault.myrenault.one.valid:id/bt_ok
+  title_privacy: com.renault.myrenault.one.valid:id/banner_title
+  allow_cookies: com.renault.myrenault.one.valid:id/btn_accept_cookies
+  car_bottom_tab: com.renault.myrenault.one.valid:id/nav_car
+  plugged_in_search: //android.widget.TextView[@resource-id='com.renault.myrenault.one.valid:id/statusTV' and contains(@text, 'Plugged in')]
+  unplugged_search: //android.widget.TextView[@resource-id='com.renault.myrenault.one.valid:id/statusTV' and contains(@text, 'Unplugged')]
+  profile_bottom_tab: com.renault.myrenault.one.valid:id/nav_profile
+  logout: com.renault.myrenault.one.valid:id/profile_logout
+  sign_out: com.renault.myrenault.one.valid:id/logout_btn
+  time_on_car: com.renault.myrenault.one.valid:id/carData
+  time_on_car_xpath: //android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TextView
+  map_navigation: com.renault.myrenault.one.valid:id/map_navigation
+  pin_car: com.renault.myrenault.one.valid:id/pin_my_car_fab
+  vehicle_position: com.renault.myrenault.one.valid:id/navigation_car_location
+  speed_dial_button: //android.widget.LinearLayout[@resource-id='com.renault.myrenault.one.valid:id/speed_dial']
+  button_add_new_position: com.renault.myrenault.one.valid:id/reset_pin_position_fab
+  button_delete_pin_position: com.renault.myrenault.one.valid:id/delete_pin_position_fab
+  decline_activation_location: android:id/button2
+  plan_route: //android.widget.LinearLayout[2]/android.widget.ImageButton
+  back_button_plan_route: //android.widget.ImageButton[@content-desc="Navigate up"]
+  car_location: //android.widget.TextView[contains(@resource-id,'tv_car_location_title')]
+  car_icon: //android.view.View[@content-desc="Google Map"]/android.view.View
+  warning_banner: //android.widget.TextView[contains(@resource-id,'custom_snackbar_text')]
+  refresh_button: com.renault.myrenault.one.valid:id/iv_refresh
+  button_location_menu: com.renault.myrenault.one.valid:id/validate_btn
+  direction_button: //android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout
+  open_with_default_app: //android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.ImageButton
+  maps_time_estimation: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView[1]
+  maps_distance_estimation: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView[2]
+  google_maps_direction_button: //*[contains(@text,'Directions') or contains(@text,'DIRECTIONS')]
+  car_address: //android.widget.TextView[contains(@resource-id,'car_address')]
+  home_car: com.renault.myrenault.one.valid:id/nav_car
+  vehicle_details: //android.widget.TextView[contains(@text, 'Vehicle information')]
+  iunderstand_xpath: //android.widget.TextView[contains(@text, 'I UNDERSTAND')]
+  charge_history_privacy: //android.widget.TextView[contains(@text, 'Charge history')]
+  toast_message_banner: com.renault.myrenault.one.valid:id/custom_snackbar_text
+  toast_message_banner_debug: com.renault.myrenault.one.valid.debug:id/custom_snackbar_text
+  back_button: //android.widget.ImageButton[@content-desc="Navigate up"]
+  rlu_rhl_button: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.ImageView
+  hornlight_button: com.renault.myrenault.one.valid:id/icHornLight
+  hornlight_button_debug: com.renault.myrenault.one.valid.debug:id/icHornLight
+  light_only_button_debug: com.renault.myrenault.one.valid.debug:id/icLight
+  horn_only_button_debug: com.renault.myrenault.one.valid.debug:id/icHorn
+  pincode_view: com.renault.myrenault.one.valid:id/set_pin_code_view
+  pincode_view_debug: com.renault.myrenault.one.valid.debug:id/set_pin_code_view
+  scroll_button: com.renault.myrenault.one.valid:id/scrollright
+  scroll_button_debug: com.renault.myrenault.one.valid.debug:id/scrollright
+  scroll_button_left: com.renault.myrenault.one.valid:id/scrollleft
+  lock_unlock_button: com.renault.myrenault.one.valid:id/btnLockUnlock
+  lockstatus_text: //android.widget.TextView[@resource-id='com.renault.myrenault.one.valid:id/statusTV' and contains(@text, 'Locked')]
+  unlockstatus_text: //android.widget.TextView[@resource-id='com.renault.myrenault.one.valid:id/statusTV' and contains(@text, 'Unlocked')]
+  lock_unlock_status: //android.view.ViewGroup[3]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.ImageView
+  lock_unlock_btn: com.renault.myrenault.one.valid:id/tvLockStatus
+  vehicle_spring_button: com.renault.myrenault.one.valid:id/vehicle_selection_text_view
+  select_first_vehicle: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.ImageView[1]
+  autonomy: nb_kilometers
+  autonomy_text: com.renault.myrenault.one.valid:id/nb_kilometers
+  scroll_to_pin_box: //android.widget.TextView[contains(@text, 'PIN')]
+  tap_on_pin_box: //android.widget.TextView[contains(@text, 'PIN')]
+  tap_on_start: com.renault.myrenault.one.valid:id/bt_init_pin_presentation_connect
+  read_text_title1: com.renault.myrenault.one.valid:id/init_pin_step1_title1
+  read_text_title2: com.renault.myrenault.one.valid:id/init_pin_step1_title2
+  read_text_title3: com.renault.myrenault.one.valid:id/init_pin_step1_title3
+  tap_done_button: com.renault.myrenault.one.valid:id/bt_init_pin_step1_done
+  enter_text_in_window: com.renault.myrenault.one.valid:id/set_pin_code_view
+  tap_on_save: com.renault.myrenault.one.valid:id/bt_init_pin_step2_save
+  read_text_step_3_1: com.renault.myrenault.one.valid:id/txt_init_pin_step_3_1
+  read_text_step_3_2: com.renault.myrenault.one.valid:id/txt_init_pin_step_3_2
+  tap_on_done_step3: com.renault.myrenault.one.valid:id/bt_init_pin_step3_done
+  disconnect_vehicle: com.renault.myrenault.one.valid:id/tv_action_disconnect_vehicle
+  light_only_button: com.renault.myrenault.one.valid:id/icLight
+  horn_only_button: com.renault.myrenault.one.valid:id/icHorn
+  battery_percentage: com.renault.myrenault.one.valid:id/percent_of_charge
+  charge_status: com.renault.myrenault.one.valid:id/descr_charge
+  vin_tab: //*[@content-desc='VIN']
+  add_vehicle_button: com.renault.myrenault.one.valid:id/edt_add_car
+  submit_button: com.renault.myrenault.one.valid:id/add_car_button_validate
+  synchronisation_tab: //*[@text='Synchronisation']
+  pairing_ivi_connect_button: com.renault.myrenault.one.valid:id/pairing_ivi_connect_cta
+  pairing_ivi_begin_button: com.renault.myrenault.one.valid:id/pairing_ivi_begin_cta
+  display_code_button: com.renault.myrenault.one.valid:id/btn_ivi_display_code
+  otp_view: com.renault.myrenault.one.valid:id/otp_view
+  iunderstood_button: com.renault.myrenault.one.valid:id/pairing_ivi_understood_cta
+  pairing_success_gif: com.renault.myrenault.one.valid:id/success_gif
+  precondition_tab: com.renault.myrenault.one.valid:id/tvTitle_hvac
+  select_planner: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]
+  days:
+    Mon: //*[@resource-id='com.renault.myrenault.one.valid:id/dayPicker']/./android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]
+    Tue: //*[@resource-id='com.renault.myrenault.one.valid:id/dayPicker']/./android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]
+    Wed: //*[@resource-id='com.renault.myrenault.one.valid:id/dayPicker']/./android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]
+    Thu: //*[@resource-id='com.renault.myrenault.one.valid:id/dayPicker']/./android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]
+    Fri: //*[@resource-id='com.renault.myrenault.one.valid:id/dayPicker']/./android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]
+    Sat: //*[@resource-id='com.renault.myrenault.one.valid:id/dayPicker']/./android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[6]
+    Sun: //*[@resource-id='com.renault.myrenault.one.valid:id/dayPicker']/./android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[7]
+  hour_picker: //android.widget.TimePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.Button[2]
+  min_picker: //android.widget.TimePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.Button[2]
+  submit_schedule: com.renault.myrenault.one.valid:id/charge_calendar_btn_validate
+  switch_button: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Switch
+  switch_button2: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Switch
+  save_schedule: com.renault.myrenault.one.valid:id/btnSave
+  save_precondition: com.renault.myrenault.one.valid:id/charge_schedule_save_cta
+  exit_save: com.renault.myrenault.one.valid:id/charge_schedule_popup_leave_cta
+  deactivate_plan: com.renault.myrenault.one.valid:id/rbv_hvac_desactivation_ok
+  distance_text: //android.view.ViewGroup[@resource-id='com.renault.myrenault.one.valid:id/statusItem1']/android.widget.TextView[@resource-id='com.renault.myrenault.one.valid:id/statusTV']
+  charge_time_left: com.renault.myrenault.one.valid:id/end_charge
+  delete_vehicle: com.renault.myrenault.one.valid:id/tv_action_remove_vehicle
+  yes_button: com.renault.myrenault.one.valid:id/yes_btn
+  label_ID: com.renault.myrenault.one.valid:id/tvLabel
+  My_renault_text: //android.widget.TextView[@resource-id='android:id/app_name_text' and contains(@text, 'My Renault')]
+  Myr_notification_succed: //android.widget.TextView[contains(@text, 'The information was sent to the vehicle. A notification will be sent to you.')]
+  Myr_notification_failed: //android.widget.TextView[contains(@text, 'Your request has been sent correctly. However, the response time does not allow us to confirm its success.')]
+  chargeScheduleButton: com.renault.myrenault.one.valid:id/chargeScheduleButton
+  chargeMode_SubTitle: com.renault.myrenault.one.valid:id/tvSubTitle
+  HVAC_SubTitle: com.renault.myrenault.one.valid:id/tvSubTitleHvac
+  main_activity: com.renault.myrenault.one.valid:id/main_activity_layout
+  destination_address: com.renault.myrenault.one.valid:id/searchContainer
+  destination_address_enter: com.renault.myrenault.one.valid:id/search_et
+  first_search_for_destination: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]
+  epoi_search_button: com.renault.myrenault.one.valid:id/navigation_charge_station
+  top_pannel_address: com.renault.myrenault.one.valid:id/title
+  search_area_button: com.renault.myrenault.one.valid:id/search_area_button
+  no_epoi_available: com.renault.myrenault.one.valid:id/tv_poi_no_result
+  filter_button: com.renault.myrenault.one.valid:id/button_filter
+  plug_filter: com.renault.myrenault.one.valid:id/bt_switch_all_plug
+  see_results_button: com.renault.myrenault.one.valid:id/results_plug_Button
+  epoi_connector_power: com.renault.myrenault.one.valid:id/connector_power
+  mobile_location: com.renault.myrenault.one.valid:id/navigation_my_location
+  unknown_plug_status: com.renault.myrenault.one.valid:id/unknown_plug
+  reserved_plug_status: com.renault.myrenault.one.valid:id/reserved_plug
+  available_plug_status: com.renault.myrenault.one.valid:id/available_plug
+  understand_btn_vehicle_disconnected: com.renault.myrenault.one.valid:id/tv_ok
+  distance_value_epoi: com.renault.myrenault.one.valid:id/distance
+  opening_time_epoi: com.renault.myrenault.one.valid:id/opening
+  full_address_epoi: com.renault.myrenault.one.valid:id/address
+  name_plug_epoi: com.renault.myrenault.one.valid:id/namePlug
+  block_information_epoi: com.renault.myrenault.one.valid:id/txtBlockInfoZe
+  image_epoi_plug: com.renault.myrenault.one.valid:id/icPlug
+  wifi_button_on: //android.view.ViewGroup[contains(@content-desc, 'Wi-Fi,On.,')]
+  wifi_text: Wi-Fi
+  wifi_button_off: //android.view.ViewGroup[contains(@content-desc, 'Wi-Fi,Off.,')]
+  my_notifications_tab: //android.widget.LinearLayout/android.widget.LinearLayout[3]/android.view.ViewGroup/android.widget.TextView
+  bcb_ccs2_tab_vehicle: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]
+  remote_charging_button: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.Switch
+  charge_switch_button: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.Switch
+  notif_submit_button: com.renault.myrenault.one.valid:id/btn_validate
+  speed_dial: com.renault.myrenault.one.valid:id/sd_main_fab
+  itenary_fab: //android.view.ViewGroup/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ImageButton
+  itenary_modify_passenger: //android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView[2]
+  itenary_add_passenger: com.renault.myrenault.one.valid:id/plus_button
+  itenary_submit_button: com.renault.myrenault.one.valid:id/validate_button
+  itenary_modify_luggage: //android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.TextView[2]
+  itenary_add_luggage: com.renault.myrenault.one.valid:id/plus_button
+  itenary_modify_battery: //android.view.ViewGroup/android.widget.FrameLayout[3]/android.view.ViewGroup/android.widget.TextView[2]
+  itenary_charge_text: com.renault.myrenault.one.valid:id/seekbar
+  itenary_modify_route: //android.view.ViewGroup/android.widget.FrameLayout[4]/android.view.ViewGroup/android.widget.TextView[2]
+  itenary_avoid_tolls: com.renault.myrenault.one.valid:id/toll_checkbox
+  itenary_avoid_motorways: com.renault.myrenault.one.valid:id/highway_checkbox
+  itenary_result_text: //android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView[1]
+  itenary_arrrival_text: //android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView[2]
+  poi_itenary_button: com.renault.myrenault.one.valid:id/poi_itinerary_button
+  start_navigation: com.google.android.apps.maps:id/start_button
+  distance_text_in_map : //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView
+  pre_conditioning_hvac: com.renault.myrenault.one.valid:id/havcScheduleButton
+  hvac_menu: //android.view.ViewGroup[2]/android.widget.FrameLayout/android.view.ViewGroup
+  monday_button: //android.view.ViewGroup[1]/android.widget.ToggleButton
+  friday_button: //android.view.ViewGroup[5]/android.widget.ToggleButton
+  hvac_validate_button: com.renault.myrenault.one.valid:id/charge_calendar_btn_validate
+  second_hvac_on_off_schedule: (//*[@resource-id='com.renault.myrenault.one.valid:id/switch_button'])[2]
+  save_hvac_schedule_button: //android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]
+  hvac_plan: //android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.TextView[2]
+  start_first_program: //android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[1]
+  hour_first_program: //android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[2]
+  at_first_program: //android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[3]
+  temp_first_program: //android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[4]
+  days_first_program: //android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[5]
+  start_second_program: //android.view.ViewGroup[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[1]
+  hour_second_program: //android.view.ViewGroup[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[2]
+  at_second_program: //android.view.ViewGroup[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[3]
+  temp_second_program: //android.view.ViewGroup[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[4]
+  days_second_program: //android.view.ViewGroup[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[5]
+  start_third_program: //android.view.ViewGroup[3]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[1]
+  hour_third_program: //android.view.ViewGroup[3]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[2]
+  at_third_program: //android.view.ViewGroup[3]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[3]
+  temp_third_program: //android.view.ViewGroup[3]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[4]
+  days_third_program: //android.view.ViewGroup[3]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[5]
+  start_fourth_program: //android.view.ViewGroup[4]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[1]
+  hour_fourth_program: //android.view.ViewGroup[4]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[2]
+  at_fourth_program: //android.view.ViewGroup[4]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[3]
+  temp_fourth_program: //android.view.ViewGroup[4]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[4]
+  days_fourth_program: //android.view.ViewGroup[4]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[5]
+  hvac_first_switch_button: //android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Switch
+  hvac_second_switch_button: //android.view.ViewGroup[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Switch
+  program_one: //android.view.ViewGroup[1]/android.widget.TextView[@text='Program 1']
+  program_two: //android.view.ViewGroup[2]/android.widget.TextView[@text='Program 2']
+  less_buttons: com.renault.myrenault.one.valid:id/less_buttons
+  plus_button: com.renault.myrenault.one.valid:id/plus_button
+  temp_found: com.renault.myrenault.one.valid:id/tv_temperature
+  hour_MyR: //android.widget.NumberPicker[1]/android.widget.EditText
+  min_MyR: //android.widget.NumberPicker[2]/android.widget.EditText
+  choose_all_days: com.renault.myrenault.one.valid:id/all_days_switch
+  submit_program: com.renault.myrenault.one.valid:id/charge_calendar_btn_validate
+  save_program: com.renault.myrenault.one.valid:id/charge_schedule_save_cta
+  cancel_button_on_vehicle_location: //android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.ImageButton
+  vehicle_location: //android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.EditText
+  vehicle_location_enter: com.renault.myrenault.one.valid:id/search_et
+  first_search_source_address: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView[1]
+  swipe_button: //android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView[1]
+  departure_address: //android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView[1]
+  arrival_address: com.renault.myrenault.one.valid:id/endCity
+  itenary_back_button: //android.widget.ImageButton[@content-desc="Navigate up"]
+  erp_options_percentage: com.renault.myrenault.one.valid:id/seekbar_value_textview
+  departure_battery_percentage: com.renault.myrenault.one.valid:id/txtBattr
+  arrival_battery_percentage: com.renault.myrenault.one.valid:id/icEndBattr
+  departure_to_arrival_distance_and_time: com.renault.myrenault.one.valid:id/tv_origin
+  arrival_estimate_time: com.renault.myrenault.one.valid:id/tv_trip_scheduled
+  charge_history_tab: //*[@text='Charge history']
+  last_charge: //android.widget.FrameLayout[1]/android.view.ViewGroup
+  total_charge_numbers: com.renault.myrenault.one.valid:id/totalChargesNumber
+  total_charging_durations: com.renault.myrenault.one.valid:id/totalChargesDuration
+  ch_start_percent: com.renault.myrenault.one.valid:id/tv_ch_start_percent
+  ch_end_percent: com.renault.myrenault.one.valid:id/tv_ch_end_percent
+  ch_start_time: com.renault.myrenault.one.valid:id/tv_ch_start_time
+  charge_calender: com.renault.myrenault.one.valid:id/charge_calendar
+  customized_schedule: com.renault.myrenault.one.valid:id/bottom_weekly_charge_cv
+  customize_program_1_tab: //android.widget.TextView[contains(@text, 'Program 1')]
+  customized_charge_notif_text: The information was sent to the vehicle. A notification will be sent to you.
+  expand_button: (//android.widget.Button[@content-desc="Expand"])[1]
+  collapse_button: //android.widget.Button[@content-desc="Collapse"]
+  customized_charge_notif_error_text: Your request has been sent correctly. However, the response time does not allow us to confirm its success.
+  schedule_delay_charge: //android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup
+  delayed_schedule: com.renault.myrenault.one.valid:id/bottom_delayed_charge_cv
+  instant_charge: com.renault.myrenault.one.valid:id/bottom_instant_charge_cv
+  check_delay_submit_button: //android.widget.Button[@resource-id='com.renault.myrenault.one.valid:id/btnValidate' and contains (@enabled, 'false')]
+  delay_submit_button: com.renault.myrenault.one.valid:id/btnValidate
+  selected_mode: com.renault.myrenault.one.valid:id/tvSubTitle
+  hour_picker_end_time: //android.widget.TimePicker[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.Button[2]
+  min_picker_end_time: //android.widget.TimePicker[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.Button[2]
+  charge_mode_customized: com.renault.myrenault.one.valid:id/top_weekly_charge_cv
+  charge_mode_delayed: com.renault.myrenault.one.valid:id/top_delayed_charge_cv
+  schedule_a_delayed_charge: com.renault.myrenault.one.valid:id/add_text
+  charge_plan_prog_1: //android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]
+  charge_plan_prog_2: //android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]
+  all_days_switch_button: com.renault.myrenault.one.valid:id/all_days_switch
+  charge_schedule_edit_start: com.renault.myrenault.one.valid:id/tv_charge_schedule_edit_start
+  charge_schedule_edit_end: com.renault.myrenault.one.valid:id/tv_charge_schedule_edit_end_24
+  start_time_hour: //android.view.ViewGroup/android.widget.TimePicker[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.EditText
+  start_time_min: //android.view.ViewGroup/android.widget.TimePicker[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.EditText
+  end_time_hour: //android.view.ViewGroup/android.widget.TimePicker[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.EditText
+  end_time_min: //android.view.ViewGroup/android.widget.TimePicker[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.EditText
+  st_hour_top_button: //android.view.ViewGroup/android.widget.TimePicker[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.Button[1]
+  st_hour_bottom_button: //android.view.ViewGroup/android.widget.TimePicker[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.Button[2]
+  et_hour_top_button: //android.view.ViewGroup/android.widget.TimePicker[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.Button[1]
+  et_hour_bottom_button: //android.view.ViewGroup/android.widget.TimePicker[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.Button[2]
+  st_min_top_button: //android.view.ViewGroup/android.widget.TimePicker[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.Button[1]
+  st_min_bottom_button: //android.view.ViewGroup/android.widget.TimePicker[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.Button[2]
+  et_min_top_button: //android.view.ViewGroup/android.widget.TimePicker[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.Button[1]
+  et_min_bottom_button: //android.view.ViewGroup/android.widget.TimePicker[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.Button[2]
+  toggle_button_pr1: //android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Switch
+  toggle_button_pr2: //android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Switch
+  hvac_start_hour: //android.widget.TimePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.EditText
+  hvac_start_min: //android.widget.TimePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.EditText
+  hvac_min_top_button: //android.widget.TimePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.Button[1]
+  hvac_min_bottom_button: //android.widget.TimePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.Button[2]
+  hvac_hour_top_button: //android.widget.TimePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.Button[1]
+  hvac_meridiem_navigate: //android.widget.TimePicker/android.widget.LinearLayout/android.widget.NumberPicker/android.widget.Button
+  hvac_current_meridiem: //android.widget.TimePicker/android.widget.LinearLayout/android.widget.NumberPicker/android.widget.EditText
+  delayed_start_hour: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.EditText
+  delayed_start_min: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.EditText
+  delayed_hour_top_button: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.Button[1]
+  delayed_hour_bottom_button: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.Button[2]
+  delayed_min_top_button: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.Button[1]
+  delayed_min_bottom_button: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.Button[2]
+  hvac_hour_bottom_button: //android.widget.TimePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.Button[2]
+  vehicle_selection_button: com.renault.myrenault.one.valid:id/vehicle_selection_text_view
+  synchronization_tab: //android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView
+  days_hvac:
+      Mon: //android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]
+      Tue: //android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]
+      Wed: //android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]
+      Thu: //android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]
+      Fri: //android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]
+      Sat: //android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[6]
+      Sun: //android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[7]
+  charge_mode_instant: com.renault.myrenault.one.valid:id/instant_charge_iv
+  socket_title: com.renault.myrenault.one.valid:id/socket_title
+  modify_plug: com.renault.myrenault.one.valid:id/edit_plug_btn
+  header_title: com.renault.myrenault.one.valid:id/header_title
+  source_location: com.renault.myrenault.one.valid:id/origin_textview
+  destination_location: com.renault.myrenault.one.valid:id/destination_textview
+  disclaimer_text: com.renault.myrenault.one.valid:id/gps_disclaimer_textview
+  distance_value_trip: com.renault.myrenault.one.valid:id/fastest_way_value_textview
+  swipe_button_without_stop: com.renault.myrenault.one.valid:id/arrow_imageview
+  itinerary_button_for_maps: //android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageButton
+  departure_on_maps: //android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[2]
+  epoi_on_maps: //android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.TextView[2]
+  arrival_on_maps: //android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout[3]/android.widget.TextView[2]
+  swipe_on_maps: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView[2]
+  back_navigation: //android.widget.FrameLayout[@content-desc="Navigate up"]/android.widget.ImageView
+  unavailable_calendar: //android.widget.TextView[@resource-id='com.renault.myrenault.one.valid:id/tv_schedule_title' and contains(@text, 'Program 6')]
+  button_text: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.TextView
+  charging_mode: com.renault.myrenault.one.valid:id/tvTitle
+  instant_hvac: //android.view.ViewGroup[3]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]
+  hvac_button_inprogress: //android.widget.TextView[@text='AIR CONDITIONING IN PROGRESS']/preceding-sibling::android.widget.ImageView
+  setting_time: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[3]/android.widget.RelativeLayout
+  set_time_element: //android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView[4]
+  set_time_ok_button: android:id/button1
+  google_back_button: //android.widget.Button[@content-desc="Back"]
+  pop_up_launch_i_agree: com.renault.myrenault.one.valid:id/accept_btn
+  welcome_beta: com.renault.myrenault.one.valid:id/ib_core_img_onboarding
+  beta_done: com.renault.myrenault.one.valid:id/ib_core_onboarding_done
+  schedule_hvac_days: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[3]
+  data_sharing_off: //android.widget.TextView[contains(@text, 'data sharing in your vehicle has been disabled')]
+  firstname_profile: com.renault.myrenault.one.valid:id/tv_first_name
+  lastname_profile: com.renault.myrenault.one.valid:id/tv_last_name
+  gmap_search: //android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.EditText/android.widget.TextView
+  gmap_account_arrow: //android.widget.ImageView[@content-desc="Expand account list."]
+  gmap_add_account: //*[@text="Add another account"]
+  gmap_location: com.google.android.apps.maps:id/search_omnibox_edit_text
+  gmap_save_button: //android.widget.Button[contains(@content-desc,'Save')]
+  gmap_starred_checkbox: //android.widget.CheckBox[@content-desc="Place is not saved in Starred places. Tap to add the place to the list."]
+  gmap_done_button: //*[@text='Done']
+  gmap_back_button: //android.widget.Button[@content-desc="Navigate up"]/android.widget.ImageView
+  gmap_explore: //android.widget.FrameLayout[@content-desc="Explore"]/android.widget.FrameLayout/android.widget.ImageView
+  gmap_agree: //*[@text='I agree']
+  gmap_skip: //*[@text='SKIP']
+  gmap_accept: //*[@text='Accept']
+  gmap_manage_accounts: //*[contains(@text,"Manage accounts on this device")]
+  gmap_turn_on_backup: //*[@text='Turn on Backup']
+  gmap_remove_account: //*[contains(@text,'Remove account')]
+  gmap_select_location: //android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.TextView
+  gmap_signin_button: com.google.android.apps.maps:id/og_apd_ring_view
+  gmap_signin_account: com.google.android.apps.maps:id/account_name
+  gmap_signin_close: //android.widget.ImageView[@content-desc="Close"]
+  gmap_no_account_sign_in: com.google.android.apps.maps:id/sign_in_button
+  gmap_x_button: //android.widget.ImageView[@content-desc="Clear"]
+  clear_notif: com.android.systemui:id/clear_all
+  gmap_saved_button: //*[@text='Saved']
+  gmap_sign_in_save_searches: //*[@text='Sign in to save your searches']
+  gmap_starred_places: //*[@text='Starred places']
+  most_recent_search: //*[@text='More from recent history']
+  recent_search_layout: //android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout
+  map_directions: //*[contains(@content-desc,'Directions')]
+  map_walk: //*[contains(@content-desc,'Walking mode')]
+  map_start: //*[@text='Start']
+  recent_place: //android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.TextView[1]
+  gmap_starred_text: com.google.android.apps.maps:id/title
+  explore_button: //*[@text='Explore']
+  start_time_id: com.renault.myrenault.one.valid:id/startTime
+  rhl_button: //android.widget.TextView[@text='identify my vehicle' or @text='IDENTIFY MY VEHICLE']/preceding-sibling::android.widget.ImageView
+  rlu_button: //android.widget.TextView[@text='open/close' or @text='Open/Close' or @text='OPEN/CLOSE']/preceding-sibling::android.widget.ImageView
+  lockunlockstatus_text: //android.widget.TextView[@resource-id='com.renault.myrenault.one.valid:id/statusTV' and (contains(@text, 'Locked') or contains(@text,'Unlocked'))]
+  battery_privacyon: //*[@resource-id='com.renault.myrenault.one.valid:id/percent_of_charge' and contains(@text, '-')]
+  hvac_button: //*[@text='air-condition' or @text='launch']/preceding-sibling::android.widget.ImageView
+  hvac_text: //*[@resource-id='com.renault.myrenault.one.valid:id/tvLabel' and (@text='air-condition' or @text='launch' or @text='air conditioning in progress' or @text='climate control in progress' )]
+  warning_popup: com.renault.myrenault.one.valid:id/tv_title
+  warning_popup_click: com.renault.myrenault.one.valid:id/tv_ok
+  gmap_account: //*[@resource-id='com.google.android.apps.maps:id/account_name' or @resource-id='com.google.android.apps.maps:id/og_secondary_account_information']
+  gmap_search_clear: //android.widget.ImageView[@content-desc="Clear"]
+  remove_starred_place: //android.widget.CheckBox[@content-desc="Place is saved in Starred places. Tap to remove the place from the list."]
+  geolocation_popup: //android.widget.TextView[contains(@text, 'the geolocation data in your vehicle has been deactivated')]
+  back_geolocation_popup: //android.widget.TextView[contains(@text, 'Vehicle')]
+  ecch_left_arrow: com.renault.myrenault.one.valid:id/imv_leftarrow
+  ecch_right_arrow: com.renault.myrenault.one.valid:id/imv_rightarrow
+  no_charge_result: com.renault.myrenault.one.valid:id/tv_ch_no_data
+  first_epoi_button: //android.view.View[@content-desc="Google Map"]/android.view.View[1]
+  itenary_remove: com.renault.myrenault.one.valid:id/less_button
+  least_passenger: //*[@resource-id='com.renault.myrenault.one.valid:id/number_textview' and contains(@text, '1')]
+  least_luggage: //*[@resource-id='com.renault.myrenault.one.valid:id/number_textview' and contains(@text, '0')]
+My_Renault_calendars:
+  one_plan:
+    calendar1:
+      hour: "21:15"
+      days: "Wednesday, Thursday, Friday, Saturday, Sunday"
+  two_plans:
+    calendar1:
+      hour: "14:00"
+      days: "Wednesday, Thursday, Friday, Saturday, Sunday"
+    calendar2:
+      hour: "7:30"
+      days: "Monday, Friday"
+  two_calendars_hvac:
+    calendar1:
+      hour: "10:15 AM"
+      days: "Monday, Tuesday"
+    calendar2:
+      hour: "11:30 PM OR 23:30"
+      days: "Wednesday, Thursday"
+  four_plans:
+    calendar1:
+      hour: "14:00"
+      days: "Wednesday, Thursday, Friday, Saturday, Sunday"
+    calendar2:
+      hour: "7:30"
+      days: "Monday, Friday"
+    calendar3:
+      hour: "22:10"
+      days: "Tuesday, Saturday"
+    calendar4:
+      hour: "12:10"
+      days: "Friday, Sunday"
+  two_calendars:
+    expected_status:
+      - "ON"
+      - "ON"
+    calendar1:
+      start_hour: "21"
+      end_hour: "23"
+      start_min: "45"
+      end_min: "30"
+      days: "Wed,Thu,Fri,Sat"
+    calendar2:
+      start_hour: "20"
+      end_hour: "21"
+      start_min: "0"
+      end_min: "0"
+      days: "Mon,Tue,Fri,Sat,Sun"
+  demo_calendar:
+    calendar1:
+      start_hour: "0"
+      end_hour: "0"
+      start_min: "15"
+      end_min: "30"
+      days: "Sun"
+  one_calendar:
+    expected_status:
+      - "ON"
+    calendar1:
+      start_hour: "0"
+      end_hour: "1"
+      start_min: "15"
+      end_min: "30"
+      days: ""

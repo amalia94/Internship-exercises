@@ -1,0 +1,587 @@
+car_settings:
+  content_and_more: //android.widget.FrameLayout[@content-desc="More"]/android.widget.Button
+  users: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[4]/android.widget.RelativeLayout/android.widget.TextView
+  driver: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.RelativeLayout/android.widget.TextView[1]
+  update_menu: //android.widget.TextView[@text='Update']
+  check_for_update_button: //android.widget.TextView[@text='Check for update']
+  update_in_progress_button: //android.widget.TextView[@text='Update ongoing']
+  searching_in_progress: //android.widget.TextView[@text='Update in progress']
+  no_campaign: com.renault.vehiclesettings:id/updateInfoTemplateTopTextView
+  campaign_ongoing: com.renault.vehiclesettings:id/otherUpdateOngoingBottomTextView
+  back_check_for_update_button: com.renault.vehiclesettings:id/toolbar_nav
+  ok_check_for_update_button: com.renault.vehiclesettings:id/okButton
+  appPackage_vehicle_settings: com.renault.vehiclesettings
+  activityName_vehicle_settings: com.renault.vs.page.main.VehicleSettingsActivity
+  data_collection: com.renault.connectivity:id/switchWidget
+  system_button: //android.widget.TextView[@text='System']
+  reset_option: //*[contains(@text, 'Reset')]
+  factory_reset: //android.widget.TextView[contains(@text,'factory')]
+  location_menu_ivi_package: com.android.car.settings
+  location_menu_ivi_activity: com.android.car.settings.location.LocationSettingsActivity
+  location_button: //android.widget.Switch[contains(@resource-id,'car_ui_toolbar_menu_item_switch')  or contains(@resource-id,'android:id/switch_widget')]
+  map_menu_ivi_package: com.google.android.apps.maps
+  map_menu_ivi_activity: com.google.android.maps.MapsActivity
+  search_button_map: //android.widget.FrameLayout[@content-desc="Search"]/android.widget.TextView
+  categories_button_map: //*[@text='Categories']
+  dismiss_button: //*[@text='Dismiss']
+  continue_button: //*[@text='Continue']
+  out_of_battery_notification: //*[@text='Out of battery range']
+  charging_station_map: //android.widget.FrameLayout[@content-desc="Charging stations"]/android.widget.TextView
+  charging_station_first: //android.widget.FrameLayout[@content-desc="ENEL Charging Station"][1]
+  charging_station_image: //android.widget.ImageView[@content-desc="Charging stations"]
+  account_picker_IVI: com.google.android.apps.maps:id/account_particle_account_picker_container
+  map_locator_IVI: com.google.android.apps.maps:id/map_buttons_view_my_location
+  settings_button: //android.widget.ImageView[@content-desc="Settings"]
+  route_options: //android.widget.LinearLayout[@content-desc="Route options"]/android.widget.FrameLayout/android.widget.TextView
+  avoid_motorways: //android.widget.TextView[@text='Avoid motorways']
+  avoid_toll_roads: //android.widget.TextView[@text='Avoid toll roads']
+  avoid_ferries: //android.widget.TextView[@text='Avoid ferries']
+  cancel_button: //*[@content-desc="Close"]/android.widget.FrameLayout
+  guidance_audio: //android.widget.LinearLayout[@content-desc="Guidance audio"]/android.widget.FrameLayout/android.widget.TextView
+  unmute_option: //android.widget.FrameLayout[@content-desc="Unmute"]/android.widget.TextView
+  mute_option: //android.widget.FrameLayout[@content-desc="Mute"]/android.widget.TextView
+  epoi_station_distance: //android.widget.TextView[contains(@text,'m') or contains(@text,'km')]
+  epoi_open_hours: //android.widget.TextView[contains(@text,'hours')]
+  full_epoi_address: //android.widget.FrameLayout/android.widget.FrameLayout[1]/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TextView
+  epoi_station_name: //android.widget.FrameLayout/android.widget.FrameLayout[1]/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.TextView
+  connector_epoi_type: //android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.TextView[1]
+  epoi_current_max_power: //android.widget.TextView[contains(@text,'KW') or contains(@text,'W')]
+  ETA_epoi: //android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[1]
+  epoi_phone_num: //android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.TextView[1]
+  pincode_epoi: //android.widget.LinearLayout/android.widget.FrameLayout[3]/android.widget.TextView
+  scroll_down_button_epoi: //android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.ImageView
+  ENEL_station: (//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.TextView)[1]
+  ENEL_station_point: //android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]
+  about_and_help: //android.widget.TextView[@text='About & help']
+  settings_menu: com.google.android.apps.maps:id/map_buttons_view_settings_button
+  search_destination: com.google.android.apps.maps:id/destination_input_search_box
+  search_edit: com.google.android.apps.maps:id/edittext_view
+  search_edit_FR: com.google.android.apps.maps:id/destination_input_keyboard_search_edit_text
+  search_first_address: //android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[2]
+  charging_station_title: com.google.android.apps.maps:id/place_details_title
+  start_button: com.google.android.apps.maps:id/place_details_navigation_footer_action_button
+  start_button_FR: com.google.android.apps.maps:id/place_details_navigation_footer_double_line_with_icon_only_button
+  search_along_route: //*[@content-desc='Search along route']
+  charging_stations_route: //android.widget.TextView[@text='Charging stations']
+  second_destination_button: //*[contains(@content-desc, "Route overview")]
+  select_chargingstation: //android.support.v7.widget.RecyclerView/android.widget.FrameLayout
+  soc_value: //android.widget.TextView[contains(@text, '%')]
+  map_back_button: //*[@content-desc="Back"]
+  start_navigation: //android.widget.FrameLayout[@content-desc="Start"]
+  add_charging_stop: //android.widget.TextView[contains(@text, 'Add charging stop')]
+  compatible_element: //android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.ImageView
+  list_view_charging_stations: //android.widget.FrameLayout[2]/android.widget.FrameLayout[1]/android.support.v7.widget.RecyclerView
+  offline_status: //android.widget.TextView[contains(@text, 'Offline')]
+  percentage: com.renault.evservices:id/batterySettingsPercentageTextView
+  map_version: //android.widget.TextView[@text='Version']
+  map_help_center: //android.widget.TextView[@text='Help Center' or @text='Help Centre']
+  random_epoi_in_list: //android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]
+  route_overview: //android.widget.TextView[@text='Route overview']
+  software_update_failed: com.renault.vehiclesettings:id/updateFailedTopTextView
+  second_widget_below: com.renault.launcher:id/widget_bottom_container
+  EV_charge_widget: //androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.widget.ImageView
+  widget_back_button: //*[@resource-id='com.renault.launcher:id/toolbar_nav' or @resource-id='com.renault.launcher:id/info']
+  text_second_widget: //android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[1]
+  text_first_widget: //android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[1]
+  compatible_text: //android.widget.TextView[@text='Compatible']
+  select_added_epoi: //android.widget.TextView[@text='1']
+  add_stop_button: //android.widget.TextView[contains(@text, "Add stop")]
+  journey_start_button: //android.widget.TextView[contains(@text, "Start")]
+  along_route_button: //*[contains(@content-desc, "Search along route")]
+  charging_status: //*[@text='Charging stations']
+  add_stop: //*[contains(@content-desc, "Add stop")]
+  route_overview_button: //*[contains(@content-desc, "Route overview")]
+  remove_stop_point: //*[@text='Remove stop']
+  close_button_maps: com.google.android.apps.maps:id/status_panel_close_button
+  exit_nav_button:  //*[@text="Exit navigation"]
+  ev_payments_filter: //android.widget.LinearLayout[@content-desc="EV payment filters"]/android.widget.FrameLayout/android.widget.TextView
+  plugsurfing: //*[@text='Plugsurfing']
+  mobilize_charge_pass: //*[@text='Mobilize Charge Pass']
+  einfachstromladen: //android.support.v7.widget.RecyclerView[1]/android.widget.LinearLayout[3]/android.widget.TextView
+  juicepass: //android.support.v7.widget.RecyclerView[1]/android.widget.LinearLayout[4]/android.widget.TextView
+  epoi_payment_info: //android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.FrameLayout[1]/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]
+  epoi_payment_info_text: //android.support.v7.widget.RecyclerView/android.widget.FrameLayout/android.widget.TextView
+  data_sharing: //android.widget.TextView[contains(@text, "Data sharing")]
+  refuse_sharing: //android.widget.RadioButton[contains(@text,'Refuse sharing')]
+  refuse_sharing_granular: //android.widget.Button[contains(@text,'Refuse all')]
+  share_only_data: //android.widget.RadioButton[contains(@text,'Share only data')]
+  share_data_and_geolocation: //android.widget.RadioButton[contains(@text,'Share data and position')]
+  accept_sharing_granular: //android.widget.Button[contains(@text,'Accept all')]
+  add_charging_stop_button: //android.widget.TextView[@text='Add stop']
+  battery_percentage_thirteen: //android.widget.TextView[@text='13%']
+  confirm_button: //android.widget.TextView[@text='Confirm']
+  filter_button: //android.support.v7.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.ImageView
+  compatible_plugs_option: //android.widget.TextView[@text='Compatible plugs']
+  exit_button: //android.widget.TextView[@text='Exit Navigation' or @text='Exit navigation']
+  Electric_settings_button: //*[@text='Electric']
+  Electric_settings_nav_back_button: com.renault.evservices:id/toolbar_nav
+  Air_quality_settings_button: //*[@text='Air quality']
+  Air_quality_settings_nav_back_button: com.renault.cabincontrol:id/toolbar_nav
+  Driving_eco_settings_button: //*[@text='Driving eco']
+  Driving_eco_settings_nav_back_button: com.renault.drivingeco:id/toolbar_nav
+  Driving_assistance_settings_button: //*[@text='Driving assistance']
+  Driving_assistance_settings_nav_back_button: com.renault.driveassist:id/toolbar_nav
+  Dynamic_chassis_settings_button: //*[@text='Dynamic chassis']
+  Dynamic_chassis_settings_nav_back_button: com.renault.driveassist:id/toolbar_nav
+  Parking_assistance_settings_button: //*[@text='Parking assistance']
+  Parking_assistance_settings_nav_back_button: com.renault.parkassist:id/toolbar_nav
+  Vehicle_settings_button: //*[@text='Vehicle']
+  Vehicle_settings_nav_back_button: com.renault.vehiclesettings:id/toolbar_nav
+  seatbutton: //*[@resource-id='com.android.systemui:id/seatButtonImageView']
+  climatebutton: //*[@resource-id='com.android.systemui:id/climateBarBlowerImageView']
+  ventilationbutton: //*[@resource-id='com.android.systemui:id/ventilationLevelClimateBarButtonImageView']
+  myraccount_button: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView[contains(@text, 'MY Renault account')]
+  google_account: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView[contains(@text, 'Google account')]
+  gmap_saved: //*[@text='Saved']
+  gmap_starred: //*[@text='Starred']
+  gmap_signin_button: com.google.android.apps.maps:id/avatar
+  gmap_signin_account: com.google.android.apps.maps:id/body
+  gmap_location: //android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.TextView[1]
+  gmap_save_button: //android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]
+  gmap_favorite_button: //android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout[3]/android.widget.FrameLayout
+  gmap_close: //android.widget.FrameLayout[@content-desc="Close"]/android.widget.FrameLayout
+  first_widget_below: com.renault.launcher:id/widget_upper_container
+  save_checkbox: //*[contains(@text,'Starred')]//following-sibling::android.widget.CheckBox
+  gmap_back_button: //android.widget.FrameLayout[@content-desc="Back"]/android.widget.FrameLayout
+  gmap_back_button2: //android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.FrameLayout
+  ivi_location_tap: com.google.android.apps.maps:id/snackbar_coordinator_view
+  fast_charging_button: //android.widget.FrameLayout[4]/android.widget.FrameLayout/android.widget.ImageView
+  epoi_fast: //*[@text='Fast']
+  epoi_medium: //*[@text='Medium']
+  ivi_battery: //*[@text='Battery']
+  gmap_close_button: //android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[2]
+  gmap_settings_button: //*[@text='Go to Settings']
+  gmap_turn_on_button: //*[@text='Turn on']
+  gmap_done_button: //android.widget.TextView[3]
+  Payment_widget: //*[@text='Mobilize Charge Pass' or @text='Plugsurfing']
+  ev_payment_detail: com.google.android.apps.maps:id/menu_frame_view
+  none_text: //*[@text='None']
+  map_app_name: //*[@text='Maps']
+  GA_app_name: //*[@text='Google Assistant']
+  app_ver_text: //android.widget.TextView[contains(@text,'Version')]
+  app_information: com.renault.launcher:id/app_options_first_button
+  playstore_app_name: //*[@text='Play Store']
+  later_custom_sharing: //*[@text='Later']
+  data_custom_sharing: //*[@text='Custom']
+  share_data_find_my_car: //*[@text='Find My Car']
+  connected_services_tab: //android.widget.TextView[contains(@text,'Share data and location with my active services')]
+  analytics_tab: //android.widget.TextView[contains(@text,'Share Analytics & Logs with Partners')]
+  switch_data_find_my_car: //android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.Switch
+  switch_data_remotes: //android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.Switch
+  switch_connected_services: //android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.widget.Switch
+  switch_analytics_renault: //android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.Switch
+  switch_analytics_partners: //android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.widget.Switch
+  back_privacy_settings: //android.widget.FrameLayout[@content-desc="Back"]/android.widget.ImageView
+  profile_user_conducteur: (//android.widget.ImageView[@content-desc="Profile picture"])[1]
+  profile_new_user_1: (//android.widget.ImageView[@content-desc="Profile picture"])[2]
+  profile_new_user_2: (//android.widget.ImageView[@content-desc="Profile picture"])[3]
+  google_assistant_switch: (//*[@resource-id='android:id/switch_widget'])[1]
+  google_result_switch: (//*[@resource-id='android:id/switch_widget'])[1]
+  privacy_settings: //*[@text='Privacy settings']
+  pop_up_location_off_DOM: //*[@text='If you turn this off, it will remove location access for all apps. Driver assistance apps will still have access.']
+  pop_up_location_ok_button: //android.widget.Button[@text='OK']
+  location_button_driver_assistance: //android.widget.Switch[contains(@resource-id,'com.android.car.settings:id/car_ui_secondary_action_concrete')]
+  pop_up_location_driver_assistance: //*[@text='If you turn this off, driver assistance apps that rely on location information will be disabled.']
+  pop_up_location_turn_off_button: //android.widget.Button[@text='Turn off anyway']
+  source_icon: //*[@resource-id='com.renault.car.media:id/menu_item_selector']
+  image_player: //*[@resource-id='com.renault.car.media:id/thumbnail']
+
+EV_services:
+  program: //android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RadioButton
+  NewProgram: com.renault.evservices:id/weeklyNewProgramButton
+  Charge_delay_mode: //android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RadioButton
+  minute_value: //androidx.recyclerview.widget.RecyclerView[2]/android.widget.TextView[2]
+  delay_program_savebutton: com.renault.evservices:id/chargeDelayedProgramSaveButton
+  my_programs: //android.widget.Button[contains(@resource-id,'weeklyProgram')]
+  advanced_program_switch: com.renault.evservices:id/advancedProgramChargeSwitch
+  advanced_program_climate: com.renault.evservices:id/advancedProgramCheckBox
+  SOC_increase: com.renault.evservices:id/batterySettingsMoveRightButton
+  charge_switch: com.renault.car.evservices:id/chargeProgramSwitch
+  climate_switch: com.renault.car.evservices:id/climateProgramSwitch
+  program_status: //android.widget.Switch[@resource-id='com.renault.car.evservices:id/programItemSwitch' and @checked='false']
+  days:
+    Monday: //android.widget.ToggleButton[contains(@resource-id,'calendarMondayButton')]
+    Monday_myf3: //android.widget.ToggleButton[contains(@resource-id,'newProgramCalendarMondayButton')]
+    Tuesday: //android.widget.ToggleButton[contains(@resource-id,'calendarTuesdayButton')]
+    Tuesday_myf3: //android.widget.ToggleButton[contains(@resource-id,'newProgramCalendarTuesdayButton')]
+    Wednesday: //android.widget.ToggleButton[contains(@resource-id,'calendarWednesdayButton')]
+    Wednesday_myf3: //android.widget.ToggleButton[contains(@resource-id,'newProgramCalendarWednesdayButton')]
+    Thursday: //android.widget.ToggleButton[contains(@resource-id,'calendarThursdayButton')]
+    Thursday_myf3: //android.widget.ToggleButton[contains(@resource-id,'newProgramCalendarThursdayButton')]
+    Friday: //android.widget.ToggleButton[contains(@resource-id,'calendarFridayButton')]
+    Friday_myf3: //android.widget.ToggleButton[contains(@resource-id,'newProgramCalendarFridayButton')]
+    Saturday: //android.widget.ToggleButton[contains(@resource-id,'calendarSaturdayButton')]
+    Saturday_myf3: //android.widget.ToggleButton[contains(@resource-id,'newProgramCalendarSaturdayButton')]
+    Sunday: //android.widget.ToggleButton[contains(@resource-id,'calendarSundayButton')]
+    Sunday_myf3: //android.widget.ToggleButton[contains(@resource-id,'newProgramCalendarSundayButton')]
+  temperature: com.renault.evservices:id/temperatureCellValue
+  temperature_myf3: com.renault.car.evservices:id/temperatureCellValue
+  set_temperature: com.renault.car.evservices:id/myProgramsHeaderClimateSettings
+  save_temperature: com.renault.car.evservices:id/thermalComfortProgramSaveButton
+  left_arrow: com.renault.evservices:id/advancedScrollLeftButton
+  left_arrow_myf3: com.renault.car.evservices:id/thermalComfortScrollLeftButton
+  right_arrow: com.renault.evservices:id/advancedScrollRightButton
+  right_arrow_myf3: com.renault.car.evservices:id/thermalComfortScrollRightButton
+  off_peak_hours: com.renault.evservices:id/advancedProgramChargeType
+  settings_save_button: com.renault.evservices:id/chargeSettingsSaveButton
+  program_save_button: com.renault.evservices:id/mainWeeklyProgramSaveButton
+  charge_only_between: com.renault.evservices:id/simpleChargeSubtitle
+  scharge_save_button: com.renault.evservices:id/classicChargeProgramSaveButton
+  new_program: //android.widget.Button[contains(@resource-id,'NewProgram')]
+  program_charge_switch: //android.widget.Switch[contains(@resource-id,'advancedProgramChargeSwitch') and @checked='true']
+  delete_icon: //androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ImageView[2]
+  delete_icon_myf3: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView
+  delete_button: //android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.TextView
+  delete_button_myf3: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.LinearLayout/android.widget.TextView
+  icon_navigation_bar: com.renault.evservices:id/toolbar_divider
+  weekly_program_text: com.renault.evservices:id/weeklyProgramText
+  goto_my_programs: //android.widget.ImageView[@clickable='true']
+  charge: (//*[@resource-id='com.renault.evservices:id/programTypeTitle'])[1]
+  simple_charge_hours: com.renault.evservices:id/simpleChargeSubtitle
+  simple_charge_first_hour: com.renault.evservices:id/simpleChargeFirstHour
+  simple_charge_second_hour: com.renault.evservices:id/simpleChargeSecondHour
+  simple_charge_time_setting_menu: com.renault.evservices:id/timePickerTextItem
+  simple_charge_start_hour: //*[@resource-id='com.renault.evservices:id/classicChargeStartTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.evservices:id/timePickerHourRecyclerView']/android.widget.TextView[2]
+  simple_charge_start_min: //*[@resource-id='com.renault.evservices:id/classicChargeStartTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.evservices:id/timePickerMinutesRecyclerView']/android.widget.TextView[2]
+  simple_charge_end_hour: //*[@resource-id='com.renault.evservices:id/classicChargeEndTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.evservices:id/timePickerHourRecyclerView']/android.widget.TextView[2]
+  simple_charge_end_min: //*[@resource-id='com.renault.evservices:id/classicChargeEndTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.evservices:id/timePickerMinutesRecyclerView']/android.widget.TextView[2]
+  simple_charge_time_setting_save_btn: com.renault.evservices:id/classicChargeProgramSaveButton
+  simple_charge_start_time: com.renault.evservices:id/simpleChargeFirstHour
+  simple_charge_end_time: com.renault.evservices:id/simpleChargeSecondHour
+  check_calendar_day: //android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView
+  check_calendar_day_myf3: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView
+  check_calendars_1: //android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView
+  check_calendars_2: //android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.TextView
+  check_calendar: //android.widget.TextView[contains(@resource-id,'weeklyProgramTitle')]
+  check_calendar_myf3: //android.widget.TextView[contains(@resource-id,'programItemTitle')]
+  curent_trip_menu: //android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup[1]/android.widget.TextView
+  score_menu: //android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup[2]
+  other_data_menu: //android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup[3]
+  trip_distance_km: (//android.widget.TextView[@resource-id='com.renault.drivingeco:id/tripInfoCellValue'])[1]
+  average_speed: (//android.widget.TextView[@resource-id='com.renault.drivingeco:id/tripInfoCellValue'])[2]
+  average_electric_consumption: (//android.widget.TextView[@resource-id='com.renault.drivingeco:id/tripInfoCellValue'])[3]
+  eco_driveing_score: //android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView
+  acceleration: //android.view.ViewGroup/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageButton
+  anticipation: //android.view.ViewGroup/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageButton
+  eco_mode_saving: //android.widget.TextView[@resource-id='com.renault.drivingeco:id/otherDataItemTitle']
+  new_trip_button: com.renault.drivingeco:id/baseActivityNewTrip
+  confirmation_button: com.renault.drivingeco:id/positive
+  reset_data_button: com.renault.drivingeco:id/otherDataResetDataButton
+  back_button: com.renault.evservices:id/toolbar_nav
+  active_schedule_mode: //android.widget.RadioButton[@resource-id='com.renault.evservices:id/weeklyChargeCheckBox' and contains (@checked, 'false')]
+  schedule_mode: //android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RadioButton
+  instant_mode: //android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RadioButton
+  delayed_mode: //android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RadioButton
+  switch_button: //android.widget.FrameLayout/android.view.ViewGroup/android.widget.Switch
+  first_schedule: //androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup
+  second_schedule: //androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup[2]
+  savings_menu: //*[@resource-id='com.renault.drivingeco:id/baseActivityTabLayout']//android.view.ViewGroup[3]/android.widget.TextView[contains(@text, 'Savings')]
+  eco_mode: //*[@resource-id='com.renault.appmenu:id/mexEco' or @resource-id='com.renault.appmenu:id/ecoModeActivationToggleButton']
+  save_trip: com.renault.drivingeco:id/baseActivitySaveButton
+  save_homeoption: com.renault.drivingeco:id/savedTripHomeWorkOption
+  save_journeyoption: com.renault.drivingeco:id/savedTripJourneyOption
+  save_personaloption: com.renault.drivingeco:id/savedTripPersonalOption
+  eco_navigate: com.renault.drivingeco:id/toolbar_nav
+  settings: //android.widget.TextView[@text='Settings']
+User_profile:
+  skip_button: com.google.android.car.setupwizard:id/primary_toolbar_button
+  ok_btn: com.renault.setupwizardoverlay:id/button_service_activation_pending_ok
+  suw_language_summary: android:id/summary
+  share_data_only: //*[@text='Share data only']
+  edit_profile: //*[@text='Edit profile']
+  change_language: android:id/title
+  add_user: //android.widget.ImageView[@content-desc="Add profile picture" or @content-desc="Add user icon"]
+  confirm_add_user: com.renault.profilesettingscenter:id/negative
+  confirm_add_user_myf3: android:id/button2
+  user_settings: //android.widget.ImageButton[@clickable='true']
+  manage_profiles: //android.widget.TextView[contains(@text,'Manage profiles')]
+  confirm_delete: //android.widget.Button[contains(@text,'Delete')]
+  confirm_delete_myf3: //android.widget.TextView[contains(@text,'Delete')]
+  refuse_terms: //android.widget.RadioGroup/android.widget.RadioButton[2]
+  accept_terms: //android.widget.RadioGroup/android.widget.RadioButton[1]
+  pin_button: //android.widget.TextView[@text='PIN']
+  pattern_button: //android.widget.TextView[@text='Pattern']
+  password_button: //*[@text='Password']
+  continue_button: //*[contains(@resource-id,'com.android.car.settings:id/key_enter') or (@text='Continue')]
+  confirm_button: //*[@text='Confirm']
+  enter_pin_button: com.android.car.settings:id/key_enter
+  none_pin_button: //android.widget.TextView[@text='None']
+  remove_pin_button: //android.widget.Button[@text='Remove']
+  user_name_text: //*[@text='Name']
+  user_name_input_box: com.renault.profilesettingscenter:id/text_input_edit_text_user_edit_name
+  user_name_input_box_myf3: com.renault.car.settings:id/text_input_edit_text_user_edit_name
+  user_name_UM_menu: //*[@text='Name']//following-sibling::android.widget.TextView[@resource-id='android:id/summary']
+  settings: //android.view.ViewGroup/android.widget.LinearLayout/android.widget.ImageButton
+  settingsA12: com.renault.car.settings:id/car_ui_toolbar_menu_item_icon
+  settings_myf3: //android.widget.FrameLayout[@content-desc="Overflow"]/android.widget.FrameLayout/android.widget.ImageView[1]
+  manage_accounts: //android.widget.TextView[@resource-id='com.renault.profilesettingscenter:id/title' and contains(@text,'Manage accounts')]
+  check_account: //androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.RelativeLayout/android.widget.TextView
+  add_account: //android.widget.FrameLayout[@content-desc="Add account"]/android.widget.Button
+  google_account_username: //*[@text='Google']/preceding-sibling::*
+  remove_account: //android.widget.FrameLayout[@content-desc="Remove"]/android.widget.Button
+  confirm_remove: //android.widget.Button[@resource-id='android:id/button1' and contains(@text, 'Remove account')]
+  select_myr: //android.widget.TextView[@resource-id='android:id/title' and contains(@text,'MY Renault')]
+  check_existing_user: //android.widget.TextView[@resource-id='android:id/summary' and contains(@text,'MY Renault')]
+  acc_sign_in: //android.widget.Button[@resource-id='com.renault.myrenault:id/button_account_pairing_preamble_start' and contains (@text, 'Sign in')]
+  next: com.renault.myrenault:id/button_account_pairing_intro_landscape_next
+  sign_in_username: com.renault.myrenault:id/text_input_account_pairing_username
+  sign_in_password: com.renault.myrenault:id/text_input_account_pairing_password
+  connect: com.renault.myrenault:id/button_account_pairing_start
+  pairing_successful: com.renault.myrenault:id/button_account_pairing_successful_next
+  access_account: //androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.RelativeLayout/android.widget.TextView[2]
+  myr_account: //android.widget.TextView[@resource-id='android:id/summary' and contains(@text, 'MY Renault')]
+  view_terms_and_data_settings: //*[@text='View terms and data settings']
+  accept_google_services: //*[@text='Accept']
+  finish_setting_profile: //*[@text='Finish setting up your profile']
+  Activate: //android.widget.TextView[contains(@text,"Activate")]
+  skip_element: //*[@text='Skip' or @text='skip']
+  auto_fill: //android.widget.ImageButton[@content-desc="Close"]
+  google_account: //android.widget.TextView[@resource-id='android:id/summary' and contains(@text, 'Google')]
+  select_google: //android.widget.TextView[@resource-id='android:id/title' and contains(@text,'Google')]
+  google_sign_in: //android.widget.TextView[contains(@text,'Sign in on car screen')]
+  edit_google_mail: //android.view.View/android.view.View[1]/android.view.View[1]/android.widget.EditText
+  google_next_button: com.google.android.gms:id/primary_toolbar_button
+  gmap_next: //*[@text='Next']
+  edit_google_password: //android.view.View/android.view.View/android.view.View[1]/android.widget.EditText
+  not_signed_in_text: //android.widget.TextView[contains(@text,"Couldn't sign in")]
+  no_network: //android.widget.TextView[contains(@text,"No network connection")]
+  no_myr_account_msg: //android.widget.TextView[contains(@text,'No My Renault account connected') and @resource-id='com.android.systemui:id/notification_body_title']
+  activate_button: //*[contains(@text,'Activate')]
+  activate_option: //android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView[1]
+  privacy_info_icon: com.renault.profilesettingscenter:id/icon_welcome_data_collection_info
+  welcome_user_title: com.renault.profilesettingscenter:id/text_welcome_data_collection_switch_title
+  welcome_data_collection_switch: com.renault.profilesettingscenter:id/switch_welcome_data_collection
+  welcome_user_settings_ok_button: com.renault.profilesettingscenter:id/button_welcome_ok
+  privacy_terms_title: //*[@text='Privacy terms']
+  navigate_back_from_privacy_page: com.renault.connectivity:id/toolbar_nav
+  no_myrenault_account_notification: //*[contains(@text,"No My Renault account connected") and @resource-id='com.android.systemui:id/notification_body_title']
+  guest: //*[contains(@text,'Guest')]
+  myr_sign_in: //*[contains(@text,'Sign in')]
+  myr_settings: //android.widget.TextView[contains(@text,'My Renault settings') and @resource-id='android:id/title']
+  automatic_connection_status: com.renault.myrenault:id/text_account_settings_auto_pairing_status
+  automatic_connection: com.renault.myrenault:id/switch_account_settings_auto_pairing
+  myrenaullt_signin_error_content: com.renault.myrenault:id/content
+  myrenault_account_not_connected: //*[contains(@text, 'Your vehicle is not connected to MY Renault')]
+  next_button: //*[@text='Next']
+  finished_for_now_button: //*[@text='Finished for now']
+  welcome_begin: com.renault.setupwizardoverlay:id/button_welcome_start
+  privacy_confirm: com.renault.setupwizardoverlay:id/button_data_collection_accept
+  google_terms_accept: com.google.android.gms:id/primary_toolbar_button
+  data_plan: //*[contains(@text,'Activate the data plan')]
+  suw_gbutton: //*[contains(@text,'Set up Google Assistant and apps')]
+  suw_lock: //*[contains(@text,'Profile lock')]
+  suw_profile: //*[contains(@text,'Customise your profile')]
+  no_myr_account: //*[contains(@text,'Your MY Renault account is not connected')]
+  myr_account_connected: //*[contains(@text,'Your MY Renault account is connected')]
+  make_admin: //android.widget.TextView[contains(@text,'Make admin')]
+  confirm_admin: //android.widget.Button[contains(@text,'Yes, make admin')]
+  user_settings_button: com.renault.profilesettingscenter:id/toolbar_menu_icon
+  cancel_button: //android.widget.TextView[contains(@text,"Cancel")]
+  profile_button: com.android.systemui:id/home
+  language_english: //android.widget.TextView[contains(@text,'English')]
+  language_english_UK: //*[@text='English (United Kingdom)']
+  suw_renault_logo: com.renault.setupwizardoverlay:id/image_welcome_renault_logo
+  suw_privacy_terms_screen: //*[contains(@text,'THE PROTECTION OF YOUR PERSONAL')]
+  suw_google_services_title: com.google.android.gms:id/setup_services_header_title
+  suw_summary_screen_title: com.google.android.car.setupwizard:id/suw_summary_screen_item_text_title
+  profile_password_field: com.android.systemui:id/passwordEntry
+  admin_user_image: //*[contains(@text,'Admin')]//preceding-sibling::android.widget.ImageView
+  current_user_name: //*[@resource-id='com.renault.profilesettingscenter:id/icon_view_user_picture_stroke']/following-sibling::*[@resource-id='com.renault.profilesettingscenter:id/text_user_name']
+  skip_btn: com.renault.myrenault:id/negative
+  pairing_unsuccessful: //*[contains(@text,'Your vehicle is not connected to My Renault')]
+  location_data: //*[contains(@text,'Let apps use your vehicle')]
+  diagnostic_data: //*[contains(@text,'Send usage and diagnostic data')]
+  auto_update: //*[contains(@text,'Auto-install updates and apps')]
+  auto_download: //*[contains(@text,'Auto-download maps')]
+  google_assistant: //*[contains(@text,'Set up Google Assistant and apps')]
+  welcome_title_text: com.renault.profilesettingscenter:id/text_welcome_title
+  wrong_profile_password: //*[@text='Wrong password']
+  wrong_profile_pincode: //*[@text='Wrong PIN']
+  profile_image: com.android.systemui:id/profilePictureView
+  pincode_key_enter_button: com.android.systemui:id/key_enter
+  pincode_entry_screen: com.android.systemui:id/pinEntry
+  profile_protection: //*[contains(@text,'Profile protection') or contains(@text,'Security')]
+  clear_lock: //*[contains(@text,'Clear credentials')]
+  ok_button: //*[contains(@text,'OK')]
+  wrong_credentials: //*[contains(@text,'Wrong email or password')]
+  wrong_pass_banner: //android.view.View[3]/android.view.View/android.view.View[2]/android.view.View
+  gmail_login_success: com.google.android.gms:id/primary_toolbar_button
+  choose_lock_type: //*[contains(@text,'Choose a lock type') or contains(@text,'Profile lock')]
+  password_entry: com.android.car.settings:id/password_entry
+  set_lock_pattern: com.android.car.settings:id/lockPattern
+  pattern_entry_screen: com.android.systemui:id/lockPatternView
+  wrong_profile_pattern: //*[@text='Wrong pattern']
+  number_of_profiles: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout
+  account_limit_reached: //*[contains(@text,'Account limit reached')]
+  play_store_sign_in: //*[@text='Sign in']
+  play_store_car_sign_in: //*[@text='Sign in on car screen']
+  play_store_id: //*[@resource-id='identifierId']
+  play_store_pwd: //*[@class='android.widget.EditText']
+  done_button: //*[@text='Done']
+  system: //*[@text='System']
+  languages_and_input: //*[@text='Languages and input']
+  profile_back: com.renault.profilesettingscenter:id/toolbar_nav
+  delete_profile: //*[@text='Delete profile']
+  delete_admin: //android.widget.TextView[contains(@text,'Delete')]
+  play_store_g_login: //*[@resource-id='identifierId']
+  play_store_g_pwd: //*[@class='android.widget.EditText']
+  myr_account_mailid: (//android.widget.TextView[@resource-id='android:id/title'])[2]
+  myr_email_account: //android.widget.TextView[@resource-id='android:id/summary' and contains(@text, 'MY Renault')]//preceding-sibling::android.widget.TextView
+  privacyok_button: //*[contains(@resource-id,'com.renault.myrenault:id/negative') or (@text='OK')]
+  setup_skip_button: //android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView
+  unsuccessful_next: com.renault.myrenault:id/button_account_pairing_unsuccessful_next
+  admin_profile_name: //android.widget.TextView[@text='Admin.']/preceding-sibling::android.widget.TextView
+  suw_agree: //*[contains(@text,'I agree')]
+  myr_profile_dom: //*[contains(@text,'My Renault account')]
+  remove_account_dom: //*[@resource-id="com.android.car.settings:id/car_ui_secondary_action_concrete"]
+  acc_sign_in_dom: //*[contains (@text, 'Sign in')]
+  sign_in_username_dom: com.renault.car.myrenault:id/email_input
+  sign_in_password_dom: com.renault.car.myrenault:id/password_input
+  connect_pairing_dom: //*[@text='Connect']
+  next_pairing_dom: //*[@text='Next']
+  admin_str: //*[@text='Admin.']
+SP_bluetooth:
+  BT_allow: //android.widget.Button[contains(@text,'Allow')]
+  BT_status: //android.widget.TextView[contains(@text,'Connected')]
+  BT_OK: //*[@text='Ok' or @text='Pair']
+  BT_enable: //android.widget.Switch[contains(@text,'Bluetooth')]
+  BT_select_IVI: //android.widget.TextView[contains(@text,'CAR') or contains(@text,'IVI')]
+  BT_device_details: com.android.settings:id/deviceDetails
+  BT_unpair: //android.widget.TextView[@text='Unpair']
+  BT_connections: //*[@text='Connections']
+  BT_Bluetooth: //*[@text='Bluetooth']
+DateTime:
+  select_country: //android.widget.TextView[contains(@text,'Select country')]
+BT_pair:
+  id_button1: android:id/button1
+  more_button: //*[@content-desc="More"]
+  text_bluetooth: //*[@text='Bluetooth']
+  forget_button: //*[@content-desc="Forget"]
+  addDevice_button: com.renault.spcx:id/addDevice
+  xpath_gear_icon: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.ImageView
+  confirm_pin: com.android.settings:id/phonebook_sharing_message_confirm_pin
+  settings_app: com.android.car.settings/.Settings
+  bt_enable_request: android.bluetooth.adapter.action.REQUEST_ENABLE
+  bt_disable_request: android.bluetooth.adapter.action.REQUEST_DISABLE
+  bt_enable_discoverable: android.bluetooth.adapter.action.REQUEST_DISCOVERABLE
+  start_call: android.intent.action.CALL -d tel
+MusicPlayer:
+  switch_app: //*[@content-desc="Switch apps" or @resource-id='com.renault.radio:id/app_switch_container']
+  select_spotify: //android.widget.TextView[@resource-id='com.renault.launcher:id/application_name' and contains(@text, 'Spotify')]
+  spotify_search_bar: //android.widget.FrameLayout[@content-desc="Search"]/android.widget.FrameLayout/android.widget.ImageView
+  spotify_search_inbox: com.android.car.media:id/car_ui_toolbar_search_bar
+  first_element_from_list: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]
+  open_player_menu: com.android.car.media:id/minimized_playback_controls
+  current_time: //*[@resource-id='com.android.car.media:id/current_time']
+  play_pause_button: com.android.car.media:id/play_pause_stop
+  slect_google_news: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]
+  back_button: com.android.car.media:id/car_ui_toolbar_nav_icon
+  radio_container: com.renault.radio:id/app_switch_container
+PlayStore:
+  search_inbox: //android.widget.EditText[@resource-id='com.android.vending:id/car_ui_toolbar_search_bar']
+  search_sugested_text: com.android.vending:id/0_resource_name_obfuscated
+  search_bar: //android.widget.FrameLayout[@content-desc="Search"]
+  select_result: (//*[@resource-id='com.android.vending:id/0_resource_name_obfuscated'])[1]
+  check_app_status: //android.widget.Button[@resource-id='com.android.vending:id/0_resource_name_obfuscated' and contains(@text, 'Install' or @text, 'Uninstall' )]
+  first_app_found: //android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout
+  search: //*[@content-desc='Search']
+  install_button: //*[@text='Install']
+  uninstall_button: //*[@text='Uninstall']
+  nav_icon: //*[@resource-id='com.android.vending:id/car_ui_toolbar_nav_icon']
+  nav_icon_container: //*[@resource-id='com.android.vending:id/car_ui_toolbar_nav_icon_container']
+  open_app: //*[@text="Open"]
+  spotify_app: //android.view.View[contains(@content-desc, "Spotify")]
+  more_options: //android.widget.FrameLayout[@content-desc="Menu"]/android.widget.FrameLayout
+kitchensink:
+  get_text: com.alliance.car.kitchensink:id/text_view_listener
+Radio:
+  control_bar: com.renault.radio:id/minimized_control_bar_title
+  audio_settings: com.renault.radio:id/btn_radio_audio_effect
+  sound_tab: //*[@text='Sound']
+  seekbar: com.renault.audiofx:id/seekbar
+  volume_range_tab: //*[@text='Volume / Speed']
+  back_button: com.renault.radio:id/nav_icon
+  favourite_button_myf3: //android.widget.LinearLayout/android.widget.FrameLayout[5]/android.widget.ImageButton
+Spotify:
+  error_button: com.android.car.media:id/error_button
+  login: com.spotify.music:id/login_password_button
+  enter_username: com.spotify.music:id/login_username
+  login_password: com.spotify.music:id/login_password
+  do_login: com.spotify.music:id/login_button
+  autofill: android:id/autofill_save_no
+  search: //android.widget.FrameLayout[@content-desc="Search"]/android.widget.FrameLayout/android.widget.ImageView
+  searchbar: com.android.car.media:id/car_ui_toolbar_search_bar
+  first_search: //androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]
+  play_pause: com.android.car.media:id/play_pause_stop
+  settings: //android.widget.FrameLayout[@content-desc="Settings"]/android.widget.FrameLayout/android.widget.ImageView
+  logout: //*[@text="LOG OUT"]
+  logout_positive: com.spotify.music:id/positive_button
+adas:
+  departure_anticipation_late: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.widget.RadioGroup/android.widget.RadioButton[3]
+  departure_anticipation_early: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.widget.RadioGroup/android.widget.RadioButton[1]
+  departure_anticipation_medium: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.widget.RadioGroup/android.widget.RadioButton[2]
+  alert_vibration_high: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[6]/android.widget.RadioGroup/android.widget.RadioButton[3]
+  alert_vibration_low: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[6]/android.widget.RadioGroup/android.widget.RadioButton[1]
+  alert_vibration_medium: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[6]/android.widget.RadioGroup/android.widget.RadioButton[2]
+  lane_keeping_sistem: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.TextView
+  button_lane_departure_warning: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.Switch
+  lane_departure_warning: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView
+  departure_anticipation: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.TextView[1]
+  alert_vibration: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[6]/android.widget.TextView[1]
+  back: //android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView[1]
+  departure_value: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.TextView[2]
+  alert_value: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.widget.TextView[2]
+mex:
+  drawer: //android.widget.ImageButton[@content-desc="Open drawer"]
+  mex_menu: //android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[7]
+  MEX: //android.view.ViewGroup[2]/android.widget.FrameLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[6]
+  user_setting: //android.widget.LinearLayout/android.widget.LinearLayout[4]/android.widget.LinearLayout[2]/android.widget.Spinner
+  menu_on_off: android:id/text1
+  current_state_mex: //android.widget.LinearLayout/android.widget.LinearLayout[4]/android.widget.LinearLayout[1]/android.widget.TextView[2]
+  current_state_radio: //android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView[1]
+Contacts:
+  menu: //android.widget.ImageButton[@content-desc="Open navigation drawer"]
+  settings_contact: //*[@text='Settings']
+  import: //*[@text='Import']
+  file_tipe: //*[@text='.vcf file']
+  second_menu: //android.widget.ImageButton[@content-desc="Show roots"]
+  usb: //*[@text='DRIVE DISK']
+  file: //android.widget.TextView[@text='sample.vcf']
+  allow: //*[@text='Allow']
+  contacts: //*[@resource-id='com.android.contacts:id/cliv_name_textview']
+  back: //android.widget.ImageButton[@content-desc="Navigate up"]
+AndroidAuto:
+  wireless_aa: //*[@text='Wireless Android Auto']
+  more_options: //*[@content-desc='More options']
+  developer_settings: //*[@text='Developer settings']
+  start_aa: //*[@text='Start' or @text='Start Android Auto']
+  android_auto: //*[@text='Android Auto']
+EVMenu:
+  battery_level: //*[@resource-id='com.renault.evservices:id/minMaxPercentageTextView' or @resource-id='com.renault.car.evservices:id/maxPercentageTextView']
+  left_battery_button: //*[@resource-id='com.renault.evservices:id/batterySettingsMoveLeftButton']
+  right_battery_button: //*[@resource-id='com.renault.evservices:id/batterySettingsMoveRightButton']
+  max_value_dot: //*[@resource-id='com.renault.car.evservices:id/minMaxChargeMaxValueDot']
+Time_format:
+ date_time_format: //*[@text='Date and time']
+ format_24_12: //*[@text='Use 24-hour format']
+AllianceKitchenSink:
+  alliance_ks_App: //*[@content-desc='AllianceKitchenSink' or @content-desc='Open drawer']
+  derating_register: //*[@resource-id='com.alliance.car.kitchensink:id/deratingRegister']
+  derating_value: //*[@resource-id='com.alliance.car.kitchensink:id/deratingValue']
+Peak_hours:
+  start_vehicle_ready_time: //*[@resource-id='com.renault.car.evservices:id/advancedProgramTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.car.evservices:id/timePickerHourRecyclerView']/android.widget.TextView[3]
+  start_vehicle_ready_time_scroll: //*[@resource-id='com.renault.car.evservices:id/advancedProgramTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.car.evservices:id/timePickerHourRecyclerView']/android.widget.TextView[1]
+  program1: //*[@resource-id="com.renault.car.evservices:id/programItemDaysContainer"]
+  start_hour: //*[@resource-id='com.renault.car.evservices:id/preferentialHoursStartTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.car.evservices:id/timePickerHourRecyclerView']/android.widget.TextView[3]
+  start_min: //*[@resource-id='com.renault.car.evservices:id/preferentialHoursStartTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.car.evservices:id/timePickerMinutesRecyclerView']/android.widget.TextView[3]
+  end_hour: //*[@resource-id='com.renault.car.evservices:id/preferentialHoursEndTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.car.evservices:id/timePickerHourRecyclerView']/android.widget.TextView[3]
+  end_min: //*[@resource-id='com.renault.car.evservices:id/preferentialHoursEndTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.car.evservices:id/timePickerMinutesRecyclerView']/android.widget.TextView[3]
+  start_hour_scroll: //*[@resource-id='com.renault.car.evservices:id/preferentialHoursStartTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.car.evservices:id/timePickerHourRecyclerView']/android.widget.TextView[1]
+  start_min_scroll: //*[@resource-id='com.renault.car.evservices:id/preferentialHoursStartTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.car.evservices:id/timePickerMinutesRecyclerView']/android.widget.TextView[1]
+  end_hour_scroll: //*[@resource-id='com.renault.car.evservices:id/preferentialHoursEndTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.car.evservices:id/timePickerHourRecyclerView']/android.widget.TextView[1]
+  end_min_scroll: //*[@resource-id='com.renault.car.evservices:id/preferentialHoursEndTimePicker']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.renault.car.evservices:id/timePickerMinutesRecyclerView']/android.widget.TextView[1]
+  save: //*[@text='Save']
+  programmes: //*[@text='Programmes']
+  charge_settings: //*[@text='Charge settings']
+  my_programs: //*[@text='My programs']
+  time_setting: //android.widget.TextView[contains(@resource-id,'com.renault.car.evservices:id/preferentialFirstHour')]

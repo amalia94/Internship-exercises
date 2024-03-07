@@ -1,0 +1,2012 @@
+CDP_Notification:
+  dabr_single_trigger_cdp_1:
+    params:
+      json:
+        messages:
+          evBatteryChargeState: "3"
+  dabr_single_trigger_cdp_2:
+    params:
+      json:
+        messages:
+          isLowBatteryVoltageDisplayed: "3"
+          evBatteryChargeLevel: "40.0"
+          evChargeRemainingTime: "60"
+          engineCoolantTemp: "0"
+          airbagCrashOrder: "1"
+          isOilPressureWarningDisplayed: "1"
+          rearRightWheelStatus: "0"
+          rearLeftWheelStatus: "0"
+          frontRightWheelStatus: "0"
+          frontLeftWheelStatus: "0"
+          rearRightWheelPressure: "90.0"
+          rearLeftWheelPressure: "90.0"
+          frontRightWheelPressure: "90.0"
+          frontLeftWheelPressure: "90.0"
+          externalTempDisplayed: "21.0"
+          fuelLevelDisplayed: "30.0"
+          distanceTotalizer: "123.0"
+          airConRightTempDisplayed: "20.0"
+          fixedMaintenanceRange: "250.0"
+  dabr_single_trigger_cdp_3:
+    params:
+      json:
+        messages:
+          vehicleState: "3"
+  dabr_single_trigger_cdp_4:
+    params:
+      json:
+        messages:
+          statusDoorOutsideLockedState: "1"
+          frontLeftDoorStatus: "1"
+          frontRightDoorStatus: "1"
+          rearLeftDoorStatus: "1"
+          rearRightDoorStatus: "1"
+  dabr_single_trigger_cdp_5:
+    params:
+      json:
+        messages:
+          isFuelLow: "0"
+  dabr_single_trigger_cdp_6:
+    params:
+      json:
+        messages:
+          globalVehicleWarningStatus: "0"
+  dabr_single_trigger_cdp_7:
+    params:
+      json:
+        messages:
+          evChargeType: "0"
+  dabr_single_trigger_cdp_8:
+    params:
+      json:
+        messages:
+          evBatteryLowVoltageAlert: "1"
+  dabr_data_periodic_trigger_cdp_1:
+    params:
+      json:
+        messages:
+          latitude: "dynamic"
+  dabr_data_periodic_trigger_cdp_2:
+    params:
+      json:
+        messages:
+          longitude: "dynamic"
+  dabr_data_periodic_trigger_cdp_3:
+    params:
+      json:
+        messages:
+          heading: "dynamic"
+  dabr_data_periodic_trigger_cdp_4:
+    params:
+      json:
+        messages:
+          gpsAccuracy: "dynamic"
+  dabr_data_periodic_trigger_cdp_5:
+    params:
+      json:
+        messages:
+          gpsTimestamp: "dynamic"
+  dabr_data_periodic_trigger_cdp_6:
+    params:
+      json:
+        messages:
+          vehicleSpeed:
+            value: [100.0]
+  dabr_data_periodic_trigger_cdp_7:
+    params:
+      json:
+        messages:
+          engineRpm:
+            values: [3500.0]
+  dabr_data_periodic_trigger_cdp_8:
+    params:
+      json:
+        messages:
+          averageEffectiveTorque:
+            value: [200.0]
+  dabr_data_periodic_trigger_cdp_9:
+    params:
+      json:
+        messages:
+          brakingPressure:
+            value: [3.0]
+  dabr_data_periodic_trigger_cdp_10:
+    params:
+      json:
+        messages:
+          correctedLongitudinalAcceleration:
+            value: [1.0]
+  dabr_data_periodic_trigger_cdp_11:
+    params:
+      json:
+        messages:
+          transversalAcceleration:
+            values: [1.0]
+  dabr_data_periodic_trigger_cdp_12:
+    params:
+      json:
+        messages:
+          distanceTotalizer: "123.0"
+  dabr_data_periodic_trigger_cdp_13:
+    params:
+      json:
+        messages:
+          fuelLevelDisplayed: "30.0"
+  dabr_data_periodic_trigger_cdp_14:
+    params:
+      json:
+        messages:
+          airConRightTempDisplayed: "20.0"
+  dabr_data_periodic_trigger_cdp_15:
+    params:
+      json:
+        messages:
+          externalTempDisplayed: "21.0"
+  dabr_data_periodic_trigger_cdp_16:
+    params:
+      json:
+        messages:
+          frontLeftWheelPressure: "90.0"
+  dabr_data_periodic_trigger_cdp_17:
+    params:
+      json:
+        messages:
+          frontRightWheelPressure: "90.0"
+  dabr_data_periodic_trigger_cdp_18:
+    params:
+      json:
+        messages:
+          rearLeftWheelPressure: "90.0"
+  dabr_data_periodic_trigger_cdp_19:
+    params:
+      json:
+        messages:
+          rearRightWheelPressure: "90.0"
+  dabr_data_periodic_trigger_cdp_20:
+    params:
+      json:
+        messages:
+          evChargeRemainingTime: "60"
+  dabr_data_periodic_trigger_cdp_21:
+    params:
+      json:
+        messages:
+          evChargeInstantCurrent: "200.0"
+  dabr_data_periodic_trigger_cdp_22:
+    params:
+      json:
+        messages:
+          evBatteryChargeLevel: "40.0"
+  dabr_context_trigger_data_cdp:
+    params:
+      json:
+        messages:
+          tripAverageSpeed: 23.0
+          tripDistance: 0.0
+          nominalFuelConsumption: 0.0
+          tripEnergyConsumption: 0.0
+  eva_cdp_1:
+    params:
+      name: "historicalCellTension1"
+      scalarValue: "3.0"
+  eva_cdp_2:
+    params:
+      name: "historicalCellTension2"
+      scalarValue: "3.0"
+  eva_cdp_3:
+    params:
+      name: "historicalCellTension3"
+      scalarValue: "3.0"
+  eva_cdp_4:
+    params:
+      name: "historicalCellTension4"
+      scalarValue: "3.0"
+  eva_cdp_5:
+    params:
+      name: "historicalCellTension5"
+      scalarValue: "3.0"
+  eva_cdp_6:
+    params:
+      name: "historicalCellTension6"
+      scalarValue: "3.0"
+  eva_cdp_7:
+    params:
+      name: "historicalCellTension7"
+      scalarValue: "3.0"
+  eva_cdp_8:
+    params:
+      name: "historicalCellTension8"
+      scalarValue: "3.0"
+  eva_cdp_9:
+    params:
+      name: "historicalCellTension9"
+      scalarValue: "3.0"
+  eva_cdp_10:
+    params:
+      name: "historicalCellTension10"
+      scalarValue: "3.0"
+  eva_cdp_11:
+    params:
+      name: "historicalCellTension11"
+      scalarValue: "3.0"
+  eva_cdp_12:
+    params:
+      name: "historicalCellTension12"
+      scalarValue: "3.0"
+  eva_cdp_13:
+    params:
+      name: "historicalCellTension13"
+      scalarValue: "3.0"
+  eva_cdp_14:
+    params:
+      name: "historicalCellTension14"
+      scalarValue: "3.0"
+  eva_cdp_15:
+    params:
+      name: "historicalCellTension15"
+      scalarValue: "3.0"
+  eva_cdp_16:
+    params:
+      name: "historicalCellTension16"
+      scalarValue: "3.0"
+  eva_cdp_17:
+    params:
+      name: "historicalCellTension17"
+      scalarValue: "3.0"
+  eva_cdp_18:
+    params:
+      name: "historicalCellTension18"
+      scalarValue: "3.0"
+  eva_cdp_19:
+    params:
+      name: "historicalCellTension19"
+      scalarValue: "3.0"
+  eva_cdp_20:
+    params:
+      name: "historicalCellTension20"
+      scalarValue: "3.0"
+  eva_cdp_21:
+    params:
+      name: "historicalCellTension21"
+      scalarValue: "3.0"
+  eva_cdp_22:
+    params:
+      name: "historicalCellTension22"
+      scalarValue: "3.0"
+  eva_cdp_23:
+    params:
+      name: "historicalCellTension23"
+      scalarValue: "3.0"
+  eva_cdp_24:
+    params:
+      name: "historicalCellTension24"
+      scalarValue: "3.0"
+  eva_cdp_25:
+    params:
+      name: "historicalCellTension25"
+      scalarValue: "3.0"
+  eva_cdp_26:
+    params:
+      name: "historicalCellTension26"
+      scalarValue: "3.0"
+  eva_cdp_27:
+    params:
+      name: "historicalCellTension27"
+      scalarValue: "3.0"
+  eva_cdp_28:
+    params:
+      name: "historicalCellTension28"
+      scalarValue: "3.0"
+  eva_cdp_29:
+    params:
+      name: "historicalCellTension29"
+      scalarValue: "3.0"
+  eva_cdp_30:
+    params:
+      name: "historicalCellTension30"
+      scalarValue: "3.0"
+  eva_cdp_31:
+    params:
+      name: "historicalCellTension31"
+      scalarValue: "3.0"
+  eva_cdp_32:
+    params:
+      name: "historicalCellTension32"
+      scalarValue: "3.0"
+  eva_cdp_33:
+    params:
+      name: "historicalCellTension33"
+      scalarValue: "3.0"
+  eva_cdp_34:
+    params:
+      name: "historicalCellTension34"
+      scalarValue: "3.0"
+  eva_cdp_35:
+    params:
+      name: "historicalCellTension35"
+      scalarValue: "3.0"
+  eva_cdp_36:
+    params:
+      name: "historicalCellTension36"
+      scalarValue: "3.0"
+  eva_cdp_37:
+    params:
+      name: "historicalCellTension37"
+      scalarValue: "3.0"
+  eva_cdp_38:
+    params:
+      name: "historicalCellTension38"
+      scalarValue: "3.0"
+  eva_cdp_39:
+    params:
+      name: "historicalCellTension39"
+      scalarValue: "3.0"
+  eva_cdp_40:
+    params:
+      name: "historicalCellTension40"
+      scalarValue: "3.0"
+  eva_cdp_41:
+    params:
+      name: "historicalCellTension41"
+      scalarValue: "3.0"
+  eva_cdp_42:
+    params:
+      name: "historicalCellTension42"
+      scalarValue: "3.0"
+  eva_cdp_43:
+    params:
+      name: "historicalCellTension43"
+      scalarValue: "3.0"
+  eva_cdp_44:
+    params:
+      name: "historicalCellTension44"
+      scalarValue: "3.0"
+  eva_cdp_45:
+    params:
+      name: "historicalCellTension45"
+      scalarValue: "3.0"
+  eva_cdp_46:
+    params:
+      name: "historicalCellTension46"
+      scalarValue: "3.0"
+  eva_cdp_47:
+    params:
+      name: "historicalCellTension47"
+      scalarValue: "3.0"
+  eva_cdp_48:
+    params:
+      name: "historicalCellTension48"
+      scalarValue: "3.0"
+  eva_cdp_49:
+    params:
+      name: "historicalCellTension49"
+      scalarValue: "3.0"
+  eva_cdp_50:
+    params:
+      name: "historicalCellTension50"
+      scalarValue: "3.0"
+  eva_cdp_51:
+    params:
+      name: "historicalCellTension51"
+      scalarValue: "3.0"
+  eva_cdp_52:
+    params:
+      name: "historicalCellTension52"
+      scalarValue: "3.0"
+  eva_cdp_53:
+    params:
+      name: "historicalCellTension53"
+      scalarValue: "3.0"
+  eva_cdp_54:
+    params:
+      name: "historicalCellTension54"
+      scalarValue: "3.0"
+  eva_cdp_55:
+    params:
+      name: "historicalCellTension55"
+      scalarValue: "3.0"
+  eva_cdp_56:
+    params:
+      name: "historicalCellTension56"
+      scalarValue: "3.0"
+  eva_cdp_57:
+    params:
+      name: "historicalCellTension57"
+      scalarValue: "3.0"
+  eva_cdp_58:
+    params:
+      name: "historicalCellTension58"
+      scalarValue: "3.0"
+  eva_cdp_59:
+    params:
+      name: "historicalCellTension59"
+      scalarValue: "3.0"
+  eva_cdp_60:
+    params:
+      name: "historicalCellTension60"
+      scalarValue: "3.0"
+  eva_cdp_61:
+    params:
+      name: "historicalCellTension61"
+      scalarValue: "3.0"
+  eva_cdp_62:
+    params:
+      name: "historicalCellTension62"
+      scalarValue: "3.0"
+  eva_cdp_63:
+    params:
+      name: "historicalCellTension63"
+      scalarValue: "3.0"
+  eva_cdp_64:
+    params:
+      name: "historicalCellTension64"
+      scalarValue: "3.0"
+  eva_cdp_65:
+    params:
+      name: "historicalCellTension65"
+      scalarValue: "3.0"
+  eva_cdp_66:
+    params:
+      name: "historicalCellTension66"
+      scalarValue: "3.0"
+  eva_cdp_67:
+    params:
+      name: "historicalCellTension67"
+      scalarValue: "3.0"
+  eva_cdp_68:
+    params:
+      name: "historicalCellTension68"
+      scalarValue: "3.0"
+  eva_cdp_69:
+    params:
+      name: "historicalCellTension69"
+      scalarValue: "3.0"
+  eva_cdp_70:
+    params:
+      name: "historicalCellTension70"
+      scalarValue: "3.0"
+  eva_cdp_71:
+    params:
+      name: "historicalCellTension71"
+      scalarValue: "3.0"
+  eva_cdp_72:
+    params:
+      name: "historicalCellTension72"
+      scalarValue: "3.0"
+  eva_cdp_73:
+    params:
+      name: "historicalCellTension73"
+      scalarValue: "3.0"
+  eva_cdp_74:
+    params:
+      name: "historicalCellTension74"
+      scalarValue: "3.0"
+  eva_cdp_75:
+    params:
+      name: "historicalCellTension75"
+      scalarValue: "3.0"
+  eva_cdp_76:
+    params:
+      name: "historicalCellTension76"
+      scalarValue: "3.0"
+  eva_cdp_77:
+    params:
+      name: "historicalCellTension77"
+      scalarValue: "3.0"
+  eva_cdp_78:
+    params:
+      name: "historicalCellTension78"
+      scalarValue: "3.0"
+  eva_cdp_79:
+    params:
+      name: "historicalCellTension79"
+      scalarValue: "3.0"
+  eva_cdp_80:
+    params:
+      name: "historicalCellTension80"
+      scalarValue: "3.0"
+  eva_cdp_81:
+    params:
+      name: "historicalCellTension81"
+      scalarValue: "3.0"
+  eva_cdp_82:
+    params:
+      name: "historicalCellTension82"
+      scalarValue: "3.0"
+  eva_cdp_83:
+    params:
+      name: "historicalCellTension83"
+      scalarValue: "3.0"
+  eva_cdp_84:
+    params:
+      name: "historicalCellTension84"
+      scalarValue: "3.0"
+  eva_cdp_85:
+    params:
+      name: "historicalCellTension85"
+      scalarValue: "3.0"
+  eva_cdp_86:
+    params:
+      name: "historicalCellTension86"
+      scalarValue: "3.0"
+  eva_cdp_87:
+    params:
+      name: "historicalCellTension87"
+      scalarValue: "3.0"
+  eva_cdp_88:
+    params:
+      name: "historicalCellTension88"
+      scalarValue: "3.0"
+  eva_cdp_89:
+    params:
+      name: "historicalCellTension89"
+      scalarValue: "3.0"
+  eva_cdp_90:
+    params:
+      name: "historicalCellTension90"
+      scalarValue: "3.0"
+  eva_cdp_91:
+    params:
+      name: "historicalCellTension91"
+      scalarValue: "3.0"
+  eva_cdp_92:
+    params:
+      name: "historicalCellTension92"
+      scalarValue: "3.0"
+  eva_cdp_93:
+    params:
+      name: "historicalCellTension93"
+      scalarValue: "3.0"
+  eva_cdp_94:
+    params:
+      name: "historicalCellTension94"
+      scalarValue: "3.0"
+  eva_cdp_95:
+    params:
+      name: "historicalCellTension95"
+      scalarValue: "3.0"
+  eva_cdp_96:
+    params:
+      name: "historicalCellTension96"
+      scalarValue: "3.0"
+  eva_02_cdp_1:
+    params:
+      name: "IVCHardwareReference"
+      scalarValue: "dynamic"
+  eva_02_cdp_2:
+    params:
+      name: "IVCSoftwareReference"
+      scalarValue: "dynamic"
+  eva_02_cdp_3:
+    params:
+      name: "blmsMaxAcCurrent"
+      scalarValue: "15"
+  eva_02_cdp_4:
+    params:
+      name: "hvBatteryChargeType"
+      scalarValue: "1"
+  eva_02_cdp_5:
+    params:
+      name: "hvBatteryStateOfHealth"
+      scalarValue: "20"
+  eva_02_cdp_6:
+    params:
+      name: "evHvBatteryTemperature"
+      scalarValue: "30"
+  eva_02_cdp_7:
+    params:
+      name: "hvBatteryTemperatureMax"
+      scalarValue: "35"
+  eva_02_cdp_8:
+    params:
+      name: "hvBatteryTemperatureMin"
+      scalarValue: "10"
+  eva_02_cdp_9:
+    params:
+      name: "externalTempValue"
+      scalarValue: "25"
+  eva_02_cdp_10:
+    params:
+      name: "evHvBatteryEnergyLevel"
+      scalarValue: "5"
+  eva_02_cdp_11:
+    params:
+      name: "evUserSoc"
+      scalarValue: "40.000015258789062"
+  eva_02_cdp_12:
+    params:
+      name: "historicalParking"
+      scalarValue: "12345ABCD"
+  eva_02_cdp_13:
+    params:
+      name: "historicalDriving"
+      scalarValue: "12345ABCD"
+  eva_02_cdp_14:
+    params:
+      name: "globalKWhVehicle"
+      scalarValue: "1.2"
+  eva_02_cdp_15:
+    params:
+      name: "globalKWhPack"
+      scalarValue: "1.3"
+  eva_02_cdp_16:
+    params:
+      name: "HV_BatteryAbsTimePack"
+      scalarValue: "2"
+  eva_02_cdp_17:
+    params:
+      name: "hvBatteryMileage"
+      scalarValue: "3"
+  eva_02_cdp_18:
+    params:
+      name: "blmsSlaveFaultType"
+      scalarValue: "1"
+  eva_02_cdp_19:
+    params:
+      name: "blmsMasterFaultType"
+      scalarValue: "1"
+  eva_02_cdp_20:
+    params:
+      name: "evAvailableEnergy"
+      scalarValue: "50"
+  eva_02_cdp_21:
+    params:
+      name: "blmsInstantCurrent"
+      scalarValue: "500"
+  eva_02_cdp_22:
+    params:
+      name: "hvBatteryHighestCellVoltageProbeId"
+      scalarValue: "200"
+  eva_02_cdp_23:
+    params:
+      name: "hvBatteryLowestCellVoltageProbeId"
+      scalarValue: "110"
+  eva_02_cdp_24:
+    params:
+      name: "cellVoltageMax"
+      scalarValue: "4"
+  eva_02_cdp_25:
+    params:
+      name: "cellVoltageMin"
+      scalarValue: "2"
+  eva_02_cdp_26:
+    params:
+      name: "chargeComplete"
+      scalarValue: "4"
+  eva_02_cdp_27:
+    params:
+      name: "evBlmsHvIsolationImpedance"
+      scalarValue: "1000"
+  eva_02_cdp_28:
+    params:
+      name: "evNumberPhasesUsed"
+      scalarValue: "1"
+  eva_02_cdp_29:
+    params:
+      name: "chargePartial"
+      scalarValue: "5"
+  eva_02_cdp_30:
+    params:
+      name: "hvBatteryStatusSohAvailablePower"
+      scalarValue: "1.5"
+  eva_02_cdp_31:
+    params:
+      name: "hvBatteryStatusSohGeneratedPower"
+      scalarValue: "1.7"
+  eva_02_cdp_32:
+    params:
+      name: "zevAutonomyDisplay"
+      scalarValue: "2"
+  eva_02_cdp_33:
+    params:
+      name: "statusDistanceTotalizer"
+      scalarValue: "123"
+  eva_02_cdp_34:
+    params:
+      name: "evAcChargeInletTemperature"
+      scalarValue: "25"
+  eva_02_cdp_35:
+    params:
+      name: "evDcChargeInletTemperature"
+      scalarValue: "30"
+  eva_02_cdp_36:
+    params:
+      name: "blmsTemperature"
+      scalarValue: "40"
+  eva_02_cdp_37:
+    params:
+      name: "evWaterTemperature"
+      scalarValue: "45"
+  eva_02_cdp_38:
+    params:
+      name: "blmsAvailableChargingPower"
+      scalarValue: "20"
+  eva_02_cdp_39:
+    params:
+      name: "evNumberAcChargeStarts"
+      scalarValue: "5000"
+  eva_02_cdp_40:
+    params:
+      name: "blmsNumAcSmartCharging"
+      scalarValue: "6000"
+  eva_02_cdp_41:
+    params:
+      name: "blmsNumAcSmartChargingBreak"
+      scalarValue: "6000"
+  eva_02_cdp_42:
+    params:
+      name: "evNumDcChargeRelayOpening"
+      scalarValue: "8000"
+  eva_02_cdp_43:
+    params:
+      name: "evNumDcChargeRelayOpeningWithCurrent"
+      scalarValue: "8000"
+  eva_02_cdp_44:
+    params:
+      name: "ecoCruiseScore"
+      scalarValue: "140"
+  eva_02_cdp_45:
+    params:
+      name: "ecoEcoScore"
+      scalarValue: "130"
+  eva_02_cdp_46:
+    params:
+      name: "ecoSlowdownScore"
+      scalarValue: "145"
+  eva_02_cdp_47:
+    params:
+      name: "ecoStartScore"
+      scalarValue: "120"
+  eva_02_cdp_48:
+    params:
+      name: "hvBatteryResistiveStateOfHealth"
+      scalarValue: "100"
+  eva_02_cdp_49:
+    params:
+      name: "batteryIdentificationNumber"
+      scalarValue: "1234567890123456789012345"
+  eva_02_cdp_50:
+    params:
+      name: "DistanceTripUnit"
+      scalarValue: "0"
+  eva_02_cdp_51:
+    params:
+      name: "evNumberHvBatteryRelaysOpening"
+      scalarValue: "1000"
+  eva_02_cdp_52:
+    params:
+      name: "powerRelayStatus"
+      scalarValue: "1"
+  eva_03_cdp_1:
+    params:
+      name: "chargeProhibitionByRental"
+      scalarValue: "0"
+  eva_03_cdp_2:
+    params:
+      name: "chargeStatus"
+      scalarValue: "1"
+  eva_03_cdp_3:
+    params:
+      name: "evCplcFaultType"
+      scalarValue: "0"
+  eva_03_cdp_4:
+    params:
+      name: "blmsComboReady"
+      scalarValue: "1"
+  eva_03_cdp_5:
+    params:
+      name: "blmsCombochargeHlcRequest"
+      scalarValue: "1"
+  eva_03_cdp_6:
+    params:
+      name: "blmsComboErrorCode"
+      scalarValue: "2"
+  eva_03_cdp_7:
+    params:
+      name: "blmsComboRequestedEnergyTransferMode"
+      scalarValue: "1"
+  eva_03_cdp_8:
+    params:
+      name: "evChargeProgrammingStatus"
+      scalarValue: "1"
+  eva_03_cdp_9:
+    params:
+      name: "evChargeHvCharge"
+      scalarValue: "1"
+  eva_03_cdp_10:
+    params:
+      name: "blmsOperatingType"
+      scalarValue: "0"
+  eva_03_cdp_11:
+    params:
+      name: "chargeAlert"
+      scalarValue: "1"
+  eva_03_cdp_12:
+    params:
+      name: "evChargePlugConnected"
+      scalarValue: "1"
+  eva_03_cdp_13:
+    params:
+      name: "evHvBatteryStartOfChargeTrigger"
+      scalarValue: "1"
+  eva_04_cdp_1:
+    params:
+      name: "evHvBatteryTemperature"
+      scalarValue: "20"
+  eva_04_cdp_2:
+    params:
+      name: "hvBatteryTemperatureMax"
+      scalarValue: "50"
+  eva_04_cdp_3:
+    params:
+      name: "hvbTemperatureMin"
+      scalarValue: "10"
+  eva_04_cdp_4:
+    params:
+      name: "blmsInstantCurrent"
+      scalarValue: "500"
+  eva_04_cdp_5:
+    params:
+      name: "blmsHvBatteryNetworkVoltage"
+      scalarValue: "100"
+  eva_04_cdp_6:
+    params:
+      name: "blmsMaxAcCurrent"
+      scalarValue: "10"
+  eva_04_cdp_7:
+    params:
+      name: "chargeSpotPowerLevel"
+      scalarValue: "70.19999694824219"
+  eva_04_cdp_8:
+    params:
+      name: "blmsComboPresentVoltage"
+      scalarValue: "200"
+  eva_04_cdp_9:
+    params:
+      name: "chargeInstantaneousPower"
+      scalarValue: "100"
+  eva_04_cdp_10:
+    params:
+      name: "blmsComboMaximumVoltageLimit"
+      scalarValue: "700"
+  eva_04_cdp_11:
+    params:
+      name: "blmsComboMinimumVoltageLimit"
+      scalarValue: "200"
+  eva_04_cdp_12:
+    params:
+      name: "blmsCplcCommunicationStatus"
+      scalarValue: "1"
+  eva_04_cdp_13:
+    params:
+      name: "evChargeRemainingTime"
+      scalarValue: "600"
+  eva_04_cdp_14:
+    params:
+      name: "blmsComboTargetCurrent"
+      scalarValue: "300"
+  eva_04_cdp_15:
+    params:
+      name: "evBlmsEmInverterVoltage"
+      timeSeriesValue:
+        value: [200]
+  eva_04_cdp_16:
+    params:
+      name: "dcdcNetworkVoltage"
+      timeSeriesValue:
+        value: [120]
+  eva_04_cdp_17:
+    params:
+      name: "phevBlmsHsgInverterCurrent"
+      timeSeriesValue:
+        value: [250]
+  eva_04_cdp_18:
+    params:
+      name: "evBlmsEmInverterCurrent"
+      timeSeriesValue:
+        value: [100]
+  eva_04_cdp_19:
+    params:
+      name: "evBlmsReTorque"
+      timeSeriesValue:
+        value: [200]
+  eva_04_cdp_20:
+    params:
+      name: "mainBlmsTorqueRequest"
+      timeSeriesValue:
+        value: [60]
+  eva_04_cdp_21:
+    params:
+      name: "evBlmsEmElecTorqueEstimation"
+      timeSeriesValue:
+        value: [70]
+  eva_04_cdp_22:
+    params:
+      name: "mainBlmsSafetyMaxTorque"
+      timeSeriesValue:
+        value: [100]
+  eva_04_cdp_23:
+    params:
+      name: "mainBlmsSafetyMinTorque"
+      timeSeriesValue:
+        value: [-20]
+  eva_04_cdp_24:
+    params:
+      name: "evBlmsEmElecMaxGeneratorTorque"
+      timeSeriesValue:
+        value: [50]
+  eva_04_cdp_25:
+    params:
+      name: "evBlmsEmElecMaxMotorTorque"
+      timeSeriesValue:
+        value: [100]
+  eva_04_cdp_26:
+    params:
+      name: "phevHsgTorqueRequest"
+      timeSeriesValue:
+        value: [90]
+  eva_04_cdp_27:
+    params:
+      name: "phevBlmsHsgElecTorqueEstimation"
+      timeSeriesValue:
+        value: [80]
+  eva_04_cdp_28:
+    params:
+      name: "inverterBlmsSafetyMaxTorque"
+      timeSeriesValue:
+        value: [450]
+  eva_04_cdp_29:
+    params:
+      name: "inverterBlmsSafetyMinTorque"
+      timeSeriesValue:
+        value: [-30]
+  eva_04_cdp_30:
+    params:
+      name: "phevBlmsHsgElecMaxGenTorque"
+      timeSeriesValue:
+        value: [50]
+  eva_04_cdp_31:
+    params:
+      name: "phevBlmsHsgElecMaxMotorTorque"
+      timeSeriesValue:
+        value: [200]
+  eva_04_cdp_32:
+    params:
+      name: "evEdrEmSpeed"
+      timeSeriesValue:
+        value: [5000]
+  eva_04_cdp_33:
+    params:
+      name: "evBlmsEmInverterTempDeg"
+      timeSeriesValue:
+        value: [100]
+  eva_04_cdp_34:
+    params:
+      name: "evBlmsEmElecMachineTempDeg"
+      timeSeriesValue:
+        value: [60]
+  eva_04_cdp_35:
+    params:
+      name: "evBlmsPebWaterTemp"
+      timeSeriesValue:
+        value: [110]
+  eva_04_cdp_36:
+    params:
+      name: "inverterEmissionTradingSchemeCoolantFlow"
+      timeSeriesValue:
+        value: [5]
+  eva_04_cdp_37:
+    params:
+      name: "inverterFaultType"
+      timeSeriesValue:
+        value: [1]
+  eva_04_cdp_38:
+    params:
+      name: "mainFailureDisplayElectricalSystem"
+      timeSeriesValue:
+        value: [1]
+  eva_04_cdp_39:
+    params:
+      name: "mainFailureDisplayElectricalMotor"
+      timeSeriesValue:
+        value: [1]
+  eva_04_cdp_40:
+    params:
+      name: "phevBlmsHsgElecMachineSpeed"
+      timeSeriesValue:
+        value: [6000]
+  eva_04_cdp_41:
+    params:
+      name: "phevBlmsHsgElecMachineTemperature"
+      timeSeriesValue:
+        value: [30]
+  eva_04_cdp_42:
+    params:
+      name: "phevBlmsHsgInverterTemperature"
+      timeSeriesValue:
+        value: [80]
+  eva_04_cdp_43:
+    params:
+      name: "InverterFailureDisplayElectricalSystem"
+      timeSeriesValue:
+        value: [1]
+  eva_04_cdp_44:
+    params:
+      name: "InverterFailureDisplayElectricalMotor"
+      timeSeriesValue:
+        value: [1]
+  eva_05_cdp_1:
+    params:
+      name: "Nb_ME_Inverter_NoFaultType_BLMS"
+      scalarValue: "1"
+  eva_05_cdp_2:
+    params:
+      name: "Nb_ME_ElecSysFailure_Alert_BLMS"
+      scalarValue: "1"
+  eva_05_cdp_3:
+    params:
+      name: "Nb_ME_ElecMotorFailure_Alert_BLMS"
+      scalarValue: "1"
+  eva_05_cdp_4:
+    params:
+      name: "Nb_ME_Deactivation_Request_diff_Status_BLMS"
+      scalarValue: "1"
+  eva_05_cdp_5:
+    params:
+      name: "tripDistance"
+      scalarValue: "77"
+  eva_05_cdp_6:
+    params:
+      name: "tripEnergyConsumption"
+      scalarValue: "30"
+  payd_data_cdp:
+    params:
+      name: "statusDistanceTotalizer"
+      scalarValue: "150.0"
+  phyd_data_cdp_1:
+    params:
+      name: "BrakePressure"
+      scalarValue: "3"
+  phyd_data_cdp_2:
+    params:
+      name: "ESCAccelerationLongitudinalCorrected"
+      scalarValue: "2"
+  phyd_data_cdp_3:
+    params:
+      name: "ESCAccelerationTransversalCorrected"
+      scalarValue: "1"
+  phyd_data_cdp_4:
+    params:
+      name: "LocationHeading"
+      scalarValue: "dynamic"
+  phyd_data_cdp_5:
+    params:
+      name: "LocationLatitude"
+      scalarValue: "dynamic"
+  phyd_data_cdp_6:
+    params:
+      name: "LocationLongitude"
+      scalarValue: "dynamic"
+  phyd_data_cdp_7:
+    params:
+      name: "LocationValidity"
+      scalarValue: "dynamic"
+  phyd_data_cdp_8:
+    params:
+      name: "SpeedValue"
+      scalarValue: "100"
+  phyd_data_cdp_9:
+    params:
+      name: "StatusDistanceTotalizer"
+      scalarValue: "123.0"
+  ubam_data_single_trigger_cdp_1:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      name: "MaintenanceOilDrainEngineRevolutions"
+      scalarValue: "50"
+  ubam_data_single_trigger_cdp_2:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      name: "StatusDistanceTotalizer"
+      scalarValue: "123"
+  ubam_data_single_trigger_cdp_3:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      name: "EngineOilDrainingRange"
+      scalarValue: "80"
+  ubam_data_single_trigger_cdp_4:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      name: "AirFilterCloggingStatus"
+      scalarValue: "60"
+  ubam_data_single_trigger_cdp_5:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      name: "AirFilterCloggingDataReliab"
+      scalarValue: "55"
+  ubam_data_single_trigger_cdp_6:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      name: "StatusEEMSOCBatteryV"
+      scalarValue: "75"
+  ubam_data_single_trigger_cdp_7:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      name: "EcoStartScore"
+      scalarValue: "120"
+  ubam_data_single_trigger_cdp_8:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      name: "EcoEcoScore"
+      scalarValue: "130"
+  ubam_data_single_trigger_cdp_9:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      name: "EcoCruiseScore"
+      scalarValue: "140"
+  ubam_data_single_trigger_cdp_10:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      name: "EcoSlowdownScore"
+      scalarValue: "145"
+  ubam_data_single_trigger_cdp_11:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_StopAutoForbidden_changed_no_privacy"
+      name: "GEEStopAutoForbidden"
+      scalarValue: "2"
+  ubam_periodic_trigger_cdp_data_1:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "BrakePressure"
+      timeSeriesValue:
+        value: [70]
+  ubam_periodic_trigger_cdp_data_2:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "SpeedValue"
+      timeSeriesValue:
+        value: [150]
+  ubam_periodic_trigger_cdp_data_3:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "EngineRPM"
+      timeSeriesValue:
+        value: [3000]
+  ubam_periodic_trigger_cdp_data_4:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "ESCAccelerationTransversalCorrected"
+      timeSeriesValue:
+        value: [1]
+  ubam_periodic_trigger_cdp_data_5:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "EngineMeanEffectiveTorque"
+      timeSeriesValue:
+        value: [700]
+  ubam_periodic_trigger_cdp_data_6:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "ESCBrakingPedalInformation"
+      timeSeriesValue:
+        value: [2]
+  ubam_periodic_trigger_cdp_data_7:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "ESCAccelerationLongitudinalCorrected"
+      timeSeriesValue:
+        value: [1]
+  ubam_periodic_trigger_cdp_data_8:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "YawRateCorrected"
+      timeSeriesValue:
+        value: [35]
+  ubam_periodic_trigger_cdp_data_9:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "WheelSpeedRearLeft"
+      timeSeriesValue:
+        value: [120]
+  ubam_periodic_trigger_cdp_data_10:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "WheelSpeedRearRight"
+      timeSeriesValue:
+        value: [120]
+  ubam_periodic_trigger_cdp_data_11:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "WheelSpeedFrontLeft"
+      timeSeriesValue:
+        value: [120]
+  ubam_periodic_trigger_cdp_data_12:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "WheelSpeedFrontRight"
+      timeSeriesValue:
+        value: [120]
+  ubam_periodic_trigger_cdp_data_13:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "AtmoPressure"
+      timeSeriesValue:
+        value: [75]
+  ubam_periodic_trigger_cdp_data_14:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "VehicleSteeringAngle"
+      timeSeriesValue:
+        value: [180]
+  ubam_periodic_trigger_cdp_data_15:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "StatusWheelPressureFrontLeft"
+      timeSeriesValue:
+        value: [4500]
+  ubam_periodic_trigger_cdp_data_16:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "StatusWheelPressureFrontRight"
+      timeSeriesValue:
+        value: [4500]
+  ubam_periodic_trigger_cdp_data_17:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "StatusWheelPressureRearRight"
+      timeSeriesValue:
+        value: [4500]
+  ubam_periodic_trigger_cdp_data_18:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "StatusWheelPressureRearLeft"
+      timeSeriesValue:
+        value: [4500]
+  ubam_periodic_trigger_cdp_data_19:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "GearBoxClutchSwitchMinimumTravel"
+      timeSeriesValue:
+        value: [2]
+  ubam_periodic_trigger_cdp_data_20:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      name: "LocationSpeed"
+      timeSeriesValue:
+        value: [200]
+  ubam_periodic_trigger_cdp_data_21:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_120_seconds_no_privacy"
+      name: "ExternalTempValue"
+      timeSeriesValue:
+      value: [25]
+  coma_01_cdp_1:
+    params:
+      name: "MaintenanceFixedRange"
+      scalarValue: "250"
+  coma_01_cdp_2:
+    params:
+      name: "MaintenanceDrainingTimeBefore"
+      scalarValue: "120"
+  coma_01_cdp_3:
+    params:
+      name: "OilLevel"
+      scalarValue: "1"
+  coma_01_cdp_4:
+    params:
+      name: "GlobalVehicleWarningState"
+      scalarValue: "2"
+  coma_01_cdp_5:
+    params:
+      name: "MaintenanceOverhaulTimeBefore"
+      scalarValue: "255"
+  coma_01_cdp_6:
+    params:
+      name: "MaintenanceOverhaulMilageMinimum"
+      scalarValue: "250"
+  coma_01_cdp_7:
+    params:
+      name: "MaintenanceOverhaulAlertMinimum"
+      scalarValue: "0"
+  coma_01_cdp_8:
+    params:
+      name: "StatusDistanceTotalizer"
+      scalarValue: "123"
+  coma_01_cdp_9:
+    params:
+      name: "DistanceTripUnit"
+      scalarValue: "0"
+  coma_01_cdp_10:
+    params:
+      name: "GEELowBatteryVoltage"
+      scalarValue: "2"
+  coma_01_cdp_11:
+    params:
+      name: "CrashAirbagMalfunction"
+      scalarValue: "0"
+  coma_01_cdp_12:
+    params:
+      name: "CrashAirbagPassengerInhibition"
+      scalarValue: "0"
+  coma_01_cdp_13:
+    params:
+      name: "ESCBrakingFailureStatus"
+      scalarValue: "0"
+  coma_01_cdp_14:
+    params:
+      name: "ESCABSMalfunction"
+      scalarValue: "0"
+  coma_01_cdp_15:
+    params:
+      name: "ESCASRMalfunction"
+      scalarValue: "0"
+  coma_01_cdp_16:
+    params:
+      name: "AFUFailure"
+      scalarValue: "0"
+  coma_01_cdp_17:
+    params:
+      name: "ESCVDCStatus"
+      scalarValue: "0"
+  coma_01_cdp_18:
+    params:
+      name: "ESCEBDStateDisplay"
+      scalarValue: "0"
+  coma_01_cdp_19:
+    params:
+      name: "OilPressureWarning"
+      scalarValue: "0"
+  coma_01_cdp_20:
+    params:
+      name: "EngineWaterTempWarning"
+      scalarValue: "0"
+  coma_01_cdp_21:
+    params:
+      name: "EngineFailureLevel1"
+      scalarValue: "0"
+  coma_01_cdp_22:
+    params:
+      name: "EngineFailureLevel2"
+      scalarValue: "0"
+  coma_01_cdp_23:
+    params:
+      name: "StatusSCRUreaLevel"
+      scalarValue: "0"
+  coma_01_cdp_24:
+    params:
+      name: "SCRWarningDistance"
+      scalarValue: "0"
+  coma_01_cdp_25:
+    params:
+      name: "SCRDistanceFinalWarning"
+      scalarValue: "0"
+  coma_01_cdp_26:
+    params:
+      name: "StatusMIL_LampRequest"
+      scalarValue: "1"
+  coma_01_cdp_27:
+    params:
+      name: "FuelLowLevel"
+      scalarValue: "1"
+  coma_01_cdp_28:
+    params:
+      name: "DieselFilterWaterDetection"
+      scalarValue: "0"
+  coma_01_cdp_29:
+    params:
+      name: "BadgeLowBatteryAlert"
+      scalarValue: "0"
+  coma_01_cdp_30:
+    params:
+      name: "StatusWheelStateFrontLeft"
+      scalarValue: "2"
+  coma_01_cdp_31:
+    params:
+      name: "StatusWheelStateFrontRight"
+      scalarValue: "2"
+  coma_01_cdp_32:
+    params:
+      name: "StatusWheelStateRearLeft"
+      scalarValue: "2"
+  coma_01_cdp_33:
+    params:
+      name: "StatusWheelStateRearRight"
+      scalarValue: "2"
+  coma_01_cdp_34:
+    params:
+      name: "VehicleReceivedHEVDisplayChargeFailure"
+      scalarValue: "0"
+  coma_01_cdp_35:
+    params:
+      name: "MaintenanceParticulateFilterFailureWarning"
+      scalarValue: "1"
+  coma_01_cdp_36:
+    params:
+      name: "ESCAYCMalfunction"
+      scalarValue: "0"
+  coma_01_cdp_37:
+    params:
+      name: "StatusBrakeLowFluidLevel"
+      scalarValue: "1"
+  coma_01_cdp_38:
+    params:
+      name: "CrashDetectionOutOfOrder"
+      scalarValue: "0"
+  coma_01_cdp_39:
+    params:
+      name: "ChargeAlertSpotCharge"
+      scalarValue: "3"
+  coma_01_cdp_40:
+    params:
+      name: "VehicleLocationGNSS_Timestamp"
+      scalarValue: "dynamic"
+  coma_01_cdp_41:
+    params:
+      name: "TripMaxEngineCoolantTemp"
+      scalarValue: "30"
+  dabr_oil_pressure_warning_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_oil_pressure_warning_no_privacy"
+      message:
+        data:
+          oilPressureWarning: 1
+  dabr_front_left_wheel_status_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Wheel_Front_Left_alert_no_privacy"
+      message:
+        data:
+          statusWheelStateFrontLeft: 1
+  dabr_front_right_wheel_status_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Wheel_Front_Right_alert_no_privacy"
+      message:
+        data:
+          statusWheelStateFrontRight: 1
+  dabr_rear_right_wheel_status_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Wheel_Rear_Right_alert_no_privacy"
+      message:
+        data:
+          statusWheelStateRearRight: 1
+  dabr_rear_left_wheel_status_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Wheel_Rear_Left_alert_no_privacy"
+      message:
+        data:
+          statusWheelStateRearLeft: 1
+  dabr_hvbattery_low_alert_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_HVBatteryLowAlert_no_privacy"
+      message:
+        data:
+          hvBatteryLowAlert: 1
+  dabr_periodic_trigger_120_cdp_data_1:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_120_seconds_no_privacy"
+      message:
+        data:
+          statusDistanceTotalizer: "1000.0"
+  dabr_periodic_trigger_120_cdp_data_2:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_120_seconds_no_privacy"
+      message:
+        data:
+          hvacTemperatureCabinCurrentValue: "25.0"
+  dabr_periodic_trigger_120_cdp_data_3:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_120_seconds_no_privacy"
+      message:
+        data:
+          fuelDisplayedLevel: "20.0"
+  dabr_periodic_trigger_120_cdp_data_4:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_120_seconds_no_privacy"
+      message:
+        data:
+          evHvBatteryEnergyLevel: "46.0"
+  dabr_periodic_trigger_120_cdp_data_5:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_120_seconds_no_privacy"
+      message:
+        data:
+          externalTempValue: "10.0"
+  dabr_periodic_trigger_120_cdp_data_6:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_120_seconds_no_privacy"
+      message:
+        data:
+          statusWheelPressureFrontLeft: "90.0"
+  dabr_periodic_trigger_120_cdp_data_7:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_120_seconds_no_privacy"
+      message:
+        data:
+          statusWheelPressureRearLeft: "90.0"
+  dabr_periodic_trigger_120_cdp_data_8:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_120_seconds_no_privacy"
+      message:
+        data:
+          statusWheelPressureFrontRight: "90.0"
+  dabr_periodic_trigger_120_cdp_data_9:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_120_seconds_no_privacy"
+      message:
+        data:
+          statusWheelPressureRearRight: "90.0"
+  dabr_periodic_300_DuringCharge_trigger_2:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_300_Seconds_DuringCharge_Common_no_privacy"
+      message:
+        data:
+          evHvBatteryEnergyLevel: "dynamic"
+  dabr_periodic_300_DuringCharge_trigger_1:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_300_Seconds_DuringCharge_Common_no_privacy"
+      message:
+        data:
+          evChargeRemainingTime: 500
+  dabr_water_temp_alert_status_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_water_temp_alert_no_privacy"
+      message:
+        data:
+          engineWaterTempWarning: 1
+  dabr_ChargeStatus_Changed_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_ChargeStatus_changed_no_privacy"
+      message:
+        data:
+          ChargeStatus: "dynamic"
+  dabr_End_of_Charge_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_EndOfCharge"
+      message:
+        data:
+          hvBatteryStateOfHealth: "dynamic"
+  dabr_StartofCharge_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_StartOfCharge"
+      message:
+        data:
+          chargeStatus: 3
+  dabr_GlobalVehicleWarningState:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_GlobalWarning_no_privacy"
+      message:
+        data:
+          globalVehicleWarningState: 1
+  dabr_StatusVehicleStates:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_VehicleStates_changed_no_privacy"
+      message:
+          data:
+            statusVehicleStates: 1
+  dabr_14VLowBatWarning_status_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_14VLowBatWarning_no_privacy"
+      message:
+        data:
+          geeLowBatteryVoltage: 1
+  dabr_change_outside_lock_state_no_privacy_data1:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_ChangeOutsideLockState_no_privacy"
+      message:
+        data:
+          statusDoorOutsideLockedState: 1
+  dabr_change_outside_lock_state_no_privacy_data2:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_ChangeOutsideLockState_no_privacy"
+      message:
+        data:
+          statusDoorFrontLeft: 0
+  dabr_change_outside_lock_state_no_privacy_data3:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_ChangeOutsideLockState_no_privacy"
+      message:
+        data:
+          statusDoorFrontRight: 0
+  dabr_change_outside_lock_state_no_privacy_data4:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_ChangeOutsideLockState_no_privacy"
+      message:
+        data:
+          statusDoorRearLeft: 0
+  dabr_change_outside_lock_state_no_privacy_data5:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_ChangeOutsideLockState_no_privacy"
+      message:
+        data:
+          statusDoorRearRight: 0
+  dabr_Trg_StartOfJourney_data1:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          oilPressureWarning: 1
+  dabr_Trg_StartOfJourney_data2:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          fuelLowLevel: 1
+  dabr_Trg_StartOfJourney_data3:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          globalVehicleWarningState: 1
+  dabr_Trg_StartOfJourney_data4:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          crashDetected: 1
+  dabr_Trg_StartOfJourney_data5:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          engineWaterTempWarning: 1
+  dabr_Trg_StartOfJourney_data6:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          fuelDisplayedLevel: "30.0"
+  dabr_Trg_StartOfJourney_data7:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          hvacTemperatureCabinCurrentValue: "10.0"
+  dabr_Trg_StartOfJourney_data8:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          statusWheelPressureFrontRight: "210.0"
+  dabr_Trg_StartOfJourney_data9:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          evChargeRemainingTime: "50"
+  dabr_Trg_StartOfJourney_data10:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          externalTempValue: "35.0"
+  dabr_Trg_StartOfJourney_data11:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          statusWheelStateRearLeft: 2
+  dabr_Trg_StartOfJourney_data12:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          statusWheelPressureRearRight: "210.0"
+  dabr_Trg_StartOfJourney_data13:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          geeLowBatteryVoltage: 1
+  dabr_Trg_StartOfJourney_data14:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          statusWheelStateRearRight: 2
+  dabr_Trg_StartOfJourney_data15:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          statusDistanceTotalizer: "160.0"
+  dabr_Trg_StartOfJourney_data16:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          statusWheelPressureFrontLeft: "210.0"
+  dabr_Trg_StartOfJourney_data17:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          statusWheelStateFrontRight: 2
+  dabr_Trg_StartOfJourney_data18:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          statusWheelStateFrontLeft: 2
+  dabr_Trg_StartOfJourney_data19:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          statusWheelPressureRearLeft: "210.0"
+  dabr_Trg_StartOfJourney_data20:
+    params:
+      triggerOrContext: "Vehicle/Trigger/StartOfJourney"
+      message:
+        data:
+          evHvBatteryEnergyLevel: "30.0"
+  dabr_periodic_trigger_15_cdp_data_1:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      message:
+        data:
+          locationValidity: "dynamic"
+  dabr_periodic_trigger_15_cdp_data_2:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      message:
+        data:
+          speedValue: [ 300.0 ]
+  dabr_periodic_trigger_15_cdp_data_3:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      message:
+        data:
+          locationLongitude: "dynamic"
+  dabr_periodic_trigger_15_cdp_data_4:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      message:
+        data:
+          locationLatitude: "dynamic"
+  dabr_periodic_trigger_15_cdp_data_5:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      message:
+        data:
+          locationHeading: "dynamic"
+  dabr_periodic_trigger_15_cdp_data_6:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      message:
+        data:
+          engineRpm: [ 2000.0 ]
+  dabr_periodic_trigger_15_cdp_data_7:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      message:
+        data:
+          escAccelerationTransversalCorrected: [ 1.0 ]
+  dabr_periodic_trigger_15_cdp_data_8:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      message:
+        data:
+          escAccelerationLongitudinalCorrected: [ 1.0 ]
+  dabr_periodic_trigger_15_cdp_data_9:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      message:
+        data:
+          engineMeanEffectiveTorque: [ 200.0 ]
+  dabr_periodic_trigger_15_cdp_data_10:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_periodic_15_seconds_no_privacy"
+      message:
+        data:
+          brakePressure: "20"
+  dabr_Trg_EndOfJourney_data1:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          oilPressureWarning: 1
+  dabr_Trg_EndOfJourney_data2:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          fuelLowLevel: 1
+  dabr_Trg_EndOfJourney_data3:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          globalVehicleWarningState: 1
+  dabr_Trg_EndOfJourney_data4:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          crashDetected: 2
+  dabr_Trg_EndOfJourney_data5:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          maintenanceOverhaulMilageMinimum: "500.0"
+  dabr_Trg_EndOfJourney_data6:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          engineWaterTempWarning: 1
+  dabr_Trg_EndOfJourney_data7:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          fuelDisplayedLevel: "30.0"
+  dabr_Trg_EndOfJourney_data8:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          hvacTemperatureCabinCurrentValue: "50"
+  dabr_Trg_EndOfJourney_data9:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          statusWheelPressureFrontRight: "210.0"
+  dabr_Trg_EndOfJourney_data10:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          evChargeRemainingTime: "100"
+  dabr_Trg_EndOfJourney_data11:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          externalTempValue: "50.0"
+  dabr_Trg_EndOfJourney_data12:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          statusWheelStateRearLeft: 1
+  dabr_Trg_EndOfJourney_data13:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          statusWheelPressureRearRight: "210.0"
+  dabr_Trg_EndOfJourney_data14:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          geeLowBatteryVoltage: 1
+  dabr_Trg_EndOfJourney_data15:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          statusWheelStateRearRight: 1
+  dabr_Trg_EndOfJourney_data16:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          statusDistanceTotalizer: "200.0"
+  dabr_Trg_EndOfJourney_data17:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          statusWheelPressureFrontLeft: "210.0"
+  dabr_Trg_EndOfJourney_data18:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          statusWheelStateFrontRight: 1
+  dabr_Trg_EndOfJourney_data19:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          statusWheelStateFrontLeft: 1
+  dabr_Trg_EndOfJourney_data20:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          statusWheelPressureRearLeft: "210.0"
+  dabr_Trg_EndOfJourney_data21:
+    params:
+      triggerOrContext: "Vehicle/Trigger/EndOfJourney"
+      message:
+        data:
+          evHvBatteryEnergyLevel: "50.0"
+  dabr_ctx_without_permit_data_1:
+    params:
+      message:
+        data:
+          averageTripSpeedKmh: "dynamic"
+  dabr_ctx_without_permit_data_2:
+    params:
+      message:
+        data:
+          tripDistance: "0.0"
+  dabr_ctx_without_permit_data_3:
+    params:
+      message:
+        data:
+          tripFuelConsumption: "0.0"
+  dabr_ctx_without_permit_data_4:
+    params:
+      message:
+        data:
+          tripEnergyConsumption: "dynamic"
+  coma_front_left_wheel_status_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Wheel_Front_Left_alert_no_privacy"
+      message:
+        data:
+          statusWheelStateFrontLeft: 1
+  coma_front_right_wheel_status_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Wheel_Front_Right_alert_no_privacy"
+      message:
+        data:
+          statusWheelStateFrontRight: 1
+  coma_rear_right_wheel_status_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Wheel_Rear_Right_alert_no_privacy"
+      message:
+        data:
+          statusWheelStateRearRight: 1
+  coma_rear_left_wheel_status_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Wheel_Rear_Left_alert_no_privacy"
+      message:
+        data:
+          statusWheelStateRearLeft: 1
+  coma_14vlowbatwarningtrigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_14VLowBatWarning_no_privacy"
+      message:
+        data:
+          geeLowBatteryVoltage: 1
+  coma_airbag_failure_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_Airbag_Failure_no_privacy"
+      message:
+        data:
+          crashAirbagMalfunction: 1
+  coma_injection_failurel1_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_Major_Injection_Failure_L1_no_privacy"
+      message:
+        data:
+          engineFailureLevel1: 1
+  coma_ESCWarning:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_ESCWarning_no_privacy"
+      message:
+        data:
+          escVdcStatus: 1
+  coma_oil_pressure_warning:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_oil_pressure_warning_no_privacy"
+      message:
+        data:
+          oilPressureWarning: 1
+  coma_ABSfail_trigger:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_ABS_Fail_triggered_no_privacy"
+      message:
+        data:
+          escabsMalfunction: 1
+  coma_ESC_EBD_StateDisplay:
+    params:
+      triggerOrContext: "UCD/Sent/Trigger/Trg_ESC_EBD_StateDisplay_changed_no_privacy"
+      message:
+        data:
+          escEbdStateDisplay: 1

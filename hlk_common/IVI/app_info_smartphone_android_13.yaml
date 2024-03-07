@@ -1,0 +1,62 @@
+apps_smartphone_android_13:
+  Bluetooth:
+    package: com.android.settings
+    activity: .Settings
+  Music:
+    package: com.google.android.apps.nbu.files
+    activity: .home.HomeActivity
+  DeviceManager:
+    package: com.android.settings
+    #activity: .Settings$BluetoothSettingsActivity
+    activity: .Settings
+  Settings:
+    package: com.android.settings
+    activity: .Settings
+  PhoneBtSettings:
+    package: com.android.settings
+    activity: .com.android.settings.SubSettings
+  HomePage:
+    package: com.sec.android.app.launcher
+    activity: com.sec.android.app.launcher.activities.LauncherActivity
+  Gmap:
+    package: com.google.android.apps.maps
+    activity: com.google.android.maps.MapsActivity
+  MyRenault:
+    package: com.renault.myrenault.one.valid
+    activity: com.accenture.myrenault.activities.MainActivity
+  MyRenaultDebugApp:
+    package: com.renault.myrenault.one.valid.debug
+    activity: com.accenture.myrenault.activities.MainActivity
+  NexusHomePage:
+    package: com.google.android.apps.nexuslauncher
+    activity: com.google.android.apps.nexuslauncher.NexusLauncherActivity
+  RedmiHomePage:
+    package: com.sec.android.app.launcher 
+    activity: .activities.LauncherActivity
+  YoutubePlayer:
+    package: com.google.android.apps.youtube.music
+    activity: .activities.MusicActivity
+  MusicPlayer:
+    package: com.simplemobiletools.musicplayer
+    activity: .activities.MainActivity
+
+SmartPhone:
+  settings:
+  general_management: //android.widget.TextView[@resource-id='android:id/title' and contains(@text, 'General management')]
+  date_and_time: //android.widget.TextView[@resource-id='android:id/title' and contains(@text, 'Date & time')]
+  time_format: //android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.Switch
+  connections: //*[@text='Connections']
+  hotspot_tethering: //android.widget.TextView[@resource-id='android:id/title' and contains(@text, 'Mobile Hotspot and Tethering')]
+  data_usage: //android.widget.TextView[@resource-id='android:id/title' and contains(@text, 'Data usage')]
+  mobile_data: //android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.Switch
+  switch_hotspot: //android.widget.Switch[@content-desc="Mobile Hotspot"]
+  wi-fi_off: //android.widget.Switch[@content-desc="Wi-Fi"]
+  mobile_hotspot: //android.widget.TextView[@resource-id='android:id/title' and contains(@text, 'Mobile Hotspot')]
+  configure_hotspot: //android.widget.TextView[@resource-id='com.android.settings:id/button_text' and contains(@text, 'Configure')]
+  ssid_edit: com.android.settings:id/ssid_edit_oneui_3_0
+  password_edit: com.android.settings:id/password_edit_oneui_3_0
+  save_hotspot: com.android.settings:id/save_button
+  navigate_up: //android.widget.ImageButton[@content-desc="Navigate up"]
+  connected_devices: //android.widget.LinearLayout[5]/android.widget.RelativeLayout/android.widget.TextView
+  time_change: //android.widget.RadialTimePickerView.RadialPickerTouchHelper[@content-desc="17"] | //android.widget.TimePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.Button[1]
+  system: //android.widget.TextView[@resource-id='android:id/title' and contains(@text, 'System')]

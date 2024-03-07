@@ -1,120 +1,2136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.0 on win32)" generated="2024-02-28T15:39:23.559322" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.10.0 on win32)" generated="2024-03-07T11:28:47.986394" rpa="false" schemaversion="5">
 <suite id="s1" name="Internship-exercises" source="C:\Users\agiurgea\PycharmProjects\Internship-exercises">
 <suite id="s1-s1" name="RobotFramework" source="C:\Users\agiurgea\PycharmProjects\Internship-exercises\RobotFramework">
 <suite id="s1-s1-s1" name="Logcat" source="C:\Users\agiurgea\PycharmProjects\Internship-exercises\RobotFramework\logcat.robot">
-<test id="s1-s1-s1-t1" name="Test Logcat Analysis" line="14">
+<test id="s1-s1-s1-t1" name="Test Logcat Analysis" line="23">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-03-07T11:28:48.032281" level="INFO">${EMPTY_LIST} = []</msg>
+<var>${EMPTY_LIST}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-03-07T11:28:48.031286" elapsed="0.000995"/>
+</kw>
 <kw name="Parse Logcat">
 <kw name="Get File" owner="OperatingSystem">
-<msg time="2024-02-28T15:39:23.603174" level="INFO" html="true">Getting file '&lt;a href="file://C:\Users\agiurgea\PycharmProjects\Internship-exercises\RobotFramework\logcat_applications.txt"&gt;C:\Users\agiurgea\PycharmProjects\Internship-exercises\RobotFramework\logcat_applications.txt&lt;/a&gt;'.</msg>
-<msg time="2024-02-28T15:39:23.609162" level="INFO">${log_data} = --------- beginning of main
+<msg time="2024-03-07T11:28:48.033295" level="INFO" html="true">Getting file '&lt;a href="file://C:\Users\agiurgea\PycharmProjects\Internship-exercises\RobotFramework\logcat_applications.txt"&gt;C:\Users\agiurgea\PycharmProjects\Internship-exercises\RobotFramework\logcat_applications.txt&lt;/a&gt;'.</msg>
+<msg time="2024-03-07T11:28:48.038260" level="INFO">${log_file} = --------- beginning of main
 03-14 17:55:47.856  5535  5619 I System.out: Broadcasting: Intent { act=com.samsung.intent.action.BIG_DATA_INFO (has extras) }
 03-14 17:55:47.857  4830 17522 E power   : IS...</msg>
-<var>${log_data}</var>
+<var>${log_file}</var>
 <arg>${input_file}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<status status="PASS" start="2024-02-28T15:39:23.602212" elapsed="0.006950"/>
+<status status="PASS" start="2024-03-07T11:28:48.033295" elapsed="0.004965"/>
 </kw>
-<kw name="Create List" owner="BuiltIn">
-<msg time="2024-02-28T15:39:23.609162" level="INFO">${parsed_data} = []</msg>
-<var>${parsed_data}</var>
-<doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2024-02-28T15:39:23.609162" elapsed="0.000000"/>
-</kw>
-<kw name="Split To Lines" owner="String">
-<msg time="2024-02-28T15:39:23.611215" level="INFO">9656 lines returned</msg>
-<msg time="2024-02-28T15:39:23.622120" level="INFO">${lines} = ['--------- beginning of main', '03-14 17:55:47.856  5535  5619 I System.out: Broadcasting: Intent { act=com.samsung.intent.action.BIG_DATA_INFO (has extras) }', '03-14 17:55:47.857  4830 17522 E powe...</msg>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.086808" level="INFO">${lines} = ['03-14 17:56:07.504  5230  7316 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.sec.android.app.camera/.Camera bnds=[529,...</msg>
 <var>${lines}</var>
-<arg>${log_data}</arg>
-<doc>Splits the given string to lines.</doc>
-<status status="PASS" start="2024-02-28T15:39:23.609162" elapsed="0.012958"/>
+<arg>${log_file}</arg>
+<arg>${REGEX_ACTIVITY}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:48.038260" elapsed="4.048548"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.087805" level="INFO">${packages_dict} = {}</msg>
+<var>${packages_dict}</var>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.087805" elapsed="0.000000"/>
 </kw>
 <for flavor="IN">
 <iter>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Should Not Start With" owner="BuiltIn">
-<msg time="2024-02-28T15:39:23.623116" level="FAIL">'--------- beginning of main' starts with '---------'</msg>
-<arg>${single_line}</arg>
-<arg>---------</arg>
-<doc>Fails if the string ``str1`` starts with the string ``str2``.</doc>
-<status status="FAIL" start="2024-02-28T15:39:23.623116" elapsed="0.000000">'--------- beginning of main' starts with '---------'</status>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.087805" level="INFO">${timestamp_package} = ['03-14 17:56:07.504', 'com.sec.android.app.camera']</msg>
+<var>${timestamp_package}</var>
+<arg>${line}</arg>
+<arg>${REGEX_TIMESTAMP_PACKAGE}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.087805" elapsed="0.000000"/>
 </kw>
-<msg time="2024-02-28T15:39:23.623116" level="INFO">${ignore} = False</msg>
-<var>${ignore}</var>
-<arg>Should Not Start With</arg>
-<arg>${single_line}</arg>
-<arg>---------</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-02-28T15:39:23.623116" elapsed="0.000000"/>
+<kw name="Append to Dictionary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.088802" level="INFO">${timestamp} = 03-14 17:56:07.504</msg>
+<var>${timestamp}</var>
+<arg>${timestamp_package}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.088802" elapsed="0.000000"/>
 </kw>
-<kw name="Run Keyword If" owner="BuiltIn">
-<arg>${ignore}</arg>
-<arg>Continue For Loop</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-02-28T15:39:23.623116" elapsed="0.000000"/>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.088802" level="INFO">${package} = com.sec.android.app.camera</msg>
+<var>${package}</var>
+<arg>${timestamp_package}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.088802" elapsed="0.000000"/>
 </kw>
-<kw name="Run Keyword If" owner="BuiltIn">
-<msg time="2024-02-28T15:39:23.624113" level="FAIL">Evaluating expression 'ActivityTaskManager: START u0 in --------- beginning of main' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</msg>
-<arg>ActivityTaskManager: START u0 in ${single_line}</arg>
-<arg>Parse Start Line</arg>
-<arg>${single_line}</arg>
-<arg>${parsed_data}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="FAIL" start="2024-02-28T15:39:23.623116" elapsed="0.000997">Evaluating expression 'ActivityTaskManager: START u0 in --------- beginning of main' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.089730" level="INFO">${value} = </msg>
+<var>${value}</var>
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${EMPTY_LIST}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.089730" elapsed="0.000000"/>
 </kw>
-<kw name="Run Keyword If" owner="BuiltIn">
-<arg>Layer: Destroyed ActivityRecord in ${single_line}</arg>
-<arg>Parse End Line</arg>
-<arg>${single_line}</arg>
-<arg>${parsed_data}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="NOT RUN" start="2024-02-28T15:39:23.624113" elapsed="0.000000"/>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.089730" level="INFO">Length is 0.</msg>
+<msg time="2024-03-07T11:28:52.089730" level="INFO">${length} = 0</msg>
+<var>${length}</var>
+<arg>${value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.089730" elapsed="0.000000"/>
 </kw>
-<var name="${single_line}">--------- beginning of main</var>
-<status status="FAIL" start="2024-02-28T15:39:23.622120" elapsed="0.001993">Evaluating expression 'ActivityTaskManager: START u0 in --------- beginning of main' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+<if>
+<branch type="IF" condition="${length} == 0">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.089730" level="INFO">${value} = ['03-14 17:56:07.504', '0', '0']</msg>
+<var>${value}</var>
+<arg>${timestamp}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.089730" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.089730" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>1</arg>
+<arg>${timestamp}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.090792" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.089730" elapsed="0.001062"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.089730" elapsed="0.001062"/>
+</if>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.090792" level="INFO">${is_ended} = 0</msg>
+<var>${is_ended}</var>
+<arg>${value}[1]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.090792" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="$is_ended != '0'">
+<kw name="Catenate" owner="BuiltIn">
+<var>${start_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[0]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.092779" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<var>${end_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[1]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.092779" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<var>${start_datetime}</var>
+<arg>${start_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.092779" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<var>${end_datetime}</var>
+<arg>${end_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.092779" elapsed="0.000000"/>
+</kw>
+<kw name="Subtract Date From Date" owner="DateTime">
+<var>${time_diff}</var>
+<arg>${end_datetime}</arg>
+<arg>${start_datetime}</arg>
+<doc>Subtracts date from another date and returns time between.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.093784" elapsed="0.000000"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>2</arg>
+<arg>${time_diff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.093784" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.090792" elapsed="0.002992"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.090792" elapsed="0.002992"/>
+</if>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${value}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.093784" elapsed="0.000000"/>
+</kw>
+<arg>${timestamp_package}</arg>
+<arg>${packages_dict}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.088802" elapsed="0.004982"/>
+</kw>
+<var name="${line}">03-14 17:56:07.504  5230  7316 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.sec.android.app.camera/.Camera bnds=[529,13...</var>
+<status status="PASS" start="2024-03-07T11:28:52.087805" elapsed="0.005979"/>
 </iter>
-<var>${single_line}</var>
+<iter>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.093784" level="INFO">${timestamp_package} = ['03-14 17:56:29.534', 'com.netflix.mediaclient']</msg>
+<var>${timestamp_package}</var>
+<arg>${line}</arg>
+<arg>${REGEX_TIMESTAMP_PACKAGE}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.093784" elapsed="0.000000"/>
+</kw>
+<kw name="Append to Dictionary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.094780" level="INFO">${timestamp} = 03-14 17:56:29.534</msg>
+<var>${timestamp}</var>
+<arg>${timestamp_package}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.094780" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.094780" level="INFO">${package} = com.netflix.mediaclient</msg>
+<var>${package}</var>
+<arg>${timestamp_package}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.094780" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.094780" level="INFO">${value} = </msg>
+<var>${value}</var>
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${EMPTY_LIST}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.094780" elapsed="0.000000"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.095783" level="INFO">Length is 0.</msg>
+<msg time="2024-03-07T11:28:52.095783" level="INFO">${length} = 0</msg>
+<var>${length}</var>
+<arg>${value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.094780" elapsed="0.001003"/>
+</kw>
+<if>
+<branch type="IF" condition="${length} == 0">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.095783" level="INFO">${value} = ['03-14 17:56:29.534', '0', '0']</msg>
+<var>${value}</var>
+<arg>${timestamp}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.095783" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.095783" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>1</arg>
+<arg>${timestamp}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.095783" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.095783" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.095783" elapsed="0.000000"/>
+</if>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.095783" level="INFO">${is_ended} = 0</msg>
+<var>${is_ended}</var>
+<arg>${value}[1]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.095783" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="$is_ended != '0'">
+<kw name="Catenate" owner="BuiltIn">
+<var>${start_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[0]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.095783" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<var>${end_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[1]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.096776" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<var>${start_datetime}</var>
+<arg>${start_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.096776" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<var>${end_datetime}</var>
+<arg>${end_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.096776" elapsed="0.000000"/>
+</kw>
+<kw name="Subtract Date From Date" owner="DateTime">
+<var>${time_diff}</var>
+<arg>${end_datetime}</arg>
+<arg>${start_datetime}</arg>
+<doc>Subtracts date from another date and returns time between.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.096776" elapsed="0.000000"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>2</arg>
+<arg>${time_diff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.096776" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.095783" elapsed="0.000993"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.095783" elapsed="0.000993"/>
+</if>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${value}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.096776" elapsed="0.000000"/>
+</kw>
+<arg>${timestamp_package}</arg>
+<arg>${packages_dict}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.094780" elapsed="0.001996"/>
+</kw>
+<var name="${line}">03-14 17:56:29.534  5230  7331 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.netflix.mediaclient/.ui.launch.UIWebViewAct...</var>
+<status status="PASS" start="2024-03-07T11:28:52.093784" elapsed="0.002992"/>
+</iter>
+<iter>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.096776" level="INFO">${timestamp_package} = ['03-14 17:56:30.882', 'com.sec.android.app.camera']</msg>
+<var>${timestamp_package}</var>
+<arg>${line}</arg>
+<arg>${REGEX_TIMESTAMP_PACKAGE}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.096776" elapsed="0.000000"/>
+</kw>
+<kw name="Append to Dictionary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.097772" level="INFO">${timestamp} = 03-14 17:56:30.882</msg>
+<var>${timestamp}</var>
+<arg>${timestamp_package}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.097772" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.097772" level="INFO">${package} = com.sec.android.app.camera</msg>
+<var>${package}</var>
+<arg>${timestamp_package}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.097772" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.098766" level="INFO">${value} = ['03-14 17:56:07.504', '0', '0']</msg>
+<var>${value}</var>
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${EMPTY_LIST}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.097772" elapsed="0.000994"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.098766" level="INFO">Length is 3.</msg>
+<msg time="2024-03-07T11:28:52.098766" level="INFO">${length} = 3</msg>
+<var>${length}</var>
+<arg>${value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.098766" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${length} == 0">
+<kw name="Create List" owner="BuiltIn">
+<var>${value}</var>
+<arg>${timestamp}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.098766" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.098766" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>1</arg>
+<arg>${timestamp}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.098766" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.098766" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.098766" elapsed="0.000000"/>
+</if>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.099765" level="INFO">${is_ended} = 03-14 17:56:30.882</msg>
+<var>${is_ended}</var>
+<arg>${value}[1]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.099765" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="$is_ended != '0'">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.099765" level="INFO">${start_datetime} = 2023-03-14 17:56:07.504</msg>
+<var>${start_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[0]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.099765" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.099765" level="INFO">${end_datetime} = 2023-03-14 17:56:30.882</msg>
+<var>${end_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[1]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.099765" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.102752" level="INFO">${start_datetime} = 2023-03-14 17:56:07.504000</msg>
+<var>${start_datetime}</var>
+<arg>${start_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.099765" elapsed="0.002987"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.103747" level="INFO">${end_datetime} = 2023-03-14 17:56:30.882000</msg>
+<var>${end_datetime}</var>
+<arg>${end_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.102752" elapsed="0.000995"/>
+</kw>
+<kw name="Subtract Date From Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.103747" level="INFO">${time_diff} = 23.378</msg>
+<var>${time_diff}</var>
+<arg>${end_datetime}</arg>
+<arg>${start_datetime}</arg>
+<doc>Subtracts date from another date and returns time between.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.103747" elapsed="0.000000"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>2</arg>
+<arg>${time_diff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.103747" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.099765" elapsed="0.003982"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.099765" elapsed="0.003982"/>
+</if>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${value}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.103747" elapsed="0.000000"/>
+</kw>
+<arg>${timestamp_package}</arg>
+<arg>${packages_dict}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.097772" elapsed="0.005975"/>
+</kw>
+<var name="${line}">03-14 17:56:30.882  5230  5252 I Layer: Destroyed ActivityRecord{d2590bc u0 com.sec.android.app.camera}</var>
+<status status="PASS" start="2024-03-07T11:28:52.096776" elapsed="0.006971"/>
+</iter>
+<iter>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.104770" level="INFO">${timestamp_package} = ['03-14 17:56:33.783', 'com.android.vending', 'com.google.android.finsky.activities.MainActivity']</msg>
+<var>${timestamp_package}</var>
+<arg>${line}</arg>
+<arg>${REGEX_TIMESTAMP_PACKAGE}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.104770" elapsed="0.000000"/>
+</kw>
+<kw name="Append to Dictionary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.104770" level="INFO">${timestamp} = 03-14 17:56:33.783</msg>
+<var>${timestamp}</var>
+<arg>${timestamp_package}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.104770" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.104770" level="INFO">${package} = com.android.vending</msg>
+<var>${package}</var>
+<arg>${timestamp_package}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.104770" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.105818" level="INFO">${value} = </msg>
+<var>${value}</var>
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${EMPTY_LIST}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.105818" elapsed="0.000000"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.105818" level="INFO">Length is 0.</msg>
+<msg time="2024-03-07T11:28:52.105818" level="INFO">${length} = 0</msg>
+<var>${length}</var>
+<arg>${value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.105818" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${length} == 0">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.105818" level="INFO">${value} = ['03-14 17:56:33.783', '0', '0']</msg>
+<var>${value}</var>
+<arg>${timestamp}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.105818" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.105818" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>1</arg>
+<arg>${timestamp}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.105818" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.105818" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.105818" elapsed="0.000000"/>
+</if>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.106819" level="INFO">${is_ended} = 0</msg>
+<var>${is_ended}</var>
+<arg>${value}[1]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.105818" elapsed="0.001001"/>
+</kw>
+<if>
+<branch type="IF" condition="$is_ended != '0'">
+<kw name="Catenate" owner="BuiltIn">
+<var>${start_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[0]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.106819" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<var>${end_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[1]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.106819" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<var>${start_datetime}</var>
+<arg>${start_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.106819" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<var>${end_datetime}</var>
+<arg>${end_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.106819" elapsed="0.000000"/>
+</kw>
+<kw name="Subtract Date From Date" owner="DateTime">
+<var>${time_diff}</var>
+<arg>${end_datetime}</arg>
+<arg>${start_datetime}</arg>
+<doc>Subtracts date from another date and returns time between.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.106819" elapsed="0.000000"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>2</arg>
+<arg>${time_diff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.106819" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.106819" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.106819" elapsed="0.000000"/>
+</if>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${value}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.106819" elapsed="0.000999"/>
+</kw>
+<arg>${timestamp_package}</arg>
+<arg>${packages_dict}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.104770" elapsed="0.003048"/>
+</kw>
+<var name="${line}">03-14 17:56:33.783  5230  7966 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=http://market.android.com/... cmp=com.android.vending/com.google.android.finsky.activities.MainActivi...</var>
+<status status="PASS" start="2024-03-07T11:28:52.104770" elapsed="0.003048"/>
+</iter>
+<iter>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.107818" level="INFO">${timestamp_package} = ['03-14 17:56:40.793', 'com.spotify.music']</msg>
+<var>${timestamp_package}</var>
+<arg>${line}</arg>
+<arg>${REGEX_TIMESTAMP_PACKAGE}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.107818" elapsed="0.000000"/>
+</kw>
+<kw name="Append to Dictionary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.108811" level="INFO">${timestamp} = 03-14 17:56:40.793</msg>
+<var>${timestamp}</var>
+<arg>${timestamp_package}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.107818" elapsed="0.000993"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.108811" level="INFO">${package} = com.spotify.music</msg>
+<var>${package}</var>
+<arg>${timestamp_package}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.108811" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.108811" level="INFO">${value} = </msg>
+<var>${value}</var>
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${EMPTY_LIST}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.108811" elapsed="0.000000"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.108811" level="INFO">Length is 0.</msg>
+<msg time="2024-03-07T11:28:52.108811" level="INFO">${length} = 0</msg>
+<var>${length}</var>
+<arg>${value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.108811" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${length} == 0">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.108811" level="INFO">${value} = ['03-14 17:56:40.793', '0', '0']</msg>
+<var>${value}</var>
+<arg>${timestamp}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.108811" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.108811" elapsed="0.001000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>1</arg>
+<arg>${timestamp}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.109811" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.109811" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.108811" elapsed="0.001000"/>
+</if>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.109811" level="INFO">${is_ended} = 0</msg>
+<var>${is_ended}</var>
+<arg>${value}[1]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.109811" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="$is_ended != '0'">
+<kw name="Catenate" owner="BuiltIn">
+<var>${start_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[0]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.109811" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<var>${end_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[1]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.109811" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<var>${start_datetime}</var>
+<arg>${start_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.109811" elapsed="0.000992"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<var>${end_datetime}</var>
+<arg>${end_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.110803" elapsed="0.000000"/>
+</kw>
+<kw name="Subtract Date From Date" owner="DateTime">
+<var>${time_diff}</var>
+<arg>${end_datetime}</arg>
+<arg>${start_datetime}</arg>
+<doc>Subtracts date from another date and returns time between.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.110803" elapsed="0.000000"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>2</arg>
+<arg>${time_diff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.110803" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.109811" elapsed="0.000992"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.109811" elapsed="0.000992"/>
+</if>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${value}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.110803" elapsed="0.000000"/>
+</kw>
+<arg>${timestamp_package}</arg>
+<arg>${packages_dict}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.107818" elapsed="0.003985"/>
+</kw>
+<var name="${line}">03-14 17:56:40.793  5230  5681 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.spotify.music/.MainActivity bnds=[26,823][1...</var>
+<status status="PASS" start="2024-03-07T11:28:52.107818" elapsed="0.003985"/>
+</iter>
+<iter>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.111803" level="INFO">${timestamp_package} = ['03-14 17:56:49.245', 'com.android.vending']</msg>
+<var>${timestamp_package}</var>
+<arg>${line}</arg>
+<arg>${REGEX_TIMESTAMP_PACKAGE}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.111803" elapsed="0.000000"/>
+</kw>
+<kw name="Append to Dictionary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.112772" level="INFO">${timestamp} = 03-14 17:56:49.245</msg>
+<var>${timestamp}</var>
+<arg>${timestamp_package}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.112772" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.113795" level="INFO">${package} = com.android.vending</msg>
+<var>${package}</var>
+<arg>${timestamp_package}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.112772" elapsed="0.001023"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.113795" level="INFO">${value} = ['03-14 17:56:33.783', '0', '0']</msg>
+<var>${value}</var>
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${EMPTY_LIST}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.113795" elapsed="0.000000"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.113795" level="INFO">Length is 3.</msg>
+<msg time="2024-03-07T11:28:52.113795" level="INFO">${length} = 3</msg>
+<var>${length}</var>
+<arg>${value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.113795" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${length} == 0">
+<kw name="Create List" owner="BuiltIn">
+<var>${value}</var>
+<arg>${timestamp}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.114812" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.113795" elapsed="0.001017"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>1</arg>
+<arg>${timestamp}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.114812" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.114812" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.113795" elapsed="0.001017"/>
+</if>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.114812" level="INFO">${is_ended} = 03-14 17:56:49.245</msg>
+<var>${is_ended}</var>
+<arg>${value}[1]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.114812" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="$is_ended != '0'">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.115720" level="INFO">${start_datetime} = 2023-03-14 17:56:33.783</msg>
+<var>${start_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[0]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.115720" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.115720" level="INFO">${end_datetime} = 2023-03-14 17:56:49.245</msg>
+<var>${end_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[1]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.115720" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.115720" level="INFO">${start_datetime} = 2023-03-14 17:56:33.783000</msg>
+<var>${start_datetime}</var>
+<arg>${start_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.115720" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.115720" level="INFO">${end_datetime} = 2023-03-14 17:56:49.245000</msg>
+<var>${end_datetime}</var>
+<arg>${end_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.115720" elapsed="0.000000"/>
+</kw>
+<kw name="Subtract Date From Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.116797" level="INFO">${time_diff} = 15.462</msg>
+<var>${time_diff}</var>
+<arg>${end_datetime}</arg>
+<arg>${start_datetime}</arg>
+<doc>Subtracts date from another date and returns time between.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.115720" elapsed="0.001077"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>2</arg>
+<arg>${time_diff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.116797" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.114812" elapsed="0.001985"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.114812" elapsed="0.001985"/>
+</if>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${value}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.116797" elapsed="0.000000"/>
+</kw>
+<arg>${timestamp_package}</arg>
+<arg>${packages_dict}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.112772" elapsed="0.004025"/>
+</kw>
+<var name="${line}">03-14 17:56:49.245  5230  5252 I Layer: Destroyed ActivityRecord{d2590bc u0 com.android.vending}</var>
+<status status="PASS" start="2024-03-07T11:28:52.111803" elapsed="0.004994"/>
+</iter>
+<iter>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.116797" level="INFO">${timestamp_package} = ['03-14 17:56:58.802', 'com.spotify.music']</msg>
+<var>${timestamp_package}</var>
+<arg>${line}</arg>
+<arg>${REGEX_TIMESTAMP_PACKAGE}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.116797" elapsed="0.000985"/>
+</kw>
+<kw name="Append to Dictionary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.117782" level="INFO">${timestamp} = 03-14 17:56:58.802</msg>
+<var>${timestamp}</var>
+<arg>${timestamp_package}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.117782" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.117782" level="INFO">${package} = com.spotify.music</msg>
+<var>${package}</var>
+<arg>${timestamp_package}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.117782" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.118737" level="INFO">${value} = ['03-14 17:56:40.793', '0', '0']</msg>
+<var>${value}</var>
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${EMPTY_LIST}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.117782" elapsed="0.000955"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.118737" level="INFO">Length is 3.</msg>
+<msg time="2024-03-07T11:28:52.118737" level="INFO">${length} = 3</msg>
+<var>${length}</var>
+<arg>${value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.118737" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${length} == 0">
+<kw name="Create List" owner="BuiltIn">
+<var>${value}</var>
+<arg>${timestamp}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.118737" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.118737" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>1</arg>
+<arg>${timestamp}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.118737" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.118737" elapsed="0.001039"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.118737" elapsed="0.001039"/>
+</if>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.119776" level="INFO">${is_ended} = 03-14 17:56:58.802</msg>
+<var>${is_ended}</var>
+<arg>${value}[1]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.119776" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="$is_ended != '0'">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.119776" level="INFO">${start_datetime} = 2023-03-14 17:56:40.793</msg>
+<var>${start_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[0]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.119776" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.119776" level="INFO">${end_datetime} = 2023-03-14 17:56:58.802</msg>
+<var>${end_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[1]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.119776" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.120770" level="INFO">${start_datetime} = 2023-03-14 17:56:40.793000</msg>
+<var>${start_datetime}</var>
+<arg>${start_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.119776" elapsed="0.000994"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.120770" level="INFO">${end_datetime} = 2023-03-14 17:56:58.802000</msg>
+<var>${end_datetime}</var>
+<arg>${end_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.120770" elapsed="0.000000"/>
+</kw>
+<kw name="Subtract Date From Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.120770" level="INFO">${time_diff} = 18.009</msg>
+<var>${time_diff}</var>
+<arg>${end_datetime}</arg>
+<arg>${start_datetime}</arg>
+<doc>Subtracts date from another date and returns time between.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.120770" elapsed="0.000000"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>2</arg>
+<arg>${time_diff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.120770" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.119776" elapsed="0.000994"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.119776" elapsed="0.000994"/>
+</if>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${value}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.120770" elapsed="0.001003"/>
+</kw>
+<arg>${timestamp_package}</arg>
+<arg>${packages_dict}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.117782" elapsed="0.003991"/>
+</kw>
+<var name="${line}">03-14 17:56:58.802  5230  5252 I Layer: Destroyed ActivityRecord{d2590bc u0 com.spotify.music}</var>
+<status status="PASS" start="2024-03-07T11:28:52.116797" elapsed="0.004976"/>
+</iter>
+<iter>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.121773" level="INFO">${timestamp_package} = ['03-14 17:56:59.524', 'com.sec.android.app.popupcalculator']</msg>
+<var>${timestamp_package}</var>
+<arg>${line}</arg>
+<arg>${REGEX_TIMESTAMP_PACKAGE}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.121773" elapsed="0.000000"/>
+</kw>
+<kw name="Append to Dictionary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.122734" level="INFO">${timestamp} = 03-14 17:56:59.524</msg>
+<var>${timestamp}</var>
+<arg>${timestamp_package}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.121773" elapsed="0.000961"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.122734" level="INFO">${package} = com.sec.android.app.popupcalculator</msg>
+<var>${package}</var>
+<arg>${timestamp_package}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.122734" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.122734" level="INFO">${value} = </msg>
+<var>${value}</var>
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${EMPTY_LIST}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.122734" elapsed="0.000000"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.122734" level="INFO">Length is 0.</msg>
+<msg time="2024-03-07T11:28:52.122734" level="INFO">${length} = 0</msg>
+<var>${length}</var>
+<arg>${value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.122734" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${length} == 0">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.122734" level="INFO">${value} = ['03-14 17:56:59.524', '0', '0']</msg>
+<var>${value}</var>
+<arg>${timestamp}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.122734" elapsed="0.001039"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.122734" elapsed="0.001039"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>1</arg>
+<arg>${timestamp}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.123773" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.123773" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.122734" elapsed="0.001039"/>
+</if>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.123773" level="INFO">${is_ended} = 0</msg>
+<var>${is_ended}</var>
+<arg>${value}[1]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.123773" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="$is_ended != '0'">
+<kw name="Catenate" owner="BuiltIn">
+<var>${start_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[0]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.123773" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<var>${end_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[1]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.123773" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<var>${start_datetime}</var>
+<arg>${start_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.123773" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<var>${end_datetime}</var>
+<arg>${end_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.123773" elapsed="0.000000"/>
+</kw>
+<kw name="Subtract Date From Date" owner="DateTime">
+<var>${time_diff}</var>
+<arg>${end_datetime}</arg>
+<arg>${start_datetime}</arg>
+<doc>Subtracts date from another date and returns time between.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.124759" elapsed="0.000000"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>2</arg>
+<arg>${time_diff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.124759" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.123773" elapsed="0.000986"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.123773" elapsed="0.000986"/>
+</if>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${value}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.124759" elapsed="0.000000"/>
+</kw>
+<arg>${timestamp_package}</arg>
+<arg>${packages_dict}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.121773" elapsed="0.002986"/>
+</kw>
+<var name="${line}">03-14 17:56:59.524  5230 10365 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.sec.android.app.popupcalculator/.Calculator...</var>
+<status status="PASS" start="2024-03-07T11:28:52.121773" elapsed="0.002986"/>
+</iter>
+<iter>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.124759" level="INFO">${timestamp_package} = ['03-14 17:57:00.006', 'com.netflix.mediaclient']</msg>
+<var>${timestamp_package}</var>
+<arg>${line}</arg>
+<arg>${REGEX_TIMESTAMP_PACKAGE}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.124759" elapsed="0.000000"/>
+</kw>
+<kw name="Append to Dictionary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.125756" level="INFO">${timestamp} = 03-14 17:57:00.006</msg>
+<var>${timestamp}</var>
+<arg>${timestamp_package}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.125756" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.125756" level="INFO">${package} = com.netflix.mediaclient</msg>
+<var>${package}</var>
+<arg>${timestamp_package}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.125756" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.125756" level="INFO">${value} = ['03-14 17:56:29.534', '0', '0']</msg>
+<var>${value}</var>
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${EMPTY_LIST}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.125756" elapsed="0.000000"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.125756" level="INFO">Length is 3.</msg>
+<msg time="2024-03-07T11:28:52.125756" level="INFO">${length} = 3</msg>
+<var>${length}</var>
+<arg>${value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.125756" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${length} == 0">
+<kw name="Create List" owner="BuiltIn">
+<var>${value}</var>
+<arg>${timestamp}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.126749" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.126749" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>1</arg>
+<arg>${timestamp}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.126749" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.126749" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.126749" elapsed="0.000000"/>
+</if>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.126749" level="INFO">${is_ended} = 03-14 17:57:00.006</msg>
+<var>${is_ended}</var>
+<arg>${value}[1]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.126749" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="$is_ended != '0'">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.126749" level="INFO">${start_datetime} = 2023-03-14 17:56:29.534</msg>
+<var>${start_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[0]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.126749" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.127749" level="INFO">${end_datetime} = 2023-03-14 17:57:00.006</msg>
+<var>${end_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[1]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.126749" elapsed="0.001000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.127749" level="INFO">${start_datetime} = 2023-03-14 17:56:29.534000</msg>
+<var>${start_datetime}</var>
+<arg>${start_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.127749" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.127749" level="INFO">${end_datetime} = 2023-03-14 17:57:00.006000</msg>
+<var>${end_datetime}</var>
+<arg>${end_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.127749" elapsed="0.000000"/>
+</kw>
+<kw name="Subtract Date From Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.127749" level="INFO">${time_diff} = 30.472</msg>
+<var>${time_diff}</var>
+<arg>${end_datetime}</arg>
+<arg>${start_datetime}</arg>
+<doc>Subtracts date from another date and returns time between.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.127749" elapsed="0.000000"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>2</arg>
+<arg>${time_diff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.128746" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.126749" elapsed="0.001997"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.126749" elapsed="0.001997"/>
+</if>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${value}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.128746" elapsed="0.000000"/>
+</kw>
+<arg>${timestamp_package}</arg>
+<arg>${packages_dict}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.124759" elapsed="0.003987"/>
+</kw>
+<var name="${line}">03-14 17:57:00.006  5230  5252 I Layer: Destroyed ActivityRecord{d2590bc u0 com.netflix.mediaclient}</var>
+<status status="PASS" start="2024-03-07T11:28:52.124759" elapsed="0.003987"/>
+</iter>
+<iter>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.128746" level="INFO">${timestamp_package} = ['03-14 17:57:16.608', 'com.sec.android.app.clockpackage']</msg>
+<var>${timestamp_package}</var>
+<arg>${line}</arg>
+<arg>${REGEX_TIMESTAMP_PACKAGE}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.128746" elapsed="0.000000"/>
+</kw>
+<kw name="Append to Dictionary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.129741" level="INFO">${timestamp} = 03-14 17:57:16.608</msg>
+<var>${timestamp}</var>
+<arg>${timestamp_package}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.129741" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.129741" level="INFO">${package} = com.sec.android.app.clockpackage</msg>
+<var>${package}</var>
+<arg>${timestamp_package}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.129741" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.129741" level="INFO">${value} = </msg>
+<var>${value}</var>
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${EMPTY_LIST}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.129741" elapsed="0.000000"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.129741" level="INFO">Length is 0.</msg>
+<msg time="2024-03-07T11:28:52.129741" level="INFO">${length} = 0</msg>
+<var>${length}</var>
+<arg>${value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.129741" elapsed="0.001009"/>
+</kw>
+<if>
+<branch type="IF" condition="${length} == 0">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.130750" level="INFO">${value} = ['03-14 17:57:16.608', '0', '0']</msg>
+<var>${value}</var>
+<arg>${timestamp}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.130750" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.130750" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>1</arg>
+<arg>${timestamp}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.130750" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.130750" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.130750" elapsed="0.000000"/>
+</if>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.130750" level="INFO">${is_ended} = 0</msg>
+<var>${is_ended}</var>
+<arg>${value}[1]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.130750" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="$is_ended != '0'">
+<kw name="Catenate" owner="BuiltIn">
+<var>${start_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[0]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.130750" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<var>${end_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[1]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.130750" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<var>${start_datetime}</var>
+<arg>${start_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.130750" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<var>${end_datetime}</var>
+<arg>${end_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.131732" elapsed="0.000000"/>
+</kw>
+<kw name="Subtract Date From Date" owner="DateTime">
+<var>${time_diff}</var>
+<arg>${end_datetime}</arg>
+<arg>${start_datetime}</arg>
+<doc>Subtracts date from another date and returns time between.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.131732" elapsed="0.000000"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>2</arg>
+<arg>${time_diff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.131732" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.130750" elapsed="0.000982"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.130750" elapsed="0.000982"/>
+</if>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${value}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.131732" elapsed="0.000000"/>
+</kw>
+<arg>${timestamp_package}</arg>
+<arg>${packages_dict}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.129741" elapsed="0.001991"/>
+</kw>
+<var name="${line}">03-14 17:57:16.608  5230  7327 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.sec.android.app.clockpackage/.ClockPackage ...</var>
+<status status="PASS" start="2024-03-07T11:28:52.128746" elapsed="0.002986"/>
+</iter>
+<iter>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.131732" level="INFO">${timestamp_package} = ['03-14 17:57:25.200', 'com.sec.android.app.popupcalculator']</msg>
+<var>${timestamp_package}</var>
+<arg>${line}</arg>
+<arg>${REGEX_TIMESTAMP_PACKAGE}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.131732" elapsed="0.000000"/>
+</kw>
+<kw name="Append to Dictionary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.132711" level="INFO">${timestamp} = 03-14 17:57:25.200</msg>
+<var>${timestamp}</var>
+<arg>${timestamp_package}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.132711" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.132711" level="INFO">${package} = com.sec.android.app.popupcalculator</msg>
+<var>${package}</var>
+<arg>${timestamp_package}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.132711" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.133674" level="INFO">${value} = ['03-14 17:56:59.524', '0', '0']</msg>
+<var>${value}</var>
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${EMPTY_LIST}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.132711" elapsed="0.000963"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.133674" level="INFO">Length is 3.</msg>
+<msg time="2024-03-07T11:28:52.133674" level="INFO">${length} = 3</msg>
+<var>${length}</var>
+<arg>${value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.133674" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${length} == 0">
+<kw name="Create List" owner="BuiltIn">
+<var>${value}</var>
+<arg>${timestamp}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.133674" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.133674" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>1</arg>
+<arg>${timestamp}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.133674" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.133674" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.133674" elapsed="0.000000"/>
+</if>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.133674" level="INFO">${is_ended} = 03-14 17:57:25.200</msg>
+<var>${is_ended}</var>
+<arg>${value}[1]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.133674" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="$is_ended != '0'">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.134723" level="INFO">${start_datetime} = 2023-03-14 17:56:59.524</msg>
+<var>${start_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[0]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.134723" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.134723" level="INFO">${end_datetime} = 2023-03-14 17:57:25.200</msg>
+<var>${end_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[1]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.134723" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.134723" level="INFO">${start_datetime} = 2023-03-14 17:56:59.524000</msg>
+<var>${start_datetime}</var>
+<arg>${start_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.134723" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.135723" level="INFO">${end_datetime} = 2023-03-14 17:57:25.200000</msg>
+<var>${end_datetime}</var>
+<arg>${end_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.134723" elapsed="0.001000"/>
+</kw>
+<kw name="Subtract Date From Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.135723" level="INFO">${time_diff} = 25.676</msg>
+<var>${time_diff}</var>
+<arg>${end_datetime}</arg>
+<arg>${start_datetime}</arg>
+<doc>Subtracts date from another date and returns time between.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.135723" elapsed="0.000000"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>2</arg>
+<arg>${time_diff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.135723" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.134723" elapsed="0.001000"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.134723" elapsed="0.001000"/>
+</if>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${value}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.135723" elapsed="0.000000"/>
+</kw>
+<arg>${timestamp_package}</arg>
+<arg>${packages_dict}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.132711" elapsed="0.003012"/>
+</kw>
+<var name="${line}">03-14 17:57:25.200  5230  5252 I Layer: Destroyed ActivityRecord{d2590bc u0 com.sec.android.app.popupcalculator}</var>
+<status status="PASS" start="2024-03-07T11:28:52.131732" elapsed="0.003991"/>
+</iter>
+<iter>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-03-07T11:28:52.136725" level="INFO">${timestamp_package} = ['03-14 17:57:59.906', 'com.sec.android.app.clockpackage']</msg>
+<var>${timestamp_package}</var>
+<arg>${line}</arg>
+<arg>${REGEX_TIMESTAMP_PACKAGE}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.136725" elapsed="0.000000"/>
+</kw>
+<kw name="Append to Dictionary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.136725" level="INFO">${timestamp} = 03-14 17:57:59.906</msg>
+<var>${timestamp}</var>
+<arg>${timestamp_package}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.136725" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.136725" level="INFO">${package} = com.sec.android.app.clockpackage</msg>
+<var>${package}</var>
+<arg>${timestamp_package}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.136725" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.137717" level="INFO">${value} = ['03-14 17:57:16.608', '0', '0']</msg>
+<var>${value}</var>
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${EMPTY_LIST}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.136725" elapsed="0.000992"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.137717" level="INFO">Length is 3.</msg>
+<msg time="2024-03-07T11:28:52.137717" level="INFO">${length} = 3</msg>
+<var>${length}</var>
+<arg>${value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.137717" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${length} == 0">
+<kw name="Create List" owner="BuiltIn">
+<var>${value}</var>
+<arg>${timestamp}</arg>
+<arg>0</arg>
+<arg>0</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2024-03-07T11:28:52.137717" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-07T11:28:52.137717" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>1</arg>
+<arg>${timestamp}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.137717" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.137717" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.137717" elapsed="0.000000"/>
+</if>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.138712" level="INFO">${is_ended} = 03-14 17:57:59.906</msg>
+<var>${is_ended}</var>
+<arg>${value}[1]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.137717" elapsed="0.000995"/>
+</kw>
+<if>
+<branch type="IF" condition="$is_ended != '0'">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.138712" level="INFO">${start_datetime} = 2023-03-14 17:57:16.608</msg>
+<var>${start_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[0]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.138712" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.138712" level="INFO">${end_datetime} = 2023-03-14 17:57:59.906</msg>
+<var>${end_datetime}</var>
+<arg>SEPARATOR=-</arg>
+<arg>2023</arg>
+<arg>${value}[1]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.138712" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.138712" level="INFO">${start_datetime} = 2023-03-14 17:57:16.608000</msg>
+<var>${start_datetime}</var>
+<arg>${start_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.138712" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.139638" level="INFO">${end_datetime} = 2023-03-14 17:57:59.906000</msg>
+<var>${end_datetime}</var>
+<arg>${end_datetime}</arg>
+<arg>result_format=%Y-%m-%d %H:%M:%S.%f</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.139638" elapsed="0.000000"/>
+</kw>
+<kw name="Subtract Date From Date" owner="DateTime">
+<msg time="2024-03-07T11:28:52.139638" level="INFO">${time_diff} = 43.298</msg>
+<var>${time_diff}</var>
+<arg>${end_datetime}</arg>
+<arg>${start_datetime}</arg>
+<doc>Subtracts date from another date and returns time between.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.139638" elapsed="0.000000"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${value}</arg>
+<arg>2</arg>
+<arg>${time_diff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.139638" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-07T11:28:52.138712" elapsed="0.000926"/>
+</branch>
+<status status="PASS" start="2024-03-07T11:28:52.138712" elapsed="0.000926"/>
+</if>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dictionary}</arg>
+<arg>${package}</arg>
+<arg>${value}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.139638" elapsed="0.000000"/>
+</kw>
+<arg>${timestamp_package}</arg>
+<arg>${packages_dict}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.136725" elapsed="0.002913"/>
+</kw>
+<var name="${line}">03-14 17:57:59.906  5230  5252 I Layer: Destroyed ActivityRecord{d2590bc u0 com.sec.android.app.clockpackage}</var>
+<status status="PASS" start="2024-03-07T11:28:52.135723" elapsed="0.003915"/>
+</iter>
+<var>${line}</var>
 <value>@{lines}</value>
-<status status="FAIL" start="2024-02-28T15:39:23.622120" elapsed="0.001993">Evaluating expression 'ActivityTaskManager: START u0 in --------- beginning of main' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+<status status="PASS" start="2024-03-07T11:28:52.087805" elapsed="0.051833"/>
 </for>
 <return>
-<value>${parsed_data}</value>
-<status status="NOT RUN" start="2024-02-28T15:39:23.624113" elapsed="0.000000"/>
+<value>${packages_dict}</value>
+<status status="PASS" start="2024-03-07T11:28:52.140709" elapsed="0.000000"/>
 </return>
+<msg time="2024-03-07T11:28:52.140709" level="INFO">${parsed_data} = {'com.sec.android.app.camera': ['03-14 17:56:07.504', '03-14 17:56:30.882', 23.378], 'com.netflix.mediaclient': ['03-14 17:56:29.534', '03-14 17:57:00.006', 30.472], 'com.android.vending': ['03-14 17:...</msg>
 <var>${parsed_data}</var>
 <arg>${LOG FILE}</arg>
-<status status="FAIL" start="2024-02-28T15:39:23.602212" elapsed="0.021901">Evaluating expression 'ActivityTaskManager: START u0 in --------- beginning of main' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
-</kw>
-<kw name="Generate Output">
-<arg>${parsed_data}</arg>
-<arg>${output_file}</arg>
-<status status="NOT RUN" start="2024-02-28T15:39:23.625100" elapsed="0.000000"/>
-</kw>
-<kw name="Calculate Verdict">
-<var>${verdict}</var>
-<arg>${parsed_data}</arg>
-<status status="NOT RUN" start="2024-02-28T15:39:23.626097" elapsed="0.000000"/>
+<status status="PASS" start="2024-03-07T11:28:48.032281" elapsed="4.108428"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<arg>Verdict: ${verdict}</arg>
+<msg time="2024-03-07T11:28:52.140709" level="INFO">{'com.sec.android.app.camera': ['03-14 17:56:07.504', '03-14 17:56:30.882', 23.378], 'com.netflix.mediaclient': ['03-14 17:56:29.534', '03-14 17:57:00.006', 30.472], 'com.android.vending': ['03-14 17:56:33.783', '03-14 17:56:49.245', 15.462], 'com.spotify.music': ['03-14 17:56:40.793', '03-14 17:56:58.802', 18.009], 'com.sec.android.app.popupcalculator': ['03-14 17:56:59.524', '03-14 17:57:25.200', 25.676], 'com.sec.android.app.clockpackage': ['03-14 17:57:16.608', '03-14 17:57:59.906', 43.298]}</msg>
+<arg>${parsed_data}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-02-28T15:39:23.626097" elapsed="0.000000"/>
+<status status="PASS" start="2024-03-07T11:28:52.140709" elapsed="0.000000"/>
+</kw>
+<kw name="Create Log Analysis File">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.141706" level="INFO">${output} = applications:
+</msg>
+<var>${output}</var>
+<arg>applications:\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.141706" elapsed="0.000924"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.142630" level="INFO">Length is 6.</msg>
+<msg time="2024-03-07T11:28:52.142630" level="INFO">${dict_len} = 6</msg>
+<var>${dict_len}</var>
+<arg>${data}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.142630" elapsed="0.000000"/>
+</kw>
+<kw name="Get Dictionary Keys" owner="Collections">
+<msg time="2024-03-07T11:28:52.142630" level="INFO">${packages} = ['com.sec.android.app.camera', 'com.netflix.mediaclient', 'com.android.vending', 'com.spotify.music', 'com.sec.android.app.popupcalculator', 'com.sec.android.app.clockpackage']</msg>
+<var>${packages}</var>
+<arg>${data}</arg>
+<arg>sort_keys=False</arg>
+<doc>Returns keys of the given ``dictionary`` as a list.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.142630" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.142630" level="INFO">${name} = com.sec.android.app.camera</msg>
+<var>${name}</var>
+<arg>${packages}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.142630" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.143629" level="INFO">${timestamp_info} = ['03-14 17:56:07.504', '03-14 17:56:30.882', 23.378]</msg>
+<var>${timestamp_info}</var>
+<arg>${data}</arg>
+<arg>${name}</arg>
+<arg>${None}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.142630" elapsed="0.000999"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.144625" level="INFO">${app_output} = ['- application_1\n', '...', '- app_path:', 'com.sec.android.app.camera\n', '...', '- ts_app_started:', '03-14 17:56:07.504\n', '...', '- ts_app_closed:', '03-14 17:56:30.882\n', '...', '- lifespan:',...</msg>
+<var>${app_output}</var>
+<arg>- application_${index+1}\n</arg>
+<arg>...</arg>
+<arg>- app_path:</arg>
+<arg>${name}\n</arg>
+<arg>...</arg>
+<arg>- ts_app_started:</arg>
+<arg>${timestamp_info}[${START_TIMESTAMP_LIST_INDEX}]\n</arg>
+<arg>...</arg>
+<arg>- ts_app_closed:</arg>
+<arg>${timestamp_info}[${END_TIMESTAMP_LIST_INDEX}]\n</arg>
+<arg>...</arg>
+<arg>- lifespan:</arg>
+<arg>${timestamp_info}[${LIFESPAN_LIST_INDEX}]\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.143629" elapsed="0.000996"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.144625" level="INFO">${output} = applications:
+['- application_1\n', '...', '- app_path:', 'com.sec.android.app.camera\n', '...', '- ts_app_started:', '03-14 17:56:07.504\n', '...', '- ts_app_closed:', '03-14 17:56:30.882\n', '...', ...</msg>
+<var>${output}</var>
+<arg>${output}${app_output}\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.144625" elapsed="0.000000"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-03-07T11:28:52.142630" elapsed="0.001995"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.145365" level="INFO">${name} = com.netflix.mediaclient</msg>
+<var>${name}</var>
+<arg>${packages}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.145365" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.146288" level="INFO">${timestamp_info} = ['03-14 17:56:29.534', '03-14 17:57:00.006', 30.472]</msg>
+<var>${timestamp_info}</var>
+<arg>${data}</arg>
+<arg>${name}</arg>
+<arg>${None}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.145365" elapsed="0.000923"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.146288" level="INFO">${app_output} = ['- application_2\n', '...', '- app_path:', 'com.netflix.mediaclient\n', '...', '- ts_app_started:', '03-14 17:56:29.534\n', '...', '- ts_app_closed:', '03-14 17:57:00.006\n', '...', '- lifespan:', '3...</msg>
+<var>${app_output}</var>
+<arg>- application_${index+1}\n</arg>
+<arg>...</arg>
+<arg>- app_path:</arg>
+<arg>${name}\n</arg>
+<arg>...</arg>
+<arg>- ts_app_started:</arg>
+<arg>${timestamp_info}[${START_TIMESTAMP_LIST_INDEX}]\n</arg>
+<arg>...</arg>
+<arg>- ts_app_closed:</arg>
+<arg>${timestamp_info}[${END_TIMESTAMP_LIST_INDEX}]\n</arg>
+<arg>...</arg>
+<arg>- lifespan:</arg>
+<arg>${timestamp_info}[${LIFESPAN_LIST_INDEX}]\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.146288" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.147289" level="INFO">${output} = applications:
+['- application_1\n', '...', '- app_path:', 'com.sec.android.app.camera\n', '...', '- ts_app_started:', '03-14 17:56:07.504\n', '...', '- ts_app_closed:', '03-14 17:56:30.882\n', '...', ...</msg>
+<var>${output}</var>
+<arg>${output}${app_output}\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.147289" elapsed="0.000000"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-03-07T11:28:52.145211" elapsed="0.002078"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.147289" level="INFO">${name} = com.android.vending</msg>
+<var>${name}</var>
+<arg>${packages}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.147289" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.147289" level="INFO">${timestamp_info} = ['03-14 17:56:33.783', '03-14 17:56:49.245', 15.462]</msg>
+<var>${timestamp_info}</var>
+<arg>${data}</arg>
+<arg>${name}</arg>
+<arg>${None}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.147289" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.148280" level="INFO">${app_output} = ['- application_3\n', '...', '- app_path:', 'com.android.vending\n', '...', '- ts_app_started:', '03-14 17:56:33.783\n', '...', '- ts_app_closed:', '03-14 17:56:49.245\n', '...', '- lifespan:', '15.46...</msg>
+<var>${app_output}</var>
+<arg>- application_${index+1}\n</arg>
+<arg>...</arg>
+<arg>- app_path:</arg>
+<arg>${name}\n</arg>
+<arg>...</arg>
+<arg>- ts_app_started:</arg>
+<arg>${timestamp_info}[${START_TIMESTAMP_LIST_INDEX}]\n</arg>
+<arg>...</arg>
+<arg>- ts_app_closed:</arg>
+<arg>${timestamp_info}[${END_TIMESTAMP_LIST_INDEX}]\n</arg>
+<arg>...</arg>
+<arg>- lifespan:</arg>
+<arg>${timestamp_info}[${LIFESPAN_LIST_INDEX}]\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.147289" elapsed="0.000991"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.148280" level="INFO">${output} = applications:
+['- application_1\n', '...', '- app_path:', 'com.sec.android.app.camera\n', '...', '- ts_app_started:', '03-14 17:56:07.504\n', '...', '- ts_app_closed:', '03-14 17:56:30.882\n', '...', ...</msg>
+<var>${output}</var>
+<arg>${output}${app_output}\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.148280" elapsed="0.000000"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-03-07T11:28:52.147289" elapsed="0.000991"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.149276" level="INFO">${name} = com.spotify.music</msg>
+<var>${name}</var>
+<arg>${packages}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.148280" elapsed="0.000996"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.149276" level="INFO">${timestamp_info} = ['03-14 17:56:40.793', '03-14 17:56:58.802', 18.009]</msg>
+<var>${timestamp_info}</var>
+<arg>${data}</arg>
+<arg>${name}</arg>
+<arg>${None}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.149276" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.149276" level="INFO">${app_output} = ['- application_4\n', '...', '- app_path:', 'com.spotify.music\n', '...', '- ts_app_started:', '03-14 17:56:40.793\n', '...', '- ts_app_closed:', '03-14 17:56:58.802\n', '...', '- lifespan:', '18.009\...</msg>
+<var>${app_output}</var>
+<arg>- application_${index+1}\n</arg>
+<arg>...</arg>
+<arg>- app_path:</arg>
+<arg>${name}\n</arg>
+<arg>...</arg>
+<arg>- ts_app_started:</arg>
+<arg>${timestamp_info}[${START_TIMESTAMP_LIST_INDEX}]\n</arg>
+<arg>...</arg>
+<arg>- ts_app_closed:</arg>
+<arg>${timestamp_info}[${END_TIMESTAMP_LIST_INDEX}]\n</arg>
+<arg>...</arg>
+<arg>- lifespan:</arg>
+<arg>${timestamp_info}[${LIFESPAN_LIST_INDEX}]\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.149276" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.150272" level="INFO">${output} = applications:
+['- application_1\n', '...', '- app_path:', 'com.sec.android.app.camera\n', '...', '- ts_app_started:', '03-14 17:56:07.504\n', '...', '- ts_app_closed:', '03-14 17:56:30.882\n', '...', ...</msg>
+<var>${output}</var>
+<arg>${output}${app_output}\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.150272" elapsed="0.000000"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-03-07T11:28:52.148280" elapsed="0.001992"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.150272" level="INFO">${name} = com.sec.android.app.popupcalculator</msg>
+<var>${name}</var>
+<arg>${packages}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.150272" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.150272" level="INFO">${timestamp_info} = ['03-14 17:56:59.524', '03-14 17:57:25.200', 25.676]</msg>
+<var>${timestamp_info}</var>
+<arg>${data}</arg>
+<arg>${name}</arg>
+<arg>${None}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.150272" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.151274" level="INFO">${app_output} = ['- application_5\n', '...', '- app_path:', 'com.sec.android.app.popupcalculator\n', '...', '- ts_app_started:', '03-14 17:56:59.524\n', '...', '- ts_app_closed:', '03-14 17:57:25.200\n', '...', '- li...</msg>
+<var>${app_output}</var>
+<arg>- application_${index+1}\n</arg>
+<arg>...</arg>
+<arg>- app_path:</arg>
+<arg>${name}\n</arg>
+<arg>...</arg>
+<arg>- ts_app_started:</arg>
+<arg>${timestamp_info}[${START_TIMESTAMP_LIST_INDEX}]\n</arg>
+<arg>...</arg>
+<arg>- ts_app_closed:</arg>
+<arg>${timestamp_info}[${END_TIMESTAMP_LIST_INDEX}]\n</arg>
+<arg>...</arg>
+<arg>- lifespan:</arg>
+<arg>${timestamp_info}[${LIFESPAN_LIST_INDEX}]\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.151274" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.152198" level="INFO">${output} = applications:
+['- application_1\n', '...', '- app_path:', 'com.sec.android.app.camera\n', '...', '- ts_app_started:', '03-14 17:56:07.504\n', '...', '- ts_app_closed:', '03-14 17:56:30.882\n', '...', ...</msg>
+<var>${output}</var>
+<arg>${output}${app_output}\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.151274" elapsed="0.000924"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2024-03-07T11:28:52.150272" elapsed="0.001926"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.152198" level="INFO">${name} = com.sec.android.app.clockpackage</msg>
+<var>${name}</var>
+<arg>${packages}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.152198" elapsed="0.000000"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-03-07T11:28:52.152198" level="INFO">${timestamp_info} = ['03-14 17:57:16.608', '03-14 17:57:59.906', 43.298]</msg>
+<var>${timestamp_info}</var>
+<arg>${data}</arg>
+<arg>${name}</arg>
+<arg>${None}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.152198" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.153263" level="INFO">${app_output} = ['- application_6\n', '...', '- app_path:', 'com.sec.android.app.clockpackage\n', '...', '- ts_app_started:', '03-14 17:57:16.608\n', '...', '- ts_app_closed:', '03-14 17:57:59.906\n', '...', '- lifes...</msg>
+<var>${app_output}</var>
+<arg>- application_${index+1}\n</arg>
+<arg>...</arg>
+<arg>- app_path:</arg>
+<arg>${name}\n</arg>
+<arg>...</arg>
+<arg>- ts_app_started:</arg>
+<arg>${timestamp_info}[${START_TIMESTAMP_LIST_INDEX}]\n</arg>
+<arg>...</arg>
+<arg>- ts_app_closed:</arg>
+<arg>${timestamp_info}[${END_TIMESTAMP_LIST_INDEX}]\n</arg>
+<arg>...</arg>
+<arg>- lifespan:</arg>
+<arg>${timestamp_info}[${LIFESPAN_LIST_INDEX}]\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.152198" elapsed="0.001065"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.153263" level="INFO">${output} = applications:
+['- application_1\n', '...', '- app_path:', 'com.sec.android.app.camera\n', '...', '- ts_app_started:', '03-14 17:56:07.504\n', '...', '- ts_app_closed:', '03-14 17:56:30.882\n', '...', ...</msg>
+<var>${output}</var>
+<arg>${output}${app_output}\n</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.153263" elapsed="0.000000"/>
+</kw>
+<var name="${index}">5</var>
+<status status="PASS" start="2024-03-07T11:28:52.152198" elapsed="0.001065"/>
+</iter>
+<var>${index}</var>
+<value>${dict_len}</value>
+<status status="PASS" start="2024-03-07T11:28:52.142630" elapsed="0.010633"/>
+</for>
+<kw name="Create File" owner="OperatingSystem">
+<msg time="2024-03-07T11:28:52.154193" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\agiurgea\PycharmProjects\Internship-exercises\log\logcat_applications_output.yml"&gt;C:\Users\agiurgea\PycharmProjects\Internship-exercises\log\logcat_applications_output.yml&lt;/a&gt;'.</msg>
+<arg>${filename}</arg>
+<arg>${output}</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.153263" elapsed="0.001927"/>
+</kw>
+<arg>${parsed_data}</arg>
+<arg>${OUTPUT_FILE}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.141706" elapsed="0.013484"/>
+</kw>
+<kw name="Calculate Verdict">
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.155706" level="INFO">Length is 6.</msg>
+<msg time="2024-03-07T11:28:52.155706" level="INFO">${total_apps} = 6</msg>
+<var>${total_apps}</var>
+<arg>${apps}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.155706" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.156789" level="INFO">${more_than_30_seconds} = [('com.netflix.mediaclient', 30.472), ('com.sec.android.app.clockpackage', 43.298)]</msg>
+<var>${more_than_30_seconds}</var>
+<arg>[(key, value[2]) for key, value in ${apps}.items() if value[2] &gt; 30]</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.155706" elapsed="0.001083"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.156789" level="INFO">${percentage} = 33.33333333333333</msg>
+<var>${percentage}</var>
+<arg>(len(${more_than_30_seconds}) / ${total_apps}) * 100</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.156789" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Set Variable" owner="BuiltIn">
+<arg>FAILED</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.156789" elapsed="0.000000"/>
+</kw>
+<msg time="2024-03-07T11:28:52.156789" level="INFO">${verdict} = FAILED</msg>
+<var>${verdict}</var>
+<arg>${percentage} &lt;= 25</arg>
+<arg>Set Variable</arg>
+<arg>PASSED</arg>
+<arg>ELSE</arg>
+<arg>Set Variable</arg>
+<arg>FAILED</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.156789" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${verdict}</value>
+<value>${percentage}</value>
+<value>@{more_than_30_seconds}</value>
+<status status="PASS" start="2024-03-07T11:28:52.156789" elapsed="0.000000"/>
+</return>
+<msg time="2024-03-07T11:28:52.157725" level="INFO">${verdict} = ['FAILED', 33.33333333333333, ('com.netflix.mediaclient', 30.472), ('com.sec.android.app.clockpackage', 43.298)]</msg>
+<var>${verdict}</var>
+<arg>${parsed_data}</arg>
+<status status="PASS" start="2024-03-07T11:28:52.155706" elapsed="0.002019"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.157725" level="INFO">Verdict: FAILED</msg>
+<arg>Verdict: ${verdict}[${RESULT_VERDICT_INDEX}]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.157725" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.158714" level="INFO">Percent apps lifespan &gt; 30s: 33.33333333333333</msg>
+<arg>Percent apps lifespan &gt; 30s: ${verdict}[${PERCENTAGE_VERDICT_INDEX}]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.158714" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-07T11:28:52.158714" level="INFO">Apps with lifespan &gt; 30s: [('com.netflix.mediaclient', 30.472), ('com.sec.android.app.clockpackage', 43.298)]</msg>
+<arg>Apps with lifespan &gt; 30s: ${verdict}[${APPS_VERDICT_INDEX}:]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-07T11:28:52.158714" elapsed="0.001066"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${verdict}</arg>
+<msg time="2024-03-07T11:28:52.159780" level="FAIL">FAILED != PASSED</msg>
+<arg>${verdict}[${RESULT_VERDICT_INDEX}]</arg>
 <arg>PASSED</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="NOT RUN" start="2024-02-28T15:39:23.626097" elapsed="0.000000"/>
+<status status="FAIL" start="2024-03-07T11:28:52.159780" elapsed="0.000000">FAILED != PASSED</status>
 </kw>
 <doc>Test logcat analysis and verdict</doc>
 <tag>Logcat</tag>
-<status status="FAIL" start="2024-02-28T15:39:23.601197" elapsed="0.024900">Evaluating expression 'ActivityTaskManager: START u0 in --------- beginning of main' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+<status status="FAIL" start="2024-03-07T11:28:48.030286" elapsed="4.130422">FAILED != PASSED</status>
 </test>
-<status status="FAIL" start="2024-02-28T15:39:23.582312" elapsed="0.044793"/>
+<status status="FAIL" start="2024-03-07T11:28:48.011347" elapsed="4.151354"/>
 </suite>
-<status status="FAIL" start="2024-02-28T15:39:23.581248" elapsed="0.046876"/>
+<status status="FAIL" start="2024-03-07T11:28:48.009330" elapsed="4.153371"/>
 </suite>
-<status status="FAIL" start="2024-02-28T15:39:23.562393" elapsed="0.066716"/>
+<status status="FAIL" start="2024-03-07T11:28:47.989384" elapsed="4.174312"/>
 </suite>
 <statistics>
 <total>
@@ -130,5 +2146,307 @@
 </suite>
 </statistics>
 <errors>
+<msg time="2024-03-07T11:28:46.502950" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\CDU\cdu.robot' on line 39: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.504945" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\CDU\cdu.robot' on line 69: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.505941" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\CDU\cdu.robot' on line 88: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.505941" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\CDU\cdu.robot' on line 107: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.506938" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\CDU\cdu.robot' on line 119: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.513925" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\apps_reliability.robot' on line 166: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.547885" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 103: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.549795" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 114: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.549795" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 139: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.550823" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 193: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.551796" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 203: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.553783" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 258: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.553783" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 266: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.554778" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 286: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.555774" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 327: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.555774" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 334: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.555774" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 353: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.556771" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 442: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.556771" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 468: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.556771" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 478: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.559760" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 716: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.559760" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 740: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.563747" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\reliability.robot' on line 1140: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.573714" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\service_activation_reliability.robot' on line 49: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.573714" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\service_activation_reliability.robot' on line 86: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.574711" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\service_activation_reliability.robot' on line 102: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.576706" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\service_activation_reliability.robot' on line 232: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.577701" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Enabler\service_activation_reliability.robot' on line 312: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.664017" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVC\ivc_commands.robot' on line 168: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.667985" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVC\ivc_commands.robot' on line 400: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.669978" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVC\ivc_commands.robot' on line 574: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.670910" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVC\ivc_commands.robot' on line 613: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.671903" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVC\ivc_commands.robot' on line 646: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.672900" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVC\ivc_commands.robot' on line 717: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.672900" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVC\ivc_commands.robot' on line 778: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.673897" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVC\ivc_commands.robot' on line 914: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.676886" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVC\ivc_commands.robot' on line 1258: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.690841" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\adb_command.robot' on line 64: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.691837" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\adb_command.robot' on line 132: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.691837" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\adb_command.robot' on line 156: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.694825" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\adb_command.robot' on line 182: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.694825" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\adb_command.robot' on line 189: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.695822" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\adb_command.robot' on line 195: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.697817" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\adb_command.robot' on line 315: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.718745" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 33: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.719742" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 38: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.720739" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 55: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.722732" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 95: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.724747" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 110: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.725725" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 115: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.727716" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 146: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.727716" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 153: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.727716" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 159: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.727716" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 164: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.728712" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 171: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.729709" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 183: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.729709" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 191: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.729709" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 202: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.730705" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 224: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.731703" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 231: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.731703" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 236: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.732764" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 272: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.732764" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 283: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.733785" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 303: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.733785" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 307: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.734781" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\appium_hlks.robot' on line 312: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.745877" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\audio.robot' on line 180: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.747868" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\audio.robot' on line 189: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.774024" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\Connectivity\bluetooth.robot' on line 153: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.776137" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\Connectivity\bluetooth.robot' on line 265: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.777146" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\Connectivity\bluetooth.robot' on line 279: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.808031" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\Connectivity\wifi.robot' on line 120: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.814012" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\dut_dialog.robot' on line 36: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.815008" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\dut_dialog.robot' on line 40: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.816004" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\dut_dialog.robot' on line 44: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.829032" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\filesystem.robot' on line 118: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.830954" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\filesystem.robot' on line 192: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.831953" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\filesystem.robot' on line 224: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.833205" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\filesystem.robot' on line 284: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.844281" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\flashing.robot' on line 130: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.920101" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\hmi.robot' on line 715: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.926087" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\hmi.robot' on line 1152: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.927078" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\hmi.robot' on line 1182: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.928076" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\hmi.robot' on line 1212: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.928076" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\hmi.robot' on line 1255: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.929072" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\hmi.robot' on line 1275: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.930071" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\hmi.robot' on line 1288: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.931065" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\hmi.robot' on line 1327: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.932063" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\hmi.robot' on line 1433: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.934055" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\hmi.robot' on line 1585: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.939045" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\hmi.robot' on line 1948: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.952024" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\image.robot' on line 76: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.953165" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\image.robot' on line 109: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.954199" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\image.robot' on line 137: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.988830" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\ivi.robot' on line 104: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.991741" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\ivi.robot' on line 196: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.993764" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\ivi.robot' on line 252: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.994759" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\ivi.robot' on line 353: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:46.999712" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\ivi.robot' on line 814: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.000711" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\ivi.robot' on line 825: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.003233" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\ivi.robot' on line 945: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.023674" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\lemonapi.robot' on line 85: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.025663" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\lemonapi.robot' on line 127: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.158230" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 454: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.162217" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 777: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.165275" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 1077: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.166202" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 1093: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.167210" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 1180: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.168206" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 1393: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.174240" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 2059: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.176233" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 2072: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.180227" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 2592: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.183219" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 2991: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.184209" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 3032: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.185203" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 3054: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.186201" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 3105: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.187224" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 3148: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.188268" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 3240: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.188268" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 3311: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.189189" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 3334: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.195171" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 4111: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.195171" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\new_hmi.robot' on line 4120: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.203144" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\pnp.robot' on line 41: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.204141" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\pnp.robot' on line 73: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.204141" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\pnp.robot' on line 92: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.205137" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\pnp.robot' on line 121: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.230261" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\referencephone.robot' on line 181: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.233254" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\referencephone.robot' on line 264: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.234247" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\referencephone.robot' on line 305: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.243387" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\sensor.robot' on line 56: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.244386" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\sensor.robot' on line 102: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.245381" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\sensor.robot' on line 108: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.246388" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\sensor.robot' on line 125: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.252358" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 37: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.252358" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 45: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.254359" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 53: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.254529" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 58: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.256108" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 63: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.256391" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 73: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.256391" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 78: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.257693" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 83: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.258194" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 95: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.258802" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 106: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.260127" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 117: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.260127" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 131: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.260127" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 144: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.261123" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 156: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.261123" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 169: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.262118" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 187: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.262118" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 192: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.262118" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 197: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.263115" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 202: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.263115" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\input_db_handler.robot' on line 207: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.272162" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 39: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.273159" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 44: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.273159" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 49: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.274156" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 54: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.275153" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 97: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.275153" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 104: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.276148" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 111: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.276148" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 121: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.276148" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 128: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.276148" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 135: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.277144" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 149: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.277144" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 162: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.277144" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 175: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.277144" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 188: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.278142" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 201: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.278142" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 214: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.278142" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 219: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.278142" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 233: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.279138" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 247: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.279138" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 261: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.279138" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 275: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.279138" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 289: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.279138" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\upgradability\ref_db_handler.robot' on line 303: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.291033" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\usb.robot' on line 70: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.294525" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\usb.robot' on line 302: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.310472" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\vehicle_config.robot' on line 34: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.312506" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\vehicle_config.robot' on line 103: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.313464" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\IVI\vehicle_config.robot' on line 139: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.348412" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\KMR\kmr_remote_services.robot' on line 45: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.350338" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\KMR\kmr_remote_services.robot' on line 51: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.351334" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\KMR\kmr_remote_services.robot' on line 134: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.355071" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\KMR\kmr_remote_services.robot' on line 453: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.358061" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\KMR\kmr_remote_services.robot' on line 732: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.360056" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\KMR\kmr_remote_services.robot' on line 769: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.360056" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\KMR\kmr_remote_services.robot' on line 780: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.360056" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\KMR\kmr_remote_services.robot' on line 795: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.361053" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\KMR\kmr_remote_services.robot' on line 815: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.366035" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\KMR\kmr_remote_services.robot' on line 1175: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.367032" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\KMR\kmr_remote_services.robot' on line 1205: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.390469" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\PNP\pnp.robot' on line 54: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.391464" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\PNP\pnp.robot' on line 99: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.392460" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\PNP\pnp.robot' on line 167: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.404422" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\power_supply.robot' on line 192: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.406415" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\power_supply.robot' on line 213: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.407758" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\power_supply.robot' on line 218: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.407758" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\power_supply.robot' on line 231: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.415755" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\SGW\sgw.robot' on line 35: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.415755" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\SGW\sgw.robot' on line 41: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.415755" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\SGW\sgw.robot' on line 47: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.415755" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\SGW\sgw.robot' on line 53: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.416751" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\SGW\sgw.robot' on line 59: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.416751" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\SGW\sgw.robot' on line 64: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.416751" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\SGW\sgw.robot' on line 69: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.417748" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\SGW\sgw.robot' on line 80: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.417748" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\SGW\sgw.robot' on line 91: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.496484" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 161: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.500473" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 379: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.502531" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 571: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.522782" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 815: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.524480" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 894: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.525493" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 982: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.528491" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 1306: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.530486" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 1585: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.531481" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 1739: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.531481" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 1745: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.532891" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 1754: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.532891" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 1767: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.534013" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 1878: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.535021" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 1995: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.535021" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 2020: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.537002" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 2059: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.537002" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 2093: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.539993" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 2423: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.539993" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 2431: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.540989" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 2456: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.541987" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 2520: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.544976" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Smartphone\myrenault.robot' on line 2752: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.566110" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\system.robot' on line 362: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.578821" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\bench_config.robot' on line 132: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.579807" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\bench_config.robot' on line 180: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.620872" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 457: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.623944" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 540: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.624978" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 558: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.625853" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 574: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.626851" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 590: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.626851" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 598: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.627847" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 611: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.627847" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 619: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.627847" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 632: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.628844" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 659: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.628844" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 675: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.629851" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 788: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.629851" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 821: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.630837" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 836: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.631834" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 884: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.633828" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 967: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.633828" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\logs.robot' on line 999: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.643454" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\tools.robot' on line 43: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.643454" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\tools.robot' on line 55: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.644447" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\tools.robot' on line 66: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.644447" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\tools.robot' on line 97: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.644447" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\tools.robot' on line 112: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.644447" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\tools.robot' on line 120: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.645444" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Tools\tools.robot' on line 178: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.754081" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\CAN\can_remote_services.robot' on line 1430: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.756072" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\CAN\can_remote_services.robot' on line 1509: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.756072" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\CAN\can_remote_services.robot' on line 1527: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.759063" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\CAN\can_remote_services.robot' on line 1754: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.764048" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\CAN\can_remote_services.robot' on line 2292: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.775011" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\CAN\can_remote_services.robot' on line 3691: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.805908" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 66: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.807899" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 87: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.807899" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 95: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.808896" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 112: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.809892" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 136: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.810889" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 167: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.810889" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 227: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.811886" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 258: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.811886" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 268: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.812882" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 277: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.812882" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 285: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.812882" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 307: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.813879" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 322: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.813879" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 372: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.814877" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 419: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.814877" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 450: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.814877" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 517: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.815873" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 604: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.815873" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 616: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.816870" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 646: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.816870" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 658: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.817866" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 765: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.819860" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\DOIP\doip.robot' on line 917: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.850827" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\MQTT\mqtt_remote_services.robot' on line 671: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.852821" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\Vehicle\MQTT\mqtt_remote_services.robot' on line 692: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.937705" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 228: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.938701" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 293: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.939699" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 324: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.942698" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 612: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.945678" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 966: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.946676" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 1085: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.947671" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 1175: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.948667" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 1204: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.950661" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 1463: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.955654" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 1937: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.956641" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 1972: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.957638" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 2093: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.958635" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 2177: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-07T11:28:47.959631" level="WARN">Error in file 'C:\Users\agiurgea\PycharmProjects\Internship-exercises\hlk_common\VNext\apim_notif_remote_services.robot' on line 2328: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>

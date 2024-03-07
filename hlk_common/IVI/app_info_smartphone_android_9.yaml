@@ -1,0 +1,16 @@
+apps_smartphone_android_9:
+  DeviceManager:
+    package: com.android.settings
+    activity: .Settings$ConnectedDeviceDashboardActivity
+  Settings:
+    package: com.android.settings
+    activity: com.android.settings.Settings
+  MyRenault:
+    package: com.renault.myrenault.one.valid
+    activity: com.accenture.myrenault.activities.splashscreen.SplashScreenActivity
+  MyRenaultDebugApp:
+    package: com.renault.myrenault.one.valid.debug
+    activity: com.accenture.myrenault.activities.MainActivity
+  YoutubePlayer:
+    package: com.google.android.apps.youtube.music
+    activity: .activities.MusicActivity

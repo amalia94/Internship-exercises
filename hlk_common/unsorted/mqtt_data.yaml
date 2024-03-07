@@ -1,0 +1,1159 @@
+RLU_req:
+  remote_lock_order_with_pin_code:
+    MessageType: RemoteOrder
+    TargetId: RLU
+    params:
+     rluop1: NA
+     rluac: Lock
+     rluop: AllDoors
+  lock_AllDoors_KeyInside_pinCode_request:
+    MessageType: RemoteOrder
+    TargetId: RLU
+    params:
+     rluop1: InSide
+     rluac: Lock
+     rluop: AllDoors
+  lock_AllDoors_KeyOutside_request:
+    MessageType: RemoteOrder
+    TargetId: RLU
+    params:
+     rluop1: OutSide
+     rluac: Lock
+     rluop: AllDoors
+  unlock_AllDoors_pinCode_request:
+    MessageType: RemoteOrder
+    TargetId: RLU
+    params:
+      rluop1: NA
+      rluac: Unlock
+      rluop: AllDoors
+  unlock_driverDoor_request:
+    MessageType: RemoteOrder
+    TargetId: RLU
+    params:
+      rluop1: NA
+      rluac: Lock
+      rluop: DriverDoorOnly
+  lock_AllDoors_request:
+    MessageType: RemoteOrder
+    TargetId: RLU
+    params:
+     rluop1: NA
+     rluac: Lock
+     rluop: AllDoors
+  unlock_tailgate_request:
+    MessageType: RemoteOrder
+    TargetId: RLU
+    params:
+      rluop1: NA
+      rluac: Unlock
+      rluop: Tailgate
+  unlock_AllDoors_request:
+    MessageType: RemoteOrder
+    TargetId: RLU
+    params:
+      rluop1: NA
+      rluac: Unlock
+      rluop: AllDoors
+RLU_resp:
+  ack_success:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RLU
+    params:
+      rlus: 0
+  no_ack_error7:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RLU
+    params:
+      rlus: 1
+      rlue: 7
+  no_ack_error8:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RLU
+    params:
+      rlus: 1
+      rlue: 8
+  ack_fail_customer_present:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RLU
+    params:
+      rlus: 1
+      rlue: 9
+  ack_fail_key_inside:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RLU
+    params:
+      rlus: 1
+      rlue: 41
+  no_ack_error12:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RLU
+    params:
+      rlus: 1
+      rlue: 12
+  ack_fail_key_outside:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RLU
+    params:
+      rlus: 1
+      rlue: 42
+RHL_req:
+  Start_HornLight_pinCode_request:
+    MessageType: RemoteOrder
+    TargetId: RHL
+    params:
+     rhlac: Start
+     rhlop: HornLight
+  Stop_HornLight_pinCode_request:
+    MessageType: RemoteOrder
+    TargetId: RHL
+    params:
+     rhlac: Stop
+     rhlop: HornLight
+  Start_HornOnly_SRP:
+    MessageType: RemoteOrder
+    TargetId: RHL
+    params:
+     rhlac: Start
+     rhlop: HornOnly
+  Start_LightOnly_SRP:
+    MessageType: RemoteOrder
+    TargetId: RHL
+    params:
+     rhlac: Start
+     rhlop: LightOnly
+  Start_Horn_Light_60s:
+    MessageType: RemoteOrder
+    TargetId: RHL
+    params:
+     rhlac: Start
+     rhlop: HornLight
+     rhlop2: style1
+     rhlop3: 60s
+  Start_Light_Only_60s:
+    MessageType: RemoteOrder
+    TargetId: RHL
+    params:
+     rhlac: Start
+     rhlop: LightOnly
+     rhlop3: 60
+RHL_resp:
+  ack_success:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RHL
+    params:
+      rhls: 0
+  rhl_ack_success:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RHL
+    params:
+      rhls: 0
+  rhl_ack_jwt_wrong_vin:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RHL
+    params:
+      rhlec: 81
+      rhls: 1
+RES_req:
+  Start_request:
+    MessageType: RemoteOrder
+    TargetId: RES
+    params:
+      resac: Start
+  Stop_request:
+    MessageType: RemoteOrder
+    TargetId: RES
+    params:
+      resac: Stop
+  DoubleStart_request:
+    MessageType: RemoteOrder
+    TargetId: RES
+    params:
+      resac: DoubleStart
+RES_resp:
+  ack_success:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RES
+    params:
+      ress: 0
+SRP_req:
+  init_pin_code:
+    MessageType: SRPRequest
+    TargetId: SRP_PINCODE
+  salt_request:
+    MessageType: SRPRequest
+    TargetId: SRP_LOGIN
+  clear_pin_code:
+    MessageType: SRPRequest
+    TargetId: SRP_PincodeClear
+    params:
+      srpc: SRPClear
+SRP_resp:
+  init_pin_code_ack:
+    MessageType: SRPNotification
+    TargetId: SRP_PincodeAck
+    params:
+      srpsta: OK
+  init_pin_code_status:
+    MessageType: SRPNotification
+    TargetId: SRP_PincodeStatus
+    params:
+      srpsta: OK
+  salt_request_status:
+    MessageType: SRPNotification
+    TargetId: SRP_LOGIN
+    params:
+      srpb: "dynamic"
+      srps: "dynamic"
+      srpls: OK
+  clear_pin_code_ack:
+    MessageType: SRPNotification
+    TargetId: SRP_PincodeClear
+    params:
+      srpcs: OK
+UCD_req:
+  doors_status_request:
+    MessageType: RemoteUploadRequest
+    TargetId: UCD_REQ
+    params:
+      DataList: ["sdols", "sdfl", "sdfr", "sdrl", "sdrr", "sdeh", "sdtg", "sdd", "sdp"]
+  res_status_request:
+    MessageType: RemoteUploadRequest
+    TargetId: UCD_REQ
+    params:
+      DataList: ["sres", "ltdc", "rse"]
+  refresh_car_position_request:
+    MessageType: RemoteUploadRequest
+    TargetId: UCD_REQ
+    params:
+      DataList: [vlola, vlolo, locsou, locval, lochea]
+  hvac_status_req:
+    MessageType: RemoteUploadRequest
+    TargetId: UCD_REQ
+    params:
+      DataList: [htccv,ebis,essd,etcsd,ebsoc,erec,ecac,vede,ecsta,evs,evolj,ct1,ct2,ct3,ercd,efcd,evhbd,ecder,eddv,vedr,vaecof,vaecon,eeec,echop,ebhe,vcmintem,estam,estom,ese2j,enccd,epcd,qccd,hvpcsun1,htctv,pscf,sdeh]
+  hvac_settings_req:
+    MessageType: RemoteUploadRequest
+    TargetId: UCD_REQ
+    params:
+      DataList: [htccv,etv,ebis,essd,etcsd,ebsoc,erec,ecac,vede,ecsta,evs,evolj,ct1,ct2,ct3,ercd,efcd,evhbd,ecder,eddv,vedr,vaecof,vaecon,eeec,echop,ebhe,vcmintem,estam,estom,ese2j,enccd,epcd,qccd]
+  configuration_read_request:
+    MessageType: RemoteDataRequest
+    TargetId: ConfigRead
+    params:
+      TS: "dynamic"
+UCD_resp:
+  UCD_Snapshot:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      sdols: 0
+      sdrl: 1
+      sdrr: 1
+      sdeh: 2
+      sdtg: 1
+      sdd: 1
+      sdp: 1
+  configuration_read_request_response:
+    MessageType: RemoteDataResponse
+    TargetId: ConfigRead
+    params:
+      TS: "dynamic"
+      cfgresd: "dynamic"
+  doors_status_lock_answer:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      sdols: 1
+      sdrl: 1
+      sdrr: 1
+      sdeh: 2
+      sdtg: 1
+      sdd: 1
+      sdp: 1
+  doors_status_Unlock_answer:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      sdfr: 1
+      sdrl: 1
+      sdtg: 1
+      sdrr: 1
+      sdols: 0
+      sdfl: 1
+      sdeh: 2
+  res_status_answer:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      sres: 12
+      ltdc: 599
+      rse: 0
+  res_stop_status_answer:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      sres: 6
+      ltdc: 000
+      rse: 0
+  res_Doublestart_status_answer:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      sres: 12
+      ltdc: 1199
+      rse: 0
+  res_getstatus_answer:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      sres: 12
+      ltdc: 500
+      rse: 0
+  car_position_refreshed:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      vlola: "dynamic"
+      vlolo: "dynamic"
+      locsou: "1"
+      locval: "0"
+  final_destination_updated_when_car_shutdown:
+    MessageType: RemoteNotification
+    TargetId: E2E_FinalDestination
+  charging_inhibitor_status:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      TriggerType: UCD/Sent/Trigger/Trg_ProhibitionByRent_changed
+  hvac_status_req_answer:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      hvpcsun1: 2
+      htccv: 25
+  hvac_status_req_answer_presoak_off:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      hvpcsun1: 1
+      htccv: 25
+  hvac_settings_req_answer:
+    MessageType: UCD_Snapshot
+    TargetId: Notification
+    params:
+      htccv: 26
+      etv: 25
+VA_resp:
+  certificateInstalled:
+    MessageType: RemoteNotification
+    TargetId: CertificateInstalled
+Notifications:
+  PM:
+    MessageType: RemoteNotification
+    TargetId: PushMessageFeedback
+    params:
+      Read:
+        pmfi: PushMessage/backendAnswer
+      Accepted:
+        pmfi: PushMessage/setDestinationAndStartGuidance
+      Outdated:
+        pmfi: activity/removal/lifetimeend
+  CIPHER_KEY:
+    MessageType: RemoteNotification
+    TargetId: CipherKey
+    params:
+      request: {}
+PM_req:
+  simple_message:
+    MessageType: RemotePush
+    TargetId: PushMessage
+    params:
+      pmud: 0
+      pmmt: 0
+      pmd: "Store"
+      pmin: "suggest1alw90"
+      pmml: 900
+      pmt1: "Do you know the accessories list for your car"
+      pmt2: "Do you want received our new catalog ?"
+      pmabn: 2
+      pmab1: "Accept"
+      pmab1d: "NULL"
+      pmab1s: "Accept"
+      pmab2: "Refuse"
+      pmab2d: "NULL"
+      pmab2s: "Dismiss"
+      pmfr: 1
+  suggestion_message:
+    MessageType: RemotePush
+    TargetId: PushMessage
+    params:
+      pmud: 0
+      pmmt: 2
+      pmd: "Navigation"
+      pmin: "suggest1alw90"
+      pmml: 2419200
+      pmt1: "Suggestion"
+      pmt2: "Start a route guidance"
+      pmabn: 2
+      pmab1: "Start Guidance"
+      pmab1s: "Accept"
+      pmab2: "Reject suggestion"
+      pmab2s: "Dismiss"
+      pmta: "Navigation"
+      pmif: "setDestinationAndStartGuidance"
+      pmpal: "{ \"@type\" : \"PushMessage/setDestinationAndStartGuidance\", \"gpsLocation\" :\
+      { \"@type\" : \"location/gpsLocation\", \"coordinates\" :\
+      { \"@type\": \"coordinates\", \"latitude\": 48.858222, \"longitude\": 2.2945 } } }"
+      pmfr: 1
+  message_after_update:
+    MessageType: RemotePush
+    TargetId: PushMessage
+    params:
+      pmud: 0
+      pmmt: 0
+      pmd: "Store"
+      pmin: "suggest1alw90"
+      pmml: 300
+      pmt1: "Notification after update"
+      pmfr: 0
+  message_after_delete:
+    MessageType: RemotePush
+    TargetId: PushMessageDelete
+    params:
+      pmdud: "False"
+  otp_message:
+    MessageType: RemotePush
+    TargetId: PushMessage
+    params:
+      pmud: 0
+      pmmt: 0
+      pmd: "Store"
+      pmin: "suggest1alw90"
+      pmml: 900
+      pmt1: "Code 356795 to be entered"
+      pmabn: 1
+      pmab1: "Done"
+      pmab1d: "NULL"
+      pmab1s: "OK"
+      pmfr: 1
+  otp_message_pairing_myr:
+    MessageType: RemotePush
+    TargetId: PushMessage
+    params:
+      pmud: 0
+      pmmt: 0
+      pmt2: "to be entered in MY Renault"
+      pmab1: "Done"
+      pmab1d: "NULL"
+      pmab1s: "OK"
+      pmfr: 1
+CIPHER_KEY_REQ:
+  download:
+    MessageType: RemoteServiceSetting
+    TargetId: CipherKey
+PT_req:
+  Send_navigation_route_request:
+    MessageType: RemotePush
+    TargetId: E2E_Destination
+    params:
+      e2eddti: 0
+      e2edsn1: "Renault Store"
+      e2etdsts1: "NA"
+      e2eda1: "57, av. des Champs-Elysees, 75008 Paris"
+      e2epdsh1: "123456"
+      e2edla1: 48.4371032
+      e2dselo1: 1.6394226
+      e2edlam1: 0
+      e2edslom1: 0
+      e2edlot1: 1
+      e2edcc1: 0
+BCI_req:
+  block:
+    MessageType: RemoteOrder
+    TargetId: BCI
+    params:
+      bciac: Block
+  unblock:
+    MessageType: RemoteOrder
+    TargetId: BCI
+    params:
+      bciac: Unblock
+BCI_resp:
+  block_ack_status:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: BCI
+    params:
+      bcis: 1
+  unblock_ack_status:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: BCI
+    params:
+      bcis: 2
+RHOO_req:
+  hvac_on:
+    MessageType: RemoteOrder
+    TargetId: RPC_EV
+    params:
+      rpcevac: Start
+  hvac_off:
+    MessageType: RemoteOrder
+    TargetId: RPC_EV
+    params:
+      rpcevac: Stop
+RHOO_resp:
+  remote_ack_success_on:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RPC_EV
+    params:
+      rpcevs: 0
+  remote_ack_success_off:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RPC_EV
+    params:
+      rpcevs: 1
+  remote_ack_success_fail:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RPC_EV
+    params:
+      rpcevs: 2
+Remote_synchro:
+  ScheduleSynchro:
+    MessageType: RemoteOrder
+    TargetId: RC
+    params:
+      rcac: ScheduleSynchro
+      TS: "dynamic"
+  ScheduleSynchro_ACK:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RC
+    params:
+      rcs: 0
+      TS: "dynamic"
+RCSS_synchro:
+  sync_needed:
+    MessageType: AVNextSynchroNeeded
+    TargetId: EVCharge
+    params:
+  sync_needed_ack:
+    MessageType: AIVISynchroNeededAck
+    TargetId: EVCharge
+    params:
+      evchasta: 0
+  sync_request:
+    MessageType: AIVISynchroReq
+    TargetId: EVCharge
+    params:
+      ecps: "dynamic"
+      evcasta1: "dynamic"
+      evcasta2: "dynamic"
+      evcasta3: "dynamic"
+      evcasta4: "dynamic"
+      evcasta5: "dynamic"
+      evcbh1: "dynamic"
+      evcbh2: "dynamic"
+      evcbh3: "dynamic"
+      evcbh4: "dynamic"
+      evcbh5: "dynamic"
+      evcbm1: "dynamic"
+      evcbm2: "dynamic"
+      evcbm3: "dynamic"
+      evcbm4: "dynamic"
+      evcbm5: "dynamic"
+      evcdu1: "dynamic"
+      evcdu2: "dynamic"
+      evcdu3: "dynamic"
+      evcdu4: "dynamic"
+      evcdu5: "dynamic"
+      evcdv: "dynamic"
+      evcfri1: "dynamic"
+      evcfri2: "dynamic"
+      evcfri3: "dynamic"
+      evcfri4: "dynamic"
+      evcfri5: "dynamic"
+      evcmo1: "dynamic"
+      evcmo2: "dynamic"
+      evcmo3: "dynamic"
+      evcmo4: "dynamic"
+      evcmo5: "dynamic"
+      evcsa1: "dynamic"
+      evcsa2: "dynamic"
+      evcsa3: "dynamic"
+      evcsa4: "dynamic"
+      evcsa5: "dynamic"
+      evcsu1: "dynamic"
+      evcsu2: "dynamic"
+      evcsu3: "dynamic"
+      evcsu4: "dynamic"
+      evcsu5: "dynamic"
+      evcth1: "dynamic"
+      evcth2: "dynamic"
+      evcth3: "dynamic"
+      evcth4: "dynamic"
+      evcth5: "dynamic"
+      evctu1: "dynamic"
+      evctu2: "dynamic"
+      evctu3: "dynamic"
+      evctu4: "dynamic"
+      evctu5: "dynamic"
+      evcwe1: "dynamic"
+      evcwe2: "dynamic"
+      evcwe3: "dynamic"
+      evcwe4: "dynamic"
+      evcwe5: "dynamic"
+  sync_response_always_mode_enabled:
+    MessageType: AVNextSynchroResp
+    TargetId: EVCharge
+    params:
+      NSTS: "dynamic"
+      Status: 1
+      ecps: 0
+      evcasta1: "dynamic"
+      evcasta2: "dynamic"
+      evcasta3: "dynamic"
+      evcasta4: "dynamic"
+      evcasta5: "dynamic"
+      evcbh1: "dynamic"
+      evcbh2: "dynamic"
+      evcbh3: "dynamic"
+      evcbh4: "dynamic"
+      evcbh5: "dynamic"
+      evcbm1: "dynamic"
+      evcbm2: "dynamic"
+      evcbm3: "dynamic"
+      evcbm4: "dynamic"
+      evcbm5: "dynamic"
+      evcdu1: "dynamic"
+      evcdu2: "dynamic"
+      evcdu3: "dynamic"
+      evcdu4: "dynamic"
+      evcdu5: "dynamic"
+      evcdv: "dynamic"
+      evcfri1: "dynamic"
+      evcfri2: "dynamic"
+      evcfri3: "dynamic"
+      evcfri4: "dynamic"
+      evcfri5: "dynamic"
+      evcmo1: "dynamic"
+      evcmo2: "dynamic"
+      evcmo3: "dynamic"
+      evcmo4: "dynamic"
+      evcmo5: "dynamic"
+      evcsa1: "dynamic"
+      evcsa2: "dynamic"
+      evcsa3: "dynamic"
+      evcsa4: "dynamic"
+      evcsa5: "dynamic"
+      evcsu1: "dynamic"
+      evcsu2: "dynamic"
+      evcsu3: "dynamic"
+      evcsu4: "dynamic"
+      evcsu5: "dynamic"
+      evcth1: "dynamic"
+      evcth2: "dynamic"
+      evcth3: "dynamic"
+      evcth4: "dynamic"
+      evcth5: "dynamic"
+      evctu1: "dynamic"
+      evctu2: "dynamic"
+      evctu3: "dynamic"
+      evctu4: "dynamic"
+      evctu5: "dynamic"
+      evcwe1: "dynamic"
+      evcwe2: "dynamic"
+      evcwe3: "dynamic"
+      evcwe4: "dynamic"
+      evcwe5: "dynamic"
+  final_sync_ack:
+    MessageType: AIVISynchroAck
+    TargetId: EVCharge
+    params:
+      evchasta: 0
+      NSTS: "dynamic"
+      TS: "dynamic"
+  sync_response_delayed_mode_enabled:
+    MessageType: AVNextSynchroResp
+    TargetId: EVCharge
+    params:
+      NSTS: "dynamic"
+      Status: 1
+      ecps: 1
+      evcasta1: "dynamic"
+      evcasta2: "dynamic"
+      evcasta3: "dynamic"
+      evcasta4: "dynamic"
+      evcasta5: "dynamic"
+      evcbh1: "dynamic"
+      evcbh2: "dynamic"
+      evcbh3: "dynamic"
+      evcbh4: "dynamic"
+      evcbh5: "dynamic"
+      evcbm1: "dynamic"
+      evcbm2: "dynamic"
+      evcbm3: "dynamic"
+      evcbm4: "dynamic"
+      evcbm5: "dynamic"
+      evcdu1: "dynamic"
+      evcdu2: "dynamic"
+      evcdu3: "dynamic"
+      evcdu4: "dynamic"
+      evcdu5: "dynamic"
+      evcdv: "dynamic"
+      evcfri1: "dynamic"
+      evcfri2: "dynamic"
+      evcfri3: "dynamic"
+      evcfri4: "dynamic"
+      evcfri5: "dynamic"
+      evcmo1: "dynamic"
+      evcmo2: "dynamic"
+      evcmo3: "dynamic"
+      evcmo4: "dynamic"
+      evcmo5: "dynamic"
+      evcsa1: "dynamic"
+      evcsa2: "dynamic"
+      evcsa3: "dynamic"
+      evcsa4: "dynamic"
+      evcsa5: "dynamic"
+      evcsu1: "dynamic"
+      evcsu2: "dynamic"
+      evcsu3: "dynamic"
+      evcsu4: "dynamic"
+      evcsu5: "dynamic"
+      evcth1: "dynamic"
+      evcth2: "dynamic"
+      evcth3: "dynamic"
+      evcth4: "dynamic"
+      evcth5: "dynamic"
+      evctu1: "dynamic"
+      evctu2: "dynamic"
+      evctu3: "dynamic"
+      evctu4: "dynamic"
+      evctu5: "dynamic"
+      evcwe1: "dynamic"
+      evcwe2: "dynamic"
+      evcwe3: "dynamic"
+      evcwe4: "dynamic"
+      evcwe5: "dynamic"
+  sync_response_scheduled_one_calendar_active:
+    MessageType: AVNextSynchroResp
+    TargetId: EVCharge
+    params:
+      Status: 1
+      ecps: 2
+      evcdv: "dynamic"
+      evcasta1: "Yes"
+      evcasta2: "No"
+      evcasta3: "No"
+      evcasta4: "No"
+      evcasta5: "No"
+      evcbh1: 21
+      evcbh2: "dynamic"
+      evcbh3: "dynamic"
+      evcbh4: "dynamic"
+      evcbh5: "dynamic"
+      evcbm1: 15
+      evcbm2: "dynamic"
+      evcbm3: "dynamic"
+      evcbm4: "dynamic"
+      evcbm5: "dynamic"
+      evcdu1: 120
+      evcdu2: "dynamic"
+      evcdu3: "dynamic"
+      evcdu4: "dynamic"
+      evcdu5: "dynamic"
+      evcfri1: 1
+      evcfri2: "dynamic"
+      evcfri3: "dynamic"
+      evcfri4: "dynamic"
+      evcfri5: "dynamic"
+      evcmo1: 1
+      evcmo2: "dynamic"
+      evcmo3: "dynamic"
+      evcmo4: "dynamic"
+      evcmo5: "dynamic"
+      evcsa1: 1
+      evcsa2: "dynamic"
+      evcsa3: "dynamic"
+      evcsa4: "dynamic"
+      evcsa5: "dynamic"
+      evcsu1: 1
+      evcsu2: "dynamic"
+      evcsu3: "dynamic"
+      evcsu4: "dynamic"
+      evcsu5: "dynamic"
+      evcth1: 1
+      evcth2: "dynamic"
+      evcth3: "dynamic"
+      evcth4: "dynamic"
+      evcth5: "dynamic"
+      evctu1: 1
+      evctu2: "dynamic"
+      evctu3: "dynamic"
+      evctu4: "dynamic"
+      evctu5: "dynamic"
+      evcwe1: 1
+      evcwe2: "dynamic"
+      evcwe3: "dynamic"
+      evcwe4: "dynamic"
+      evcwe5: "dynamic"
+  sync_response_scheduled_mode_enabled:
+    MessageType: AVNextSynchroResp
+    TargetId: EVCharge
+    params:
+      NSTS: "dynamic"
+      Status: 1
+      ecps: 2
+      evcdv: "dynamic"
+      evcasta1: "Yes"
+      evcasta2: "No"
+      evcasta3: "No"
+      evcasta4: "No"
+      evcasta5: "No"
+      evcbh1: 21
+      evcbh2: "dynamic"
+      evcbh3: "dynamic"
+      evcbh4: "dynamic"
+      evcbh5: "dynamic"
+      evcbm1: 15
+      evcbm2: "dynamic"
+      evcbm3: "dynamic"
+      evcbm4: "dynamic"
+      evcbm5: "dynamic"
+      evcdu1: 120
+      evcdu2: "dynamic"
+      evcdu3: "dynamic"
+      evcdu4: "dynamic"
+      evcdu5: "dynamic"
+      evcfri1: 1
+      evcfri2: "dynamic"
+      evcfri3: "dynamic"
+      evcfri4: "dynamic"
+      evcfri5: "dynamic"
+      evcmo1: 1
+      evcmo2: "dynamic"
+      evcmo3: "dynamic"
+      evcmo4: "dynamic"
+      evcmo5: "dynamic"
+      evcsa1: 1
+      evcsa2: "dynamic"
+      evcsa3: "dynamic"
+      evcsa4: "dynamic"
+      evcsa5: "dynamic"
+      evcsu1: 1
+      evcsu2: "dynamic"
+      evcsu3: "dynamic"
+      evcsu4: "dynamic"
+      evcsu5: "dynamic"
+      evcth1: 1
+      evcth2: "dynamic"
+      evcth3: "dynamic"
+      evcth4: "dynamic"
+      evcth5: "dynamic"
+      evctu1: 1
+      evctu2: "dynamic"
+      evctu3: "dynamic"
+      evctu4: "dynamic"
+      evctu5: "dynamic"
+      evcwe1: 1
+      evcwe2: "dynamic"
+      evcwe3: "dynamic"
+      evcwe4: "dynamic"
+      evcwe5: "dynamic"
+  sync_request_schedule_one_calendar:
+    MessageType: AIVISynchroReq
+    TargetId: EVCharge
+    params:
+      ecps: 2
+      evcasta1: "Yes"
+      evcasta2: "No"
+      evcasta3: "No"
+      evcasta4: "No"
+      evcasta5: "No"
+      evcbh1: 21
+      evcbh2: "dynamic"
+      evcbh3: "dynamic"
+      evcbh4: "dynamic"
+      evcbh5: "dynamic"
+      evcbm1: 15
+      evcbm2: "dynamic"
+      evcbm3: "dynamic"
+      evcbm4: "dynamic"
+      evcbm5: "dynamic"
+      evcdu1: 120
+      evcdu2: "dynamic"
+      evcdu3: "dynamic"
+      evcdu4: "dynamic"
+      evcdu5: "dynamic"
+      evcdv: "dynamic"
+      evcfri1: 1
+      evcfri2: "dynamic"
+      evcfri3: "dynamic"
+      evcfri4: "dynamic"
+      evcfri5: "dynamic"
+      evcmo1: 1
+      evcmo2: "dynamic"
+      evcmo3: "dynamic"
+      evcmo4: "dynamic"
+      evcmo5: "dynamic"
+      evcsa1: 1
+      evcsa2: "dynamic"
+      evcsa3: "dynamic"
+      evcsa4: "dynamic"
+      evcsa5: "dynamic"
+      evcsu1: 1
+      evcsu2: "dynamic"
+      evcsu3: "dynamic"
+      evcsu4: "dynamic"
+      evcsu5: "dynamic"
+      evcth1: 1
+      evcth2: "dynamic"
+      evcth3: "dynamic"
+      evcth4: "dynamic"
+      evcth5: "dynamic"
+      evctu1: 1
+      evctu2: "dynamic"
+      evctu3: "dynamic"
+      evctu4: "dynamic"
+      evctu5: "dynamic"
+      evcwe1: 1
+      evcwe2: "dynamic"
+      evcwe3: "dynamic"
+      evcwe4: "dynamic"
+      evcwe5: "dynamic"
+  sync_request_always:
+    MessageType: AIVISynchroReq
+    TargetId: EVCharge
+    params:
+      ecps: 0
+      evcasta1: "dynamic"
+      evcasta2: "dynamic"
+      evcasta3: "dynamic"
+      evcasta4: "dynamic"
+      evcasta5: "dynamic"
+      evcbh1: "dynamic"
+      evcbh2: "dynamic"
+      evcbh3: "dynamic"
+      evcbh4: "dynamic"
+      evcbh5: "dynamic"
+      evcbm1: "dynamic"
+      evcbm2: "dynamic"
+      evcbm3: "dynamic"
+      evcbm4: "dynamic"
+      evcbm5: "dynamic"
+      evcdu1: "dynamic"
+      evcdu2: "dynamic"
+      evcdu3: "dynamic"
+      evcdu4: "dynamic"
+      evcdu5: "dynamic"
+      evcdv: "dynamic"
+      evcfri1: "dynamic"
+      evcfri2: "dynamic"
+      evcfri3: "dynamic"
+      evcfri4: "dynamic"
+      evcfri5: "dynamic"
+      evcmo1: "dynamic"
+      evcmo2: "dynamic"
+      evcmo3: "dynamic"
+      evcmo4: "dynamic"
+      evcmo5: "dynamic"
+      evcsa1: "dynamic"
+      evcsa2: "dynamic"
+      evcsa3: "dynamic"
+      evcsa4: "dynamic"
+      evcsa5: "dynamic"
+      evcsu1: "dynamic"
+      evcsu2: "dynamic"
+      evcsu3: "dynamic"
+      evcsu4: "dynamic"
+      evcsu5: "dynamic"
+      evcth1: "dynamic"
+      evcth2: "dynamic"
+      evcth3: "dynamic"
+      evcth4: "dynamic"
+      evcth5: "dynamic"
+      evctu1: "dynamic"
+      evctu2: "dynamic"
+      evctu3: "dynamic"
+      evctu4: "dynamic"
+      evctu5: "dynamic"
+      evcwe1: "dynamic"
+      evcwe2: "dynamic"
+      evcwe3: "dynamic"
+      evcwe4: "dynamic"
+      evcwe5: "dynamic"
+  sync_response:
+    MessageType: AVNextSynchroResp
+    TargetId: EVCharge
+    params:
+      NSTS: "dynamic"
+      Status: 1
+RHVS_synchro:
+  sync_needed:
+    MessageType: AVNextSynchroNeeded
+    TargetId: EVPresoak
+    params:
+      TS: "dynamic"
+  sync_needed_ack:
+    MessageType: AIVISynchroNeededAck
+    TargetId: EVPresoak
+    params:
+      evpsta: 0
+  sync_request_two_calendars:
+    MessageType: AIVISynchroReq
+    TargetId: EVPresoak
+    params:
+      hpc1sa: 1
+      hpc1su: 1
+      hpc1th: 1
+      hpc1tu: 0
+      hpc1tvmv2: "dynamic"
+      hpc1we: 1
+      hpc2ah: 7
+      hpc2am: 30
+      hpc2fr: 1
+      hpc2mo: 1
+      hpc2sa: 0
+      hpc2su: 0
+      hpc2th: 0
+      hpc2tu: 0
+      hpc2we: 0
+      hpc3ah: "dynamic"
+      hpc3am: "dynamic"
+      hpc3fr: "dynamic"
+      hpc3mo: "dynamic"
+      hpc3sa: "dynamic"
+      hpc3su: "dynamic"
+      hpc3th: "dynamic"
+      hpc3tu: "dynamic"
+      hpc3we: "dynamic"
+      hpc4ah: "dynamic"
+      hpc4am: "dynamic"
+      hpc4fr: "dynamic"
+      hpc4mo: "dynamic"
+      hpc4sa: "dynamic"
+      hpc4su: "dynamic"
+      hpc4th: "dynamic"
+      hpc4tu: "dynamic"
+      hpc4we: "dynamic"
+      hpc5ah: "dynamic"
+      hpc5am: "dynamic"
+      hpc5fr: "dynamic"
+      hpc5mo: "dynamic"
+      hpc5sa: "dynamic"
+      hpc5su: "dynamic"
+      hpc5th: "dynamic"
+      hpc5tu: "dynamic"
+      hpc5we: "dynamic"
+      hvpc1as: "Yes"
+      hvpc2as: "Yes"
+      hvpc3as: "No"
+      hvpc4as: "No"
+      hvpc5as: "No"
+      hvpcsun2: 14
+      hvpcsun3: 0
+      hvpcsun4: 1
+      hvpcsun5: 0
+  sync_response_one_deactivated_calendar_entry:
+    MessageType: AVNextSynchroResp
+    TargetId: EVPresoak
+    params:
+      TS: "dynamic"
+      NSTS: "dynamic"
+      Status: 1
+      hvpc1as: "Yes"
+      hvpcsun2: 14
+      hvpcsun3: 0
+      hvpcsun5: 1
+      hpc1tu: 0
+      hpc1we: 1
+      hpc1th: 0
+      hvpcsun4: 1
+      hpc1sa: 0
+      hpc1su: 0
+      hvpc2as: "No"
+      hpc2ah: 16
+      hpc2am: 0
+      hpc2mo: 1
+      hpc2tu: 0
+      hpc2we: 0
+      hpc2th: 0
+      hpc2fr: 0
+      hpc2sa: 0
+      hpc2su: 0
+      hvpc3as: "No"
+      hpc3ah: 18
+      hpc3am: 0
+      hpc3mo: 1
+      hpc3tu: 0
+      hpc3we: 0
+      hpc3th: 0
+      hpc3fr: 0
+      hpc3sa: 0
+      hpc3su: 0
+      hvpc4as: "No"
+      hpc4ah: 20
+      hpc4am: 0
+      hpc4mo: 1
+      hpc4tu: 0
+      hpc4we: 0
+      hpc4th: 0
+      hpc4fr: 0
+      hpc4sa: 0
+      hpc4su: 0
+      hvpc5as: "No"
+      hpc5ah: 22
+      hpc5am: 0
+      hpc5mo: 1
+      hpc5tu: 0
+      hpc5we: 0
+      hpc5th: 0
+      hpc5fr: 0
+      hpc5sa: 0
+      hpc5su: 0
+  final_sync_ack:
+    MessageType: AIVISynchroAck
+    TargetId: EVPresoak
+    params:
+      evpsta: 0
+      NSTS: "dynamic"
+      TS: "dynamic"
+  sync_response:
+    MessageType: AVNextSynchroResp
+    TargetId: EVPresoak
+    params:
+      NSTS: "dynamic"
+      Status: 1
+SA_req:
+  pbo:
+    MessageType: AIVIOrder
+    TargetId: ServiceActivation
+    params:
+      actsou: PBO
+SA_resp:
+  pbo_ack:
+    MessageType: RemoteAVNEXTAcknowledgement
+    TargetId: ServiceActivation
+    params:
+      actsta: 1
+Factory_reset:
+  reset:
+    MessageType: RemoteNotification
+    TargetId: IVIFactoryReset
+REDI_req:
+  diagnostic_on_demand:
+    MessageType: RemoteOrder
+    TargetId: RDIAGRequest
+    params:
+      rdiards: 0
+      rdiarvm: 1
+  diagnostic_on_demand_kmr:
+    MessageType: RemoteOrder
+    TargetId: RDIAGRequest
+    params:
+      rdiards: 0
+REDI_resp:
+  diagnostic_on_demand_ACK_success:
+    MessageType: RemoteAIVCAcknowledgement
+    TargetId: RDIAGRequest
+    params:
+      rdiars: 0

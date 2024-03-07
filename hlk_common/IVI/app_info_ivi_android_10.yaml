@@ -1,0 +1,148 @@
+top_menu_order_apps_ivi_android_10: ['RadioLine', 'Maps', 'AppsMenu', 'TPMS', 'PhoneBook']
+apps_ivi_android_10:
+  Privacy:
+    package: com.renault.connectivity
+    activity: com.renault.connectivity.page.ConnectivityStatusActivity
+  EvMenu:
+    package: com.renault.evservices
+    activity: com.renault.evservices.page.main.MainActivity
+  Navigation:
+    package: com.renault.launcher
+    activity: com.renault.launcher.NavigationActivity
+  MediaSource:
+    package: com.renault.launcher
+    activity: com.renault.launcher.appmenu.media.MediaSourceActivity
+  SetupWizard:
+    package: com.renault.setupwizardoverlay
+    activity: .welcome.WelcomeActivity
+  Settings:
+    package: com.android.car.settings
+    activity: com.android.car.settings.common.CarSettingActivity
+  EvSettings:
+    package: com.renault.evservices
+    activity: com.renault.evservices.page.main.MainActivity
+  TPMS:
+    package: com.renault.appmenu
+    activity: com.renault.appmenu.pages.carworld.CarWorldActivity
+    coordinates: ['1100', '110']
+  ProfileSettings:
+    package: com.renault.profilesettingscenter
+    activity: .ui.view.UserProfileActivity
+  DrivingEco:
+    package: com.renault.drivingeco
+    activity: .page.activities.main.MainActivity
+  AirPurifier:
+    package: com.renault.cabincontrol
+    activity: .ui.airquality.main.AirQualityActivity
+  Radio:
+    package: com.renault.radio
+    activity: .view.RadioActivity
+  Maps:
+    package: com.google.android.apps.maps
+    activity: com.google.android.maps.MapsActivity
+    coordinates: ['150' , '110']
+  AllianceKitchensink:
+    package: com.alliance.car.kitchensink
+    activity: .AllianceKitchenSinkActivity
+  eHorizon:
+    package: com.elektrobit.ehorizon
+    activity: .MainActivity
+  Connectivity:
+    package: com.renault.connectivity
+    activity: .page.ConnectivityStatusActivity
+  UserManagement:
+    package: com.renault.profilesettingscenter
+    activity: .ui.view.UserProfileActivity
+  PlayStore:
+    package: com.android.vending
+    activity: com.google.android.finsky.unauthenticated.activity.UnauthenticatedMainActivity
+  PlayStore_FR:
+    package: com.android.vending
+    activity: com.google.android.finsky.unauthenticated.UnauthenticatedMainActivity
+  PlayStore2:
+    package: com.android.vending
+    activity: com.google.android.finsky.carmainactivity.MainActivity
+  VideoPlayer:
+    package: com.renault.videoplayer
+    activity: .browser.FileBrowserActivity
+  Files:
+    package: com.android.documentsui
+    activity: .files.FilesActivity
+  Sensor:
+    package: jp.alchemysoft.sensorlogger
+    activity: .MainActivity
+  Waze:
+    package: com.waze
+    activity: .FreeMapAppActivity
+  PhotoPlayer:
+    package: com.renault.photoplayer
+    activity: .browser.FileBrowserActivity
+  MediaDispatcher:
+    package: com.android.car.media
+    activity: .MediaDispatcherActivity
+  SetupWizardBluetooth:
+    package: com.google.android.car.setupwizard
+    activity: bluetooth.BluetoothActivity
+  PhoneBtSettings:
+    package: com.android.settings
+    activity: .Settings$ConnectedDeviceDashboardActivity
+  DeviceManager:
+    package: com.renault.spcx
+    activity: .feature.main.MainActivity
+  PhoneBook:
+    package: com.android.car.dialer
+    activity: com.android.car.dialer.ui.TelecomActivity
+    coordinates: ['510' ,'110']
+  RadioLine:
+    package: com.renault.radio
+    activity: com.renault.radio.view.RadioActivity
+    coordinates: ['300' , '110']
+  CarPlay:
+    package: com.alliance.car.carplaysvc
+    activity: .activity.AvailableIcon
+  AndroidAuto:
+    package: com.google.android.embedded.projection
+    activity: com.google.android.apps.auto.aareceiver.ui.AndroidAutoHeadunitActivity
+  Spcx:
+    package: com.google.android.embedded.projection
+    activity: com.google.android.apps.auto.aareceiver.ui.ProjectionDeviceDisambiguationActivity
+  AppsMenu:
+    package: com.renault.launcher
+    activity: com.renault.launcher.appmenu.AppsMenuActivity
+    coordinates: ['750' , '110']
+  Location:
+    package: com.android.car.settings
+    activity: com.android.car.settings.location.LocationSettingsActivity
+  VehicleSettings:
+    package: com.renault.vehiclesettings
+    activity: com.renault.vs.MainActivity
+  Contacts:
+    package: com.android.contacts
+    activity: com.android.contacts.activities.PeopleActivity
+  CarSettings:
+    package: com.renault.vehiclesettings
+    activity: com.renault.vs.page.main.VehicleSettingsActivity
+  SetupWizardOverlay:
+    package: com.google.android.car.setupwizard
+    activity: CarSetupWizardTestActivity
+  GoogleSignin:
+    package: com.google.android.gms
+    activity: .auth.auto.SignInMethodActivity
+  Spotify:
+    package: com.android.car.media
+    activity: com.android.car.media.MediaActivity
+  WelcomeProfile:
+    package: com.renault.profilesettingscenter
+    activity: com.renault.profilesettingscenter.ui.view.WelcomeActivity
+  DriverAssistance:
+    package: com.renault.driveassist
+    activity: com.renault.driveassistapp.page.main.DriveAssistActivity
+  AllianceKitchenSink:
+    package: com.alliance.car.kitchensink
+    activity: com.alliance.car.kitchensink.AllianceKitchenSinkActivity
+  KitchenSink:
+    package: com.google.android.car.kitchensink
+    activity: com.google.android.car.kitchensink.KitchenSinkActivity
+  PermissionsTest:
+    package: com.alliance.car.permissionstest
+    activity: com.alliance.car.permissionstest.PermissionsTestActivity
