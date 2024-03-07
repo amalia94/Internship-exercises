@@ -8,7 +8,7 @@ Library           String
 
 *** Variables ***
 ${LOG_FILE}                     ${CURDIR}/logcat_applications.txt
-${OUTPUT_FILE}                  ${CURDIR}/../log/logcat_applications_output.yml
+${OUTPUT_FILE}                  ${CURDIR}/logcat_applications_output.yml
 ${REGEX_ACTIVITY}               .*((ActivityTaskManager: START u0)|(Layer: Destroyed ActivityRecord)).*
 ${REGEX_TIMESTAMP_PACKAGE}      \\d{2}-\\d{2}\\s\\d{2}:\\d{2}:\\d{2}\\.\\d{3}|com\\.[\\w\\d]+(?:\\.[\\w\\d]+)*
 ${START_TIMESTAMP_LIST_INDEX}   0
